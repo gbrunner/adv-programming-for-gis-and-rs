@@ -13,6 +13,7 @@ Ideas for a more advanced Python class for GIS and Remote Sensing
 - [ArcGIS Python API](https://developers.arcgis.com/python/)
 - Matplotlib
 - Numpy with a focus on images and rasters
+- ArcGIS Python Raster Function
 - Pandas
 - Scipy
 - [Folium](https://blog.dominodatalab.com/creating-interactive-crime-maps-with-folium/)
