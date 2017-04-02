@@ -1,11 +1,11 @@
 # Advanced_Python_for_GIS_and_RS
 Ideas for a more advanced Python class for GIS and Remote Sensing
 
-#Textbooks:
+# Textbooks:
 - [Python for ArcGIS. Tateosian, Laura. 2015.](http://www.springer.com/us/book/9783319183978)
 - [Python Data Science Handbook. VanderPlas, Jake. 2016.](http://shop.oreilly.com/product/0636920034919.do)
 
-#Topics Covered
+# Topics Covered
 - In Memory Processing
 - Multiprocessing
 - TKinter
