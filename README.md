@@ -43,5 +43,5 @@ Ideas for a more advanced Python class for GIS and Remote Sensing
 - Week 11: Scipy
 - Week 12: Guest Lecture on R
 - Week 13: Multiprocessing
-- Week 14: Creatinng User Interfaces with TKinter
+- Week 14: Creatinng User Interfaces with [TKinter](https://wiki.python.org/moin/TkInter)
 - Week 15: Student Presentations
