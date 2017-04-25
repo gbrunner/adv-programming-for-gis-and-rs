@@ -20,7 +20,7 @@ Ideas for a more advanced Python class for GIS and Remote Sensing
   - Sharing on Github
 - Week 4: Matplotlib
   - Review What you should already know
-  - [Basemap](https://basemaptutorial.readthedocs.io/en/latest/first_map.html)
+  - [~~Basemap~~](https://basemaptutorial.readthedocs.io/en/latest/first_map.html)
 - Week 5: [ArcGIS Python API](https://developers.arcgis.com/python/)
   - Map Objects
   - Adding layers to maps
