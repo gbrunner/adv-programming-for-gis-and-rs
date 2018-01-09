@@ -1,15 +1,18 @@
-# Advanced_Python_for_GIS_and_RS
+# Advanced Python for Remote Sensing\GIS
 Ideas for a more advanced Python class for GIS and Remote Sensing
 
-# Course Description
+## Course Description
 
-# Course Objectives
+## Course Objectives
+- To teach students how to work with geogarphic web services.
+- To introduce students to modern data science methods and tools that can be used to augment their research in geography and remote sensing.
+- Encourage students to use webmaps and webapps for visualizing and contextualizing data.
 
-# Textbooks:
+## Textbooks:
 - [Python Data Science Handbook. VanderPlas, Jake. 2016.](http://shop.oreilly.com/product/0636920034919.do)
 - [ArcGIS Web Development](https://www.amazon.com/ArcGIS-Web-Development-Rene-Rubalcava/dp/1617291617)
 
-# Course Schedule
+## Course Schedule
 
 | Week    | Topics |
 |---------|--------|
@@ -29,7 +32,7 @@ Ideas for a more advanced Python class for GIS and Remote Sensing
 | Week 14 | Developin Custom Data Driven Applications |
 | Week 15 | Student Present Final Project |
 
-# Assignments & Grading
+## Assignments & Grading
 | Weight | Type |
 |--------|------|
 | 15% | Jupyter Notebook Project |
