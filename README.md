@@ -28,3 +28,13 @@ Ideas for a more advanced Python class for GIS and Remote Sensing
 | Week 13 | Creating GIS Applications with the ArcGIS Javascript API |
 | Week 14 | Developin Custom Data Driven Applications |
 | Week 15 | Student Present Final Project |
+
+# Assignments & Grading
+| Weight | Type |
+|--------|------|
+| 15% | Jupyter Notebook Project |
+| 15% | ArcGIS Python API Project |
+| 15% | Data Science with Numpy\Pandas\Matplotlib Project |
+| 15% | Student Coice Project (multiprocessing, sk-learn, or folium) |
+| 15% | ArcGIS JSAPI Project |
+| 25% | Student defined final project |
