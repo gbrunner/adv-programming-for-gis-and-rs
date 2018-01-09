@@ -1,11 +1,12 @@
 # Advanced Python for Remote Sensing\GIS
 
 ## Course Description
+Have you ever wanted to learn how to publish, consume, and use geographic web services? Are in intrested in learning how typical desktop GIS and remote sensing workflows change when the data is shared as a ewb service? Do you want to learn how to create webmaps and webaps? After completing this course, you will understand how to do all of these things! In **Advanced Python for GIS and Remote Sensing**, students will learn how to publish, consume, and analyze web services using Python. They will be introduced to more powerful, more advanced Python libraries such as Pandas, Numpy, ArcGIS, and Folium. They will also learn how to use the ArcGIS API for Javascript to create their first stand-alone web applications.
 
 ## Course Objectives
 - To teach students how to work with geogarphic web services.
 - To introduce students to modern data science methods and tools that can be used to augment their research in geography and remote sensing.
-- Encourage students to use webmaps and webapps for visualizing and contextualizing data.
+- Encourage students to use web services, webmaps, and webapps for visualizing and contextualizing data.
 
 ## Textbooks:
 - [Python Data Science Handbook. VanderPlas, Jake. 2016.](http://shop.oreilly.com/product/0636920034919.do)
@@ -28,8 +29,8 @@
 | Week 11 | Web Mapping with [Folium](https://blog.dominodatalab.com/creating-interactive-crime-maps-with-folium/)
 | Week 12 | Working with the ArcGIS REST API |
 | Week 13 | Creating GIS Applications with the ArcGIS Javascript API |
-| Week 14 | Developin Custom Data Driven Applications |
-| Week 15 | Student Present Final Project |
+| Week 14 | Developing Custom Data Driven Applications |
+| Week 15 | Students Present Final Project |
 
 ## Assignments & Grading
 | Weight | Type |
@@ -37,6 +38,6 @@
 | 15% | Jupyter Notebook Project |
 | 15% | ArcGIS Python API Project |
 | 15% | Data Science with Numpy\Pandas\Matplotlib Project |
-| 15% | Student Coice Project (multiprocessing, sk-learn, or folium) |
+| 15% | Student Choice Project (multiprocessing, sk-learn, or folium) |
 | 15% | ArcGIS JSAPI Project |
 | 25% | Student defined final project |
