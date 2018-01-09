@@ -1,48 +1,30 @@
 # Advanced_Python_for_GIS_and_RS
 Ideas for a more advanced Python class for GIS and Remote Sensing
 
-# Textbooks:
-- [Python for ArcGIS. Tateosian, Laura. 2015.](http://www.springer.com/us/book/9783319183978)
-- [Python Data Science Handbook. VanderPlas, Jake. 2016.](http://shop.oreilly.com/product/0636920034919.do)
+# Course Description
 
-# Topics Covered
-- Week 1: Everything you should already know about Python
-  - List
-  - Dictionarries
-  - Tuples
-  - List comprehension
-- Week 2: Arcpy tips and tricks for improving productivity
-  - In Memory Processing
-- Week 3: Jupyter Notebooks (IDE)
-  - Markdown
-  - Python
-  - Exporting notebooks
-  - Sharing on Github
-- Week 4: Matplotlib
-  - Review What you should already know
-  - [Seaborn](https://seaborn.pydata.org/)
-  - [~~Basemap~~](https://basemaptutorial.readthedocs.io/en/latest/first_map.html)
-- Week 5: : [Pandas](http://nbviewer.jupyter.org/gist/wesm/4757075/PandasTour.ipynb)
-  - Reading from and writing to files
-  - Working with data frames
-  - Plotting
-  - Lambdas
-  - Functions
-- Week 6: [ArcGIS Python API](https://developers.arcgis.com/python/)
-  - Map Objects
-  - Adding layers to maps
-  - Styling maps
-- Week 7: [ArcGIS Python API](https://developers.arcgis.com/python/)
-  - Publishing content
-  - Administering AGOL
-- Week 8: GeoPandas
-- Week 9: [Folium](https://blog.dominodatalab.com/creating-interactive-crime-maps-with-folium/)
-- Week 10: Numpy for Math
-- Week 11: Numpy for Rasters and Hyperslectral Data
-  - Iterating over data cubes
-  - ArcGIS Python Raster Function
-- Week 12: Scipy
-- ~~Week 12: Guest Lecture on R~~
-- Week 13: [Multiprocessing](https://www.youtube.com/watch?v=s1SkCYMnfbY)
-- Week 14: Creatinng User Interfaces with [TKinter](https://wiki.python.org/moin/TkInter)
-- Week 15: Student Presentations
+# Course Objectives
+
+# Textbooks:
+- [Python Data Science Handbook. VanderPlas, Jake. 2016.](http://shop.oreilly.com/product/0636920034919.do)
+- [ArcGIS Web Development](https://www.amazon.com/ArcGIS-Web-Development-Rene-Rubalcava/dp/1617291617)
+
+# Course Schedule
+
+| Week    | Topics |
+|---------|--------|
+| Week 1  | [Jupyter Notebooks (IDE)](https://jupyter.org/install.html), [Github](https://github.com/), [Domino](https://app.dominodatalab.com/overview) |                 
+| Week 2  | [Intro to the ArcGIS API for Python](https://developers.arcgis.com/python/) |
+| Week 3  | ArcGIS API for Python: [Publishing](https://developers.arcgis.com/python/sample-notebooks/publishing-sd-shapefiles-and-csv/) and [Analysis](https://developers.arcgis.com/python/sample-notebooks/chennai-floods-analysis/) |
+| Week 4  | ArcGIS API for Python: [Data Science](https://developers.arcgis.com/python/sample-notebooks/counting-features-in-satellite-images-using-scikit-image/) and [Administering Your Organization](https://developers.arcgis.com/python/sample-notebooks/batch-creation-of-groups/) |
+| Week 5  | [Numpy](https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html) and [Xarray](https://pypi.python.org/pypi/xarray) |
+| Week 6  | [Intro to Pandas](https://jakevdp.github.io/PythonDataScienceHandbook/03.00-introduction-to-pandas.html) |
+| Week 7  | More Pandas |
+| Week 8  | Advanced Plotting: [Matplotlib](https://jakevdp.github.io/PythonDataScienceHandbook/04.00-introduction-to-matplotlib.html) and [Beyond](https://seaborn.pydata.org/) |
+| Week 9  | [Intro to Machine Learning with Scikit-Learn](https://jakevdp.github.io/PythonDataScienceHandbook/05.02-introducing-scikit-learn.html) | 
+| Week 10  | [Multiprocessing](https://www.youtube.com/watch?v=s1SkCYMnfbY), [Concurrent](http://www.gregreda.com/2016/10/16/asynchronous-scraping-with-python/), and Parallel Processing Techniques |
+| Week 11 | Web Mapping with [Folium](https://blog.dominodatalab.com/creating-interactive-crime-maps-with-folium/)
+| Week 12 | Working with the ArcGIS REST API |
+| Week 13 | Creating GIS Applications with the ArcGIS Javascript API |
+| Week 14 | Developin Custom Data Driven Applications |
+| Week 15 | Student Present Final Project |
