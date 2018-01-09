@@ -1,5 +1,4 @@
 # Advanced Python for Remote Sensing\GIS
-Ideas for a more advanced Python class for GIS and Remote Sensing
 
 ## Course Description
 
