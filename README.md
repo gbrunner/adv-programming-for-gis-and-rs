@@ -16,7 +16,7 @@ Have you ever wanted to learn how to publish, consume, and use geographic web se
 
 | Week    | Topics |
 |---------|--------|
-| Week 1  | [Jupyter Notebooks (IDE)](https://jupyter.org/install.html), [Github](https://github.com/), [Domino](https://app.dominodatalab.com/overview) |                 
+| Week 1  | [Jupyter Notebooks (IDE)](https://jupyter.org/install.html), [Github](https://github.com/), [Domino](https://app.dominodatalab.com/overview)? |                 
 | Week 2  | [Intro to the ArcGIS API for Python](https://developers.arcgis.com/python/) |
 | Week 3  | ArcGIS API for Python: [Publishing](https://developers.arcgis.com/python/sample-notebooks/publishing-sd-shapefiles-and-csv/) and [Analysis](https://developers.arcgis.com/python/sample-notebooks/chennai-floods-analysis/) |
 | Week 4  | ArcGIS API for Python: [Data Science](https://developers.arcgis.com/python/sample-notebooks/counting-features-in-satellite-images-using-scikit-image/) and [Administering Your Organization](https://developers.arcgis.com/python/sample-notebooks/batch-creation-of-groups/) |
