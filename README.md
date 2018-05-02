@@ -22,7 +22,7 @@ Have you ever wanted to learn how to publish, consume, and use geographic web se
 | Week 4  | ArcGIS API for Python: [Data Science](https://developers.arcgis.com/python/sample-notebooks/counting-features-in-satellite-images-using-scikit-image/) and [Administering Your Organization](https://developers.arcgis.com/python/sample-notebooks/batch-creation-of-groups/) |
 | Week 5  | [Numpy](https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html) and [Esri Raster Functions](https://github.com/Esri/raster-functions) |
 | Week 6  | [Intro to Pandas](https://jakevdp.github.io/PythonDataScienceHandbook/03.00-introduction-to-pandas.html) |
-| Week 7  | More Pandas |
+| Week 7  | Spatial DataFrames |
 | Week 8  | Advanced Plotting: [Matplotlib](https://jakevdp.github.io/PythonDataScienceHandbook/04.00-introduction-to-matplotlib.html) and [Beyond](https://seaborn.pydata.org/) |
 | Week 9  | [Intro to Machine Learning with Scikit-Learn](https://jakevdp.github.io/PythonDataScienceHandbook/05.02-introducing-scikit-learn.html) | 
 | Week 10  | [Multiprocessing](https://www.youtube.com/watch?v=s1SkCYMnfbY), [Concurrent](http://www.gregreda.com/2016/10/16/asynchronous-scraping-with-python/), and Parallel Processing Techniques |
