@@ -20,13 +20,13 @@ Have you ever wanted to learn how to publish, consume, and use geographic web se
 | Week 2  | [Intro to the ArcGIS API for Python](https://developers.arcgis.com/python/) |
 | Week 3  | ArcGIS API for Python: [Publishing](https://developers.arcgis.com/python/sample-notebooks/publishing-sd-shapefiles-and-csv/) and [Analysis](https://developers.arcgis.com/python/sample-notebooks/chennai-floods-analysis/) |
 | Week 4  | ArcGIS API for Python: [Data Science](https://developers.arcgis.com/python/sample-notebooks/counting-features-in-satellite-images-using-scikit-image/) and [Administering Your Organization](https://developers.arcgis.com/python/sample-notebooks/batch-creation-of-groups/) |
-| Week 5  | [Numpy](https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html) and [Xarray](https://pypi.python.org/pypi/xarray) |
+| Week 5  | [Numpy](https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html) and [Esri Raster Functions](https://github.com/Esri/raster-functions) |
 | Week 6  | [Intro to Pandas](https://jakevdp.github.io/PythonDataScienceHandbook/03.00-introduction-to-pandas.html) |
-| Week 7  | More Pandas |
+| Week 7  | Spatial DataFrames |
 | Week 8  | Advanced Plotting: [Matplotlib](https://jakevdp.github.io/PythonDataScienceHandbook/04.00-introduction-to-matplotlib.html) and [Beyond](https://seaborn.pydata.org/) |
 | Week 9  | [Intro to Machine Learning with Scikit-Learn](https://jakevdp.github.io/PythonDataScienceHandbook/05.02-introducing-scikit-learn.html) | 
 | Week 10  | [Multiprocessing](https://www.youtube.com/watch?v=s1SkCYMnfbY), [Concurrent](http://www.gregreda.com/2016/10/16/asynchronous-scraping-with-python/), and Parallel Processing Techniques |
-| Week 11 | Web Mapping with [Folium](https://blog.dominodatalab.com/creating-interactive-crime-maps-with-folium/)
+| Week 11 | Web Mapping with [Leaflet](http://leafletjs.com/) and [Folium](https://blog.dominodatalab.com/creating-interactive-crime-maps-with-folium/)
 | Week 12 | Working with the ArcGIS REST API |
 | Week 13 | Creating GIS Applications with the ArcGIS Javascript API |
 | Week 14 | Developing Custom Data Driven Applications |
