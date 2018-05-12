@@ -1,1 +1,7 @@
-https://www.youtube.com/watch?v=mxnc0vMRD3I
+## Preparation for Class: [Watch this Video](https://www.youtube.com/watch?v=KA0AysGnSf4)
+
+## Lecture
+
+## Exercises
+
+## Homework
