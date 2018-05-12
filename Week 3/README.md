@@ -1,1 +1,7 @@
-https://www.youtube.com/watch?v=mxnc0vMRD3I
+## Prepatation: [Watch this Video](https://www.youtube.com/watch?v=hWl4WXVZcIQ)
+
+## Lecture:
+
+## In Class:
+
+## Homework:
