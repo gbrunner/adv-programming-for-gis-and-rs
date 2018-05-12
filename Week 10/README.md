@@ -1,4 +1,4 @@
-## Prepatation: [Watch this Video](https://www.youtube.com/watch?v=hWl4WXVZcIQ) and [this video](https://www.youtube.com/watch?v=DdUBrV2zpvI)
+## Prepatation: [Watch this Video](https://www.youtube.com/watch?v=s1SkCYMnfbY)
 
 ## Lecture:
 
