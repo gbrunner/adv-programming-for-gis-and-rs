@@ -1,27 +1,33 @@
 ## Prepatation: Read Chapter 1 of **Mastering Geospatial Analysis with Python**.
 
-[Watch this Video](https://www.youtube.com/watch?v=mxnc0vMRD3I)
-
 ## Lecture:
 - Start with an introduction to ArcGIS Pro
-- Seguey into ArcGIS Pro and Ptyhon Package mangemeent
+- Seguey into ArcGIS Pro and Pyhon Package mangemeent
 - Discuss Anaconda distribution of Python
 - Setup Jupyter (if necessary). Use instructionf from last semester
 - **Break**
 - Introduction to ArcGIS Online
-- talk about Geocoding
-- Add an address to 
+- Talk about Geocoding
+- Add an address to webmap
 - Introduction to the **ArcGIS API for Python.**
+- [Markdown](https://www.markdowntutorial.com/)
+- Create a Jupuyter notebook
+- *GIS* Demo
+- *Geocoding* Demo
 
 ## Classwork Exercises:
-
+1. Working with Maps in Jupyter: https://developers.arcgis.com/python/guide/using-the-map-widget/
+2. Geocoding with Jupyter: https://developers.arcgis.com/python/guide/using-the-geocode-function/
+  - Also, possibly look at this: https://developers.arcgis.com/python/guide/understanding-geocoders/
 
 ## Classwork Problems:
 1. Create a new Jupyter Notebook that:
   - Contains a map
   - Zooms to a particular city of interest
-  - Changes the basemap from the default Terrain basemap
+  - Changes the basemap from the default Terrain basemap-
+  - Please use Markdown to apply meaningful discriptions of your steps.
 2. Create a second notebook that geocodes the attached CSV of addresses. Please include a popup with each!
+3 (**Bonus**) - Save this as a webmap following from this example (https://developers.arcgis.com/python/guide/working-with-web-maps-and-web-scenes/#Saving-or-Updating-a-web-map). Be sure to go to ArcGIS online and check that the Webmap is there!
 
 
 ## Homework:
