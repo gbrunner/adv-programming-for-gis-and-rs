@@ -18,7 +18,7 @@
 ## Classwork Exercises:
 1. Working with Maps in Jupyter: https://developers.arcgis.com/python/guide/using-the-map-widget/
 2. Geocoding with Jupyter: https://developers.arcgis.com/python/guide/using-the-geocode-function/
-  - Also, possibly look at this: https://developers.arcgis.com/python/guide/understanding-geocoders/
+3 (**Optional**) Also, possibly look at this: https://developers.arcgis.com/python/guide/understanding-geocoders/
 
 ## Classwork Problems:
 1. Create a new Jupyter Notebook that:
@@ -32,6 +32,7 @@
 
 ## Homework:
 - Please complete the classwork and submit it as Assignment 1.
+- Watch this video: https://www.youtube.com/watch?v=0LfJrk2_VRg
 - Explore the different tabs on the online doc and get familiar with the general layout and the content available
   - https://developers.arcgis.com/python/ 
 - Download the ArcGIS API for Python samples 
