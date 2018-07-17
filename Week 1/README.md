@@ -30,6 +30,7 @@
 3 (**Bonus**) - Save this as a webmap following from this example (https://developers.arcgis.com/python/guide/working-with-web-maps-and-web-scenes/#Saving-or-Updating-a-web-map). Be sure to go to ArcGIS online and check that the Webmap is there!
 
 
+
 ## Homework:
 - Please complete the classwork and submit it as Assignment 1.
 - Watch this video: https://www.youtube.com/watch?v=0LfJrk2_VRg
