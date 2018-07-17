@@ -16,10 +16,10 @@ Have you ever wanted to learn how to publish, consume, and use geographic web se
 
 | Week    | Topics |
 |---------|--------|
-| Week 1  | [Jupyter Notebooks (IDE)](https://jupyter.org/install.html), [Github](https://github.com/), [Domino](https://app.dominodatalab.com/overview)? |                 
-| Week 2  | [Intro to the ArcGIS API for Python](https://developers.arcgis.com/python/) |
+| Week 1  | [Jupyter Notebooks (IDE)](https://jupyter.org/install.html), [Intro to the ArcGIS API for Python](https://developers.arcgis.com/python/), [Domino](https://app.dominodatalab.com/overview)? |                 
+| Week 2  |  [Github](https://github.com/) and [Administering Your Organization](https://developers.arcgis.com/python/sample-notebooks/batch-creation-of-groups/) |
 | Week 3  | ArcGIS API for Python: [Publishing](https://developers.arcgis.com/python/sample-notebooks/publishing-sd-shapefiles-and-csv/) and [Analysis](https://developers.arcgis.com/python/sample-notebooks/chennai-floods-analysis/) |
-| Week 4  | ArcGIS API for Python: [Data Science](https://developers.arcgis.com/python/sample-notebooks/counting-features-in-satellite-images-using-scikit-image/) and [Administering Your Organization](https://developers.arcgis.com/python/sample-notebooks/batch-creation-of-groups/) |
+| Week 4  | ArcGIS API for Python: [Data Science](https://developers.arcgis.com/python/sample-notebooks/counting-features-in-satellite-images-using-scikit-image/) |
 | Week 5  | [Numpy](https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html) and [Esri Raster Functions](https://github.com/Esri/raster-functions) |
 | Week 6  | [Intro to Pandas](https://jakevdp.github.io/PythonDataScienceHandbook/03.00-introduction-to-pandas.html) |
 | Week 7  | Spatial DataFrames |
