@@ -1,4 +1,4 @@
-## Preparation for Class: [Watch this Video](https://www.youtube.com/watch?v=KA0AysGnSf4)
+## Preparation for Class: [Watch this Video](https://www.youtube.com/watch?v=hWl4WXVZcIQ)
 
 ## Lecture
 
