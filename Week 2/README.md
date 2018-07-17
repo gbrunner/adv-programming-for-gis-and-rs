@@ -48,3 +48,5 @@ These exercises are optional this week. You don't need to explicitly do them but
 3. (**Bonus**) - Export all ArcGIS Online users to a CSV file.
 
 ## Homework
+1. Please complete the classwork and submit it as Assignment 2.
+2. Watch this video: https://www.youtube.com/watch?v=0LfJrk2_VRg. This video will mostly recap what we've been doing in Week 1 and 2 and give some perspective on other things that you can do with Python.
