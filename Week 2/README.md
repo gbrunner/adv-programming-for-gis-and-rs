@@ -20,8 +20,16 @@
 **Break**
 
 ### Administering ArcGIS Online
+1. Go to ArcGIS Online
+2. Show users the 
 
 
 ## Exercises
+1. Using Python, create 3 groups in ArcGIS Online: 
+ - *YOUR_FIRST_NAME*_Webmaps
+ - *YOUR_FIRST_NAME*_Feature_Services
+ - *YOUR_FIRST_NAME*_All_Content
+2. Using Python, share any webmaps you have in your ArcGIS Online account with *YOUR_FIRST_NAME*_Webmaps. Share any Feature Services you have with *YOUR_FIRST_NAME*_Feature_Services,and share all content you have with *YOUR_FIRST_NAME*_All_Content. Note that if you have not webmaps or feature services, publish a feature service and create a webmap beforehand.
+3.**Bonus** Export all ArcGIS Online users to a CSV file.
 
 ## Homework
