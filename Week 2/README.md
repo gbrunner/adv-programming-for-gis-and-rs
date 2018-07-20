@@ -49,4 +49,4 @@ These exercises are optional this week. You don't need to explicitly do them but
 
 ## Homework
 1. Please complete the classwork and submit it as Assignment 2.
-2. Watch this video: https://www.youtube.com/watch?v=0LfJrk2_VRg. This video will mostly recap what we've been doing in Week 1 and 2 and give some perspective on other things that you can do with Python.
+2. Watch these two videos: [Publishing](https://www.youtube.com/watch?v=4AzOodYTHs4) and [Automating your WebGIS](https://www.youtube.com/watch?v=0LfJrk2_VRg). This video will mostly recap what we've been doing in Week 1 and 2 and give some perspective on other things that you can do with Python.
