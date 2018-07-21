@@ -29,7 +29,7 @@ Demonstrate how we can automate the workflow above with Python
 
 ![](https://cdn.rawgit.com/gbrunner/Advanced_Python_for_GIS_and_RS/e13f9938/Week%203/unhcr_map.jpg)
 
-3. (**If you complete 1 and 2**) Pulish and the aggregate...
+3. Pulish and the aggregate the zipped geodatabase containing the St. Louis crime data. For help, follow the example shown here: https://developers.arcgis.com/python/guide/summarizing-feature-data/. We are going to look at this in greater detail next week.
 
 
 ## Homework:
