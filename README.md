@@ -20,9 +20,9 @@ Have you ever wanted to learn how to publish, consume, and use geographic web se
 | Week 2  |  [Github](https://github.com/) and [Administering Your Organization](https://developers.arcgis.com/python/sample-notebooks/batch-creation-of-groups/) |
 | Week 3  | ArcGIS API for Python: [Publishing](https://developers.arcgis.com/python/sample-notebooks/publishing-sd-shapefiles-and-csv/) and [Analysis](https://developers.arcgis.com/python/sample-notebooks/chennai-floods-analysis/) |
 | Week 4  | ArcGIS API for Python: [Data Science](https://developers.arcgis.com/python/sample-notebooks/counting-features-in-satellite-images-using-scikit-image/) |
-| Week 5  | [Numpy](https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html) and Rasters |
-| Week 6  | [Esri Raster Functions](https://github.com/Esri/raster-functions)  |
-| Week 7  | [Intro to Pandas](https://jakevdp.github.io/PythonDataScienceHandbook/03.00-introduction-to-pandas.html) and ArcGIS Spatial DataFrames |
+| Week 5  | [Intro to Pandas](https://jakevdp.github.io/PythonDataScienceHandbook/03.00-introduction-to-pandas.html) and ArcGIS Spatial DataFrames |
+| Week 6  | [Numpy](https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html) and Rasters |
+| Week 7  | [Esri Raster Functions](https://github.com/Esri/raster-functions)  |
 | Week 8  | Advanced Plotting: [Matplotlib](https://jakevdp.github.io/PythonDataScienceHandbook/04.00-introduction-to-matplotlib.html) and [Beyond](https://seaborn.pydata.org/) |
 | Week 9  | [Intro to Machine Learning with Scikit-Learn](https://jakevdp.github.io/PythonDataScienceHandbook/05.02-introducing-scikit-learn.html) | 
 | Week 10  | [Multiprocessing](https://www.youtube.com/watch?v=s1SkCYMnfbY), [Concurrent](http://www.gregreda.com/2016/10/16/asynchronous-scraping-with-python/), and Parallel Processing Techniques |
