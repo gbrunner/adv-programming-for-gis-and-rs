@@ -37,6 +37,7 @@
 
 ## Optional Classwork Exercises
 These exercises are optional this week. You don't need to explicitly do them but please use them to guide you on the classwork problems below.
+1. [How to share your content](https://developers.arcgis.com/labs/python/share-your-content/)
 1. [Batch Creation of Groups](https://developers.arcgis.com/python/sample-notebooks/batch-creation-of-groups/)
 
 ## Classwork Problems
