@@ -19,7 +19,8 @@
 1. Working with Maps in Jupyter: https://developers.arcgis.com/python/guide/using-the-map-widget/
 2. Geocoding with Jupyter: https://developers.arcgis.com/python/guide/using-the-geocode-function/
 3. [Search and Geocode](https://developers.arcgis.com/labs/python/search-and-geocode/)
-4. **Optional** More on geocoding: https://developers.arcgis.com/python/guide/understanding-geocoders/
+4. **Optional** [Display a webscene](https://developers.arcgis.com/labs/python/display-web-scene/)
+4. **Optional** [More on geocoding](https://developers.arcgis.com/python/guide/understanding-geocoders/)
 
 ## Classwork Problems:
 1. Create a new Jupyter Notebook that:
