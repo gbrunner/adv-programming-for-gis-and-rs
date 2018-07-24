@@ -1,4 +1,4 @@
-## Prepatation:
+## Preparation:
 Please read [Raster processing using Python Tools](https://geohackweek.github.io/raster/).
 - [Introduction](https://geohackweek.github.io/raster/01-introduction/)
 - [Geospatial Concepts: Raster Data](https://geohackweek.github.io/raster/02-rasterconcepts/)
