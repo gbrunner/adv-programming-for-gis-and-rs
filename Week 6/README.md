@@ -39,8 +39,7 @@ def slope_function(dem, cellsize):
  4. Display the slope using imshow in *matplotlib*
  5. Export the raster to a TIFF
  6. View in Arcmap
- **Challange**
- 7. Building on the workflow here, go back to Jupyter and create a Hillshade raster from the DEM. Follow the code found [here](https://github.com/rveciana/geoexamples/blob/master/python/shaded_relief/hillshade.py)
+ 7. **Challange!** Building on the workflow here, go back to Jupyter and create a Hillshade raster from the DEM. Follow the code found [here](https://github.com/rveciana/geoexamples/blob/master/python/shaded_relief/hillshade.py)
  ```
  def hillshade(array, azimuth, angle_altitude): 
     
@@ -72,7 +71,7 @@ Go through the [Using Imagey Layers](https://developers.arcgis.com/python/guide/
 9. Show how to create a layer by appling the SAVI function function.
  
 ## In Class Problem 2:
-Following from **In [13]** in the [Using Imagery Layers Tutorial](https://developers.arcgis.com/python/guide/using-imagery-layers/), create an NDVI layer over St. Louis. Submit your Jupyter notebook.
+**Challange!** Following from **In [13]** in the [Using Imagery Layers Tutorial](https://developers.arcgis.com/python/guide/using-imagery-layers/), create an NDVI layer over St. Louis. Submit your Jupyter notebook.
 
 
 ## Homework:
