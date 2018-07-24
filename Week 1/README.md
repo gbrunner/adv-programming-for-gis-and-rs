@@ -10,7 +10,7 @@
 - Talk about Geocoding
 - Add an address to webmap
 - Introduction to the **ArcGIS API for Python.**
-- [Markdown](https://www.markdowntutorial.com/)
+- [Markdown](https://www.markdowntutorial.com/) -> [Github Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code)
 - Create a Jupuyter notebook
 - *GIS* Demo
 - *Geocoding* Demo
