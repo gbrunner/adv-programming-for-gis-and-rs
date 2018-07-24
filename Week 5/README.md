@@ -32,4 +32,6 @@
 1. [Loading a Spatial Dataframe](https://developers.arcgis.com/labs/python/load-spatial-data-frame/)
 2. [Creating data with the Python API](https://developers.arcgis.com/labs/python/create-data/)
 
+## In Class Problems:
+
 ## Homework:
