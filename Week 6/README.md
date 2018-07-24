@@ -21,8 +21,24 @@ Following from the **Raster processing** tutorial, demonstrate;
 8. Save image back to disk
 9. Load iamge into ArcMap
 
-## In Class Exercises:
-
 ## In Class Problems:
+Following from what was shown in the lecture, do the following:
+1. read in the DEM into a numpy array and it's georeference information from the DEM included in the folder.
+2. Display it using *matplotlib*
+3. Create a slope raster from the dem using the following slope function:
+```
+def slope_function(dem, cellsize):
+    #Modified from calculation found here:
+    #http://geoexamples.blogspot.com/2014/03/shaded-relief-images-using-gdal-python.html
+
+    x, y = np.gradient(dem, cellsize, cellsize)
+    #slope = np.pi/2.0 - np.arctan(np.sqrt(x*x + y*y))
+    slope = np.arctan(np.sqrt(x*x + y*y))
+    return slope
+ ```
+ 4. Display the slope using imshow in *matplotlib*
+ 5. Export the raster to a TIFF
+ 6. View in Arcmap
+    
 
 ## Homework:
