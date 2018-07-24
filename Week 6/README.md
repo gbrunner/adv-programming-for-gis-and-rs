@@ -60,7 +60,16 @@ def slope_function(dem, cellsize):
  9. Export the hillshade to a TIFF
  
 ## Lecture 2:
- Let
+Go through the [Using Imagey Layers](https://developers.arcgis.com/python/guide/using-imagery-layers/) Notebook.
+1. Log into the GIS
+2. Serarch for "Landsat 8 Views"
+3. Display the "Landsat 8 Views" items
+4. Bring the Landsat 8 service into a ImageryLayer
+5. Add the Landsa 8 service to a map
+6. Show the Landsat 8 table as a dataframe
+7. List the raster Functions
+8. Play through the raster functions
+9. Show how to create a layer by appling the SAVI function function.
  
 ## In Class Problem 2:
 Following from **In [13]** in the [Using Imagery Layers Tutorial](https://developers.arcgis.com/python/guide/using-imagery-layers/), create an NDVI layer over St. Louis. Submit your Jupyter notebook.
