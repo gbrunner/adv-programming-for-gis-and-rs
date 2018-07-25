@@ -1,4 +1,4 @@
-## Prepatation: [Watch this video on mapping and data science](https://www.youtube.com/watch?v=DdUBrV2zpvI&t=11s)
+## Preparation: [Watch this video on mapping and data science](https://www.youtube.com/watch?v=DdUBrV2zpvI&t=11s)
 
 ## Lecture:
 - Data Science Example: https://developers.arcgis.com/python/sample-notebooks/historical-wildfire-analysis/
