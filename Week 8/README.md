@@ -8,10 +8,18 @@ In preparation for next week's class, please read the the following sections fro
 - [Visuallization with Seaborn](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/04.14-Visualization-With-Seaborn.ipynb)
 
 ## Lecture 
-Plots I like (using seaborn)
+### Plots I like
 - Start at [Seaborn example gallery](https://seaborn.pydata.org/examples/)
 - Shotcharts [jointplot](http://savvastjortjoglou.com/nba-shot-sharts.html)
 - [Correlograms](https://python-graph-gallery.com/111-custom-correlogram/)
+- The multichart plot from last semester. Find it!
+
+### Demo
+- Start by installing Seaborn
+```
+conda install seaborn
+```
+
 
 ## Classwork Exercises
 
