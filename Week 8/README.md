@@ -9,7 +9,7 @@ In preparation for next week's class, please read the the following sections fro
 
 ## Lecture 
 Plots I like (using seaborn)
-- Start at Seaborn example gallery
+- Start at [Seaborn example gallery](https://seaborn.pydata.org/examples/)
 - Shotcharts [jointplot](http://savvastjortjoglou.com/nba-shot-sharts.html)
 - [Correlograms](https://python-graph-gallery.com/111-custom-correlogram/)
 
