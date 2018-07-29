@@ -38,6 +38,9 @@ L.tileLayer('http://a.tile.stamen.com/toner/{z}/{x}/{y}.png', {
     id: 'mapbox.streets'
 }).addTo(mymap);
 ```
+What city are we centered over?
 
+#### How does this look if we jam it into a single HTML file?
+See quickstart.html
 
   
