@@ -47,3 +47,15 @@ Let's complete the tutorial and see where we end up :)
 
 ### Working with Data in Leaflet
 Data is read in [GeoJSON](http://geojson.org/) format, a format for encoding a variety of geographic data structures.
+
+#### Let's Add Some Objects in GeoJSON format
+
+### Reading GeoJSON and Using it
+
+### Powerful, fun capabilities of Leaflet
+
+#### Leaflet Clustermap
+
+#### Leaflet Heatmap
+
+
