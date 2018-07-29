@@ -43,4 +43,6 @@ What city are we centered over?
 #### How does this look if we jam it into a single HTML file?
 See quickstart.html
 
+Let's complete the tutorial and see where we end up :)
+
   
