@@ -45,4 +45,5 @@ See quickstart.html
 
 Let's complete the tutorial and see where we end up :)
 
-  
+### Working with Data in Leaflet
+Data is read in [GeoJSON](http://geojson.org/) format, a format for encoding a variety of geographic data structures.
