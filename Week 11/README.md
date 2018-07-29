@@ -49,8 +49,10 @@ Let's complete the tutorial and see where we end up :)
 Data is read in [GeoJSON](http://geojson.org/) format, a format for encoding a variety of geographic data structures.
 
 #### Let's Add Some Objects in GeoJSON format
+Following from the leaflet tutorial, [let's add some features in GeoJSON format](https://leafletjs.com/examples/geojson/).
 
 ### Reading GeoJSON and Using it
+
 
 ### Powerful, fun capabilities of Leaflet
 
