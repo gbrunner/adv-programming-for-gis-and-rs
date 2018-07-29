@@ -25,6 +25,19 @@ Check out thie tutorial from [Maptime Boston](https://maptimeboston.github.io/le
   - And it's become a lot more than this!!!
   
 #### Our first Leaflet map
-  
+Let's use the Leaflet [Quick Start Guide](https://leafletjs.com/examples/quick-start/) to create our first map!
+
+Let's do this in [JSBin]()
+
+Let's use the same example, but change the JS to be the following:
+```
+var mymap = L.map('mapid').setView([41.8781, -87.6298], 13);
+L.tileLayer('http://a.tile.stamen.com/toner/{z}/{x}/{y}.png', {
+    attribution: 'Map tiles by Stamen Design, under CC BY 3.0.',
+    maxZoom: 18,
+    id: 'mapbox.streets'
+}).addTo(mymap);
+```
+
 
   
