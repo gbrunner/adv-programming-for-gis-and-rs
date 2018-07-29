@@ -58,4 +58,12 @@ Data is read in [GeoJSON](http://geojson.org/) format, a format for encoding a v
 
 #### Leaflet Heatmap
 
+## Classwork Problems
+1. Create a Leaflet map of 5 resturants that you'd like to go to in St. Louis. Include popups!
+2. Create a Leaflet showing the St. Louis Crime points from the GeoJSON found [here]()
+3. **Challange** Create a Leaflet heatmap from the crime points GeoJSON that you used above.
+4. **Challange** Create a Leaflet cluster map from the crime points GeoJSON that you used above.
 
+## Homework
+1. Complete the classwork problems and submit them. If #1 and #2 were easy, please try to do #3 and\or #4.
+2. Please read Chapters 1, 2, and 3 of [Introducing ArcGIS API 4 for Javascript](https://www.apress.com/us/book/9781484232811). Chapeters 1 and 2 are really short!
