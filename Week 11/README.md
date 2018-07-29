@@ -27,7 +27,7 @@ Check out thie tutorial from [Maptime Boston](https://maptimeboston.github.io/le
 #### Our first Leaflet map
 Let's use the Leaflet [Quick Start Guide](https://leafletjs.com/examples/quick-start/) to create our first map!
 
-Let's do this in [JSBin]()
+Let's do this in [JSBin](https://jsbin.com/)
 
 Let's use the same example, but change the JS to be the following:
 ```
