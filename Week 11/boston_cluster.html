@@ -26,7 +26,7 @@
       maxZoom: 17,
       minZoom: 9
     }).addTo(map);
-    
+    /*
   $.getJSON("neighborhoods.geojson",function(hoodData){
     L.geoJson( hoodData, {
       style: function(feature){
@@ -44,7 +44,7 @@
         layer.bindPopup( "<strong>" + feature.properties.Name + "</strong><br/>" + feature.properties.density + " rats per square mile" )
       }
     }).addTo(map);
-  });
+  });*/
  
   $.getJSON("rodents.geojson",function(data){
     var ratIcon = L.icon({
