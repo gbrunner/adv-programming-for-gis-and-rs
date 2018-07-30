@@ -79,3 +79,12 @@ Demonstrate the Boston Clustermap too. https://gbrunner.github.io/Advanced_Pytho
 ## Homework
 1. Complete the classwork problems and submit them. If #1 and #2 were easy, please try to do #3 and\or #4.
 2. Please read Chapters 1, 2, and 3 of [Introducing ArcGIS API 4 for Javascript](https://www.apress.com/us/book/9781484232811). Chapeters 1 and 2 are really short!
+
+## Fun Links
+Basemaps
+- [Stamen Watercolor](http://a.tile.stamen.com/watercolor/{z}/{x}/{y}.png)
+- [Stamen Terrain](http://a.tile.stamen.com/toner/{z}/{x}/{y}.png)
+- [Stament Toner](http://a.tile.stamen.com/terrain/{z}/{x}/{y}.png)
+- [Stamen Streets](http://a.tile.stamen.com/streets/{z}/{x}/{y}.png)
+
+
