@@ -85,6 +85,10 @@ Basemaps
 - [Stamen Watercolor](http://a.tile.stamen.com/watercolor/{z}/{x}/{y}.png)
 - [Stamen Terrain](http://a.tile.stamen.com/toner/{z}/{x}/{y}.png)
 - [Stament Toner](http://a.tile.stamen.com/terrain/{z}/{x}/{y}.png)
-- [Stamen Streets](http://a.tile.stamen.com/streets/{z}/{x}/{y}.png)
+
+[GeoJSON Viewer](https://github.com/gavinr/geojson-viewer)
+
+[Convert CSV to GeoJSON](https://github.com/gavinr/csv-to-geojson)
+
 
 
