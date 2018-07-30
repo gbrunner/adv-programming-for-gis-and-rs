@@ -1,4 +1,5 @@
 ## Preaparation
+Watch Jacob Wasilkowski's lecture from April 2018.
 
 ## Lecture
 ### Let's Learn Leaflet!!!
