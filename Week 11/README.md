@@ -52,19 +52,29 @@ Data is read in [GeoJSON](http://geojson.org/) format, a format for encoding a v
 Following from the leaflet tutorial, [let's add some features in GeoJSON format](https://leafletjs.com/examples/geojson/).
 
 ### Reading GeoJSON and Using it
+1. Use the Boston GeoJSON example here. https://gbrunner.github.io/Advanced_Python_for_GIS_and_RS/Week%2011/boston_heatmap.html
+2. Use the Chicago ZIPs example too to show polygons. https://gbrunner.github.io/Advanced_Python_for_GIS_and_RS/Week%2011/chicago_zips.html
 
 
 ### Powerful, fun capabilities of Leaflet
 
-#### Leaflet Clustermap
-
 #### Leaflet Heatmap
+Who doesn't like a *heatmap*?
+
+Ever wonder how that works?
+
+Demonstrate the Boston Heatmap example.
+
+#### Leaflet Clustermap
+Clustermaps are fun too!
+
+Demonstrate the Boston Clustermap too. https://gbrunner.github.io/Advanced_Python_for_GIS_and_RS/Week%2011/boston_cluster.html
 
 ## Classwork Problems
 1. Create a Leaflet map of 5 resturants that you'd like to go to in St. Louis. Include popups!
 2. Create a Leaflet showing the St. Louis Crime points from the GeoJSON found [here]()
-3. **Challange** Create a Leaflet heatmap from the crime points GeoJSON that you used above.
-4. **Challange** Create a Leaflet cluster map from the crime points GeoJSON that you used above.
+3. **Challenge** Create a Leaflet heatmap from the crime points GeoJSON that you used above.
+4. **Challenge** Create a Leaflet cluster map from the crime points GeoJSON that you used above.
 
 ## Homework
 1. Complete the classwork problems and submit them. If #1 and #2 were easy, please try to do #3 and\or #4.
