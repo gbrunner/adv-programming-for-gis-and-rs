@@ -30,7 +30,7 @@ To do this, we can follow the pattern in [Intro to MapView (2D)](https://develop
 
 Rather than look at the CSS, HTML, and Javascript, let's put it altogether in the HTML like last week.
 
-Let's do this in JSBin
+Let's do this in [JSBin](https://jsbin.com/?html,output)
 
 Once we have a map, change it to a Scene.
 
