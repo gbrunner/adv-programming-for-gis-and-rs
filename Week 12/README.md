@@ -61,6 +61,11 @@ Let's start by creating an app from our traffic webmap
 - Notice it even zooms over to the extent of your webmap?
 - Play around with CSS and HTML parameters
 
+#### From a Feature Layer
+- Feature layers are probably the most prevalent layers
+- Can be created from Portal Item or Service URL
+- Let's edit the webmap example to use the Feature Service (ca_traffic_from_fl.html)
+- What differences do you see between the webmap version and the heatmap version?
 
 ## Classwork Exercises:
 
