@@ -48,11 +48,17 @@ Let's learn about layers in ArcGIS!
 - Let's add this to a Webmap.
 - Change the renderer to heatmap.
 - Change renderer back to some class breaks and save the Webmap.
+
 **What's the point of this?**
 *That we did in Leaflet can be done without code. But you can code it now with Leaflet and will be able to with ArcGIS Javasctipt!*
 
 ### How do we work with these in Javascript?
-
+#### From a WebMap
+Let's start by creating an app from our traffic webmap
+- Go to [Load a Basic WebMap](https://developers.arcgis.com/javascript/latest/sample-code/webmap-basic/index.html)
+- Let's modify this to take your webmap
+- NOtice it even zooms over to the extent of your webmap?
+- Play around with CSS and HTML parameters
 
 
 ## Classwork Exercises:
