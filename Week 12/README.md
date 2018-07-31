@@ -51,6 +51,7 @@ Let's learn about layers in ArcGIS!
 **What's the point of this?**
 *That we did in Leaflet can be done without code. But you can code it now with Leaflet and will be able to with ArcGIS Javasctipt!*
 
+### How do we work with these in Javascript?
 
 
 
