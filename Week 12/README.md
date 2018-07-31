@@ -80,7 +80,13 @@ Let's start by creating an app from our traffic webmap
 ## Classwork Problems:
 1. Search through ArcGIS ONline and find 3 layers that overlap. Create an app that shows all three layers on the map. You choose the 3 layers from ArcGIS ONline. You can either add the layers to the app [From a Webmap](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%2012/README.md#from-a-webmap) or by adding [multiple feature layers](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%2012/README.md#from-a-feature-layer) 
 2. Create a webapp that uses the [CSV Layer](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%2012/README.md#from-a-csv) to map crime over St. Louis from the STL Crime CSV in this folder.
-3. In preparation for next week, add a popup to the ca_traffic_from_fl.html example. This can be done by definind a template:
+3. Following from this [server side raster function example](https://developers.arcgis.com/javascript/latest/sample-code/layers-imagery-popup/index.html), do the following:
+- Change the service to point to the Landsat 8 Views Service (https://landsat2.arcgis.com/arcgis/rest/services/Landsat8_Views/ImageServer)
+- Look at the service **RasterFunction Infos**. Change the Raster function template to one of the *NDVI* Raster Functions.
+- Change the Zoom location to be over the Midwest.
+- After you change it, does the *Popoup* still work?
+- If not, can you fix it?
+4. (**Optional**) In preparation for next week, add a popup to the ca_traffic_from_fl.html example. This can be done by definind a template:
 ```
 var template = { // autocasts as new PopupTemplate()
         title: "What Happened?",
