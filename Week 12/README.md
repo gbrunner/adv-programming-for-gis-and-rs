@@ -36,7 +36,18 @@ Once we have a map, change it to a Scene.
 
 Let's save this as an app in Github and view it online!
 
+### ArcGIS Layers
+Let's learn about layers in ArcGIS!
 
+- Go to ArcGIS ONline
+- Search for [traffice layers outside of your organization](http://slustl.maps.arcgis.com/home/search.html?q=traffic&t=content&start=1&sortOrder=desc&sortField=relevance&restrict=false&focus=layers-weblayers-features)
+- Find [California Traffic Layers](http://slustl.maps.arcgis.com/home/search.html?q=traffic&t=content&start=1&sortOrder=desc&sortField=relevance&restrict=false&focus=layers-weblayers-features)
+- Open up [the service](https://services1.arcgis.com/8CpMUd3fdw6aXef7/arcgis/rest/services/Vehicle_Traffic_Volumes_2016/FeatureServer)
+- Let's query the service
+- Notice you can return HTML, JSON (Esri JSON), GeoJSON, etc.
+- Let's add this to a Webmap.
+- Change the renderer to heatmap.
+- Change renderer back to some class breaks and save the Webmap.
 
 
 
