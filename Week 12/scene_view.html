@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Intro to MapView - Create a 2D map</title>
+<title>Intro to SceneView - Create a 3D map</title>
 <style>
   html, body, #viewDiv {
     padding: 0;
@@ -18,11 +18,11 @@
 require([
   "esri/Map",
   "esri/views/SceneView"
-], function(Map, MapView){
+], function(Map, SceneView){
   var map = new Map({
     basemap: "topo"
   });
-  var view = new MapView({
+  var view = new SceneView({
     container: "viewDiv",  // Reference to the scene div created in step 5
     map: map,  // Reference to the map object created before the scene
     scale:83602,  // Sets zoom level based on level of detail (LOD)
