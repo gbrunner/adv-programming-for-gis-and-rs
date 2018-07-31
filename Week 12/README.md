@@ -11,7 +11,14 @@
 - [Layers](https://developers.arcgis.com/javascript/latest/sample-code/layers-portal/index.html)
 - [Views](https://developers.arcgis.com/javascript/latest/sample-code/scene-goto/index.html)
 - Accessors - As a general term, functions that get something for you
-- [Promises](https://developers.google.com/web/fundamentals/primers/promises) - 
+- [Promises](https://developers.google.com/web/fundamentals/primers/promises) - Promises for assynchronous operations.
+```
+promise.then(function(result) {
+  console.log(result); // "Stuff worked!"
+}, function(err) {
+  console.log(err); // Error: "It broke"
+});
+```
 - UI - User Interface
 - Widgets - Elements on the user interface that do something
 - [Web Scenes](https://developers.arcgis.com/javascript/latest/sample-code/layers-scenelayer/index.html)
