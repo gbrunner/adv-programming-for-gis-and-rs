@@ -56,8 +56,9 @@ Let's learn about layers in ArcGIS!
 #### From a WebMap
 Let's start by creating an app from our traffic webmap
 - Go to [Load a Basic WebMap](https://developers.arcgis.com/javascript/latest/sample-code/webmap-basic/index.html)
+- Open in Sandbox
 - Let's modify this to take your webmap
-- NOtice it even zooms over to the extent of your webmap?
+- Notice it even zooms over to the extent of your webmap?
 - Play around with CSS and HTML parameters
 
 
