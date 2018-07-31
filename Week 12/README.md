@@ -67,6 +67,16 @@ Let's start by creating an app from our traffic webmap
 - Let's edit the webmap example to use the Feature Service (ca_traffic_from_fl.html)
 - What differences do you see between the webmap version and the heatmap version?
 
+#### From an Imagery Layer
+- Let's look at adding an imagery layer.
+- Using the [Imagery Layers Intro](https://developers.arcgis.com/javascript/latest/sample-code/sandbox/index.html?sample=layers-imagerylayer)
+- Open in Sandbox
+- Let's change the imagery URL to the [Landsat 8 Views URL]("https://landsat2.arcgis.com/arcgis/rest/services/Landsat8_Views/ImageServer")
+
+#### From a CSV
+- Let's take a look at the [CSV Layer Example](https://developers.arcgis.com/javascript/latest/sample-code/layers-csv/index.html)
+- From here, let's try to solve some problems ourselves!
+
 ## Classwork Exercises:
 
 
