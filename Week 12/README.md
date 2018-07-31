@@ -48,6 +48,9 @@ Let's learn about layers in ArcGIS!
 - Let's add this to a Webmap.
 - Change the renderer to heatmap.
 - Change renderer back to some class breaks and save the Webmap.
+**What's the point of this?**
+*That we did in Leaflet can be done without code. But you can code it now with Leaflet and will be able to with ArcGIS Javasctipt!*
+
 
 
 
