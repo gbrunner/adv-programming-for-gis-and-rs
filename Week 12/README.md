@@ -104,4 +104,5 @@ popupTemplate: template
 ```
 
 ## Homework:
-
+1. Read Chapters 4 and 5 of Rubalcava on **API Core Fundamentals** and **Scenes**
+2. Project 1 assigned!
