@@ -78,7 +78,30 @@ Let's start by creating an app from our traffic webmap
 - From here, let's try to solve some problems ourselves!
 
 ## Classwork Problems:
-1. Search through ArcGIS ONline and find 3 layers that overlap. Create an app that shows all three layers on the map. You choose the 3 layers from ArcGIS ONline. You can either add the layers to the app [From a Webmap]() or by adding [multiple feature layers]() 
+1. Search through ArcGIS ONline and find 3 layers that overlap. Create an app that shows all three layers on the map. You choose the 3 layers from ArcGIS ONline. You can either add the layers to the app [From a Webmap](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%2012/README.md#from-a-webmap) or by adding [multiple feature layers](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%2012/README.md#from-a-feature-layer) 
+2. Create a webapp that uses the [CSV Layer](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%2012/README.md#from-a-csv) to map crime over St. Louis from the STL Crime CSV in this folder.
+3. In preparation for next week, add a popup to the ca_traffic_from_fl.html example. This can be done by definind a template:
+```
+var template = { // autocasts as new PopupTemplate()
+        title: "What Happened?",
+        content: [{
+          // It is also possible to set the fieldInfos outside of the content
+          // directly in the popupTemplate. If no fieldInfos is specifically set
+          // in the content, it defaults to whatever may be set within the popupTemplate.
+          type: "fields",
+          fieldInfos: [{
+            fieldName: "Descriptn",
+            label: "Description %",
+            visible: true
+          }]
+        }]
+      };
+```
+and adding these fields to the FeatureLayer definition.
+```
+outFields: ["*"],
+popupTemplate: template
+```
 
 ## Homework:
 
