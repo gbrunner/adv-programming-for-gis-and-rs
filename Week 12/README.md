@@ -77,10 +77,8 @@ Let's start by creating an app from our traffic webmap
 - Let's take a look at the [CSV Layer Example](https://developers.arcgis.com/javascript/latest/sample-code/layers-csv/index.html)
 - From here, let's try to solve some problems ourselves!
 
-## Classwork Exercises:
-
-
 ## Classwork Problems:
+1. Search through ArcGIS ONline and find 3 layers that overlap. Create an app that shows all three layers on the map. You choose the 3 layers from ArcGIS ONline. You can either add the layers to the app [From a Webmap]() or by adding [multiple feature layers]() 
 
 ## Homework:
 
