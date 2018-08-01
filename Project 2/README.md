@@ -1,4 +1,4 @@
-# Project 1 - Choose One of the Following
+# Project 2 - Choose One of the Following
 
 ## Goal: Apply your knowledge of the ArcGIS Python API and web services
 ## Asssigned: Week 5
