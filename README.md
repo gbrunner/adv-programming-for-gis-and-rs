@@ -16,20 +16,20 @@ Have you ever wanted to learn how to publish, consume, and use geographic web se
 
 | Week    | Topics |
 |---------|--------|
-| Week 1  | [Jupyter Notebooks (IDE)](https://jupyter.org/install.html), [Intro to the ArcGIS API for Python](https://developers.arcgis.com/python/), [Domino](https://app.dominodatalab.com/overview)? |                 
-| Week 2  |  [Github](https://github.com/) and [Administering Your Organization](https://developers.arcgis.com/python/sample-notebooks/batch-creation-of-groups/) |
-| Week 3  | ArcGIS API for Python: [Publishing](https://developers.arcgis.com/python/sample-notebooks/publishing-sd-shapefiles-and-csv/) and [Analysis](https://developers.arcgis.com/python/sample-notebooks/chennai-floods-analysis/) |
-| Week 4  | ArcGIS API for Python: [Data Science](https://developers.arcgis.com/python/sample-notebooks/counting-features-in-satellite-images-using-scikit-image/) |
-| Week 5  | [Intro to Pandas](https://jakevdp.github.io/PythonDataScienceHandbook/03.00-introduction-to-pandas.html) and ArcGIS Spatial DataFrames |
-| Week 6  | [Numpy](https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html) and Rasters |
-| Week 7  | [Esri Raster Functions](https://github.com/Esri/raster-functions)  |
-| Week 8  | Advanced Plotting: [Matplotlib](https://jakevdp.github.io/PythonDataScienceHandbook/04.00-introduction-to-matplotlib.html) and [Beyond](https://seaborn.pydata.org/) |
-| Week 9  | [Intro to Machine Learning with Scikit-Learn](https://jakevdp.github.io/PythonDataScienceHandbook/05.02-introducing-scikit-learn.html) | 
-| Week 10  | [Multiprocessing](https://www.youtube.com/watch?v=s1SkCYMnfbY), [Concurrent](http://www.gregreda.com/2016/10/16/asynchronous-scraping-with-python/), and Parallel Processing Techniques |
-| Week 11 | Web Mapping with [Leaflet](http://leafletjs.com/) and [Folium](https://blog.dominodatalab.com/creating-interactive-crime-maps-with-folium/)
-| Week 12 | Working with the ArcGIS REST API |
-| Week 13 | Creating GIS Applications with the ArcGIS Javascript API |
-| Week 14 | Developing Custom Data Driven Applications |
+| Week 1 | Web Mapping with [Leaflet](http://leafletjs.com/) and [Github](www.github.com) and [Folium](https://blog.dominodatalab.com/creating-interactive-crime-maps-with-folium/)(maybe?)
+| Week 2 | Creating GIS Applications with the ArcGIS Javascript API |
+| Week 3 | GIS Web Application and 3D Scenes |
+| Week 4 | Popups and Widgets in Webapps |
+| Week 5  | [Jupyter Notebooks (IDE)](https://jupyter.org/install.html), [Intro to the ArcGIS API for Python](https://developers.arcgis.com/python/), ~~[Domino](https://app.dominodatalab.com/overview)?~~ |                 
+| Week 6  |  [Github](https://github.com/) and [Administering Your Organization](https://developers.arcgis.com/python/sample-notebooks/batch-creation-of-groups/) |
+| Week 7  | ArcGIS API for Python: [Publishing](https://developers.arcgis.com/python/sample-notebooks/publishing-sd-shapefiles-and-csv/) and [Analysis](https://developers.arcgis.com/python/sample-notebooks/chennai-floods-analysis/) |
+| Week 8  | ArcGIS API for Python: [Data Science](https://developers.arcgis.com/python/sample-notebooks/counting-features-in-satellite-images-using-scikit-image/) |
+| Week 9  | [Intro to Pandas](https://jakevdp.github.io/PythonDataScienceHandbook/03.00-introduction-to-pandas.html) and ArcGIS Spatial DataFrames |
+| Week 10  | [Numpy](https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html) and Rasters |
+| Week 11  | [Esri Raster Functions](https://github.com/Esri/raster-functions)  |
+| Week 12  | Advanced Plotting: [Matplotlib](https://jakevdp.github.io/PythonDataScienceHandbook/04.00-introduction-to-matplotlib.html) and [Beyond](https://seaborn.pydata.org/) |
+| Week 13  | [Intro to Machine Learning with Scikit-Learn](https://jakevdp.github.io/PythonDataScienceHandbook/05.02-introducing-scikit-learn.html) | 
+| Week 14  | [Multiprocessing](https://www.youtube.com/watch?v=s1SkCYMnfbY), [Concurrent](http://www.gregreda.com/2016/10/16/asynchronous-scraping-with-python/), and Parallel Processing Techniques |
 | Week 15 | Students Present Final Project |
 
 ## Assignments & Grading
