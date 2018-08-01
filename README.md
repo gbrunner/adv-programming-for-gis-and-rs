@@ -8,9 +8,12 @@ Have you ever wanted to learn how to publish, consume, and use geographic web se
 - To introduce students to modern data science methods and tools that can be used to augment their research in geography and remote sensing.
 - Encourage students to use web services, webmaps, and webapps for visualizing and contextualizing data.
 
-## Textbooks:
+## Textbooks
+### Required
 - [Python Data Science Handbook. VanderPlas, Jake. 2016.](http://shop.oreilly.com/product/0636920034919.do)
 - [ArcGIS Web Development](https://www.amazon.com/ArcGIS-Web-Development-Rene-Rubalcava/dp/1617291617)
+### Optional
+- [Mastering Geospatial Analysis with Python](https://www.packtpub.com/application-development/mastering-geospatial-analysis-python)
 
 ## Course Schedule
 
