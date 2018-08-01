@@ -16,7 +16,7 @@ Have you ever wanted to learn how to publish, consume, and use geographic web se
 
 | Week    | Topics |
 |---------|--------|
-| Week 1 | Web Mapping with [Leaflet](http://leafletjs.com/) and [Github](www.github.com) and [Folium](https://blog.dominodatalab.com/creating-interactive-crime-maps-with-folium/)(maybe?)
+| Week 1 | Web Mapping with [Leaflet](http://leafletjs.com/) and [Github](www.github.com) ~~and [Folium](https://blog.dominodatalab.com/creating-interactive-crime-maps-with-folium/)~~
 | Week 2 | Creating GIS Applications with the ArcGIS Javascript API |
 | Week 3 | GIS Web Application and 3D Scenes |
 | Week 4 | Popups and Widgets in Webapps |
