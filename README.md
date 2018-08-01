@@ -38,9 +38,8 @@ Have you ever wanted to learn how to publish, consume, and use geographic web se
 ## Assignments & Grading
 | Weight | Type |
 |--------|------|
-| 15% | Jupyter Notebook Project |
-| 15% | ArcGIS Python API Project |
-| 15% | Data Science with Numpy\Pandas\Matplotlib Project |
-| 15% | Student Choice Project (multiprocessing, sk-learn, or folium) |
-| 15% | ArcGIS JSAPI Project |
-| 25% | Student defined final project |
+| 20% | Weekly Assignments |
+| 20% | Project 1 - Web Application Project |
+| 20% | Project 2 - ArcGIS Python API Project |
+| 20% | Project 3 - Data Science Notebook Project|
+| 20% | Project 4 - Student Defined Final Project |
