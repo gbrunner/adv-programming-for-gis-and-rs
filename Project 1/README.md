@@ -19,3 +19,4 @@ Each application must have:
 ## Miscillaneous
 1. For this class, I don't want to be the first person you come to with questions. You can talk to your classmate. That being said, I hoping to see variation in the data and maps that are submitted. **Submit *your* own work**
 2. If you are unclear about the instructions, let me know as soon as possible!
+3. **I hope to see some beautiful maps!!!**
