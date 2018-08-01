@@ -1,4 +1,9 @@
 # Project 1 - Choose One of the Following
+
+## Goal: Apply your knowledge of the ArcGIS Python API and web services
+## Asssigned: Week 5
+## Due: Week 8
+
 ## 1. Understand the Fragile States Index
 The [Fragile States Index](http://fundforpeace.org/fsi/) is an open source dataset that ranks the fragility of the countries of the world. The FSI data is available as CSV files that ranks the courties in terms of fragility but also provides metrics on other aspects of each country's health, such as the econmony, human rights, and pliltical division. For this project, I want you to create a well documented Jupyter Notebook where you:
 - Publish each FSI CSV file as a uniquly named feature service.
