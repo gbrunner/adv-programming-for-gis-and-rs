@@ -1,30 +1,21 @@
-# Project 1 - Choose One of the Following
-## 1. Understand the Fragile States Index
-The [Fragile States Index](http://fundforpeace.org/fsi/) is an open source dataset that ranks the fragility of the countries of the world. The FSI data is available as CSV files that ranks the courties in terms of fragility but also provides metrics on other aspects of each country's health, such as the econmony, human rights, and pliltical division. For this project, I want you to create a well documented Jupyter Notebook where you:
-- Publish each FSI CSV file as a uniquly named feature service.
-- Create a webmap containing each feature service symbolized so that I can tell which countries are worse and which are better.
-- Describe the proocess and data along the way.
-- Please be as concise as possible with your code. Use for loops where possible rather than repreating code.
- If you do all of these things, you will get an **A**
- 
- If you want an **A+**, please complete of of the following additoinal tasks.
- Either:
- - Create a Storymap from your FSI Webmaps where your storymap has a new page for each year (this can be done manually, i.e. without Python).
- - Or, for each country, run the Mann-Kendall Test (mk_test.py) adn assess whether the FSI trend is improving, degrading, or unchanging over time.
+# Project 1 - Create 2 WebApps from the same datasets!
 
+## Goal: I want you to create two webapps, one with Leaflet and one with the ArcGIS Javascript API, from the same datasets
+## Asssigned: Week 2
+## Due: Week 5
 
+## The Assignment: 
+I would like you to find at least 2 datasets that are somewhat complementary and create a Leaflet app and an ArcGIS Javascript API app for each using essentially the same data.  I want you to create the same app twice so you can see the similarities and differences between the mapping frameworks. While I want you to use the same data for each map, you may find that using GeoJSON format might be an easier way to use data in Leaflet while a Webmap or Feature Service might be an easier approach using the Javascript API.
 
-## 2. Understanding Immigration Patterns
-The Office of the United Nations High Commissioner for Refugees (UNHCR), also known as the UN Refugee Agency, is a United Nations agency mandated to protect and support refugees at the request of a government or the UN itself and assists in their voluntary repatriation, local integration or resettlement to a third country. Its headquarters are in Geneva, Switzerland and is a member of the United Nations Development Group. It provides data on immigration status for coutries across the world. In this project, I want you to use the [UNHCR Data API](http://popdata.unhcr.org/wiki/index52ce.html?title=API_Documentation) to create a series of Webmaps that show how many immigrants are finding assylum in each country listed [here](http://popdata.unhcr.org/api/stats/country_of_asylum.json) for all 12 months 2017. We will learn more about how to do this in week 3, so if you are interested in this project, please look ahead to week 3. To get the number of assylum seekers per month, see here: http://popdata.unhcr.org/api/stats/asylum_seekers_monthly.json?year=2017&month=1&coa=SRB&total=true.
+## Requirements:
+Each application must have:
+- At least 2 layers, not including the Basemap. You can use difference basemaps in your Leaflet and ArcGIS Javascript API app. **10% per app**
+- Use some combination of point, line, and polygon features. I don't just want to see all points! **10% per app**
+- Your layers should each contain at least 10 features. **10% per app**
+- When your code is done, share the apps on Github as live, interactive maps. **10% per app**
+- Include a popup on at least one layer. **10% per app**
+- **Bonus** Add a widget or button to one of the apps! **10 points**
 
-For this project, I want you to create a well documented Jupyter Notebook where you:
-- Publish 12 feature services, each showing the number of assylum seekers per country.
-- Create a webmap containing each feature service symbolized so that I can tell which countries are taking in more assylumn seekers.
-- Describe the proocess and data along the way.
-- Please be as concise as possible with your code. Use for loops where possible rather than repreating code.
- If you do all of these things, you will get an **A**
-
- If you want an **A+**, please complete of of the following additoinal tasks.
- Either:
- - Create a Storymap from your UNHCR feature services where your storymap has a new page for each month (this can be done manually, i.e. without Python).
- - Or, for each country, run the Mann-Kendall Test (mk_test.py) adn assess whether the number of assylum seekers is increasing, decreasing, or unchanging over time.
+## Miscillaneous
+1. For this class, I don't want to be the first person you come to with questions. You can talk to your classmate. That being said, I hoping to see variation in the data and maps that are submitted. **Submit *your* own work**
+2. If you are unclear about the instructions, let me know as soon as possible!
