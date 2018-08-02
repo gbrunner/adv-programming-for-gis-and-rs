@@ -86,7 +86,28 @@ Let's start by creating an app from our traffic webmap
 - Change the Zoom location to be over the Midwest.
 - After you change it, does the *Popoup* still work?
 - If not, can you fix it?
-
+4. (**Optional**) In preparation for next week, add a popup to the ca_traffic_from_fl.html example. This can be done by definind a template:
+```
+var template = { // autocasts as new PopupTemplate()
+        title: "What Happened?",
+        content: [{
+          // It is also possible to set the fieldInfos outside of the content
+          // directly in the popupTemplate. If no fieldInfos is specifically set
+          // in the content, it defaults to whatever may be set within the popupTemplate.
+          type: "fields",
+          fieldInfos: [{
+            fieldName: "Descriptn",
+            label: "Description %",
+            visible: true
+          }]
+        }]
+      };
+```
+and adding these fields to the FeatureLayer definition.
+```
+outFields: ["*"],
+popupTemplate: template
+```
 
 ## Homework:
 1. Read Chapters 4 and 5 of [Rubalcava](https://www.apress.com/us/book/9781484232811) on **API Core Fundamentals** and **Scenes**
