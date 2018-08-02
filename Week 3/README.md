@@ -64,6 +64,8 @@ Back in my day, we had events listeners, functions like:
 
 At ArcGIS Javascript API 4, *promises* tell you when an action is complete or when something is ready
 
+#### TypeScript Integraion - Don't worry about this right now...
+
 #### Final Thought: These concepts are hard to learn and understand without exploring them yourself!!!
 
 ### 3D Scenes
