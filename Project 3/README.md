@@ -14,7 +14,7 @@ Using Esri's [USA Tapestry Service for Counties](http://services.arcgis.com/P3eP
 5. Create a histogram  that shows the number of Missouri counties per Tapestry Segment Name (*TSEGNAME*).
 6. Create a pie chart that shows the number of Missouri counties per Tapestry Segment Name (*TSEGNAME*).
 7. Is there Any correlation between LifeMode Group and Segment name? *Hint: plot TSEGNAME' vs. TLIFENAME.*
-8 **Bonus** Explore the data and show me somethig cool that I haven't thought of.
+8. **Bonus** Explore the data and show me somethig cool that I haven't thought of.
 
 
 **Helpful Hint**
