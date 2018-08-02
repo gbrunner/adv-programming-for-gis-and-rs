@@ -33,7 +33,20 @@ Taken deeper, here we have an example where we watch a scene and update the over
 #### Collections and Autocasting
 **Autocasting** - Passing data that looks like a certain type into that type.
 Autocasting a Portal Item as a Webmap
+Let's modify the [Intro to MapView](https://developers.arcgis.com/javascript/latest/sample-code/intro-mapview/index.html) code again!
+```
+"esri/WebMap
+.
+.
+.
+WebMap
 
+var webmap = new WebMap({
+  portalItem:{
+     id:"4be43a7b42ef4320bf995e490dbad21b"
+  }
+});
+```
 **Collections** - 
 
 **Example**
