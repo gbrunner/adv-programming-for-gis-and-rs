@@ -24,6 +24,7 @@ view.watch("center, scale", (value, oldValue, propertyName)=>{
   }
 });
 ```
+**Cool! But different than Python, right?!**
 
 #### Collections and Autocasting
 Example
