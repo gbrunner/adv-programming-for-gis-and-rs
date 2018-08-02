@@ -30,8 +30,7 @@ view.watch("center, scale", (value, oldValue, propertyName)=>{
 Taken deeper, here we have an example where we watch a scene and update the overview map based on the scene extent.
 [Overview Map](https://developers.arcgis.com/javascript/latest/sample-code/overview-map/index.html)
 
-#### Collections and Autocasting
-**Autocasting** - Passing data that looks like a certain type into that type.
+#### Autocasting - Passing data that looks like a certain type into that type.
 Autocasting a Portal Item as a Webmap
 Let's modify the [Intro to MapView](https://developers.arcgis.com/javascript/latest/sample-code/intro-mapview/index.html) code again!
 ```
@@ -47,8 +46,7 @@ var webmap = new WebMap({
   }
 });
 ```
-**Collections** - 
-
+#### Collections - Array like containers of data
 **Example**
 - [Graphic collection](https://developers.arcgis.com/javascript/latest/sample-code/layers-featurelayer-collection/index.html)
 - Reads GeoJSON, converts to esri/Graphic collection, renders them on map.
@@ -70,8 +68,6 @@ At ArcGIS Javascript API 4, *promises* tell you when an action is complete or wh
 
 ### 3D Scenes
 
-
-### Popups
 
 
 ## Classwork Problems:
