@@ -26,8 +26,17 @@ view.watch("center, scale", (value, oldValue, propertyName)=>{
 ```
 **Cool! But different than Python, right?!**
 
+#### watchUtils
+Taken deeper, here we have an example where we watch a scene and update the overview map based on the scene extent.
+[Overview Map](https://developers.arcgis.com/javascript/latest/sample-code/overview-map/index.html)
+
 #### Collections and Autocasting
-Example
+**Autocasting** - Passing data that looks like a certain type into that type.
+Autocasting a Portal Item as a Webmap
+
+**Collections** - 
+
+**Example**
 - [Graphic collection](https://developers.arcgis.com/javascript/latest/sample-code/layers-featurelayer-collection/index.html)
 - Reads GeoJSON, converts to esri/Graphic collection, renders them on map.
 - Autocasts the GeoJSON graphics into an array that becomes a feature service.
