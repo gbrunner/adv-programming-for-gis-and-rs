@@ -74,7 +74,7 @@ At ArcGIS Javascript API 4, *promises* tell you when an action is complete or wh
 
 ## Classwork Problems:
 
-4. (**Optional**) In preparation for next week, add a popup to the ca_traffic_from_fl.html example. This can be done by definind a template:
+4. (**Optional**) In preparation for next week, add a popup to the [ca_traffic_from_fl.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%202/ca_traffic_from_fl.html) example. This can be done by defining a template:
 ```
 var template = { // autocasts as new PopupTemplate()
         title: "What Happened?",
