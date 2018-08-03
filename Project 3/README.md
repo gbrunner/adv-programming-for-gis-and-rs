@@ -7,14 +7,15 @@
 Create two Python Notebooks that answer the following questions. Please use the notebook to explain your steps.
 ## 1. Missouri Demographic Study
 Using Esri's [USA Tapestry Service for Counties](http://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/Tapestry_Households/FeatureServer/1), create a Python Notebook that answers the following questions
-1. For the counties in Missouri only, what is the dominant Tapestry LifeMode Group Name(*TLIFENAME*)?
-2. Create a histrogram that shows the number of Missouri counties per Tapestry LifeMode Group Name(*TLIFENAME*)
-3. Create a pie chart that shows the number of Missouri counties per Tapestry LifeMode Group Name(*TLIFENAME*)
-4. For the counties in Missouri, what is the dominant Dominant Tapestry Segment Name (*TSEGNAME*)
-5. Create a histogram  that shows the number of Missouri counties per Tapestry Segment Name (*TSEGNAME*).
-6. Create a pie chart that shows the number of Missouri counties per Tapestry Segment Name (*TSEGNAME*).
-7. Is there Any correlation between LifeMode Group and Segment name? *Hint: plot TSEGNAME' vs. TLIFENAME.*
-8. **Bonus** Explore the data and show me somethig cool that I haven't thought of.
+1. For the counties in Missouri only, what is the dominant Tapestry LifeMode Group Name(*TLIFENAME*)? (**10 points**)
+2. Create a histrogram that shows the number of Missouri counties per Tapestry LifeMode Group Name(*TLIFENAME*) (**5 points**)
+3. Create a pie chart that shows the number of Missouri counties per Tapestry LifeMode Group Name(*TLIFENAME*) (**5 points**)
+4. For the counties in Missouri, what is the dominant Dominant Tapestry Segment Name (*TSEGNAME*) (**10 points**)
+5. Create a histogram  that shows the number of Missouri counties per Tapestry Segment Name (*TSEGNAME*). (**5 points**)
+6. Create a pie chart that shows the number of Missouri counties per Tapestry Segment Name (*TSEGNAME*). (**5 points**)
+7. Is there Any correlation between LifeMode Group and Segment name? *Hint: plot TSEGNAME' vs. TLIFENAME.* (**2 points**)
+8. Make sure the notebook is well-documented. (**8 points**)
+9. **Bonus** Explore the data and show me somethig cool that I haven't thought of. (**5 Points**)
 
 
 **Helpful Hint**
