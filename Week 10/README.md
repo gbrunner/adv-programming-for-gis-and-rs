@@ -74,8 +74,8 @@ Go through the [Using Imagey Layers](https://developers.arcgis.com/python/guide/
 **Challange!** Following from **In [13]** in the [Using Imagery Layers Tutorial](https://developers.arcgis.com/python/guide/using-imagery-layers/), create an NDVI layer over St. Louis. Submit your Jupyter notebook.
 
 ## In Class Problem 3:
-The Climate Hazards Group at UC Santa Barbera produces a 30+ year quasi global dataset called [CHIRPS](http://chg.geog.ucsb.edu/data/chirps/). YOu can download the precipitation data as rasters [here](ftp://ftp.chg.ucsb.edu/pub/org/chg/products/CHIRP/). For this exercise:
-1. Download the first 36 rasters [here](ftp://ftp.chg.ucsb.edu/pub/org/chg/products/CHIRP/dekads/). This data has 3 precipitation rasters per month, 1 every ten days, totaling 36 rasters in a year. 
+The Climate Hazards Group at UC Santa Barbera produces a 30+ year quasi global dataset called [CHIRPS](http://chg.geog.ucsb.edu/data/chirps/). YOu can download the precipitation data as rasters here:ftp://ftp.chg.ucsb.edu/pub/org/chg/products/CHIRP/. For this exercise:
+1. Download the first 36 rasters here]:ftp://ftp.chg.ucsb.edu/pub/org/chg/products/CHIRP/dekads/. This data has 3 precipitation rasters per month, 1 every ten days, totaling 36 rasters in a year. 
 2. Read each raster into a numpy array and concatenate those numpy arrays into a matrix of dimmension (3,x,y)
 3. Using *matplotlib*, plot a few slices of the array so that we can see the rainfall over time.
 4. **Are the rainfall trends periodic?**
