@@ -82,7 +82,7 @@ For this exercise:
 2. Read each raster into a numpy array and concatenate those numpy arrays into a matrix of dimmension (3,x,y)
 3. Using *matplotlib*, plot a few slices of the array so that we can see the rainfall over time.
 4. **Are the rainfall trends periodic?**
-5. **Bonus** Extract the time frame the filenames and plot some rainfall values (on the y-axis) vs. time (on the x-axis).
+5. **Challenge** Extract the time frame the filenames and plot some rainfall values (on the y-axis) vs. time (on the x-axis).
 
 ## Homework:
 1. Watch the following video on [ArcGIS Python Raster Functions](https://www.youtube.com/watch?v=OgwnKRrVHN0)
