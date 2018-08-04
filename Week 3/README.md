@@ -141,6 +141,8 @@ position: [
         ],
 tilt:30,
 ```
+Now, let's create an app that has some buttons to drive the cameras.
+Walk through the world_pop_3d_w_buttons.html example.
 
 #### Environment
 
