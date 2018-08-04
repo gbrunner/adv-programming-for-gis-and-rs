@@ -69,7 +69,11 @@ At ArcGIS Javascript API 4, *promises* tell you when an action is complete or wh
 #### Final Thought: These concepts are hard to learn and understand without exploring them yourself!!!
 
 ### 3D Scenes
+3D is probably the most exciting development\addition to the GIS web developer experience.
 
+Opens up the ability to view 3D globes, scenes, and Lidar!
+
+Loading a WebScene is ver easy. It follows the same pattern as loading a WebMap.
 
 
 ## Classwork Problems:
