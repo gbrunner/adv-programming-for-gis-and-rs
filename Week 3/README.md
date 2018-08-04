@@ -145,6 +145,55 @@ Now, let's create an app that has some buttons to drive the cameras.
 Walk through the world_pop_3d_w_buttons.html example.
 
 #### Environment
+Notice how the lighting goes right through the middle of the globe? **Let's fix that by adding an environment parameter**
+
+Here's we'll add  alighting paramter to the SceneView that allows us to view the lighting so as to reflect the current tie of day.
+```
+var view = new SceneView({
+        container: "viewDiv",
+        map: scene,
+        camera: camera,
+        environment: {
+            lighting: {
+              date: new Date(),
+              directShadowsEnabled: true,
+              // don't update the view time when user pans.
+              // The clock widget drives the time
+              cameraTrackingEnabled: false
+            }
+        },
+    });
+```
+There is a lot more we can do with this. Check out the samples!
+
+#### Local Scenes
+Let's change this to a local scene:
+```
+viewingMode:"local",
+```
+Does the lighting matter anymore?
+Do the buttons still work?
+
+#### Home Button
+Let's add a *Home* button:
+```
+"esri/widgets/Home",
+.
+.
+.
+ ], function(WebScene, SceneView, Camera, Home) {
+ .
+ .
+ .
+ var homeBtn = new Home({
+        view: view
+      });
+
+      // Add the home button to the top left corner of the view
+    view.ui.add(homeBtn, "top-left");
+```
+That's all we have to do. Of course, we should change the home location to be different from the St. Louis, USA button :)
+
 
 ## Classwork Problems:
 1. Change the world_pop_3d_w_buttons.html to use this webscene over Boston as the input portal item: http://slustl.maps.arcgis.com/home/webscene/viewer.html?webscene=8046207c1c214b5587230f5e5f8efc77
@@ -153,7 +202,11 @@ Walk through the world_pop_3d_w_buttons.html example.
 
 3. Add a third camera that looks towards downtown boston from the Atlantic Ocean.
 
-4. (**Optional**) In preparation for next week, add a popup to the [ca_traffic_from_fl.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%202/ca_traffic_from_fl.html) example. This can be done by defining a template:
+4. Add a Home button that goes back to 42.3770° N, 71.1167° W.
+
+5. Does the map look cooler as a *Globe* or *Local Scene*?
+
+6. (**Optional**) In preparation for next week, add a popup to the [ca_traffic_from_fl.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%202/ca_traffic_from_fl.html) example. This can be done by defining a template:
 ```
 var template = { // autocasts as new PopupTemplate()
         title: "What Happened?",
