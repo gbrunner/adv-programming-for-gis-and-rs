@@ -147,6 +147,11 @@ Walk through the world_pop_3d_w_buttons.html example.
 #### Environment
 
 ## Classwork Problems:
+1. Change the world_pop_3d_w_buttons.html to use this webscene over Boston as the input portal item: http://slustl.maps.arcgis.com/home/webscene/viewer.html?webscene=8046207c1c214b5587230f5e5f8efc77
+
+2. Change the two cameras to point at different areas of Boston.
+
+3. Add a third camera that looks towards downtown boston from the Atlantic Ocean.
 
 4. (**Optional**) In preparation for next week, add a popup to the [ca_traffic_from_fl.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%202/ca_traffic_from_fl.html) example. This can be done by defining a template:
 ```
