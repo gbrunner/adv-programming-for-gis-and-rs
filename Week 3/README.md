@@ -229,6 +229,7 @@ outFields: ["*"],
 popupTemplate: template
 ```
 
-
 ## Homework:
+1. Work on Project 1.
+2. Read Chapters 6 and 7 of Rubalcava.
 
