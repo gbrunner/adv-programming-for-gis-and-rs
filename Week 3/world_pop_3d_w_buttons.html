@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Intro to SceneView - Create a 3D map - 4.8</title>
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.8/esri/css/main.css">
+  <script src="https://js.arcgis.com/4.8/"></script>
+
+ <script>
+    require([
+      "esri/WebScene",
+      "esri/views/SceneView",
+      "esri/Camera",
+      "dojo/domReady!"
+    ], function(WebScene, SceneView, Camera) {
+
+    
+      /*var map = new Map({
+        basemap: "streets",
+        ground: "world-elevation"
+      });*/
+      var scene = new WebScene({
+        portalItem:{
+         id:"fbbbaa2fbfda41b8b3f96427c3ac5c79" 
+        }
+      });
+      
+      var camera = new Camera({
+        position: [
+          -90.1994, // lon
+          38.6270, // lat
+          5000000// elevation in meters
+        ],
+        tilt:0,
+        heading: 0
+      })
+
+      var view = new SceneView({
+        container: "viewDiv",
+        map: scene,
+        camera: camera
+    });
+    
+    [stl, bei].forEach(function(button) {
+      button.style.display = 'flex';
+      view.ui.add(button, 'top-right');
+    });
+    
+    bei.addEventListener('click', function() {
+      // reuse the default camera position already established in the homeBtn
+      view.goTo({
+        position: {
+          x: 116.4074,
+          y: 39.9042,
+          z: 5000000
+        },
+        tilt: 0,
+        heading: 0
+      });
+    });
+    
+    stl.addEventListener('click', function() {
+      // reuse the default camera position already established in the homeBtn
+      view.goTo({
+        target:camera
+      });
+    });
+
+
+    });
+  </script>
+</head>
+
+<body>
+  <div id="viewDiv"></div>
+  <button id="stl" class="off">St. Louis, USA</button>
+  <button id="bei" class="off">Beijing, China</button>
+</body>
+</html>
