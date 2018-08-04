@@ -104,7 +104,15 @@ FOr this example, let's use the [World Population in 3D Data](http://slustl.maps
     });
   </script>
   ```
-
+Cool! Right?
+Let's say we want to change the viewing mode. All we have to do is add:
+```
+var view = new SceneView({
+    container: "viewDiv",
+    map: scene,
+		viewingMode:'local'
+});
+```
 
 ## Classwork Problems:
 
