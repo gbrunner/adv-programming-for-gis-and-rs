@@ -114,6 +114,36 @@ var view = new SceneView({
 });
 ```
 
+#### Camera Property
+I think Rubalcava's camera property is a bit overkill. Instead, let's add some cameras to our worl population example.
+
+Let's add a camera over st. louis on the world population scene:
+```
+camera: {
+        position: [
+          -90.1994, // lon
+          38.6270, // lat
+          5000000// elevation in meters
+        ],
+
+      heading: 0
+      }
+```
+What happens when we modify the elevation?
+What happens when we change the heading?
+
+Let's add in a *tilt* parameter
+```
+position: [
+          -90.1994, // lon
+          38.6270, // lat
+          5000000// elevation in meters
+        ],
+tilt:30,
+```
+
+#### Environment
+
 ## Classwork Problems:
 
 4. (**Optional**) In preparation for next week, add a popup to the [ca_traffic_from_fl.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%202/ca_traffic_from_fl.html) example. This can be done by defining a template:
