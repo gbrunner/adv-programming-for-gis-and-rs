@@ -26,6 +26,8 @@ Next, let's conficure a popup!
 
 After that, let's save the Webmap.
 
+Let's share the Webmap with everyone too.
+
 Let's load the webmap into a JS API App.
 
 Now, let's go to the [Webmap Basic](https://developers.arcgis.com/javascript/latest/sample-code/webmap-basic/index.html) example, and switch the basemap ID.
@@ -35,8 +37,18 @@ Pretty easy, right?
 Let's copy that code into an HTML file and save it before leaving.
 
 ### Loading the Popup through Code using Popup Template
+Let's open up the Popup teamplate Basic Example and start there:
 
+Let's change the feature service to be: [NHL Prospects](https://services7.arcgis.com/fX3LzGegyrqMlv6s/ArcGIS/rest/services/2017NHLDraftProspects/FeatureServer/0)
 
+Let's change the center map location to be:
+```
+center:[-90, 38],
+zoom: 4
+```
+Now, let's change the *template* to reflect the feature service.
+
+Easy, right?!
 
 ## Classwork Exercises:
 
