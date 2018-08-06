@@ -81,10 +81,16 @@ var featureLayer = new FeatureLayer({
       map.add(featureLayer);
 ```
 
-## Classwork Exercises:
+## Classwork\Homework Problems:
+1. Search ArcGIS Online for a feature layer of some data that you are interested in.  Take that feature layer, add it to a webmap, change the symbology, and create a popup for it. Then, following from the **The Easy Way...** lesson above, create a stad-alone application from that layer similar to the *popup_from_webmap_nhl.html* example.
 
+If you are stuggling to find a feature layer, take a look at:
+- [STL Neighborhoods](http://slustl.maps.arcgis.com/home/item.html?id=70fefcbe59ea421da9169a46b341dfa9)
+- [St. Louis School Districts](http://slustl.maps.arcgis.com/home/item.html?id=cb8c591911fc4e3090b1371cb0f4ba87)
+- [St. Louis Parishes](http://slustl.maps.arcgis.com/home/item.html?id=ebb8787f96424ea88649e228f2dcfef5)
+*That's a lot of STL themed data...*
 
-## Classwork Problems:
+2. Use that same feature layer and create the same webapp and popup following from the *popup_from_fl_with_symbol.html*.
 
 ## Homework:
 
