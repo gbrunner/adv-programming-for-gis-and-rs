@@ -50,6 +50,36 @@ Now, let's change the *template* to reflect the feature service.
 
 Easy, right?!
 
+#### Now Let's Recreate the first Map's symbology, too!
+
+Wee need to add a *renderer* and a *symbol*
+**Our *Symbol* **
+```
+ var symbol = {
+      type: "picture-marker",  // autocasts as new PictureMarkerSymbol()
+      url: "https://www.hockeyshot.ca/media/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/b/l/black-puck.jpg",
+      width: "48px",
+      height: "48px"
+};
+```
+**Our *renderer* **
+```
+var renderer = {
+      type: "simple",  // autocasts as new SimpleRenderer()
+      symbol: symbol
+    };
+```
+**Our *Feature Layer* **
+```
+var featureLayer = new FeatureLayer({
+        url: "https://services7.arcgis.com/fX3LzGegyrqMlv6s/ArcGIS/rest/services/2017NHLDraftProspects/FeatureServer/0",
+        outFields: ["*"],
+        renderer: renderer,
+        popupTemplate: template
+      });
+      map.add(featureLayer);
+```
+
 ## Classwork Exercises:
 
 
