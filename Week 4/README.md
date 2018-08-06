@@ -53,6 +53,7 @@ Easy, right?!
 #### Now Let's Recreate the first Map's symbology, too!
 
 Wee need to add a *renderer* and a *symbol*
+
 **Our *Symbol***
 ```
  var symbol = {
