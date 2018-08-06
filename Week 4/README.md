@@ -5,7 +5,7 @@
 - [Layer List Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-layerlist-actions/index.html)
 - [Search Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-search-3d/index.html)
 
-## Lecture:
+## Lecture 1 - Popups and Popup Template
 Popups are ususally a uses first interaction with a map.
 
 Let's take a look at how we can add popups to our apps.
@@ -80,6 +80,15 @@ var featureLayer = new FeatureLayer({
       });
       map.add(featureLayer);
 ```
+
+## Lecture 2 - Widgets
+My focus is not to get you writing your own widgets. That is beyond my intended scope of this class. My emphasis is that I want you to be able to use widgets. To do that, we'll look at specific out of the box widgets that come with the **ArcGIS API for Javascript 4**.
+
+### Search Widget
+
+### Legend Widget
+
+### Layer Toggle Widget
 
 ## Classwork\Homework Problems:
 1. Search ArcGIS Online for a feature layer of some data that you are interested in.  Take that feature layer, add it to a webmap, change the symbology, and create a popup for it. Then, following from the **The Easy Way...** lesson above, create a stad-alone application from that layer similar to the *popup_from_webmap_nhl.html* example.
