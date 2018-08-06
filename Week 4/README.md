@@ -93,4 +93,7 @@ If you are stuggling to find a feature layer, take a look at:
 2. Use that same feature layer and create the same webapp and popup following from the *popup_from_fl_with_symbol.html*.
 
 ## Homework:
+1. Finish the **Problems** above.
+2. Submit **Project 1!**
+3. Read **Chapter 1** of **Mastering Geospatial Analysis with Python.** If you don't have the book, I will provide the chapter on **Blackboard**
 
