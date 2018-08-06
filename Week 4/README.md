@@ -6,7 +6,12 @@
 - [Search Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-search-3d/index.html)
 
 ## Lecture:
+Popups are ususally a uses first interaction with a map.
 
+Let's take a look at how we can add popups to our apps.
+
+### The Easy Way - Add a Popup through ArcGIS Online
+[Hockey Player Production](http://slustl.maps.arcgis.com/home/item.html?id=98b3f37832bf469faa79ebc74a7816ff)
 
 ## Classwork Exercises:
 
