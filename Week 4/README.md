@@ -84,6 +84,28 @@ var featureLayer = new FeatureLayer({
 ## Lecture 2 - Widgets
 My focus is not to get you writing your own widgets. That is beyond my intended scope of this class. My emphasis is that I want you to be able to use widgets. To do that, we'll look at specific out of the box widgets that come with the **ArcGIS API for Javascript 4**.
 
+### Home Button Widget
+Let's go back to Week 3 and look at the [3D Global Population app](https://gbrunner.github.io/Advanced_Python_for_GIS_and_RS/Week%203/world_pop_3d_w_home.html)
+
+Notice, we used the home button and that was imported via
+```
+ "esri/widgets/Home",
+ ```
+ 
+ The implementation was very straightforward and only required a few lines of code:
+ ```
+var homeBtn = new Home({
+    view: view
+});
+// Add the home button to the top left corner of the view
+view.ui.add(homeBtn, "top-left");
+```
+
+Implementing widgets is generally this easy. 
+- We import it. 
+- We assign it properties. 
+- And we put it on the user interface.
+
 ### Search Widget
 
 ### Legend Widget
