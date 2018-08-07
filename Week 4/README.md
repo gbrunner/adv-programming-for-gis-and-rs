@@ -107,7 +107,21 @@ Implementing widgets is generally this easy.
 - And we put it on the user interface.
 
 ### Search Widget
+Let's take the global population example we were looking at last week, remove the buttons, and add a search widget.
 
+Let's look at the [Search Widget Example](https://developers.arcgis.com/javascript/latest/sample-code/widgets-search-3d/index.html)
+
+All we have to do is add:
+```
+	  var searchWidget = new Search({
+        view: view
+      });
+
+      // Add the search widget to the top right corner of the view
+      view.ui.add(searchWidget, {
+        position: "top-right"
+      });
+```
 ### Legend Widget
 
 ### Layer Toggle Widget
