@@ -1,17 +1,17 @@
 ## Preparation: 
-1. Please read Chapters 1, 2, and 3 of [Introducing ArcGIS API 4 for Javascript](https://www.apress.com/us/book/9781484232811). Chapeters 1 and 2 are really short!
+1. Please read Chapters 1, 2, and 3 of [Introducing ArcGIS API 4 for Javascript](https://www.apress.com/us/book/9781484232811). Chapters 1 and 2 are really short!
 2. Samples for the book can be found on [Github](https://github.com/Apress/introducing-arcgis-api-4-for-javascript/tree/master/intro-arcgis-js-api-4)
 
 ## Lecture:
 ### Terminology
 - [ArcGIS API for Javascript](https://developers.arcgis.com/javascript/)
-- [Assynchronous Module Definition](https://requirejs.org/docs/whyamd.html)
+- [Asynchronous Module Definition](https://requirejs.org/docs/whyamd.html)
 - [Dojo](https://dojotoolkit.org/) - Javascript toolkit that aids in development. Provides everything you need to build a WebApp.
 - [Maps](https://developers.arcgis.com/javascript/latest/sample-code/intro-mapview/index.html)
 - [Layers](https://developers.arcgis.com/javascript/latest/sample-code/layers-portal/index.html)
 - [Views](https://developers.arcgis.com/javascript/latest/sample-code/scene-goto/index.html)
 - Accessors - As a general term, functions that get something for you
-- [Promises](https://developers.google.com/web/fundamentals/primers/promises) - Promises for assynchronous operations.
+- [Promises](https://developers.google.com/web/fundamentals/primers/promises) - Promises for asynchronous operations.
 ```
 promise.then(function(result) {
   console.log(result); // "Stuff worked!"
@@ -39,8 +39,8 @@ Let's save this as an app in Github and view it online!
 ### ArcGIS Layers
 Let's learn about layers in ArcGIS!
 
-- Go to ArcGIS ONline
-- Search for [traffice layers outside of your organization](http://slustl.maps.arcgis.com/home/search.html?q=traffic&t=content&start=1&sortOrder=desc&sortField=relevance&restrict=false&focus=layers-weblayers-features)
+- Go to ArcGIS Online
+- Search for [traffic layers outside of your organization](http://slustl.maps.arcgis.com/home/search.html?q=traffic&t=content&start=1&sortOrder=desc&sortField=relevance&restrict=false&focus=layers-weblayers-features)
 - Find [California Traffic Layers](http://slustl.maps.arcgis.com/home/search.html?q=traffic&t=content&start=1&sortOrder=desc&sortField=relevance&restrict=false&focus=layers-weblayers-features)
 - Open up [the service](https://services1.arcgis.com/8CpMUd3fdw6aXef7/arcgis/rest/services/Vehicle_Traffic_Volumes_2016/FeatureServer)
 - Let's query the service
@@ -50,9 +50,9 @@ Let's learn about layers in ArcGIS!
 - Change renderer back to some class breaks and save the Webmap.
 
 **What's the point of this?**
-*That we did in Leaflet can be done without code. But you can code it now with Leaflet and will be able to with ArcGIS Javasctipt!*
+*That we did in Leaflet can be done without code. But you can code it now with Leaflet and will be able to with ArcGIS JavaScript!*
 
-### How do we work with these in Javascript?
+### How do we work with these in JavaScript?
 #### From a WebMap
 Let's start by creating an app from our traffic webmap
 - Go to [Load a Basic WebMap](https://developers.arcgis.com/javascript/latest/sample-code/webmap-basic/index.html)
@@ -78,13 +78,13 @@ Let's start by creating an app from our traffic webmap
 - From here, let's try to solve some problems ourselves!
 
 ## Classwork Problems:
-1. Search through ArcGIS ONline and find 3 layers that overlap. Create an app that shows all three layers on the map. You choose the 3 layers from ArcGIS ONline. You can either add the layers to the app [From a Webmap](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%2012/README.md#from-a-webmap) or by adding [multiple feature layers](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%2012/README.md#from-a-feature-layer) 
+1. Search through ArcGIS Online and find 3 layers that overlap. Create an app that shows all three layers on the map. You choose the 3 layers from ArcGIS Online. You can either add the layers to the app [From a Webmap](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%2012/README.md#from-a-webmap) or by adding [multiple feature layers](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%2012/README.md#from-a-feature-layer) 
 2. Create a webapp that uses the [CSV Layer](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%2012/README.md#from-a-csv) to map crime over St. Louis from the STL Crime CSV in this folder.
 3. Following from this [server side raster function example](https://developers.arcgis.com/javascript/latest/sample-code/layers-imagery-popup/index.html), do the following:
 - Change the service to point to the Landsat 8 Views Service (https://landsat2.arcgis.com/arcgis/rest/services/Landsat8_Views/ImageServer)
 - Look at the service **RasterFunction Infos**. Change the Raster function template to one of the *NDVI* Raster Functions.
 - Change the Zoom location to be over the Midwest.
-- After you change it, does the *Popoup* still work?
+- After you change it, does the *Popup* still work?
 - If not, can you fix it?
 
 ## Homework:
