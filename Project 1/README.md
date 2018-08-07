@@ -1,12 +1,12 @@
-# Project 1 - Create 2 WebApps from the same datasets!
+# Project 1 - Create 2 WebApps from the similar (if not the same) datasets!
 
-## Goal: I want you to create two webapps, one with Leaflet and one with the ArcGIS Javascript API, from the same datasets
+## Goal: I want you to create two webapps, one with Leaflet and one with the ArcGIS Javascript API, from the similar datasets
 ## Asssigned: Week 2
 ## Due: Week 5
 ## Score: Out of 100 points. Anything exceeding 100 points is a A+!
 
 ## The Assignment: 
-I would like you to find at least 2 datasets that are somewhat complementary and create a Leaflet app and an ArcGIS Javascript API app for each using essentially the same data.  I want you to create the same app twice so you can see the similarities and differences between the mapping frameworks. While I want you to use the same data for each map, you may find that using GeoJSON format might be an easier way to use data in Leaflet while a Webmap or Feature Service might be an easier approach using the Javascript API.
+I would like you to find at least 2 datasets that are somewhat complementary and create a Leaflet app and an ArcGIS Javascript API app for each using essentially the same data.  If you can't use the same data in each app, i'd like the features to be similar in theme. I want you to create the same app twice so you can see the similarities and differences between the mapping frameworks. While I want you to use the similar data for each map, you may find that using GeoJSON format might be an easier way to use data in Leaflet while a Webmap or Feature Service might be an easier approach using the Javascript API.
 
 ## Requirements:
 Each application must have:
@@ -15,7 +15,7 @@ Each application must have:
 - Your layers should each contain at least 10 features. **10 points per app**
 - When your code is done, share the apps on Github as live, interactive maps. **10 points app**
 - Include a popup on at least one layer. **10 points app**
-- **Bonus** Add a widget or button to one of the apps! **10 points**
+- **Bonus** Add a widget (legend, search, layer list, etc.) or button to one of the apps! **10 points**
 
 ## Miscillaneous
 1. For this class, I don't want to be the first person you come to with questions. You can talk to your classmate. That being said, I hoping to see variation in the data and maps that are submitted. **Submit *your* own work**
