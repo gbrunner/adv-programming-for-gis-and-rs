@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Intro to SceneView - Create a 3D map - 4.8</title>
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.8/esri/css/main.css">
+  <script src="https://js.arcgis.com/4.8/"></script>
+
+ <script>
+    require([
+      "esri/WebScene",
+      "esri/views/SceneView",
+	  "esri/widgets/Search",
+	  "esri/widgets/Legend",
+      "dojo/domReady!"
+    ], function(WebScene, SceneView, Search, Legend) {
+
+      /*var map = new Map({
+        basemap: "streets",
+        ground: "world-elevation"
+      });*/
+      var scene = new WebScene({
+        portalItem:{
+         id:"fbbbaa2fbfda41b8b3f96427c3ac5c79" 
+        }
+      });
+
+      var view = new SceneView({
+        container: "viewDiv",
+        map: scene,
+		viewingMode:'local'
+      });
+	  
+	  var searchWidget = new Search({
+        view: view
+      });
+
+      // Add the search widget to the top right corner of the view
+      view.ui.add(searchWidget, {
+        position: "top-right"
+      });
+	  
+	    view.when(function() {
+          // get the first layer in the collection of operational layers in the WebMap
+          // when the resources in the MapView have loaded.
+          var featureLayer = scene.layers.getItemAt(0);
+
+          var legend = new Legend({
+            view: view,
+            layerInfos: [{
+              layer: featureLayer,
+              title: "NY Educational Attainment"
+            }]
+          });
+
+          // Add widget to the bottom right corner of the view
+          view.ui.add(legend, "bottom-right");
+        });
+
+    });
+  </script>
+</head>
+
+<body>
+  <div id="viewDiv"></div>
+</body>
+</html>
