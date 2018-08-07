@@ -73,7 +73,7 @@ Demonstrate the Boston Clustermap too. https://gbrunner.github.io/Advanced_Pytho
 
 ## Classwork Problems
 1. Create a Leaflet map of 5 resturants that you'd like to go to in St. Louis. Include popups!
-2. Create a Leaflet showing the St. Louis Crime points from the GeoJSON found [here]()
+2. Create a Leaflet showing the San Francisco Crime points from the GeoJSON found [here](). Please add a relevant icon to the points. See the [Leaflet tutorial here](https://maptimeboston.github.io/leaflet-intro/) if you need help with that.
 3. **Challenge** Create a Leaflet heatmap from the crime points GeoJSON that you used above.
 4. **Challenge** Create a Leaflet cluster map from the crime points GeoJSON that you used above.
 
