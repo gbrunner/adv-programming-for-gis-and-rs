@@ -91,5 +91,7 @@ Basemaps
 
 [Convert CSV to GeoJSON](https://github.com/gavinr/csv-to-geojson)
 
+[GeoJSON.io](http://geojson.io/)
 
+[More than you ever wanted to know about GeoJSON](https://macwright.org/2015/03/23/geojson-second-bite.html#projections)
 
