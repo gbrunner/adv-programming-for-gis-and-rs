@@ -122,9 +122,33 @@ All we have to do is add:
         position: "top-right"
       });
 ```
-### Legend Widget
 
-### Layer Toggle Widget
+Easy, right?!
+
+### Legend Widget
+Now, let's add a Legend!
+
+Check out the [legend example](https://developers.arcgis.com/javascript/latest/sample-code/widgets-legend/index.html).
+
+All we should need to do is add:
+```
+view.when(function() {
+// get the first layer in the collection of operational layers in the WebMap
+// when the resources in the MapView have loaded.
+var featureLayer = scene.layers.getItemAt(0);
+
+var legend = new Legend({
+  view: view,
+  layerInfos: [{
+    layer: featureLayer,
+    title: "World Population"
+  }]
+});
+
+// Add widget to the bottom right corner of the view
+view.ui.add(legend, "bottom-right");
+```
+Again, it's that easy! Now it's time for you to play!
 
 ## Classwork\Homework Problems:
 1. Search ArcGIS Online for a feature layer of some data that you are interested in.  Take that feature layer, add it to a webmap, change the symbology, and create a popup for it. Then, following from the **The Easy Way...** lesson above, create a stad-alone application from that layer similar to the *popup_from_webmap_nhl.html* example.
