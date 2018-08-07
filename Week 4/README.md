@@ -84,11 +84,71 @@ var featureLayer = new FeatureLayer({
 ## Lecture 2 - Widgets
 My focus is not to get you writing your own widgets. That is beyond my intended scope of this class. My emphasis is that I want you to be able to use widgets. To do that, we'll look at specific out of the box widgets that come with the **ArcGIS API for Javascript 4**.
 
+### Home Button Widget
+Let's go back to Week 3 and look at the [3D Global Population app](https://gbrunner.github.io/Advanced_Python_for_GIS_and_RS/Week%203/world_pop_3d_w_home.html)
+
+Notice, we used the home button and that was imported via
+```
+ "esri/widgets/Home",
+ ```
+ 
+ The implementation was very straightforward and only required a few lines of code:
+ ```
+var homeBtn = new Home({
+    view: view
+});
+// Add the home button to the top left corner of the view
+view.ui.add(homeBtn, "top-left");
+```
+
+Implementing widgets is generally this easy. 
+- We import it. 
+- We assign it properties. 
+- And we put it on the user interface.
+
 ### Search Widget
+Let's take the global population example we were looking at last week, remove the buttons, and add a search widget.
+
+Let's look at the [Search Widget Example](https://developers.arcgis.com/javascript/latest/sample-code/widgets-search-3d/index.html)
+
+All we have to do is add:
+```
+	  var searchWidget = new Search({
+        view: view
+      });
+
+      // Add the search widget to the top right corner of the view
+      view.ui.add(searchWidget, {
+        position: "top-right"
+      });
+```
+
+Easy, right?!
 
 ### Legend Widget
+Now, let's add a Legend!
 
-### Layer Toggle Widget
+Check out the [legend example](https://developers.arcgis.com/javascript/latest/sample-code/widgets-legend/index.html).
+
+All we should need to do is add:
+```
+view.when(function() {
+// get the first layer in the collection of operational layers in the WebMap
+// when the resources in the MapView have loaded.
+var featureLayer = scene.layers.getItemAt(0);
+
+var legend = new Legend({
+  view: view,
+  layerInfos: [{
+    layer: featureLayer,
+    title: "World Population"
+  }]
+});
+
+// Add widget to the bottom right corner of the view
+view.ui.add(legend, "bottom-right");
+```
+Again, it's that easy! Now it's time for you to play!
 
 ## Classwork\Homework Problems:
 1. Search ArcGIS Online for a feature layer of some data that you are interested in.  Take that feature layer, add it to a webmap, change the symbology, and create a popup for it. Then, following from the **The Easy Way...** lesson above, create a stad-alone application from that layer similar to the *popup_from_webmap_nhl.html* example.
@@ -101,6 +161,16 @@ If you are stuggling to find a feature layer, take a look at:
 *That's a lot of STL themed data...*
 
 2. Use that same feature layer and create the same webapp and popup following from the *popup_from_fl_with_symbol.html*.
+
+3. Add the following two widgets to the [3D Boston Planning](http://slustl.maps.arcgis.com/home/webscene/viewer.html?webscene=8046207c1c214b5587230f5e5f8efc77) Exameple that we made last weel.
+- [Legend Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-legend/index.html)
+- [Layer List Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-layerlist/index.html)
+
+4. Take a look at the other widget examples on the [Sample Widget Page](https://developers.arcgis.com/javascript/latest/sample-code/index.html?search=Widget). Add a two of the following widgets to an existing sample that we have worked on in Week 2, 3, or 4.
+- [Scale Bar Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-scalebar/index.html)
+- [Custom Basemap Widget](https://developers.arcgis.com/javascript/latest/sample-code/basemap-custom/index.html)
+- [Expand Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-expand/index.html)
+- [Any of the other samples](https://developers.arcgis.com/javascript/latest/sample-code/index.html?search=Widget) that use widgets taht you want to play with!
 
 ## Homework:
 1. Finish the **Problems** above.
