@@ -78,7 +78,9 @@ Let's start by creating an app from our traffic webmap
 - From here, let's try to solve some problems ourselves!
 
 ## Classwork Problems:
-1. Search through ArcGIS Online and find 3 layers that overlap. Create an app that shows all three layers on the map. You choose the 3 layers from ArcGIS Online. You can either add the layers to the app [From a Webmap](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%2012/README.md#from-a-webmap) or by adding [multiple feature layers](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%2012/README.md#from-a-feature-layer) 
+1. Search through ArcGIS Online and find 3 layers that overlap. Create two apps that show all three layers on the map. You choose the 3 layers from ArcGIS Online. 
+- Create one by adding the layers to the app [From a Webmap](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%2012/README.md#from-a-webmap) and then loading the Webmap object into the ArcGIS Javascript API
+- Create one by adding [multiple feature layers](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%2012/README.md#from-a-feature-layer), map layers, imagery layers, etc via the Javascript API.
 2. Create a webapp that uses the [CSV Layer](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%2012/README.md#from-a-csv) to map crime over St. Louis from the STL Crime CSV in this folder.
 3. Following from this [server side raster function example](https://developers.arcgis.com/javascript/latest/sample-code/layers-imagery-popup/index.html), do the following:
 - Change the service to point to the Landsat 8 Views Service (https://landsat2.arcgis.com/arcgis/rest/services/Landsat8_Views/ImageServer)
