@@ -57,7 +57,7 @@ number_as_string = 1600
 number = int(number_as_string)
 ```
 
-#### Promises
+#### [Promises](https://www.youtube.com/watch?v=H8Q83DPZy6E)
 Different concept from event listeners, but very important and increasingly used throughough JavaScript web development.
 
 At ArcGIS Javascript API v4 *promises* tell you when an "asynchronous" action is complete, or in other words, when a result is ready from some action that occurred over an unknown amount of time.  We call this "fulfilling" a promise.  If something fails along the way, we call this "rejecting" a promise.
