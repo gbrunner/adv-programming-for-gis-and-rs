@@ -77,7 +77,7 @@ Let's start by creating an app from our traffic webmap
 - Let's take a look at the [CSV Layer Example](https://developers.arcgis.com/javascript/latest/sample-code/layers-csv/index.html)
 - From here, let's try to solve some problems ourselves!
 
-## Classwork Problems:
+## Classwork\Homework Problems:
 1. Search through ArcGIS Online and find 3 layers that overlap. Create two apps that show all three layers on the map. You choose the 3 layers from ArcGIS Online. 
 - Create one by adding the layers to the app [From a Webmap](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%2012/README.md#from-a-webmap) and then loading the Webmap object into the ArcGIS Javascript API
 - Create one by adding [multiple feature layers](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%2012/README.md#from-a-feature-layer), map layers, imagery layers, etc via the Javascript API.
@@ -90,5 +90,6 @@ Let's start by creating an app from our traffic webmap
 - If not, can you fix it? The Bands for Landsat 8 can be found [here](https://landsat.usgs.gov/what-are-band-designations-landsat-satellites). This data corresponds to the OLI sensor.
 
 ## Homework:
-1. Read Chapters 4 and 5 of [Rubalcava](https://www.apress.com/us/book/9781484232811) on **API Core Fundamentals** and **Scenes**
-2. Project 1 assigned!
+1. Finish and submit the **Classwork\Homework Problems**.
+2. Read Chapters 4 and 5 of [Rubalcava](https://www.apress.com/us/book/9781484232811) on **API Core Fundamentals** and **Scenes**
+3. Project 1 assigned!
