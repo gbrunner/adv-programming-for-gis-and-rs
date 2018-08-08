@@ -95,4 +95,4 @@ Let's start by creating an app from our traffic webmap
 3. Project 1 assigned!
 
 ## Helpful Links
-- [Esri GeoDav Hacker Lanb JSAPI samples](https://github.com/Esri/geodev-hackerlabs/tree/master/develop/jsapi)
+- [Esri GeoDav Hacker Lab JSAPI samples](https://github.com/Esri/geodev-hackerlabs/tree/master/develop/jsapi)
