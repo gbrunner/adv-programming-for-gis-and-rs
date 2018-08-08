@@ -87,7 +87,7 @@ Let's start by creating an app from our traffic webmap
 - Look at the service **RasterFunction Infos**. Change the Raster function template to one of the *NDVI* Raster Functions.
 - Change the Zoom location to be over the Midwest.
 - After you change it, does the *Popup* still work?
-- If not, can you fix it?
+- If not, can you fix it? The Bands for Landsat 8 can be found [here](https://landsat.usgs.gov/what-are-band-designations-landsat-satellites). This data corresponds to the OLI sensor.
 
 ## Homework:
 1. Read Chapters 4 and 5 of [Rubalcava](https://www.apress.com/us/book/9781484232811) on **API Core Fundamentals** and **Scenes**
