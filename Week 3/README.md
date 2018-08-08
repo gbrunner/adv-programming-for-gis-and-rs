@@ -200,7 +200,7 @@ That's all we have to do. Of course, we should change the home location to be di
 
 2. Change the two cameras to point at different areas of Boston.
 
-3. Add a third camera that looks towards downtown boston from the Atlantic Ocean.
+3. Add a third camera (and button!) that looks towards downtown boston from the Atlantic Ocean.
 
 4. Add a Home button that goes back to 42.3770° N, 71.1167° W.
 
