@@ -93,3 +93,6 @@ Let's start by creating an app from our traffic webmap
 1. Finish and submit the **Classwork\Homework Problems**.
 2. Read Chapters 4 and 5 of [Rubalcava](https://www.apress.com/us/book/9781484232811) on **API Core Fundamentals** and **Scenes**
 3. Project 1 assigned!
+
+## Helpful Links
+- [Esri GeoDav Hacker Lanb JSAPI samples](https://github.com/Esri/geodev-hackerlabs/tree/master/develop/jsapi)
