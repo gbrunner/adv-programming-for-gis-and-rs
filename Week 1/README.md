@@ -93,10 +93,10 @@ For geojson to work:
 2. Set MIME type: ```.geojson, application/json```
 
 ## Fun Links
-Basemaps
-- [Stamen Watercolor](https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.png)
-- [Stamen Terrain](https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png)
-- [Stament Toner](https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png)
+Basemaps from Stamen Design http://maps.stamen.com
+- [Stamen Watercolor](http://maps.stamen.com/#watercolor) `https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.png`
+- [Stamen Toner](http://maps.stamen.com/#toner) `https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png`
+- [Stamen Terrain](http://maps.stamen.com/#terrain) `https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png`
 
 [GeoJSON Viewer](https://github.com/gavinr/geojson-viewer)
 
