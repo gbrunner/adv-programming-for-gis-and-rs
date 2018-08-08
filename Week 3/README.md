@@ -57,12 +57,14 @@ number_as_string = 1600
 number = int(number_as_string)
 ```
 
-#### Pomises
-The evolution of event listeners.
-Back in my day, we had events listeners, functions like:
+#### [Promises](https://www.youtube.com/watch?v=H8Q83DPZy6E)
+Different concept from event listeners, but very important and increasingly used throughough JavaScript web development.
 
+At ArcGIS Javascript API v4 *promises* tell you when an "asynchronous" action is complete, or in other words, when a result is ready from some action that occurred over an unknown amount of time.  We call this "fulfilling" a promise.  If something fails along the way, we call this "rejecting" a promise.
 
-At ArcGIS Javascript API 4, *promises* tell you when an action is complete or when something is ready
+For example, consider network traffic (network requests) to fetch data from a server. The outgoing request and the incoming data that you want to render on a web map takes time to complete. There's never a predictable guarantee of how long it will take to get back to your browser, if it even finishes successfully at all. A promise will be fulfilled when this example data is back in your arms after traveling all around the wilds of the Internet.
+
+Event listeners can also be used sometimes in these situations, but the trend now is to differentiate a lot more between promises and event listeners.  One good way to think about event listeners is to use them as mechanisms for responding to user actions. They sit around and wait for an event to occur. For example, when the user of your website clicks their mouse on a button, then you respond to that action with more custom code inside of a click event listener.
 
 #### TypeScript Integraion - Don't worry about this right now...
 
