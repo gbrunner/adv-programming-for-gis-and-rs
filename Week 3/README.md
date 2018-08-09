@@ -206,7 +206,7 @@ That's all we have to do. Of course, we should change the home location to be di
 
 4. Add a Home button that goes back to 42.3770° N, 71.1167° W or your initial MapView camera location.
 
-5. Does the map look cooler as a *Globe* or *Local Scene*?
+5. What happens if you try to set ```viewingMode = "local"```? Why do you think this happens? If you want to find out, go to arcgis online, create a *New Local Scene* and try to add the [Boston Buildings](https://services2.arcgis.com/cFEFS0EWrhfDeVw9/arcgis/rest/services/Boston_current_buildings/SceneServer). What message do you get?
 
 6. (**Optional**) In preparation for next week, add a popup to the [ca_traffic_from_fl.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%202/ca_traffic_from_fl.html) example. This can be done by defining a template:
 ```
