@@ -166,7 +166,7 @@ If you are stuggling to find a feature layer, take a look at:
 - [Legend Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-legend/index.html)
   - *Hint:* ```var featureLayer = scene.layers.getItemAt(1);```
 - [Layer List Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-layerlist/index.html)
-  - *Hint:*
+  - *Hint:* Nest the **LayerList** withing the same ```view.when(function() {``` that you put the **Legend** within.
 
 4. Take a look at the other widget examples on the [Sample Widget Page](https://developers.arcgis.com/javascript/latest/sample-code/index.html?search=Widget). Add a two of the following widgets to an existing sample that we have worked on in Week 2, 3, or 4.
 - [Scale Bar Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-scalebar/index.html)
