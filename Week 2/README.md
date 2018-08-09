@@ -83,6 +83,16 @@ Let's start by creating an app from our traffic webmap
 - Create one by adding [multiple feature layers](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%2012/README.md#from-a-feature-layer), map layers, imagery layers, etc via the Javascript API.
 2. Create a webapp that uses the [CSV Layer](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%2012/README.md#from-a-csv) to map crime over St. Louis from the STL Crime CSV in this folder.
 3. Change the renderer in the crime map to a [heatmap renderer](https://developers.arcgis.com/javascript/latest/sample-code/visualization-heatmap/index.html).
+**Hint:** Don't forget to add the *esri-featurelayer-webgl* to your code
+```
+<script>
+  var dojoConfig = {
+    has: {
+      "esri-featurelayer-webgl": 1
+    }
+  };
+</script>
+```
 4. Following from this [server side raster function example](https://developers.arcgis.com/javascript/latest/sample-code/layers-imagery-popup/index.html), do the following:
 - Change the service to point to the Landsat 8 Views Service (https://landsat2.arcgis.com/arcgis/rest/services/Landsat8_Views/ImageServer)
 - Look at the service **RasterFunction Infos**. Change the Raster function template to one of the *NDVI* Raster Functions.
