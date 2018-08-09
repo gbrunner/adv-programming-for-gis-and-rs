@@ -162,7 +162,7 @@ If you are stuggling to find a feature layer, take a look at:
 
 2. Use that same feature layer and create the same webapp and popup following from the *popup_from_fl_with_symbol.html*.
 
-3. Add the following two widgets to the [3D Boston Planning](http://slustl.maps.arcgis.com/home/webscene/viewer.html?webscene=8046207c1c214b5587230f5e5f8efc77) Exameple that we made last week. Use the file [boston_globe_starting_point.html]() as your starting point.
+3. Add the following two widgets to the [3D Boston Planning](http://slustl.maps.arcgis.com/home/webscene/viewer.html?webscene=8046207c1c214b5587230f5e5f8efc77) Exameple that we made last week. Use the file [boston_globe_starting_point.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%204/boston_globe_starting_point.html) as your starting point.
 - [Legend Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-legend/index.html)
   - *Hint:* ```var featureLayer = scene.layers.getItemAt(1);```
 - [Layer List Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-layerlist/index.html)
