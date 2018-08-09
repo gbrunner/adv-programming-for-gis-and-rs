@@ -208,7 +208,8 @@ That's all we have to do. Of course, we should change the home location to be di
 
 5. What happens if you try to set ```viewingMode = "local"```? Why do you think this happens? If you want to find out, go to arcgis online, create a *New Local Scene* and try to add the [Boston Buildings](https://services2.arcgis.com/cFEFS0EWrhfDeVw9/arcgis/rest/services/Boston_current_buildings/SceneServer). What message do you get?
 
-6. (**Optional**) In preparation for next week, add a popup to the [ca_traffic_from_fl.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%202/ca_traffic_from_fl.html) example. This can be done by defining a template:
+6. (**Challenge**) In preparation for next week:
+- Add a popup to the [ca_traffic_from_fl.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%202/ca_traffic_from_fl.html) example. This can be done by defining a template:
 ```
 var template = { // autocasts as new PopupTemplate()
         title: "What Happened?",
@@ -229,6 +230,17 @@ and adding these fields to the FeatureLayer definition.
 ```
 outFields: ["*"],
 popupTemplate: template
+```
+- Change the symbology by defining the renderer in the feature layer from this renderer:
+```
+var symbol = {
+  type: "simple-marker", 
+  color:"red"
+};
+var renderer = {
+  type: "simple",  // autocasts as new SimpleRenderer()
+  symbol: symbol
+};
 ```
 
 ## Homework:
