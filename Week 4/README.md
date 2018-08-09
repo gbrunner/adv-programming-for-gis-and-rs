@@ -172,7 +172,7 @@ If you are stuggling to find a feature layer, take a look at:
 - [Scale Bar Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-scalebar/index.html)
 - [Custom Basemap Widget](https://developers.arcgis.com/javascript/latest/sample-code/basemap-custom/index.html)
 - [Expand Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-expand/index.html)
-- [Any of the other samples](https://developers.arcgis.com/javascript/latest/sample-code/index.html?search=Widget) that use widgets taht you want to play with!
+- [Any of the other samples](https://developers.arcgis.com/javascript/latest/sample-code/index.html?search=Widget) that use widgets that you want to play with!
 
 ## Homework:
 1. Finish the **Problems** above.
