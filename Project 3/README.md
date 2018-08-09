@@ -38,6 +38,7 @@ sp_filter = filters.intersects(geometry=geometry)
 
 fl.query(geometry_filter=sp_filter, return_all_records=True).df
 ```
+**Note:** This is not the only way to do this.
 
 ## 2. Earthquake Impact Assessment
 The USGS tracks [global earthquake activity](https://earthquake.usgs.gov/earthquakes/map/). For this project, I want you to estimate the potential population affected by a large earthquake that occurred over the past month. The significant earthquakes from the past month can be found [here](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.csv). There will be on the order of 1 to 10 *significant* earthquakes from the last month. 
