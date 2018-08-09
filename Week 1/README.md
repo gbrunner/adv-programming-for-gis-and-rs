@@ -78,6 +78,9 @@ Demonstrate the Boston Clustermap too. https://gbrunner.github.io/Advanced_Pytho
 3. **Challenge** Create a Leaflet heatmap from the crime points GeoJSON that you used above.
 4. **Challenge** Create a Leaflet cluster map from the crime points GeoJSON that you used above. Make sure you have a default icon set. Can you change the color on the clusters?
 
+## If you finish this ins class, there's one more thing I want to show you
+[Esri Leaflet Examples](https://github.com/Esri/geodev-hackerlabs/tree/master/develop/leaflet)
+
 ## Homework
 1. Complete the classwork problems and submit them. If #1 and #2 were easy, please try to do #3 and\or #4.
 2. Please read Chapters 1, 2, and 3 of [Introducing ArcGIS API 4 for JavaScript](https://www.apress.com/us/book/9781484232811). Chapeters 1 and 2 are really short!
@@ -90,10 +93,10 @@ For geojson to work:
 2. Set MIME type: ```.geojson, application/json```
 
 ## Fun Links
-Basemaps
-- [Stamen Watercolor](https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.png)
-- [Stamen Terrain](https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png)
-- [Stament Toner](https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png)
+Basemaps from Stamen Design http://maps.stamen.com
+- [Stamen Watercolor](http://maps.stamen.com/#watercolor) `https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.png`
+- [Stamen Toner](http://maps.stamen.com/#toner) `https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png`
+- [Stamen Terrain](http://maps.stamen.com/#terrain) `https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png`
 
 [GeoJSON Viewer](https://github.com/gavinr/geojson-viewer)
 

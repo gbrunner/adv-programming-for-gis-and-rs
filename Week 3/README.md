@@ -57,12 +57,14 @@ number_as_string = 1600
 number = int(number_as_string)
 ```
 
-#### Pomises
-The evolution of event listeners.
-Back in my day, we had events listeners, functions like:
+#### [Promises](https://www.youtube.com/watch?v=H8Q83DPZy6E)
+Different concept from event listeners, but very important and increasingly used throughough JavaScript web development.
 
+At ArcGIS Javascript API v4 *promises* tell you when an "asynchronous" action is complete, or in other words, when a result is ready from some action that occurred over an unknown amount of time.  We call this "fulfilling" a promise.  If something fails along the way, we call this "rejecting" a promise.
 
-At ArcGIS Javascript API 4, *promises* tell you when an action is complete or when something is ready
+For example, consider network traffic (network requests) to fetch data from a server. The outgoing request and the incoming data that you want to render on a web map takes time to complete. There's never a predictable guarantee of how long it will take to get back to your browser, if it even finishes successfully at all. A promise will be fulfilled when this example data is back in your arms after traveling all around the wilds of the Internet.
+
+Event listeners can also be used sometimes in these situations, but the trend now is to differentiate a lot more between promises and event listeners.  One good way to think about event listeners is to use them as mechanisms for responding to user actions. They sit around and wait for an event to occur. For example, when the user of your website clicks their mouse on a button, then you respond to that action with more custom code inside of a click event listener.
 
 #### TypeScript Integraion - Don't worry about this right now...
 
@@ -202,11 +204,12 @@ That's all we have to do. Of course, we should change the home location to be di
 
 3. Add a third camera (and button!) that looks towards downtown boston from the Atlantic Ocean.
 
-4. Add a Home button that goes back to 42.3770° N, 71.1167° W.
+4. Add a Home button that goes back to 42.3770° N, 71.1167° W or your initial MapView camera location.
 
-5. Does the map look cooler as a *Globe* or *Local Scene*?
+5. What happens if you try to set ```viewingMode = "local"```? Why do you think this happens? If you want to find out, go to arcgis online, create a *New Local Scene* and try to add the [Boston Buildings](https://services2.arcgis.com/cFEFS0EWrhfDeVw9/arcgis/rest/services/Boston_current_buildings/SceneServer). What message do you get?
 
-6. (**Optional**) In preparation for next week, add a popup to the [ca_traffic_from_fl.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%202/ca_traffic_from_fl.html) example. This can be done by defining a template:
+6. (**Challenge**) In preparation for next week:
+- Add a popup to the [ca_traffic_from_fl.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%202/ca_traffic_from_fl.html) example. This can be done by defining a template:
 ```
 var template = { // autocasts as new PopupTemplate()
         title: "What Happened?",
@@ -228,10 +231,22 @@ and adding these fields to the FeatureLayer definition.
 outFields: ["*"],
 popupTemplate: template
 ```
+- Change the symbology by defining the renderer in the feature layer from this renderer:
+```
+var symbol = {
+  type: "simple-marker", 
+  color:"red"
+};
+var renderer = {
+  type: "simple",  // autocasts as new SimpleRenderer()
+  symbol: symbol
+};
+```
 
 ## Homework:
-1. Work on Project 1.
-2. Read Chapters 6 and 7 of Rubalcava. Chapter 7 can be a bit intimidating. Don't get concerned if you don't understand it. Rather than focus on creating widgets, we will focus on using them. After reading Chapter 7, please look at the following examples:
+1. Complete this week's problems.
+2. Work on Project 1.
+3. Read Chapters 6 and 7 of Rubalcava. Chapter 7 can be a bit intimidating. Don't get concerned if you don't understand it. Rather than focus on creating widgets, we will focus on using them. After reading Chapter 7, please look at the following examples:
 - [Legend Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-legend/index.html)
 - [Layer List Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-layerlist-actions/index.html)
 - [Search Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-search-3d/index.html)
