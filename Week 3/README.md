@@ -204,7 +204,7 @@ That's all we have to do. Of course, we should change the home location to be di
 
 3. Add a third camera (and button!) that looks towards downtown boston from the Atlantic Ocean.
 
-4. Add a Home button that goes back to 42.3770° N, 71.1167° W.
+4. Add a Home button that goes back to 42.3770° N, 71.1167° W or your initial MapView camera location.
 
 5. Does the map look cooler as a *Globe* or *Local Scene*?
 
@@ -232,8 +232,9 @@ popupTemplate: template
 ```
 
 ## Homework:
-1. Work on Project 1.
-2. Read Chapters 6 and 7 of Rubalcava. Chapter 7 can be a bit intimidating. Don't get concerned if you don't understand it. Rather than focus on creating widgets, we will focus on using them. After reading Chapter 7, please look at the following examples:
+1. Complete this week's problems.
+2. Work on Project 1.
+3. Read Chapters 6 and 7 of Rubalcava. Chapter 7 can be a bit intimidating. Don't get concerned if you don't understand it. Rather than focus on creating widgets, we will focus on using them. After reading Chapter 7, please look at the following examples:
 - [Legend Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-legend/index.html)
 - [Layer List Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-layerlist-actions/index.html)
 - [Search Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-search-3d/index.html)
