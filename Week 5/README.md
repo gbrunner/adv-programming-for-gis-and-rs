@@ -28,8 +28,51 @@
   - Zooms to a particular city of interest
   - Changes the basemap from the default Terrain basemap
   - Please use Markdown to apply meaningful discriptions of your steps.
-2. Create a second notebook that geocodes the attached CSV of addresses. Please include a popup with each!
-3. Save this as a webmap following from this example (https://developers.arcgis.com/python/guide/working-with-web-maps-and-web-scenes/#Saving-or-Updating-a-web-map). Be sure to go to ArcGIS online and check that the Webmap is there!
+2. Crete a Jupyter Notebook that:
+- Searched for an ACLED feature service in the ArcGIS Portal (if you are adventurous, feel free to search for a different point feature service)
+- Adds that ACLED (or other service) to the map object as:
+  - A point layer using a simple renderer (see *Hint* below for help).
+  - A Classed Size Renderer that renders on the TOTAL_FATALITIES field.
+  ```
+  classed_size = { "renderer": "ClassedSizeRenderer", "field_name":"TOTAL_FATALITIES"}
+  ```
+- [Saves each map as a Webmap](https://developers.arcgis.com/python/guide/working-with-web-maps-and-web-scenes/#Saving-or-Updating-a-web-map)  
+3. Create a second notebook that geocodes the attached CSVs (Thunder_Departed.csv and Thunder_Acquisitions.csv) of addresses and adds each to the same map opject with a differernt symbology. Save this as a webmap following from this example (https://developers.arcgis.com/python/guide/working-with-web-maps-and-web-scenes/#Saving-or-Updating-a-web-map). Be sure to go to ArcGIS online and check that the Webmap is there!
+*Hint:* You can change the symbology by changing the renderer. For example, if you change the color values inthis renderer, the points will change color accordingly.
+```
+simple_renderer = {
+  "renderer": {
+    "type": "simple",
+    "symbol": {
+      "color": [
+        0,
+        0,
+        128,
+        128
+      ],
+      "size": 15,
+      "angle": 0,
+      "xoffset": 0,
+      "yoffset": 0,
+      "type": "esriSMS",
+      "style": "esriSMSCircle",
+      "outline": {
+        "color": [
+          0,
+          0,
+          128,
+          255
+        ],
+        "width": 0.99975,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      }
+    }
+  }
+}
+
+map1.add_layer(acled, simple_renderer)
+```
 
 ## Helpful Links
 - [Publishing a CSV File](https://developers.arcgis.com/python/sample-notebooks/publishing-sd-shapefiles-and-csv/)
