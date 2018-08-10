@@ -41,6 +41,8 @@ fl.query(geometry_filter=sp_filter, return_all_records=True).df
 **Note:** This is not the only way to do this.
 
 ## 2. Earthquake Impact Assessment
+Have you ever seen the [USGS Earthquake Pager](https://earthquake.usgs.gov/earthquakes/eventpage/us1000g60s#pager)? In the project, you're going to work towards creating something similar!
+
 The USGS tracks [global earthquake activity](https://earthquake.usgs.gov/earthquakes/map/). For this project, I want you to estimate the potential population affected by a large earthquake that occurred over the past month. The significant earthquakes from the past month can be found [here](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.csv). There will be on the order of 1 to 10 *significant* earthquakes from the last month. 
 
 As a template for this analysis, please see this [GeoEnrichment Tutorial](https://developers.arcgis.com/python/guide/performing-geoenrichment/). For your analysis, you will follow some steps seen here. Your goal is to present an estimate of the **Total Population** affected by those earthquakes. I'm leaving it up to you to figure out buffer sizes, whether there are in fact any people within range of the earthquake, and other questions.
