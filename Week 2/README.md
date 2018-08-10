@@ -82,7 +82,7 @@ Let's start by creating an app from our traffic webmap
 - Create one by adding the layers to the app [From a Webmap](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%2012/README.md#from-a-webmap) and then loading the Webmap object into the ArcGIS Javascript API
 - Create one by adding [multiple feature layers](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%2012/README.md#from-a-feature-layer), map layers, imagery layers, etc via the Javascript API.
 2. Create a webapp that uses the [CSV Layer](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%2012/README.md#from-a-csv) to map crime over St. Louis from the STL Crime CSV in this folder.
-3. Change the renderer in the crime map to a [heatmap renderer](https://developers.arcgis.com/javascript/latest/sample-code/visualization-heatmap/index.html).
+3. Change the renderer in the crime map to a [heatmap renderer](https://developers.arcgis.com/javascript/latest/sample-code/visualization-heatmap/index.html). Have some fun. Change the colors!
 **Hint:** Don't forget to add the *esri-featurelayer-webgl* to your code
 ```
 <script>
@@ -107,3 +107,5 @@ Let's start by creating an app from our traffic webmap
 
 ## Helpful Links
 - [Esri GeoDav Hacker Lab JSAPI samples](https://github.com/Esri/geodev-hackerlabs/tree/master/develop/jsapi)
+- [Heatmap Renderer](https://developers.arcgis.com/javascript/latest/sample-code/visualization-heatmap/index.html)
+- [Colors as Hex Codes](http://www.color-hex.com/)
