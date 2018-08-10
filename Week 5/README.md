@@ -26,10 +26,10 @@
 1. Create a new Jupyter Notebook that:
   - Contains a map
   - Zooms to a particular city of interest
-  - Changes the basemap from the default Terrain basemap-
+  - Changes the basemap from the default Terrain basemap
   - Please use Markdown to apply meaningful discriptions of your steps.
 2. Create a second notebook that geocodes the attached CSV of addresses. Please include a popup with each!
-3. (**Bonus**) - Save this as a webmap following from this example (https://developers.arcgis.com/python/guide/working-with-web-maps-and-web-scenes/#Saving-or-Updating-a-web-map). Be sure to go to ArcGIS online and check that the Webmap is there!
+3. Save this as a webmap following from this example (https://developers.arcgis.com/python/guide/working-with-web-maps-and-web-scenes/#Saving-or-Updating-a-web-map). Be sure to go to ArcGIS online and check that the Webmap is there!
 
 
 
