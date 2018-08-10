@@ -31,7 +31,9 @@
 2. Create a second notebook that geocodes the attached CSV of addresses. Please include a popup with each!
 3. Save this as a webmap following from this example (https://developers.arcgis.com/python/guide/working-with-web-maps-and-web-scenes/#Saving-or-Updating-a-web-map). Be sure to go to ArcGIS online and check that the Webmap is there!
 
-
+## Helpful Links
+- [Publishing a CSV File](https://developers.arcgis.com/python/sample-notebooks/publishing-sd-shapefiles-and-csv/)
+- [Understanding Geocoders](https://developers.arcgis.com/python/guide/understanding-geocoders/)
 
 ## Homework:
 - Please complete the classwork and submit it as Assignment 1.
