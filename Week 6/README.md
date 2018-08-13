@@ -46,7 +46,9 @@ These exercises are optional this week. You don't need to explicitly do them but
  - *YOUR_FIRST_NAME*_Feature_Services
  - *YOUR_FIRST_NAME*_All_Content
  
- *Hint:* Look at the help for [**create**](https://esri.github.io/arcgis-python-api/apidoc/html/arcgis.gis.toc.html?highlight=create%20group#arcgis.gis.GroupManager.create)
+ *Hints:* 
+ - Look at the help for [**create**](https://esri.github.io/arcgis-python-api/apidoc/html/arcgis.gis.toc.html?highlight=create%20group#arcgis.gis.GroupManager.create)
+ - Look at the batch group creation example](http://notebooks.esri.com/user/lQucDqTaF2lPQWZtPFh4ja4vd/notebooks/samples/03_org_administrators/batch_creation_of_groups.ipynb). Note that I am not looking for you to create a CSV to do this. Just use the [gis.groups.create](https://esri.github.io/arcgis-python-api/apidoc/html/arcgis.gis.toc.html?highlight=create%20group#arcgis.gis.GroupManager.create) function as listed above.
  
 2. Using Python, share any webmaps you have in your ArcGIS Online account with *YOUR_FIRST_NAME*_Webmaps. Share any Feature Services you have with *YOUR_FIRST_NAME*_Feature_Services,and share all content you have with *YOUR_FIRST_NAME*_All_Content. Note that if you have not webmaps or feature services, publish a feature service and create a webmap beforehand.
 
