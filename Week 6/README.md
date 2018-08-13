@@ -36,7 +36,7 @@
 2. Create group and add users to group
 
 ## Optional Classwork Exercises
-These exercises are optional this week. You don't need to explicitly do them but please use them to guide you on the classwork problems below. Look at them in this order. :)
+These exercises are optional this week. You don't need to explicitly do them but please use them to guide you on the classwork problems below. Look at them in this order. Numbers one and two should be particularly helpful.
 1. [Accessing and Managing Groups](https://developers.arcgis.com/python/guide/accessing-and-managing-groups/)
 2. [Accessing and Managing Users](https://developers.arcgis.com/python/guide/accessing-and-managing-users/)
 3. [How to share your content](https://developers.arcgis.com/labs/python/share-your-content/)
@@ -73,4 +73,7 @@ For the Classwork problems, please follow the instructions, hints and **helpful 
 3. Work on **Project 2**
 
 ## Helpful Links
-- [Accessing and Managing Groups](https://developers.arcgis.com/python/guide/accessing-and-managing-groups/#sharing-content-to-groups)
+- [Accessing and Managing Groups](https://developers.arcgis.com/python/guide/accessing-and-managing-groups/)
+- [Accessing and Managing Users](https://developers.arcgis.com/python/guide/accessing-and-managing-users/)
+- [How to share your content](https://developers.arcgis.com/labs/python/share-your-content/)
+- [Batch Creation of Groups](https://developers.arcgis.com/python/sample-notebooks/batch-creation-of-groups/)
