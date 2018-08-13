@@ -45,8 +45,11 @@ These exercises are optional this week. You don't need to explicitly do them but
  - *YOUR_FIRST_NAME*_Webmaps
  - *YOUR_FIRST_NAME*_Feature_Services
  - *YOUR_FIRST_NAME*_All_Content
+ 
  *Hint:* Look at the help for [**create**](https://esri.github.io/arcgis-python-api/apidoc/html/arcgis.gis.toc.html?highlight=create%20group#arcgis.gis.GroupManager.create)
+ 
 2. Using Python, share any webmaps you have in your ArcGIS Online account with *YOUR_FIRST_NAME*_Webmaps. Share any Feature Services you have with *YOUR_FIRST_NAME*_Feature_Services,and share all content you have with *YOUR_FIRST_NAME*_All_Content. Note that if you have not webmaps or feature services, publish a feature service and create a webmap beforehand.
+
 3. Export all ArcGIS Online users to a CSV file.
 
 ## Homework
