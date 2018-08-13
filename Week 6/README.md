@@ -55,6 +55,6 @@ These exercises are optional this week. You don't need to explicitly do them but
 3. Export all ArcGIS Online users to a CSV file.
 
 ## Homework
-1. Please complete the classwork and submit it as Assignment 2.
+1. Please complete the problems above and submit it as Assignment 6.
 2. Watch these two videos: [Publishing](https://www.youtube.com/watch?v=4AzOodYTHs4) and [Automating your WebGIS](https://www.youtube.com/watch?v=0LfJrk2_VRg). This video will mostly recap what we've been doing in Week 1 and 2 and give some perspective on other things that you can do with Python.
-3. Project 1 Assigned
+3. Work on **Project 2**
