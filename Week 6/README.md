@@ -41,6 +41,8 @@ These exercises are optional this week. You don't need to explicitly do them but
 1. [Batch Creation of Groups](https://developers.arcgis.com/python/sample-notebooks/batch-creation-of-groups/)
 
 ## Classwork Problems
+For the Classwork problems, please follow the instructions, hints and **helpful links** below.
+
 1. Using Python, create 3 groups in ArcGIS Online: 
  - *YOUR_FIRST_NAME*_Webmaps
  - *YOUR_FIRST_NAME*_Feature_Services
@@ -48,9 +50,14 @@ These exercises are optional this week. You don't need to explicitly do them but
  
  *Hints:* 
  - Look at the help for [**create**](https://esri.github.io/arcgis-python-api/apidoc/html/arcgis.gis.toc.html?highlight=create%20group#arcgis.gis.GroupManager.create)
+ - [Creating new groups](https://developers.arcgis.com/python/guide/accessing-and-managing-groups/#Creating-new-groups)
  - Look at the [batch group creation example](http://notebooks.esri.com/user/lQucDqTaF2lPQWZtPFh4ja4vd/notebooks/samples/03_org_administrators/batch_creation_of_groups.ipynb). Note that I am not looking for you to create a CSV to do this. Just use the [gis.groups.create](https://esri.github.io/arcgis-python-api/apidoc/html/arcgis.gis.toc.html?highlight=create%20group#arcgis.gis.GroupManager.create) function as listed above.
  
 2. Using Python, share any webmaps you have in your ArcGIS Online account with *YOUR_FIRST_NAME*_Webmaps. Share any Feature Services you have with *YOUR_FIRST_NAME*_Feature_Services,and share all content you have with *YOUR_FIRST_NAME*_All_Content. Note that if you have no webmaps or feature services, publish a feature service and create a webmap beforehand.
+
+*Hints:*
+- You can list your items using **gis.users.me.items()**
+- [Sharing your items to new groups](https://developers.arcgis.com/python/guide/accessing-and-managing-groups/#Sharing-content-to-groups)
 
 3. Export all ArcGIS Online users to a CSV file.
 
@@ -58,3 +65,6 @@ These exercises are optional this week. You don't need to explicitly do them but
 1. Please complete the problems above and submit it as Assignment 6.
 2. Watch these two videos: [Publishing](https://www.youtube.com/watch?v=4AzOodYTHs4) and [Automating your WebGIS](https://www.youtube.com/watch?v=0LfJrk2_VRg). This video will mostly recap what we've been doing in Week 1 and 2 and give some perspective on other things that you can do with Python.
 3. Work on **Project 2**
+
+## Helpful Links
+- [Accessing and Managing Groups](https://developers.arcgis.com/python/guide/accessing-and-managing-groups/#sharing-content-to-groups)
