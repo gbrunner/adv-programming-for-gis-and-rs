@@ -244,7 +244,7 @@ var renderer = {
 ```
 
 ## Homework:
-1. Complete this week's problems.
+1. Complete this week's problems and submit them as **Assignment 3**.
 2. Work on Project 1.
 3. Read Chapters 6 and 7 of Rubalcava. Chapter 7 can be a bit intimidating. Don't get concerned if you don't understand it. Rather than focus on creating widgets, we will focus on using them. After reading Chapter 7, please look at the following examples:
 - [Legend Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-legend/index.html)
