@@ -175,7 +175,7 @@ If you are stuggling to find a feature layer, take a look at:
 - [Any of the other samples](https://developers.arcgis.com/javascript/latest/sample-code/index.html?search=Widget) that use widgets that you want to play with!
 
 ## Homework:
-1. Finish the **Problems** above.
+1. Finish the **Problems** above and submit them as **Assignment 4**.
 2. Submit **Project 1!**
 3. Read **Chapter 1** of **Mastering Geospatial Analysis with Python.** If you don't have the book, I will provide the chapter on **Blackboard**
 
