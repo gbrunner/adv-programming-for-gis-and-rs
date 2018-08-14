@@ -82,7 +82,7 @@ map1.add_layer(acled, simple_renderer)
 - [Saving a map object as a webmap](https://developers.arcgis.com/python/guide/working-with-web-maps-and-web-scenes/#Saving-or-Updating-a-web-map)
 
 ## Homework:
-- Please complete the classwork and submit it as Assignment 1.
+- Please complete the classwork and submit it as Assignment 5.
 - Watch this video: https://www.youtube.com/watch?v=0LfJrk2_VRg
 - Explore the different tabs on the online doc and get familiar with the general layout and the content available
   - https://developers.arcgis.com/python/ 
