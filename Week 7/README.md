@@ -33,5 +33,6 @@ Demonstrate how we can automate the workflow above with Python
 
 
 ## Homework:
-1. Please watch the following video: [ArcGIS Python API for Data Scientists](https://www.youtube.com/watch?v=DdUBrV2zpvI&t=11s)
-2. Work on Project 1
+1. Please complete the **Problems** above and submit them as **Assignment 7**
+2. Please watch the following video: [ArcGIS Python API for Data Scientists](https://www.youtube.com/watch?v=DdUBrV2zpvI&t=11s)
+3. Work on Project 2
