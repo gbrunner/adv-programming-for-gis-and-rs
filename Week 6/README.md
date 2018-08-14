@@ -32,7 +32,7 @@
 10. Add Content to the *Group*.
 
 ### Python Demos:
-1. [Users and Groups Notebook]()
+1. [Users and Groups Notebook](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%206/Lecture%201%20-%20Users%20and%20Groups.ipynb)
 
 ## Optional Classwork Exercises
 These exercises are optional this week. You don't need to explicitly do them but please use them to guide you on the classwork problems below. Look at them in this order. Numbers one and two should be particularly helpful.
