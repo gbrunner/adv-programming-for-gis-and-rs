@@ -82,7 +82,7 @@ Demonstrate the Boston Clustermap too. https://gbrunner.github.io/Advanced_Pytho
 [Esri Leaflet Examples](https://github.com/Esri/geodev-hackerlabs/tree/master/develop/leaflet)
 
 ## Homework
-1. Complete the classwork problems and submit them. If #1 and #2 were easy, please try to do #3 and\or #4.
+1. Complete the classwork problems and submit them as **Assignment 1**. If #1 and #2 were easy, please try to do #3 and\or #4.
 2. Please read Chapters 1, 2, and 3 of [Introducing ArcGIS API 4 for JavaScript](https://www.apress.com/us/book/9781484232811). Chapeters 1 and 2 are really short!
 
 ## Setting up IIS
