@@ -32,8 +32,7 @@
 10. Add Content to the *Group*.
 
 ### Python Demos:
-1. Faces of GIS
-2. Create group and add users to group
+1. [Users and Groups Notebook]()
 
 ## Optional Classwork Exercises
 These exercises are optional this week. You don't need to explicitly do them but please use them to guide you on the classwork problems below. Look at them in this order. Numbers one and two should be particularly helpful.
