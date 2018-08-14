@@ -37,6 +37,8 @@ for c in country_list:
 ```
 [Some helpful details can be found i the HTML table to pandas dataframe to portal item tutorial](https://developers.arcgis.com/python/sample-notebooks/html-table-to-pandas-data-frame-to-portal-item/)
 
+Please verify that these were published by going into ArcGIS Online after you think it has been successful.
+
 3. Pulish and the aggregate the zipped geodatabase containing the St. Louis crime data. For help, follow the example shown here: https://developers.arcgis.com/python/guide/summarizing-feature-data/. We are going to look at this in greater detail next week.
 
 
