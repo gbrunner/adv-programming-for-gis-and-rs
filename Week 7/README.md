@@ -73,4 +73,4 @@ crime_summary = summarize_data.aggregate_points(point_layer = published_crime,
 ## Homework:
 1. Please complete the **Problems** above and submit them as **Assignment 7**
 2. Please watch the following video: [ArcGIS Python API for Data Scientists](https://www.youtube.com/watch?v=DdUBrV2zpvI&t=11s)
-3. Work on Project 2
+3. **Project 2** due next week!
