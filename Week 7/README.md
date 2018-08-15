@@ -54,9 +54,10 @@ Note that you can add other properties like a *description*, *snippets*, adn *ta
 To help you, here is a snippet of code that shows how to aggregate crime by ward:
 ```
 from arcgis.features import summarize_data
-crime_summary = summarize_data.aggregate_points(point_layer = published_crime,
-                                            polygon_layer = published_wards.layers[0],
-                                            keep_boundaries_with_no_points=False)
+crime_summary = summarize_data.aggregate_points(point_layer = published_crime, 
+                                                output_name="stl_crime_by_ward_gjb",
+                                                polygon_layer = published_wards.layers[0],
+                                                keep_boundaries_with_no_points=False)
 ```                                            
 
 
