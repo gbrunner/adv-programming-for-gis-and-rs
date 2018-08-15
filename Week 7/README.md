@@ -4,14 +4,14 @@
 ### Into to Publishing Data
 Let's work with some [Open Data from St. Louis](https://www.stlouis-mo.gov/data/)
 1. Using ArcGIS Pro or Arcmap, publish some data to ArcGIs Online.
-  - stl_boundary.zip
-  - streets.zip
-2. Log into AGOL from Pro or ArcMap
-3. Change Symbology of Webmap
+  - [stl_boundary.zip](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%207/stl_boundary.zip)
+  - [streets.zip](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%207/streets.zip)
+2. Log into AGOL from Pro or ArcMap or just publish through ArcGIS Online.
+3. Change Symbology of Web Map.
 4. Publish features with Feature Access.
 5. Go to ArcGIS Online and open the new feature service.
-6. Add the feature Service to a Map.
-7. Restyle if Necesary.
+6. Add the feature service to a Map.
+7. Restyle if necesary.
 
 ### Analysis using ArcGIS Online
 1. Next show how we can aggregate those point features by the STL polygon.
