@@ -17,4 +17,4 @@
   - Chapter 3: [Data Indexing and Selection](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/03.02-Data-Indexing-and-Selection.ipynb)
   - Chapter 3: [Operations in Pandas](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/03.03-Operations-in-Pandas.ipynb)
   - If you like learning this, don't limit yourself to just these chapters becuase this is the only class where we will focus on Pandas.
-2. Project 1 due next week!
+2. Project 3 Assigned.
