@@ -21,7 +21,7 @@ Demonstrate how we can automate the workflow above with Python
 
 ## Classwork Exercises:
 1. [Import data from a Shapefile](https://developers.arcgis.com/labs/python/import-data/). After doing this exercise, you can go on to the **Classwork Problems**. Just note that the examples below will be helpful to look at.
-2 **Optional** [Publishing from a pandas dataframe](https://developers.arcgis.com/python/sample-notebooks/html-table-to-pandas-data-frame-to-portal-item/)
+2. **Optional** [Publishing from a pandas dataframe](https://developers.arcgis.com/python/sample-notebooks/html-table-to-pandas-data-frame-to-portal-item/)
 3. **Optional** [Publishing from a Shapefile](https://developers.arcgis.com/python/sample-notebooks/publishing-sd-shapefiles-and-csv/#Publish-a-feature-service-from-a-shapefile-and-update-the-item-information)
 4. **Optional** [Publishing from a CSV](https://developers.arcgis.com/python/sample-notebooks/publishing-sd-shapefiles-and-csv/#Publish-a-CSV-file-and-move-it-into-a-folder)
 
