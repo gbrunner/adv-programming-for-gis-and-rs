@@ -1,8 +1,12 @@
 ## Preparation: [Watch this video on mapping and data science](https://www.youtube.com/watch?v=DdUBrV2zpvI&t=11s)
 
 ## Lecture:
-- Data Science Example: https://developers.arcgis.com/python/sample-notebooks/historical-wildfire-analysis/
-- Raster\Image Service exmaple: https://developers.arcgis.com/python/sample-notebooks/tour-the-world-with-landsat-imagery-and-raster-functions/
+Let's pick up where we left off last week and Look at **Week 7, Problem 4**
+### 1. St. Louis Crime Aggregation
+
+### 2. St. Louis Data Analysis
+
+### 3. St. Louis Imagery Analysis Using Landsat NDVI
 
 
 ## In Class Exercises:
@@ -18,3 +22,7 @@
   - Chapter 3: [Operations in Pandas](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/03.03-Operations-in-Pandas.ipynb)
   - If you like learning this, don't limit yourself to just these chapters becuase this is the only class where we will focus on Pandas.
 2. Project 3 Assigned.
+
+## Helpful Links
+- Data Science Example: https://developers.arcgis.com/python/sample-notebooks/historical-wildfire-analysis/
+- Raster\Image Service exmaple: https://developers.arcgis.com/python/sample-notebooks/tour-the-world-with-landsat-imagery-and-raster-functions/
