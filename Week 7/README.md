@@ -39,7 +39,25 @@ for c in country_list:
 
 Please verify that these were published by going into ArcGIS Online after you think it has been successful.
 
-3. Pulish and the aggregate the zipped geodatabase containing the St. Louis crime data. For help, follow the example shown here: https://developers.arcgis.com/python/guide/summarizing-feature-data/. We are going to look at this in greater detail next week.
+3. Pubilish the following:
+- The zipped geodatabase containing the St. Louis crime data (STL_Crime.gdb.zip).
+- The zipped shapefiles of St. Louis Neighborhoods (nbrhds_wards.zip).
+After publishing them, make sure they exist in ArcGIS Online. You can give your features unique names when you publish them by filling in the json in the ```gis.content.add``` method as follows:
+```
+gis.content.add({"title":"stl_wards_by_greg"}, wards)
+```
+Note that you can add other properties like a *description*, *snippets*, adn *tags*
+
+4. (**Challenge**) Next week we will see how to use ArcGIS Online to process data. If you are up for a challenge, after publishing the crime data and wards, aggregate the crime data by ward following the examples in:
+- [Summarizing Feature Data](https://developers.arcgis.com/python/guide/summarizing-feature-data/)
+- [Aggretate Earthquakes by State](https://developers.arcgis.com/python/guide/summarizing-feature-data/#Aggregate-earthquakes-by-state)
+To help you, here is a snippet of code that shows how to aggregate crime by ward:
+```
+from arcgis.features import summarize_data
+crime_summary = summarize_data.aggregate_points(point_layer = published_crime,
+                                            polygon_layer = published_wards.layers[0],
+                                            keep_boundaries_with_no_points=False)
+```                                            
 
 
 ## Homework:
