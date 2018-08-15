@@ -48,9 +48,10 @@ gis.content.add({"title":"stl_wards_by_greg"}, wards)
 ```
 Note that you can add other properties like a *description*, *snippets*, adn *tags*
 
-4. (**Challenge**) Next week we will see how to use ArcGIS Online to process data. If you are up for a challenge, after publishing the crime data and wards, aggregate the crime data by ward following the examples in:
+4. **Challenge** Next week we will see how to use ArcGIS Online to process data. If you are up for a challenge, after publishing the crime data and wards, aggregate the crime data by ward following the examples in:
 - [Summarizing Feature Data](https://developers.arcgis.com/python/guide/summarizing-feature-data/)
 - [Aggretate Earthquakes by State](https://developers.arcgis.com/python/guide/summarizing-feature-data/#Aggregate-earthquakes-by-state)
+
 To help you, here is a snippet of code that shows how to aggregate crime by ward:
 ```
 from arcgis.features import summarize_data
