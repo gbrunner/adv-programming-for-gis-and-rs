@@ -2,7 +2,10 @@
 
 ## Lecture:
 ### Into to Publishing Data
+Let's work with some [Open Data from St. Louis](https://www.stlouis-mo.gov/data/)
 1. Using ArcGIS Pro or Arcmap, publish some data to ArcGIs Online.
+  - stl_boundary.zip
+  - streets.zip
 2. Log into AGOL from Pro or ArcMap
 3. Change Symbology of Webmap
 4. Publish features with Feature Access.
@@ -11,19 +14,24 @@
 7. Restyle if Necesary.
 
 ### Analysis using ArcGIS Online
-1. Next show how we can aggregate those point features by a hexagon or square grid
-2. Also show how we can interpolate points (run EBK) through ArcGIS Online
+1. Next show how we can aggregate those point features by the STL polygon.
 
 ### Automating it with Python
 Demonstrate how we can automate the workflow above with Python
 
 ## Classwork Exercises:
-1. [Publishing from a pandas dataframe](https://developers.arcgis.com/python/sample-notebooks/html-table-to-pandas-data-frame-to-portal-item/)
-2. [Publishing from a Shapefile](https://developers.arcgis.com/python/sample-notebooks/publishing-sd-shapefiles-and-csv/#Publish-a-feature-service-from-a-shapefile-and-update-the-item-information)
-3. [Publishing from a CSV](https://developers.arcgis.com/python/sample-notebooks/publishing-sd-shapefiles-and-csv/#Publish-a-CSV-file-and-move-it-into-a-folder)
+1. [Import data from a Shapefile](https://developers.arcgis.com/labs/python/import-data/). After doing this exercise, you can go on to the **Classwork Problems**. Just note that the examples below will be helpful to look at.
+2. **Optional** [Publishing from a pandas dataframe](https://developers.arcgis.com/python/sample-notebooks/html-table-to-pandas-data-frame-to-portal-item/)
+3. **Optional** [Publishing from a Shapefile](https://developers.arcgis.com/python/sample-notebooks/publishing-sd-shapefiles-and-csv/#Publish-a-feature-service-from-a-shapefile-and-update-the-item-information)
+4. **Optional** [Publishing from a CSV](https://developers.arcgis.com/python/sample-notebooks/publishing-sd-shapefiles-and-csv/#Publish-a-CSV-file-and-move-it-into-a-folder)
 
 
 ## Classwork Problems:
+As you go through these problems, 
+- check to make sure the content gets added to your ArcGIS Online account
+- try to give nique names to the content
+- and don't be afraid to explore!
+
 1. Using Python, publish the rainfall data contained in the **national_rainfall_data.zip** file. Be sure to verify that the service publishes by calling ```display(published_shp)``` and then calling ```add_layer(...)``` to add the layer to a map.
 2. The [UNHCR Data API](http://popdata.unhcr.org/wiki/index52ce.html?title=API_Documentation) provides robust statistics on immigration accross the work. Using the data API, publish 5 new items in ArcIGS Online of the location and number of assylum seekers from each location seeking assylum in England (GBR), France (FRA), Australia (AUS), Germany (DEU), and the USA (USA). Please see the UNHCR Sample Notebook to help get you started. The code pattern that I think you should establish should look something like the following:
 ```
