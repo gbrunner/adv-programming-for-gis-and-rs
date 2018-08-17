@@ -32,6 +32,14 @@ Let's pick up where we left off last week and Look at **Week 7, Problem 4**
 - Look at the ```samples``` variable.
 - Extract the Population from the samples and sum those values.
 
+3. Go into [ArcGIS Online](http://slustl.maps.arcgis.com/). Perform the following analysis on the STL Crime features that you published last week.
+- Analysis -> Analyze Patterns -> Calculate Density
+- Analysis -> Analyze Patterns -> Find Hot Spots
+
+4. After running that analysis in ArcGIS Online, run them through Python. Using Python, add the objects to a map (separate maps for each) and save the map as a Web Map. Take a look at the help documentation for each tool. Do the results from running through ArcGIS Online match up with the results from Python?
+- [Find Hot Spots](https://esri.github.io/arcgis-python-api/apidoc/html/arcgis.features.analysis.html?highlight=hot%20spot#find-hot-spots)
+- [Calculate Density](https://esri.github.io/arcgis-python-api/apidoc/html/arcgis.features.analysis.html?highlight=density#arcgis.features.analysis.calculate_density)
+
 
 
 ## Homework:
