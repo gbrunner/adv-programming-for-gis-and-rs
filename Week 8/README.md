@@ -3,10 +3,13 @@
 ## Lecture:
 Let's pick up where we left off last week and Look at **Week 7, Problem 4**
 ### 1. St. Louis Crime Aggregation
+Let's 
 
-### 2. St. Louis Data Analysis
 
-### 3. St. Louis Imagery Analysis Using Landsat NDVI
+### 2. Population Analysis in California
+#### Via Geoenrichment
+
+#### Via a Population Image Service
 
 
 ## In Class Exercises:
