@@ -43,7 +43,11 @@ Let's
 - [Find Hot Spots](https://esri.github.io/arcgis-python-api/apidoc/html/arcgis.features.analysis.html?highlight=hot%20spot#find-hot-spots)
 - [Calculate Density](https://esri.github.io/arcgis-python-api/apidoc/html/arcgis.features.analysis.html?highlight=density#arcgis.features.analysis.calculate_density)
 
-
+5. **Challenge** 
+- Publish the *STL-Police-Districts-2014-2* data as a feature service. 
+- Aggregate your crime feature layer by Police District
+- For each district, use the Geoenrichment capability to find the population per district
+- Determine which district has the highest crimes per population
 
 ## Homework:
 1. read the following chapters of the *Python Data Science Handbook*
