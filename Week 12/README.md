@@ -22,6 +22,7 @@ conda install seaborn
 
 
 ## Classwork Exercises
+1. [Kaggle Python Data Visualization](https://www.kaggle.com/benhamner/python-data-visualizations)
 
 ## Classwork Problems
 
