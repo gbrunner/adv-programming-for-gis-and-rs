@@ -27,6 +27,10 @@ Let's pick up where we left off last week and Look at **Week 7, Problem 4**
 
 
 2. Using the [world population](http://slustl.maps.arcgis.com/home/item.html?id=92d3005feb84428a8f85160f2451ec63) [image service](https://landscape7.arcgis.com/arcgis/rest/services/World_Population_Estimate_2016/ImageServer), estimate the population of St. Louis using the same polygon.
+- Define the image service layer ```il = ImageryLayer(url = img_url, gis=gis)```
+- Use ```get_samples``` to get the counts of the population cells ```samples = il.get_samples(geometry =, geometry_type='esriGeometryPolygon', sample_count=)```
+- Look at the ```samples``` variable.
+- Extract the Population from the samples and sum those values.
 
 
 
