@@ -12,7 +12,8 @@ Let's pick up where we left off last week and Look at **Week 7, Problem 4**
   - Easy, right?
 
 #### Let's do this using Python!
-
+- Walk through Week7's solution
+- Highlight that I can grab the dataframe object and *show* the tabular results via ```crime_aggregate_fc.query().df```
 
 ### 2. Population Analysis in California
 #### Via Geoenrichment
