@@ -3,7 +3,15 @@
 ## Lecture:
 Let's pick up where we left off last week and Look at **Week 7, Problem 4**
 ### 1. St. Louis Crime Aggregation
-Let's 
+#### Let's start by revisiting last weeks **Challenge** Problem.
+1. Let's aggregate the crime points in ArcGIS Online.
+2. We load:
+  - Crime points
+  - Ward
+  - And run Aggregate...
+  - Easy, right?
+
+#### Let's do this using Python!
 
 
 ### 2. Population Analysis in California
