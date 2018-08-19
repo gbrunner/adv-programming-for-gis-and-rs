@@ -15,11 +15,17 @@ Let's pick up where we left off last week and Look at **Week 7, Problem 4**
 - Walk through Week7's solution
 - Highlight that I can grab the dataframe object and *show* the tabular results via ```crime_aggregate_fc.query().df```
 
+#### Go to the Help Documentation
+- Here is how you interface with these capabilities.
+- Note the inputs
+- Point to samples
+
 ### 2. Population Analysis in California
 #### Via Geoenrichment
+Go through Geoenrichment notebook
 
 #### Via a Population Image Service
-
+Follow up with how to use image services.
 
 ## In Class Exercises:
 - Fighting forest fires notebook: https://developers.arcgis.com/python/sample-notebooks/fighting-california-forest-fires-using-spatial-analysis/
@@ -59,13 +65,14 @@ Let's pick up where we left off last week and Look at **Week 7, Problem 4**
 - Determine which district has the highest crimes per population
 
 ## Homework:
-1. read the following chapters of the *Python Data Science Handbook*
+1. Complete and submit the prolems listed above.
+2. read the following chapters of the *Python Data Science Handbook*
   - Chapter 3: [Introduction to Pandas](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/03.00-Introduction-to-Pandas.ipynb) 
   - Chapter 3: [Introducing Pandas Objects](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/03.01-Introducing-Pandas-Objects.ipynb)
   - Chapter 3: [Data Indexing and Selection](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/03.02-Data-Indexing-and-Selection.ipynb)
   - Chapter 3: [Operations in Pandas](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/03.03-Operations-in-Pandas.ipynb)
   - If you like learning this, don't limit yourself to just these chapters becuase this is the only class where we will focus on Pandas.
-2. Project 3 Assigned.
+3. Project 3 Assigned.
 
 ## Helpful Links
 - Data Science Example: https://developers.arcgis.com/python/sample-notebooks/historical-wildfire-analysis/
