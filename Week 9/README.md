@@ -48,6 +48,8 @@
 - Read in the CSV in this repo named: all_week_aug_13_20.csv.
 - Append the two CSVs into a single dataframe.
 - Publish the dataframe as a Feature Service **or** save it to a feature class. Either way, check that the output is valid afterwards in ArcGIS online or ArcMap.
+*Hint: You can use [append](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.append.html)*
+```df.append(df2, ignore_index=True)```
 3. 
 
 
