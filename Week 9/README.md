@@ -30,7 +30,7 @@
 
 ## In Class Exercises:
 1. [Loading a Spatial Dataframe](https://developers.arcgis.com/labs/python/load-spatial-data-frame/)
-2. [Creating data with the Python API](https://developers.arcgis.com/labs/python/create-data/)
+2. [Updating Features](https://developers.arcgis.com/python/sample-notebooks/updating-features-in-a-feature-layer/)
 
 ## In Class Problems:
 
