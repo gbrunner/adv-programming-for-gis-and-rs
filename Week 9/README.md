@@ -43,7 +43,13 @@
 - Drop the **nst, gap, dmin, rms,** and **net** fields from the dataframes
 - Publish each dataframe to ArcGIS Online as a Feature Service
 - Create a Webmap that shows all 4 feature classes
-2. 
+2. Go to the [USGS Earthquakes Hazard Program and download *All Earthquakes* from the *Past Week*](https://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php). Using **pandas**:
+- Read in that CSV.
+- Read in the CSV in this repo named: all_week_aug_13_20.csv.
+- Append the two CSVs into a single dataframe.
+- Publish the dataframe as a Feature Service **or** save it to a feature class. Either way, check that the output is valid afterwards in ArcGIS online or ArcMap.
+3. 
+
 
 
 ## Homework:
