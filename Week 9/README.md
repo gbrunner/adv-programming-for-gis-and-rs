@@ -33,5 +33,34 @@
 2. [Updating Features](https://developers.arcgis.com/python/sample-notebooks/updating-features-in-a-feature-layer/)
 
 ## In Class Problems:
+1. Go to the [USGS Earthquakes Hazard Program and download *All Earthquakes* from the *Past Day*](https://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php). Using **pandas**:
+- Read the CSV into a dataframe
+- Slice the dataframe into 4 new dataframes corresponding to:
+  - Earthquakes between 0 and 2.5 magnitude
+  - Earthquakes between 2.5 and 4 magnitude
+  - Earthquakes between 4 and 5 magnitudes
+  - Earthquakes greater than 5 in magnitude
+- Drop the **nst, gap, dmin, rms,** and **net** fields from the dataframes
+- Publish each dataframe to ArcGIS Online as a Feature Service
+- Create a Webmap that shows all 4 feature classes
+2. Go to the [USGS Earthquakes Hazard Program and download *All Earthquakes* from the *Past Week*](https://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php). Using **pandas**:
+- Read in that CSV.
+- Read in the CSV in this repo named: all_week_aug_13_20.csv.
+- Append the two CSVs into a single dataframe.
+- Publish the dataframe as a Feature Service **or** save it to a feature class. Either way, check that the output is valid afterwards in ArcGIS online or ArcMap.
+*Hint: You can use [append](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.append.html)*
+```df.append(df2, ignore_index=True)```
+3. 
+
+
 
 ## Homework:
+1. Complete this weeks **In Class Problems**
+2. Please read [Raster processing using Python Tools](https://geohackweek.github.io/raster/).
+- [Introduction](https://geohackweek.github.io/raster/01-introduction/)
+- [Geospatial Concepts: Raster Data](https://geohackweek.github.io/raster/02-rasterconcepts/)
+- [Encodings, Formats and Libraries](https://geohackweek.github.io/raster/03-encodingsandformats/)
+- [Working with Raster Datasets](https://geohackweek.github.io/raster/04-workingwithrasters/)
+- [Rainier DEM Example](https://geohackweek.github.io/raster/06-pygeotools_rainier/)
+We will not follow this verbatim, but we will go though the techniques that are shown here.
+
