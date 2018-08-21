@@ -60,5 +60,5 @@
 - [Encodings, Formats and Libraries](https://geohackweek.github.io/raster/03-encodingsandformats/)
 - [Working with Raster Datasets](https://geohackweek.github.io/raster/04-workingwithrasters/)
 - [Rainier DEM Example](https://geohackweek.github.io/raster/06-pygeotools_rainier/)
-We will not follow this, verbatin, but we will go though the techniques that are shown here.
+We will not follow this verbatim, but we will go though the techniques that are shown here.
 
