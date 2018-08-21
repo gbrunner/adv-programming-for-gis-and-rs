@@ -33,5 +33,19 @@
 2. [Updating Features](https://developers.arcgis.com/python/sample-notebooks/updating-features-in-a-feature-layer/)
 
 ## In Class Problems:
+1. Go to the [USGS Earthquakes Hazard Program and download *All Earthquakes* from the *Past Day*](https://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php). Using **pandas**:
+- Read the CSV into a dataframe
+- Slice the dataframe into 4 new dataframes corresponding to:
+  - Earthquakes between 0 and 2.5 magnitude
+  - Earthquakes between 2.5 and 4 magnitude
+  - Earthquakes between 4 and 5 magnitudes
+  - Earthquakes greater than 5 in magnitude
+- Drop the **nst, gap, dmin, rms,** and **net** fields from the dataframes
+- Publish each dataframe to ArcGIS Online as a Feature Service
+- Create a Webmap that shows all 4 feature classes
+2. 
+
 
 ## Homework:
+1. Complete this weeks **In Class Problems**
+2. 
