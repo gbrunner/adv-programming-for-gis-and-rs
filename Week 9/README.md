@@ -43,16 +43,76 @@
 - Drop the **nst, gap, dmin, rms,** and **net** fields from the dataframes
 - Publish each dataframe to ArcGIS Online as a Feature Service
 - Create a Webmap that shows all 4 feature classes
+
 2. Go to the [USGS Earthquakes Hazard Program and download *All Earthquakes* from the *Past Week*](https://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php). Using **pandas**:
 - Read in that CSV.
 - Read in the CSV in this repo named: all_week_aug_13_20.csv.
 - Append the two CSVs into a single dataframe.
 - Publish the dataframe as a Feature Service **or** save it to a feature class. Either way, check that the output is valid afterwards in ArcGIS online or ArcMap.
+
 *Hint: You can use [append](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.append.html)*
 ```df.append(df2, ignore_index=True)```
-3. 
 
+3. Let's revisit the [UNHCR Immigration Statistics API](http://popdata.unhcr.org/). Using this url:
+```url = 'http://popdata.unhcr.org/api/stats/asylum_seekers_monthly.json?year=2015&month=1&coa=FRA'```
+You can retrieve the UNHCR immigration assylum seeker statistics for France from January or 2015. Using pandas, you can convert the JSON returned by this URL directly into a dataframe as follows:
+```
+import requests
+import pandas as pd
 
+url = 'http://popdata.unhcr.org/api/stats/asylum_seekers_monthly.json?year=2015&month=1&coa=FRA'
+data = requests.get(url)
+as_json = data.json()
+df = pd.DataFrame(as_json)
+```
+
+After importing the data into a pandas dataframe, please answer the follwoing questions:
+- From what country did France recieve the most immigrants in January 2015?
+- What were the 5 countries that contributed the most immigrants in January of 2015?
+- From what countries did only 1 immigrant arrive from France in January of 2015?
+
+Then, modify the URL to answer the same questions for January of 2018
+- From what country did France recieve the most immigrants in January 2018?
+- What were the 5 countries that contributed the most immigrants in January of 2018?
+- From what countries did only 1 immigrant arrive from France in January of 2018?
+
+Please use pandas dataframe manipulations to answer all of these questions.
+
+**Hints:**
+- ```df.sort_values(by=)``` can be used to [sort data](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.sort_values.html)
+- ```.idxmax()``` and ```.idxmin()``` can be used in pandas to get [min](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.idxmin.html) and [max](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.idxmax.html) values in a dataframe
+
+4. **Challenge** Going back to problem 3, setup your Python Notebook to easily take in an arbtrary *year*, *month*, and *country* and answer the series of three questions by only modifying the *year*, *month*, and *country* parameters. For example, your code should have the following variables defined and just be able to pass them through the query URL:
+```
+year = 2015
+month = 'January'
+country = 'USA'
+```
+5. **Challenge** Fot this challenge, let's revisit the Fragile States Index. Using the [fsi-2018.xlsx]()...
+- Read the file into a pandas dataframe
+- List the columns in the dataframe ```df.columns.values```
+- For each column, I want a list of the worst 10 countries per metric.
+I would like your output to be in the form of a dictionary such as:
+```
+{'C1: Security Apparatus': ['Central African Republic',
+  'Libya',
+  'Mali',
+  'Chad',
+  'Somalia',
+  'Philippines',
+  'Syria',
+  'Yemen',
+  'Afghanistan',
+  'South Sudan'],
+ 'C2: Factionalized Elites': ['Lebanon',
+  'Kenya',
+  'Sudan',
+  'Central African Republic',
+  'South Sudan',
+  .
+  .
+  .
+  ```
 
 ## Homework:
 1. Complete this weeks **In Class Problems**
@@ -64,3 +124,5 @@
 - [Rainier DEM Example](https://geohackweek.github.io/raster/06-pygeotools_rainier/)
 We will not follow this verbatim, but we will go though the techniques that are shown here.
 
+## Help
+- [Python Dictionaries](https://www.w3schools.com/python/python_dictionaries.asp)

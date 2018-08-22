@@ -30,9 +30,9 @@ Have you ever wanted to learn how to publish, consume, and use geographic web se
 | Week 9  | [Intro to Pandas](https://jakevdp.github.io/PythonDataScienceHandbook/03.00-introduction-to-pandas.html) and ArcGIS Spatial DataFrames |
 | Week 10  | [Numpy](https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html) and Rasters |
 | Week 11  | [Esri Raster Functions](https://github.com/Esri/raster-functions)  |
-| Week 12  | Advanced Plotting: [Matplotlib](https://jakevdp.github.io/PythonDataScienceHandbook/04.00-introduction-to-matplotlib.html) and [Beyond](https://seaborn.pydata.org/) |
-| Week 13  | [Intro to Machine Learning with Scikit-Learn](https://jakevdp.github.io/PythonDataScienceHandbook/05.02-introducing-scikit-learn.html) | 
-| Week 14  | [Multiprocessing](https://www.youtube.com/watch?v=s1SkCYMnfbY), [Concurrent](http://www.gregreda.com/2016/10/16/asynchronous-scraping-with-python/), and Parallel Processing Techniques |
+| Week 12  | Advanced Plotting with [Matplotlib](https://jakevdp.github.io/PythonDataScienceHandbook/04.00-introduction-to-matplotlib.html) and [Seaborn](https://seaborn.pydata.org/) and [Intro to Scikit-learn](https://jakevdp.github.io/PythonDataScienceHandbook/05.02-introducing-scikit-learn.html)|
+| Week 13  | Plotting with JS by [@JWasilgeo](https://github.com/jwasilgeo): DataViz, D3, Charting |
+| Week 14  | [Scikit-learn](https://jakevdp.github.io/PythonDataScienceHandbook/05.02-introducing-scikit-learn.html) and [Multiprocessing](https://www.youtube.com/watch?v=s1SkCYMnfbY) |
 | Week 15 | Students Present Final Project |
 
 ## Assignments & Grading
