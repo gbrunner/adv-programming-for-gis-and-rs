@@ -116,7 +116,11 @@ I would like your output to be in the form of a dictionary such as:
 
 ## Homework:
 1. Complete this weeks **In Class Problems**
-2. Please read [Raster processing using Python Tools](https://geohackweek.github.io/raster/).
+2. Please read:
+- [Intro to Numpy](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.00-Introduction-to-NumPy.ipynb)
+- [Understanding Data Types](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.01-Understanding-Data-Types.ipynb)
+- [Basics of Numpy Arrays](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.02-The-Basics-Of-NumPy-Arrays.ipynb)
+3. Please read [Raster processing using Python Tools](https://geohackweek.github.io/raster/).
 - [Introduction](https://geohackweek.github.io/raster/01-introduction/)
 - [Geospatial Concepts: Raster Data](https://geohackweek.github.io/raster/02-rasterconcepts/)
 - [Encodings, Formats and Libraries](https://geohackweek.github.io/raster/03-encodingsandformats/)
