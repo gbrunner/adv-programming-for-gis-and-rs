@@ -35,14 +35,27 @@
 ## In Class Problems:
 1. Go to the [USGS Earthquakes Hazard Program and download *All Earthquakes* from the *Past Day*](https://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php). Using **pandas**:
 - Read the CSV into a dataframe
-- Drop the **nst, gap, dmin, rms,** and **net** fields from the dataframes. Look at ```df.drop```
+- Drop the **nst, gap, dmin, rms,** and **net** fields from the dataframes: ```new_df = df.drop```
+- Extract the lat and lon values to a list: ``` locations = new_df.iloc[:,1:3].values.tolist()```
+- Append the locations to the dataframe:
+```
+import arcgis
+from arcgis.features import SpatialDataFrame
+
+sdf = SpatialDataFrame(new_df,geometry=[arcgis.geometry.Geometry({'x':r[1], 'y':r[0], 
+                    'spatialReference':{'wkid':4326}}) for r in locations])
+```
 - Slice the dataframe into 4 new dataframes corresponding to:
   - Earthquakes between 0 and 2.5 magnitude
-  - Earthquakes between 2.5 and 4 magnitude
+  - Earthquakes between 2.5 and 4 magnitude. For example: ```sdf2 = sdf[(sdf['mag']>2.5) & (sdf['mag'] < 4)]```
   - Earthquakes between 4 and 5 magnitudes
   - Earthquakes greater than 5 in magnitude
-- Publish each dataframe to ArcGIS Online as a Feature Service
-- Create a Webmap that shows all 4 feature classes
+- Reset the indexes on the sliced dataframes: ```sdf4.reset_index(inplace=True, drop=True)```
+- Publish **only** the magnitude 5 or greater earthquakes to ArcGIS Online as a Feature Service
+```
+eq = gis.content.import_data(sdf4, title='Magnitude Greater than 5')
+```
+- Create a Webmap that shows the magnitude 5 earthquake locations.
 
 2. Go to the [USGS Earthquakes Hazard Program and download *All Earthquakes* from the *Past Week*](https://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php). Using **pandas**:
 - Read in that CSV.
