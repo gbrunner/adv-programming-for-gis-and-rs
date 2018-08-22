@@ -82,12 +82,37 @@ Please use pandas dataframe manipulations to answer all of these questions.
 - ```df.sort_values(by=)``` can be used to [sort data](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.sort_values.html)
 - ```.idxmax()``` and ```.idxmin()``` can be used in pandas to get [min](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.idxmin.html) and [max](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.idxmax.html) values in a dataframe
 
-5. **Challenge** Going back to problem 3, setup your Python Notebook to easily take in an arbtrary *year*, *month*, and *country* and answer the series of three questions by only modifying the *year*, *month*, and *country* parameters. For example, your code should have the following variables defined and just be able to pass them through the query URL:
+4. **Challenge** Going back to problem 3, setup your Python Notebook to easily take in an arbtrary *year*, *month*, and *country* and answer the series of three questions by only modifying the *year*, *month*, and *country* parameters. For example, your code should have the following variables defined and just be able to pass them through the query URL:
 ```
 year = 2015
 month = 'January'
 country = 'USA'
 ```
+5. **Challenge** Fot this challenge, let's revisit the Fragile States Index. Using the [fsi-2018.xlsx]()...
+- Read the file into a pandas dataframe
+- List the columns in the dataframe ```df.columns.values```
+- For each column, I want a list of the worst 10 countries per metric.
+I would like your output to be in the form of a dictionary such as:
+```
+{'C1: Security Apparatus': ['Central African Republic',
+  'Libya',
+  'Mali',
+  'Chad',
+  'Somalia',
+  'Philippines',
+  'Syria',
+  'Yemen',
+  'Afghanistan',
+  'South Sudan'],
+ 'C2: Factionalized Elites': ['Lebanon',
+  'Kenya',
+  'Sudan',
+  'Central African Republic',
+  'South Sudan',
+  .
+  .
+  .
+  ```
 
 ## Homework:
 1. Complete this weeks **In Class Problems**
@@ -99,3 +124,5 @@ country = 'USA'
 - [Rainier DEM Example](https://geohackweek.github.io/raster/06-pygeotools_rainier/)
 We will not follow this verbatim, but we will go though the techniques that are shown here.
 
+## Help
+- [Python Dictionaries](https://www.w3schools.com/python/python_dictionaries.asp)
