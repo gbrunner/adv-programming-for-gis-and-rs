@@ -60,8 +60,21 @@ eq = gis.content.import_data(sdf4, title='Magnitude Greater than 5')
 2. Go to the [USGS Earthquakes Hazard Program and download *All Earthquakes* from the *Past Week*](https://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php). Using **pandas**:
 - Read in that CSV.
 - Read in the CSV in this repo named: all_week_aug_13_20.csv.
-- Append the two CSVs into a single dataframe.
-- Publish the dataframe as a Feature Service **or** save it to a feature class. Either way, check that the output is valid afterwards in ArcGIS online or ArcMap.
+- Append the two CSVs into a single dataframe: ```comb_df = df1.append(ignore_index=True, other=df2)```
+- Extract the lat and lon values to a list: ``` locations = comb_df.iloc[:,1:3].values.tolist()```
+- Append the locations to the dataframe:
+```
+import arcgis
+from arcgis.features import SpatialDataFrame
+
+sdf = SpatialDataFrame(comb_df,geometry=[arcgis.geometry.Geometry({'x':r[1], 'y':r[0], 
+                    'spatialReference':{'wkid':4326}}) for r in locations])
+```
+- Save the spatial dataframe to a feature class. Check that the output is valid afterwards in ArcMap. You may have to *reset_index* before saving.
+```
+sdf.reset_index(inplace=True, drop=True)
+sdf.to_featureclass(out_location=r'C:\SPRING_2018\Test.gdb', out_name='EQs')
+```
 
 *Hint: You can use [append](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.append.html)*
 ```df.append(df2, ignore_index=True)```
