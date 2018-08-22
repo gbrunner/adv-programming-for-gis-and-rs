@@ -7,6 +7,11 @@
   - If you like learning this, don't limit yourself to just these chapters becuase this is the only class where we will focus on Pandas.
 
 ## Lecture:
+### To Run the Pandas Slide Show
+```
+conda isntall -c damianavaila82 rise --force
+```
+
 ### Pandas
 1. Show read in spreadsheet (CSV)
 2. Slice data
