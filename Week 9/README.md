@@ -78,9 +78,9 @@ Then, modify the URL to answer the same questions for January of 2018
 
 Please use pandas dataframe manipulations to answer all of these questions.
 
-*Hints: 
-- ```df.sort_values(by=)``` can be used to [sort data](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.sort_values.html)*
-*- ```.idxmax()``` and ```.idxmin()``` can be used in pandas to get [min](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.idxmin.html) and [max](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.idxmax.html) values in a dataframe*
+**Hints:**
+- ```df.sort_values(by=)``` can be used to [sort data](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.sort_values.html)
+- ```.idxmax()``` and ```.idxmin()``` can be used in pandas to get [min](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.idxmin.html) and [max](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.idxmax.html) values in a dataframe
 
 
 
