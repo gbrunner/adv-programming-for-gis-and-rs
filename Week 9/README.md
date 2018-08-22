@@ -43,6 +43,7 @@
 - Drop the **nst, gap, dmin, rms,** and **net** fields from the dataframes
 - Publish each dataframe to ArcGIS Online as a Feature Service
 - Create a Webmap that shows all 4 feature classes
+
 2. Go to the [USGS Earthquakes Hazard Program and download *All Earthquakes* from the *Past Week*](https://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php). Using **pandas**:
 - Read in that CSV.
 - Read in the CSV in this repo named: all_week_aug_13_20.csv.
@@ -51,6 +52,7 @@
 
 *Hint: You can use [append](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.append.html)*
 ```df.append(df2, ignore_index=True)```
+
 3. Let's revisit the [UNHCR Immigration Statistics API](http://popdata.unhcr.org/). Using this url:
 ```url = 'http://popdata.unhcr.org/api/stats/asylum_seekers_monthly.json?year=2015&month=1&coa=FRA'```
 You can retrieve the UNHCR immigration assylum seeker statistics for France from January or 2015. Using pandas, you can convert the JSON returned by this URL directly into a dataframe as follows:
