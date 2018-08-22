@@ -63,15 +63,19 @@ data = requests.get(url)
 as_json = data.json()
 df = pd.DataFrame(as_json)
 ```
+
 After importing the data into a pandas dataframe, please answer the follwoing questions:
 - From what country did France recieve the most immigrants in January 2015?
 - What were the 5 countries that contributed the most immigrants in January of 2015?
 - From what countries did only 1 immigrant arrive from France in January of 2015?
+
 Then, modify the URL to answer the same questions for January of 2018
 - From what country did France recieve the most immigrants in January 2018?
 - What were the 5 countries that contributed the most immigrants in January of 2018?
 - From what countries did only 1 immigrant arrive from France in January of 2018?
+
 Please use pandas dataframe manipulations to answer all of these questions.
+
 *Hints: 
 - ```df.sort_values(by=)``` can be used to [sort data](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.sort_values.html)*
 *- ```.idxmax()``` and ```.idxmin()``` can be used in pandas to get [min](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.idxmin.html) and [max](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.idxmax.html) values in a dataframe*
