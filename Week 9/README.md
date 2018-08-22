@@ -48,9 +48,33 @@
 - Read in the CSV in this repo named: all_week_aug_13_20.csv.
 - Append the two CSVs into a single dataframe.
 - Publish the dataframe as a Feature Service **or** save it to a feature class. Either way, check that the output is valid afterwards in ArcGIS online or ArcMap.
+
 *Hint: You can use [append](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.append.html)*
 ```df.append(df2, ignore_index=True)```
-3. 
+3. Let's revisit the [UNHCR Immigration Statistics API](http://popdata.unhcr.org/). Using this url:
+```url = 'http://popdata.unhcr.org/api/stats/asylum_seekers_monthly.json?year=2015&month=1&coa=FRA'```
+You can retrieve the UNHCR immigration assylum seeker statistics for France from January or 2015. Using pandas, you can convert the JSON returned by this URL directly into a dataframe as follows:
+```
+import requests
+import pandas as pd
+
+url = 'http://popdata.unhcr.org/api/stats/asylum_seekers_monthly.json?year=2015&month=1&coa=FRA'
+data = requests.get(url)
+as_json = data.json()
+df = pd.DataFrame(as_json)
+```
+After importing the data into a pandas dataframe, please answer the follwoing questions:
+- From what country did France recieve the most immigrants in January 2015?
+- What were the 5 countries that contributed the most immigrants in January of 2015?
+- From what countries did only 1 immigrant arrive from France in January of 2015?
+Then, modify the URL to answer the same questions for January of 2018
+- From what country did France recieve the most immigrants in January 2018?
+- What were the 5 countries that contributed the most immigrants in January of 2018?
+- From what countries did only 1 immigrant arrive from France in January of 2018?
+Please use pandas dataframe manipulations to answer all of these questions.
+*Hints: 
+- ```df.sort_values(by=)``` can be used to [sort data](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.sort_values.html)*
+*- ```.idxmax()``` and ```.idxmin()``` can be used in pandas to get [min](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.idxmin.html) and [max](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.idxmax.html) values in a dataframe*
 
 
 
