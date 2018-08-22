@@ -82,7 +82,12 @@ Please use pandas dataframe manipulations to answer all of these questions.
 - ```df.sort_values(by=)``` can be used to [sort data](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.sort_values.html)
 - ```.idxmax()``` and ```.idxmin()``` can be used in pandas to get [min](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.idxmin.html) and [max](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.idxmax.html) values in a dataframe
 
-
+5. **Challenge** Going back to problem 3, setup your Python Notebook to easily take in an arbtrary *year*, *month*, and *country* and answer the series of three questions by only modifying the *year*, *month*, and *country* parameters. For example, your code should have the following variables defined and just be able to pass them through the query URL:
+```
+year = 2015
+month = 'January'
+country = 'USA'
+```
 
 ## Homework:
 1. Complete this weeks **In Class Problems**
