@@ -46,7 +46,7 @@ sdf = SpatialDataFrame(new_df,geometry=[arcgis.geometry.Geometry({'x':r[1], 'y':
                     'spatialReference':{'wkid':4326}}) for r in locations])
 ```
 - Slice the dataframe into 4 new dataframes corresponding to:
-  - Earthquakes between 0 and 2.5 magnitude
+  - Earthquakes between 0 and 2.5 magnitude. For example: ```sdf1 = sdf[sdf['mag'] < 2.5]```
   - Earthquakes between 2.5 and 4 magnitude. For example: ```sdf2 = sdf[(sdf['mag']>2.5) & (sdf['mag'] < 4)]```
   - Earthquakes between 4 and 5 magnitudes
   - Earthquakes greater than 5 in magnitude
@@ -55,7 +55,7 @@ sdf = SpatialDataFrame(new_df,geometry=[arcgis.geometry.Geometry({'x':r[1], 'y':
 ```
 eq = gis.content.import_data(sdf4, title='Magnitude Greater than 5')
 ```
-- Create a Webmap that shows the magnitude 5 earthquake locations.
+- Create a Webmap that shows the magnitude 5 earthquake locations. You choose the renderer.
 
 2. Go to the [USGS Earthquakes Hazard Program and download *All Earthquakes* from the *Past Week*](https://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php). Using **pandas**:
 - Read in that CSV.
