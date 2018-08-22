@@ -9,7 +9,7 @@
 ## Lecture:
 ### To Run the Pandas Slide Show
 ```
-conda isntall -c damianavaila82 rise --force
+conda install -c damianavila82 rise --force
 ```
 
 ### Pandas
