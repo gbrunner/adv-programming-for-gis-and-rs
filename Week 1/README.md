@@ -78,7 +78,7 @@ Demonstrate the Boston Clustermap too. https://gbrunner.github.io/Advanced_Pytho
 3. **Challenge** Create a Leaflet heatmap from the crime points GeoJSON that you used above.
 4. **Challenge** Create a Leaflet cluster map from the crime points GeoJSON that you used above. Make sure you have a default icon set. Can you change the color on the clusters?
 
-## If you finish this ins class, there's one more thing I want to show you
+## If you finish this in class, there's one more thing I want to show you
 [Esri Leaflet Examples](https://github.com/Esri/geodev-hackerlabs/tree/master/develop/leaflet)
 
 ## Homework
