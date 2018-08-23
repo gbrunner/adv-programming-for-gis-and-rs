@@ -25,6 +25,8 @@ Check out thie tutorial from [Maptime Boston](https://maptimeboston.github.io/le
   - Programming language that lets web developers design interactive sites
   - Most of the dynamic behavior you'll see on a web page is thanks to JavaScript
   - And it's become a lot more than this!!!
+  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
+  - https://javascript.info/
   
 #### Our first Leaflet map
 Let's use the Leaflet [Quick Start Guide](https://leafletjs.com/examples/quick-start/) to create our first map!
@@ -78,7 +80,7 @@ Demonstrate the Boston Clustermap too. https://gbrunner.github.io/Advanced_Pytho
 3. **Challenge** Create a Leaflet heatmap from the crime points GeoJSON that you used above.
 4. **Challenge** Create a Leaflet cluster map from the crime points GeoJSON that you used above. Make sure you have a default icon set. Can you change the color on the clusters?
 
-## If you finish this ins class, there's one more thing I want to show you
+## If you finish this in class, there's one more thing I want to show you
 [Esri Leaflet Examples](https://github.com/Esri/geodev-hackerlabs/tree/master/develop/leaflet)
 
 ## Homework
