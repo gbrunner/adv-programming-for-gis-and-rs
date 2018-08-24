@@ -19,11 +19,11 @@ Following from the **Raster processing** tutorial, demonstrate;
 6. *Apply QA band Mask* -> Talk about advanced Numpy concepts
 7. Show Raster in *matplotllib*
 8. Save image back to disk
-9. Load iamge into ArcMap
+9. Load image into ArcMap
 
 ## In Class Problem 1:
 Following from what was shown in the lecture, do the following:
-1. read in the DEM into a numpy array and it's georeference information from the DEM included in the folder.
+1. Read in the DEM into a numpy array and it's georeference information from the DEM included in the folder. What are the dimmensions of the image? ```dem.shape```
 2. Display it using *matplotlib*
 3. Create a slope raster from the dem using the following slope function:
 ```
