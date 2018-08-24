@@ -11,7 +11,7 @@ Have you ever wanted to learn how to publish, consume, and use geographic web se
 ## Textbooks
 ### Required
 - [Python Data Science Handbook. VanderPlas, Jake. 2016.](http://shop.oreilly.com/product/0636920034919.do)
-- [ArcGIS Web Development](https://www.amazon.com/ArcGIS-Web-Development-Rene-Rubalcava/dp/1617291617)
+- [Introducing ArcGIS API 4 for Javascript](https://www.amazon.com/gp/product/148423281X/ref=dbs_a_def_rwt_bibl_vppi_i1)
 ### Optional
 - [Mastering Geospatial Analysis with Python](https://www.packtpub.com/application-development/mastering-geospatial-analysis-python)
 
