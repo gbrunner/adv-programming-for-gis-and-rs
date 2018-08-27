@@ -3,6 +3,16 @@ Watch Jacob Wasilkowski's lecture from April 2018.
 [The lecture notes and materials are available here.](https://github.com/gbrunner/Python_for_GIS_and_RS/tree/master/Week_14)
 
 ## Lecture
+
+## Github
+- Let's got to [github.com](www.github.com)
+- Login
+- Create a new repo and initialize with a readme. Name the repo *GIS 5091 - Week 1* 
+- Download and install the [Github Windows Client](https://desktop.github.com/)
+- Login
+- Clone your *GIS 5091 - Week 1* repo. 
+- Let's put all of our work in there today!
+
 ### Let's Learn Leaflet!!!
 Leaflet -> Is an open-source JavaScript library for interactive web maps. It's lightweight, simple, and flexible, and is probably the most popular open-source mapping library at the moment. Leaflet is developed by Vladimir Agafonkin (currently of MapBox) and other contributors.
 
