@@ -1,0 +1,85 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+   integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+   crossorigin=""/>
+  
+<style>
+    #mapid{ height: 100% }
+</style>
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+   integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+   crossorigin=""></script>
+
+
+</head>
+<body>
+
+   
+  
+<div id="mapid"></div>
+  <script>
+  var mymap = L.map('mapid').setView([41.8781, -87.6298], 13);
+    L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png', {
+        attribution: 'Map tiles by Stamen Design, under CC BY 3.0.',
+        maxZoom: 18,
+        id: 'Stamen Toner'
+    }).addTo(mymap);
+
+  function onEachFeature(feature, layer) {
+    // does this feature have a property named popupContent?
+    if (feature.properties && feature.properties.popupContent) {
+        layer.bindPopup(feature.properties.popupContent);
+    }
+  }
+
+    
+  var geojsonFeature = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Point 1",
+        "amenity": "Uptown",
+        "popupContent": "Chicago is awesome"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.63072967529297,
+          41.88937147316903
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Point 2",
+        "amenity": "Downtown",
+        "popupContent": "I love this city!"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.63399124145508,
+          41.88298161317542
+        ]
+      }
+    }
+  ]
+};
+    
+L.geoJSON(geojsonFeature, {
+    onEachFeature: onEachFeature
+}).addTo(mymap);
+   
+  //L.geoJSON(geojsonFeature).addTo(mymap);
+    
+  </script>
+  
+  
+</body>
+</html>
