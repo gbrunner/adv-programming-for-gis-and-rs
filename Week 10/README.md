@@ -79,11 +79,11 @@ The Climate Hazards Group at UC Santa Barbera produces a 30+ year quasi global d
 For this exercise:
 1. Download the first 36 rasters here: ftp://ftp.chg.ucsb.edu/pub/org/chg/products/CHIRP/dekads/. 
     - This data has 3 precipitation rasters per month, 1 every ten days, totaling 36 rasters in a year. 
-2. Read each raster into a numpy array and concatenate those numpy arrays into a matrix of dimmension (3,x,y)
+2. Read each raster into a numpy array and concatenate those numpy arrays into a matrix of dimmension (36,x,y)
 3. Using *matplotlib*, plot a few slices of the array so that we can see the rainfall over time.
 4. **Are the rainfall trends periodic?**
 5. **Challenge** Extract the time frame the filenames and plot some rainfall values (on the y-axis) vs. time (on the x-axis).
 
 ## Homework:
 1. Watch the following video on [ArcGIS Python Raster Functions](https://www.youtube.com/watch?v=OgwnKRrVHN0)
-2. Assign Project 2. You have 3 weeks to complete Project 2
+2. Work on Project 3!
