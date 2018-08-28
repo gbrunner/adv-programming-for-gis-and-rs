@@ -74,6 +74,7 @@ Go through the [Using Imagey Layers](https://developers.arcgis.com/python/guide/
 **Challange!** Following from **In [13]** in the [Using Imagery Layers Tutorial](https://developers.arcgis.com/python/guide/using-imagery-layers/), create an NDVI layer over St. Louis. Do this 2 ways:
 1. Applying the NDVI Raster function like ```map.add_layer(apply(landsat_lyr, fn['name']))```
 2. Using the ```ndvi``` function similar to how I showed the ```savi``` function ```savi_map.add_layer(savi(landsat_lyr, band_indexes="5 4 0.3"))```
+
 Submit your Jupyter notebook.
 
 ## In Class Problem 3:
