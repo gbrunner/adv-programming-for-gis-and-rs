@@ -61,7 +61,7 @@ def slope_function(dem, cellsize):
 ## Lecture 2:
 Go through the [Using Imagey Layers](https://developers.arcgis.com/python/guide/using-imagery-layers/) Notebook.
 1. Log into the GIS
-2. Serarch for "Landsat 8 Views"
+2. Search for "Landsat 8 Views"
 3. Display the "Landsat 8 Views" items
 4. Bring the Landsat 8 service into a ImageryLayer
 5. Add the Landsa 8 service to a map
