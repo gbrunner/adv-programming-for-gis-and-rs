@@ -61,7 +61,7 @@ def slope_function(dem, cellsize):
 ## Lecture 2:
 Go through the [Using Imagey Layers](https://developers.arcgis.com/python/guide/using-imagery-layers/) Notebook.
 1. Log into the GIS
-2. Serarch for "Landsat 8 Views"
+2. Search for "Landsat 8 Views"
 3. Display the "Landsat 8 Views" items
 4. Bring the Landsat 8 service into a ImageryLayer
 5. Add the Landsa 8 service to a map
@@ -71,7 +71,11 @@ Go through the [Using Imagey Layers](https://developers.arcgis.com/python/guide/
 9. Show how to create a layer by appling the SAVI function function.
  
 ## In Class Problem 2:
-**Challange!** Following from **In [13]** in the [Using Imagery Layers Tutorial](https://developers.arcgis.com/python/guide/using-imagery-layers/), create an NDVI layer over St. Louis. Submit your Jupyter notebook.
+**Challange!** Following from **In [13]** in the [Using Imagery Layers Tutorial](https://developers.arcgis.com/python/guide/using-imagery-layers/), create an NDVI layer over St. Louis. Do this 2 ways:
+1. Applying the NDVI Raster function like ```map.add_layer(apply(landsat_lyr, fn['name']))```
+2. Using the ```ndvi``` function similar to how I showed the ```savi``` function ```savi_map.add_layer(savi(landsat_lyr, band_indexes="5 4 0.3"))```
+
+Submit your Jupyter notebook.
 
 ## In Class Problem 3:
 The Climate Hazards Group at UC Santa Barbera produces a 30+ year quasi global dataset called [CHIRPS](http://chg.geog.ucsb.edu/data/chirps/). You can download the precipitation data as rasters here: ftp://ftp.chg.ucsb.edu/pub/org/chg/products/CHIRP/. 
