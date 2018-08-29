@@ -107,6 +107,7 @@ Basemaps from Stamen Design http://maps.stamen.com
 - [Stamen Watercolor](http://maps.stamen.com/#watercolor) `https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.png`
 - [Stamen Toner](http://maps.stamen.com/#toner) `https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png`
 - [Stamen Terrain](http://maps.stamen.com/#terrain) `https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png`
+- [Coca-Cola from Stamen Watercolor](http://a.sm.mapstack.stamen.com/(watercolor,$eb0000[hsl-color])[soft-light]/0/0/0.png)```http://a.sm.mapstack.stamen.com/(watercolor,$eb0000[hsl-color])[soft-light]/{z}/{x}/{y}.png```
 
 [GeoJSON Viewer](https://github.com/gavinr/geojson-viewer)
 
