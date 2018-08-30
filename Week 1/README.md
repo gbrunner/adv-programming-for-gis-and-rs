@@ -135,6 +135,7 @@ marker2.bindPopup("<b>Resturant 2</b><br>Annie Gunns").openPopup();
 - Change the view of the map ```var map = L.map('map').setView([42.35, -71.08], 13);``` to be over San Francisco.
 - Change the basemap to a Stamen Basemap ```L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png'``` that is listed below.
 - Change *rodents.geojson* to the [sf_crime.geojson](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/sf_crime.geojson)
+- Change the icon url ```iconUrl: 'http://andywoodruff.com/maptime-leaflet/rat.png',```
 
 ## If you finish this ins class, there's one more thing I want to show you
 [Esri Leaflet Examples](https://github.com/Esri/geodev-hackerlabs/tree/master/develop/leaflet)
