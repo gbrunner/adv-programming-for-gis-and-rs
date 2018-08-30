@@ -84,7 +84,27 @@ Demonstrate the Boston Clustermap too. https://gbrunner.github.io/Advanced_Pytho
 
 ## Classwork Problems
 1. Create a Leaflet map of 5 restaurants that you'd like to go to in St. Louis. Include popups! If you're up to it, change the symbology for the points.
+*Hints:*
+- look at [quickstart_final.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/quickstart_final.html). 
+- In quickstart_final.html, add 5 markers. For example:
+```
+var marker1 = L.marker([41.873, -87.629]).addTo(mymap);
+var marker2 = L.marker([41.812, -87.628]).addTo(mymap);
+.
+.
+.
+```
+- Bind a Popup to each one:
+```
+marker1.bindPopup("<b>Resturant 1</b><br>Spiros").openPopup();
+marker2.bindPopup("<b>Resturant 2</b><br>Annie Gunns").openPopup();
+.
+.
+.
+```
+- Remove the other markers (Circle, Polygon, etc.)
 2. Create a Leaflet showing the San Francisco Crime points from the GeoJSON found [here](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/sf_crime.geojson). Please add a relevant icon to the points. See the [Leaflet tutorial here](https://maptimeboston.github.io/leaflet-intro/) if you need help with that.
+
 3. **Challenge** Create a Leaflet heatmap from the crime points GeoJSON that you used above.
 4. **Challenge** Create a Leaflet cluster map from the crime points GeoJSON that you used above. Make sure you have a default icon set. Can you change the color on the clusters?
 
