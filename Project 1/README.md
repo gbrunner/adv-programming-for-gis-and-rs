@@ -11,10 +11,10 @@ I would like you to find at least 2 datasets that are somewhat complementary and
 ## Requirements:
 Each application must have:
 - At least 2 layers, not including the basemap. You can use difference basemaps in your Leaflet and ArcGIS Javascript API app. **10 points app**
-- Use some combination of point, line, and polygon features. I don't just want to see all points! **10 points app**
+- Use some combination of point, line, and polygon features. I don't just want to see all points! **10 points per app**
 - Your layers should each contain at least 10 features. **10 points per app**
-- When your code is done, share the apps on Github as live, interactive maps. **10 points app**
-- Include a popup on at least one layer. **10 points app**
+- When your code is done, share the apps on Github as live, interactive maps. **10 points per app**
+- Include a popup on at least one layer. **10 points per app**
 - **Bonus** Add a widget (legend, search, layer list, etc.) or button to one of the apps! **10 points**
 
 ## Miscellaneous
