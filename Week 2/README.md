@@ -3,6 +3,12 @@
 2. Samples for the book can be found on [Github](https://github.com/Apress/introducing-arcgis-api-4-for-javascript/tree/master/intro-arcgis-js-api-4)
 
 ## Lecture:
+### Review Homework Problem
+- Any volunteers to discuss their solutions?
+
+### GeoJSON
+- [http://geojson.io](http://geojson.io)
+
 ### Terminology
 - [ArcGIS API for Javascript](https://developers.arcgis.com/javascript/)
 - [Asynchronous Module Definition](https://requirejs.org/docs/whyamd.html)
