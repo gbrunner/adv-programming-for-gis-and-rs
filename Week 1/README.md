@@ -136,8 +136,22 @@ marker2.bindPopup("<b>Resturant 2</b><br>Annie Gunns").openPopup();
 - Change the basemap to a Stamen Basemap ```L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png'``` that is listed below.
 - Change *rodents.geojson* to the [sf_crime.geojson](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/sf_crime.geojson)
 - Change the icon url ```iconUrl: 'http://andywoodruff.com/maptime-leaflet/rat.png',```
+- Change:
+```
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+<link rel="stylesheet" href="MarkerCluster.css" />
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+```
+to:
+```
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css"/>
+<link rel="stylesheet" href="MarkerCluster.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+```
+Github serves things through **https** and therefore the libraries you reference must use **https**.
 
-## If you finish this ins class, there's one more thing I want to show you
+
+## If you finish this in class, there's one more thing I want to show you
 [Esri Leaflet Examples](https://github.com/Esri/geodev-hackerlabs/tree/master/develop/leaflet)
 
 ## Homework
