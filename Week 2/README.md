@@ -123,7 +123,10 @@ var featureLayer_2 = new FeatureLayer({
 map.add(featureLayer_2);
 ```
 
-2. Create a webapp that uses the [CSV Layer](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/tree/master/Week%202#from-a-csv) to map crime over St. Louis from the [STL Crime CSV](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%202/stl_crime_wgs_84.csv) in this folder.
+2. Create a webapp that uses the [CSV Layer](https://developers.arcgis.com/javascript/latest/sample-code/layers-csv/index.html) to map crime over St. Louis from the [STL Crime CSV](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%202/stl_crime_wgs_84.csv) in this folder.
+- Start with the [CSV Layer example](https://developers.arcgis.com/javascript/latest/sample-code/layers-csv/index.html)
+-
+
 3. Change the renderer in the crime map to a [heatmap renderer](https://developers.arcgis.com/javascript/latest/sample-code/visualization-heatmap/index.html). Have some fun. Change the colors!
 **Hint:** Don't forget to add the *esri-featurelayer-webgl* to your code
 ```
