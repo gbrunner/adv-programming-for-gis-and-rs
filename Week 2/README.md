@@ -131,10 +131,15 @@ var url = "https://raw.githubusercontent.com/gbrunner/Advanced_Python_for_GIS_an
 ```
 - Change the renderer to be a *simple* renderer:
 ```
-      csvLayer.renderer = {
-        type: "simple", // autocasts as new SimpleRenderer()
-        symbol: symbol
-      };
+var symbol = {
+   type: "simple-marker", 
+   color:"red"
+};
+
+csvLayer.renderer = {
+   type: "simple", // autocasts as new SimpleRenderer()
+   symbol: symbol
+};
 ```
 - Change all the *SceneView* parameters to *MapView* parameters.
 - Change the *center* and the *zoom* to be over St. Louis, MO.
