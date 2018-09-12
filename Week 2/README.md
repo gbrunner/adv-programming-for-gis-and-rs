@@ -84,9 +84,45 @@ Let's start by creating an app from our traffic webmap
 - From here, let's try to solve some problems ourselves!
 
 ## Classwork\Homework Problems:
-1. Search through ArcGIS Online and find 2 layers that overlap ()not including the basemap). Create two apps that show all two layers on the map. You choose the 2 layers from ArcGIS Online. 
-- Create one by adding the layers to the app [From a Webmap](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%2012/README.md#from-a-webmap) and then loading the Webmap object into the ArcGIS Javascript API
-- Create one by adding [multiple feature layers](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%202/README.md#from-a-feature-layer), map layers, imagery layers, etc via the Javascript API.
+1. Search through ArcGIS Online and find 2 layers that overlap (not including the basemap). Create two apps that show all two layers on the map. You choose the 2 layers from ArcGIS Online. 
+**Part 1**
+- Create one by adding the layers to the app [From a Webmap](https://developers.arcgis.com/javascript/latest/sample-code/webmap-basic/) and then loading the Webmap object into the ArcGIS Javascript API
+- Start with the [Load a Basic Webmap Example](https://developers.arcgis.com/javascript/latest/sample-code/webmap-basic/)
+- Create a Webmap in [http://slustl.maps.arcgis.com/home/index.html](http://slustl.maps.arcgis.com/home/index.html)
+- After you make the map, take the **webmap ID** and load use it as the id below:
+```
+      var webmap = new WebMap({
+        portalItem: { // autocasts as new PortalItem()
+          id: "f2e9b762544945f390ca4ac3671cfa72"
+        }
+      });
+```
+- The Webmap ID is the long alpha-numeric string at the end of the arcgis.com url. For example, for this webmap:
+```
+http://slustl.maps.arcgis.com/home/item.html?id=d2e5c37512054e62a15464955dc65d95
+```
+The ID is:
+```
+d2e5c37512054e62a15464955dc65d95
+```
+
+**Part 2**
+- Using the same layers you added to the Webmap, create a web application by adding the layers as Feature Layers like in the [Intro to Feature Layer](https://developers.arcgis.com/javascript/latest/sample-code/layers-featurelayer/index.html) example.
+- For this problem, you'll have to load multiple layers, similar to this:
+```
+var featureLayer_1 = new FeatureLayer({
+  url: "https://services.arcgis.com/V6ZHFr6zdgNZuVG0/arcgis/rest/services/Landscape_Trees/FeatureServer/0"
+});
+
+map.add(featureLayer_1);
+
+var featureLayer_2 = new FeatureLayer({
+  url: "https://services.arcgis.com/V6ZHFr6zdgNZuVG0/arcgis/rest/services/Landscape_Trees/FeatureServer/0"
+});
+
+map.add(featureLayer_2);
+```
+
 2. Create a webapp that uses the [CSV Layer](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/tree/master/Week%202#from-a-csv) to map crime over St. Louis from the [STL Crime CSV](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%202/stl_crime_wgs_84.csv) in this folder.
 3. Change the renderer in the crime map to a [heatmap renderer](https://developers.arcgis.com/javascript/latest/sample-code/visualization-heatmap/index.html). Have some fun. Change the colors!
 **Hint:** Don't forget to add the *esri-featurelayer-webgl* to your code
