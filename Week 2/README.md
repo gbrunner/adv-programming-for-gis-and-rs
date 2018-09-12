@@ -146,6 +146,88 @@ csvLayer.renderer = {
 
 
 3. Change the renderer in the crime map to a [heatmap renderer](https://developers.arcgis.com/javascript/latest/sample-code/visualization-heatmap/index.html). Have some fun. Change the colors!
+- Starting from your code for **Problem 2**, change the renderer:
+```
+const renderer = {
+        type: "heatmap",
+        colorStops: [
+        {
+          color: "rgba(63, 40, 102, 0)",
+          ratio: 0
+        },
+        {
+          color: "#472b77",
+          ratio: 0.083
+        },
+        {
+          color: "#4e2d87",
+          ratio: 0.166
+        },
+        {
+          color: "#563098",
+          ratio: 0.249
+        },
+        {
+          color: "#5d32a8",
+          ratio: 0.332
+        },
+        {
+          color: "#6735be",
+          ratio: 0.415
+        },
+        {
+          color: "#7139d4",
+          ratio: 0.498
+        },
+        {
+          color: "#7b3ce9",
+          ratio: 0.581
+        },
+        {
+          color: "#853fff",
+          ratio: 0.664
+        },
+        {
+          color: "#a46fbf",
+          ratio: 0.747
+        },
+        {
+          color: "#c29f80",
+          ratio: 0.830
+        },
+        {
+          color: "#e0cf40",
+          ratio: 0.913
+        },
+        {
+          color: "#ffff00",
+          ratio: 1
+        }],
+        maxPixelIntensity: 100,
+        minPixelIntensity: 1
+      };
+	  
+```
+-  **Require** the legend:
+```
+    require([
+      "esri/Map",
+      "esri/layers/CSVLayer",
+      "esri/views/MapView",
+      "esri/config",
+      "esri/core/urlUtils",
+	  "esri/widgets/Legend",
+      "dojo/domReady!"
+    ], function(
+      Map,
+      CSVLayer,
+      MapView,
+      esriConfig,
+      urlUtils,
+	  Legend
+    ) {
+    ```
+- After the last ```</style>```, add:
 **Hint:** Don't forget to add the *esri-featurelayer-webgl* to your code
 ```
 <script>
@@ -156,6 +238,25 @@ csvLayer.renderer = {
   };
 </script>
 ```
+- Set the template to be
+```
+const template = {
+   title: "Crime committed at {ILEADSStreet}"
+};
+```
+- Chnage the CSV layer parameters to be:
+```
+	  const csvLayer = new CSVLayer({
+        url: "https://rawgit.com/gbrunner/Advanced_Python_for_GIS_and_RS/master/Week%202/stl_crime_wgs_84.csv",
+        title: "St. Louis Crime Heatmap",
+        copyright: "St. Louis Police Department",
+		latitudeField:"Lat",
+        longitudeField:"Lon",
+		popupTemplate: template,
+		renderer: renderer
+      });
+```
+
 4. (**Optional**) Following from this [server side raster function example](https://developers.arcgis.com/javascript/latest/sample-code/layers-imagery-popup/index.html), do the following:
 - Change the service to point to the Landsat 8 Views Service (https://landsat2.arcgis.com/arcgis/rest/services/Landsat8_Views/ImageServer)
 - Look at the service **RasterFunction Infos**. Change the Raster function template to one of the *NDVI* Raster Functions.
