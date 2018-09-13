@@ -226,7 +226,7 @@ const renderer = {
       urlUtils,
 	  Legend
     ) {
-    ```
+```
 - After the last ```</style>```, add:
 **Hint:** Don't forget to add the *esri-featurelayer-webgl* to your code
 ```
