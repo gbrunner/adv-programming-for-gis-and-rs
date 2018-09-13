@@ -146,7 +146,36 @@ csvLayer.renderer = {
 
 
 3. Change the renderer in the crime map to a [heatmap renderer](https://developers.arcgis.com/javascript/latest/sample-code/visualization-heatmap/index.html). Have some fun. Change the colors!
-- Starting from your code for **Problem 2**, change the renderer:
+- Starting from your code for **Problem 2**, after the last ```</style>```, add:
+```
+<script>
+  var dojoConfig = {
+    has: {
+      "esri-featurelayer-webgl": 1
+    }
+  };
+</script>
+```
+-  **Require** the legend:
+```
+    require([
+      "esri/Map",
+      "esri/layers/CSVLayer",
+      "esri/views/MapView",
+      "esri/config",
+      "esri/core/urlUtils",
+	  "esri/widgets/Legend",
+      "dojo/domReady!"
+    ], function(
+      Map,
+      CSVLayer,
+      MapView,
+      esriConfig,
+      urlUtils,
+	  Legend
+    ) {
+```
+- Change the renderer:
 ```
 const renderer = {
         type: "heatmap",
@@ -208,45 +237,16 @@ const renderer = {
       };
 	  
 ```
--  **Require** the legend:
-```
-    require([
-      "esri/Map",
-      "esri/layers/CSVLayer",
-      "esri/views/MapView",
-      "esri/config",
-      "esri/core/urlUtils",
-	  "esri/widgets/Legend",
-      "dojo/domReady!"
-    ], function(
-      Map,
-      CSVLayer,
-      MapView,
-      esriConfig,
-      urlUtils,
-	  Legend
-    ) {
-```
-- After the last ```</style>```, add:
-**Hint:** Don't forget to add the *esri-featurelayer-webgl* to your code
-```
-<script>
-  var dojoConfig = {
-    has: {
-      "esri-featurelayer-webgl": 1
-    }
-  };
-</script>
-```
+
 - Set the template to be
 ```
 const template = {
    title: "Crime committed at {ILEADSStreet}"
 };
 ```
-- Chnage the CSV layer parameters to be:
+- Change the CSV layer parameters to be:
 ```
-	  const csvLayer = new CSVLayer({
+const csvLayer = new CSVLayer({
         url: "https://rawgit.com/gbrunner/Advanced_Python_for_GIS_and_RS/master/Week%202/stl_crime_wgs_84.csv",
         title: "St. Louis Crime Heatmap",
         copyright: "St. Louis Police Department",
@@ -254,7 +254,7 @@ const template = {
         longitudeField:"Lon",
 		popupTemplate: template,
 		renderer: renderer
-      });
+});
 ```
 
 4. (**Optional**) Following from this [server side raster function example](https://developers.arcgis.com/javascript/latest/sample-code/layers-imagery-popup/index.html), do the following:
