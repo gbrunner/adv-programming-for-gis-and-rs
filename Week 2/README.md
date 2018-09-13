@@ -145,7 +145,7 @@ csvLayer.renderer = {
 - Change the *center* and the *zoom* to be over St. Louis, MO.
 
 
-3. Change the renderer in the crime map to a [heatmap renderer](https://developers.arcgis.com/javascript/latest/sample-code/visualization-heatmap/index.html). Have some fun. Change the colors!
+3. (**Optional**)Change the renderer in the crime map to a [heatmap renderer](https://developers.arcgis.com/javascript/latest/sample-code/visualization-heatmap/index.html). Have some fun. Change the colors!
 - Starting from your code for **Problem 2**, after the last ```</style>```, add:
 ```
 <script>
