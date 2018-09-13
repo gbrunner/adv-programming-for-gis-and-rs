@@ -88,7 +88,7 @@ Let's start by creating an app from our traffic webmap
 **Part 1**
 - Create one by adding the layers to the app [From a Webmap](https://developers.arcgis.com/javascript/latest/sample-code/webmap-basic/) and then loading the Webmap object into the ArcGIS Javascript API
 - Start with the [Load a Basic Webmap Example](https://developers.arcgis.com/javascript/latest/sample-code/webmap-basic/)
-- Create a Webmap in [http://slustl.maps.arcgis.com/home/index.html](http://slustl.maps.arcgis.com/home/index.html)
+- Create a Webmap in [http://slustl.maps.arcgis.com/home/index.html](http://slustl.maps.arcgis.com/home/index.html). After you have saved it, make sure to *Share* it with everyone.
 - After you make the map, take the **webmap ID** and load use it as the id below:
 ```
       var webmap = new WebMap({
