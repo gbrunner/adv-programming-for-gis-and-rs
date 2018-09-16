@@ -225,8 +225,34 @@ That's all we have to do. Of course, we should change the home location to be di
 
 2. Change the two cameras to point at different areas of Boston.
 - Change the parameters of ```var camera2``` and ```var camera3``` to point at different parts of boston. You might have to play around to get the views you want. Right now I have ```var camera3 = camera```. You will have to define ```var camera2 = new Camera({....```
+- Be sure to change the names on the buttons from ```St. Louis, USA``` and ```Beijing, China``` to something more meaningful.
 
 3. Add a third camera (and button!) that looks towards downtown boston from the Atlantic Ocean.
+- Add a button in the ```<>body<>``` like:   
+```<button id="v3" class="off">Downtown</button>```
+- Add an event listener to listen to the button. Fill in the *???* with actual values.
+```
+    v3.addEventListener('click', function() {
+      // reuse the default camera position already established in the homeBtn
+      view.goTo({
+        position: {
+          x: ???,
+          y: ???, 
+          z: ???
+        },
+        tilt: ???,
+        heading: ???
+      });
+    });
+   ````
+- Add ```v3``` to the array here:
+```
+[v1, v2].forEach(function(button) {
+      button.style.display = 'flex';
+      view.ui.add(button, 'top-right');
+    });
+```
+- Try it!
 
 4. Add a Home button that goes back to 42.3770° N, 71.1167° W or your initial MapView camera location.
 
