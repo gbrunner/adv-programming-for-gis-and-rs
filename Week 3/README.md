@@ -121,6 +121,16 @@ I think Rubalcava's camera property is a bit overkill. Instead, let's add some c
 
 Let's add a camera over st. louis on the world population scene:
 ```
+    require([
+      "esri/WebScene",
+      "esri/views/SceneView",
+      "esri/Camera",
+      "dojo/domReady!"
+    ], function(WebScene, SceneView, Camera) {
+    .
+    .
+    .
+
       var camera = new Camera({
         position: [
           -90.1994, // lon
