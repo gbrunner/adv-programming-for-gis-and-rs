@@ -45,7 +45,7 @@
         ],
         tilt:0,
         heading: 0
-      })
+      });
 
       var view = new SceneView({
         container: "viewDiv",
@@ -53,28 +53,34 @@
         camera: camera
     });
     
-    [stl, bei].forEach(function(button) {
+    [v1, v2].forEach(function(button) {
       button.style.display = 'flex';
       view.ui.add(button, 'top-right');
     });
-    
-    bei.addEventListener('click', function() {
-      // reuse the default camera position already established in the homeBtn
-      view.goTo({
-        position: {
+	
+    var camera2 = new Camera({
+	        position: {
           x: 116.4074,
           y: 39.9042,
           z: 5000000
         },
         tilt: 0,
         heading: 0
+	});
+		
+	var camera3 = camera
+	
+    v2.addEventListener('click', function() {
+      // reuse the default camera position already established in the homeBtn
+      view.goTo({
+		target:camera2
       });
     });
     
-    stl.addEventListener('click', function() {
+    v1.addEventListener('click', function() {
       // reuse the default camera position already established in the homeBtn
       view.goTo({
-        target:camera
+        target:camera3
       });
     });
 
@@ -85,7 +91,7 @@
 
 <body>
   <div id="viewDiv"></div>
-  <button id="stl" class="off">St. Louis, USA</button>
-  <button id="bei" class="off">Beijing, China</button>
+  <button id="v1" class="off">St. Louis, USA</button>
+  <button id="v2" class="off">Beijing, China</button>
 </body>
 </html>

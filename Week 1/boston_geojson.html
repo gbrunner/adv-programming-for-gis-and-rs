@@ -23,11 +23,7 @@
 
   // load a tile layer
   L.tileLayer('http://a.tile.stamen.com/toner/{z}/{x}/{y}.png',
-    {
-      attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
-      maxZoom: 17,
-      minZoom: 9
-    }).addTo(map);
+    ).addTo(map);
 
   // load GeoJSON from an external file
   $.getJSON("rodents.geojson",function(data){
