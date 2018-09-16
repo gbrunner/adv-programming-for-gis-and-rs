@@ -255,6 +255,31 @@ That's all we have to do. Of course, we should change the home location to be di
 - Try it!
 
 4. Add a Home button that goes back to 42.3770° N, 71.1167° W or your initial MapView camera location.
+- Import the *Home* button:
+```
+"esri/widgets/Home",
+.
+.
+.
+ ], function(WebScene, SceneView, Camera, Home) {
+ ```
+ - Define the *Home* button:
+ ```
+ var homeBtn = new Home({
+        view: view
+ });
+ ```
+- Add the *Home* button to the UI:
+```view.ui.add(homeBtn, "top-left");```
+- Make sure that the ```camera``` specified in the ```view``` points to where you expect:
+```      
+var view = new SceneView({
+        container: "viewDiv",
+        map: scene,
+        camera: camera
+});
+```
+- Try it out!
 
 5. What happens if you try to set ```viewingMode = "local"```? Why do you think this happens? If you want to find out, go to arcgis online, create a *New Local Scene* and try to add the [Boston Buildings](https://services2.arcgis.com/cFEFS0EWrhfDeVw9/arcgis/rest/services/Boston_current_buildings/SceneServer). What message do you get?
 
