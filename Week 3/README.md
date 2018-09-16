@@ -121,15 +121,25 @@ I think Rubalcava's camera property is a bit overkill. Instead, let's add some c
 
 Let's add a camera over st. louis on the world population scene:
 ```
-camera: {
+    require([
+      "esri/WebScene",
+      "esri/views/SceneView",
+      "esri/Camera",
+      "dojo/domReady!"
+    ], function(WebScene, SceneView, Camera) {
+    .
+    .
+    .
+
+      var camera = new Camera({
         position: [
           -90.1994, // lon
           38.6270, // lat
           5000000// elevation in meters
         ],
-
-      heading: 0
-      }
+        tilt:0,
+        heading: 0
+      })
 ```
 What happens when we modify the elevation?
 What happens when we change the heading?
@@ -196,15 +206,80 @@ Let's add a *Home* button:
 ```
 That's all we have to do. Of course, we should change the home location to be different from the St. Louis, USA button :)
 
+#### Let's add some Buttons
+- Jump over to Button Sample and Demonstrate how to add buttons.
+
 
 ## Classwork Problems:
 1. Change the world_pop_3d_w_buttons.html to use this webscene over Boston as the input portal item: http://slustl.maps.arcgis.com/home/webscene/viewer.html?webscene=8046207c1c214b5587230f5e5f8efc77
+- Open [world_pop_3d_w_buttons.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%203/world_pop_3d_w_buttons.html) in Notepad++ or jsbin.
+- change the ```id:"fbbbaa2fbfda41b8b3f96427c3ac5c79" ``` to be ```id:"8046207c1c214b5587230f5e5f8efc77" ```
+- Change the camera position from looking at St. Louis, to looking at Boston:
+```
+        position: [
+           -71.060217,// lon of St. Louis
+          42.382655, // lat of St. Louis
+          2500// elevation in meters
+        ],
+```
 
 2. Change the two cameras to point at different areas of Boston.
+- Change the parameters of ```var camera2``` and ```var camera3``` to point at different parts of boston. You might have to play around to get the views you want. Right now I have ```var camera3 = camera```. You will have to define ```var camera2 = new Camera({....```
+- Be sure to change the names on the buttons from ```St. Louis, USA``` and ```Beijing, China``` to something more meaningful.
 
 3. Add a third camera (and button!) that looks towards downtown boston from the Atlantic Ocean.
+- Add a button in the ```<>body<>``` like:   
+```<button id="v3" class="off">Downtown</button>```
+- Add an event listener to listen to the button. Fill in the *???* with actual values.
+```
+    v3.addEventListener('click', function() {
+      // reuse the default camera position already established in the homeBtn
+      view.goTo({
+        position: {
+          x: ???,
+          y: ???, 
+          z: ???
+        },
+        tilt: ???,
+        heading: ???
+      });
+    });
+   ````
+- Add ```v3``` to the array here:
+```
+[v1, v2].forEach(function(button) {
+      button.style.display = 'flex';
+      view.ui.add(button, 'top-right');
+    });
+```
+- Try it!
 
 4. Add a Home button that goes back to 42.3770° N, 71.1167° W or your initial MapView camera location.
+- Import the *Home* button:
+```
+"esri/widgets/Home",
+.
+.
+.
+ ], function(WebScene, SceneView, Camera, Home) {
+ ```
+ - Define the *Home* button:
+ ```
+ var homeBtn = new Home({
+        view: view
+ });
+ ```
+- Add the *Home* button to the UI:
+```view.ui.add(homeBtn, "top-left");```
+- Make sure that the ```camera``` specified in the ```view``` points to where you expect:
+```      
+var view = new SceneView({
+        container: "viewDiv",
+        map: scene,
+        camera: camera
+});
+```
+- Try it out!
 
 5. What happens if you try to set ```viewingMode = "local"```? Why do you think this happens? If you want to find out, go to arcgis online, create a *New Local Scene* and try to add the [Boston Buildings](https://services2.arcgis.com/cFEFS0EWrhfDeVw9/arcgis/rest/services/Boston_current_buildings/SceneServer). What message do you get?
 

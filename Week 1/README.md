@@ -83,12 +83,75 @@ Clustermaps are fun too!
 Demonstrate the Boston Clustermap too. https://gbrunner.github.io/Advanced_Python_for_GIS_and_RS/Week%2011/boston_cluster.html
 
 ## Classwork Problems
-1. Create a Leaflet map of 5 resturants that you'd like to go to in St. Louis. Include popups! If you're up to it, change the symbology for the points.
-2. Create a Leaflet showing the San Francisco Crime points from the GeoJSON found [here](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/sf_crime.geojson). Please add a relevant icon to the points. See the [Leaflet tutorial here](https://maptimeboston.github.io/leaflet-intro/) if you need help with that.
-3. **Challenge** Create a Leaflet heatmap from the crime points GeoJSON that you used above.
-4. **Challenge** Create a Leaflet cluster map from the crime points GeoJSON that you used above. Make sure you have a default icon set. Can you change the color on the clusters?
+1. Create a Leaflet map of 5 restaurants that you'd like to go to in St. Louis. Include popups! If you're up to it, change the symbology for the points.
+*Hints:*
+- look at [quickstart_final.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/quickstart_final.html). 
+- In quickstart_final.html, add 5 markers. For example:
+```
+var marker1 = L.marker([41.873, -87.629]).addTo(mymap);
+var marker2 = L.marker([41.812, -87.628]).addTo(mymap);
+.
+.
+.
+```
+- Bind a Popup to each one:
+```
+marker1.bindPopup("<b>Resturant 1</b><br>Spiros").openPopup();
+marker2.bindPopup("<b>Resturant 2</b><br>Annie Gunns").openPopup();
+.
+.
+.
+```
+- Remove the other markers (Circle, Polygon, etc.)
 
-## If you finish this ins class, there's one more thing I want to show you
+2. Create a Leaflet showing the San Francisco Crime points from the GeoJSON found [here](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/sf_crime.geojson). Please add a relevant icon to the points. See the [Leaflet tutorial here](https://maptimeboston.github.io/leaflet-intro/) if you need help with that.
+*Hints:*
+- Start with the [bonston_geojson.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/boston_geojson.html) example.
+- Change the ```view``` to be over San Francisco: ```var map = L.map('map').setView([42.35, -71.08], 13);```
+- Change the basemap to a Stamen Basemap ```L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png'``` that is listed below.
+- Change ```$.getJSON("rodents.geojson",function(data){``` to look at the [sf_crime.geojson](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/sf_crime.geojson) file
+- Add the symbol following from the [leaflet tutorial](http://maptimeboston.github.io/leaflet-intro/) like:
+```
+ var ratIcon = L.icon({
+    iconUrl: 'rat.gif',
+    iconSize: [50,40]
+  }); 
+  L.geoJson(data  ,{
+    pointToLayer: function(feature,latlng){
+	  return L.marker(latlng,{icon: ratIcon});
+    }
+  } 
+```
+
+3. **Challenge** Create a Leaflet heatmap from the crime points GeoJSON that you used above.
+*Hints:*
+- Start with [boston_heatmap.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/boston_heatmap.html)
+- Change the view of the map ```var map = L.map('map').setView([42.35, -71.08], 13);``` to be over San Francisco.
+- Change the basemap to a Stamen Basemap ```L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png'``` that is listed below.
+- Change *rodents.geojson* to the [sf_crime.geojson](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/sf_crime.geojson)
+
+4. **Challenge** Create a Leaflet cluster map from the crime points GeoJSON that you used above. Make sure you have a default icon set. Can you change the color on the clusters?
+- Start with [boston_cluster.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/boston_cluster.html)
+- Change the view of the map ```var map = L.map('map').setView([42.35, -71.08], 13);``` to be over San Francisco.
+- Change the basemap to a Stamen Basemap ```L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png'``` that is listed below.
+- Change *rodents.geojson* to the [sf_crime.geojson](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/sf_crime.geojson)
+- Change the icon url ```iconUrl: 'http://andywoodruff.com/maptime-leaflet/rat.png',```
+- Change:
+```
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+<link rel="stylesheet" href="MarkerCluster.css" />
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+```
+to:
+```
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css"/>
+<link rel="stylesheet" href="MarkerCluster.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+```
+Github serves things through **https** and therefore the libraries you reference must use **https**.
+
+
+## If you finish this in class, there's one more thing I want to show you
 [Esri Leaflet Examples](https://github.com/Esri/geodev-hackerlabs/tree/master/develop/leaflet)
 
 ## Homework
@@ -107,6 +170,7 @@ Basemaps from Stamen Design http://maps.stamen.com
 - [Stamen Watercolor](http://maps.stamen.com/#watercolor) `https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.png`
 - [Stamen Toner](http://maps.stamen.com/#toner) `https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png`
 - [Stamen Terrain](http://maps.stamen.com/#terrain) `https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png`
+- [Coca-Cola from Stamen Watercolor](http://a.sm.mapstack.stamen.com/(watercolor,$eb0000[hsl-color])[soft-light]/0/0/0.png) ```http://a.sm.mapstack.stamen.com/(watercolor,$eb0000[hsl-color])[soft-light]/{z}/{x}/{y}.png```
 
 [GeoJSON Viewer](https://github.com/gavinr/geojson-viewer)
 
