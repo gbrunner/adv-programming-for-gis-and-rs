@@ -182,3 +182,4 @@ Basemaps from Stamen Design http://maps.stamen.com
 
 [Esri-Leaflet](https://esri.github.io/esri-leaflet/examples/) - Use Esri services with Leaflet. Probably a more advanced topic, but something you should know about.
 
+[Awesome Leaflet Basemaps](https://leaflet-extras.github.io/leaflet-providers/preview/)
