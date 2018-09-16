@@ -206,6 +206,9 @@ Let's add a *Home* button:
 ```
 That's all we have to do. Of course, we should change the home location to be different from the St. Louis, USA button :)
 
+#### Let's add some Buttons
+- Jump over to Button Sample and Demonstrate how to add buttons.
+
 
 ## Classwork Problems:
 1. Change the world_pop_3d_w_buttons.html to use this webscene over Boston as the input portal item: http://slustl.maps.arcgis.com/home/webscene/viewer.html?webscene=8046207c1c214b5587230f5e5f8efc77
