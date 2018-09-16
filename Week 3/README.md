@@ -121,15 +121,15 @@ I think Rubalcava's camera property is a bit overkill. Instead, let's add some c
 
 Let's add a camera over st. louis on the world population scene:
 ```
-camera: {
+      var camera = new Camera({
         position: [
           -90.1994, // lon
           38.6270, // lat
           5000000// elevation in meters
         ],
-
-      heading: 0
-      }
+        tilt:0,
+        heading: 0
+      })
 ```
 What happens when we modify the elevation?
 What happens when we change the heading?
