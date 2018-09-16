@@ -212,8 +212,19 @@ That's all we have to do. Of course, we should change the home location to be di
 
 ## Classwork Problems:
 1. Change the world_pop_3d_w_buttons.html to use this webscene over Boston as the input portal item: http://slustl.maps.arcgis.com/home/webscene/viewer.html?webscene=8046207c1c214b5587230f5e5f8efc77
+- Open [world_pop_3d_w_buttons.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%203/world_pop_3d_w_buttons.html) in Notepad++ or jsbin.
+- change the ```id:"fbbbaa2fbfda41b8b3f96427c3ac5c79" ``` to be ```id:"8046207c1c214b5587230f5e5f8efc77" ```
+- Change the camera position from looking at St. Louis, to looking at Boston:
+```
+        position: [
+           -71.060217,// lon of St. Louis
+          42.382655, // lat of St. Louis
+          2500// elevation in meters
+        ],
+```
 
 2. Change the two cameras to point at different areas of Boston.
+- Change the parameters of ```var camera2``` and ```var camera3``` to point at different parts of boston. You might have to play around to get the views you want. Right now I have ```var camera3 = camera```. You will have to define ```var camera2 = new Camera({....```
 
 3. Add a third camera (and button!) that looks towards downtown boston from the Atlantic Ocean.
 
