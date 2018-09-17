@@ -154,10 +154,62 @@ Again, it's that easy! Now it's time for you to play!
 
 1. Create a webapp and popup following from the *popup_from_fl_with_symbol.html* using one of the datasets listed here:
 - [STL Neighborhoods](http://slustl.maps.arcgis.com/home/item.html?id=70fefcbe59ea421da9169a46b341dfa9)
-~~- [St. Louis School Districts](http://slustl.maps.arcgis.com/home/item.html?id=cb8c591911fc4e3090b1371cb0f4ba87)
-- [St. Louis Parishes](http://slustl.maps.arcgis.com/home/item.html?id=ebb8787f96424ea88649e228f2dcfef5)~~
+- [St. Louis School Districts](http://slustl.maps.arcgis.com/home/item.html?id=cb8c591911fc4e3090b1371cb0f4ba87)
+- [St. Louis Parishes](http://slustl.maps.arcgis.com/home/item.html?id=ebb8787f96424ea88649e228f2dcfef5)
 
-
+- Starting with the *popup_from_fl_black_symbol.html*, comment out the *renderer*:
+```
+/*
+var renderer = {
+  type: "simple",  // autocasts as new SimpleRenderer()
+  symbol: {
+    type: "simple-marker",  // autocasts as new SimpleMarkerSymbol()
+    size: 6,
+    color: "black",
+    outline: {  // autocasts as new SimpleLineSymbol()
+      width: 0.5,
+      color: "white"
+    }
+  }
+};*/
+```
+- Remove ```renderer: renderer,```
+- Change the URL t0 ```http://services.arcgis.com/Ak4vS4r1vIYUiU3q/arcgis/rest/services/StLNeighborhoods/FeatureServer/0```
+- Change the zoom and center to be over St. Louis:
+```
+center:[-90, 38],
+zoom: 4
+```
+-  Modify the template title to be:
+```         
+title: "Neighborhood: {NHD_NAME}",
+```
+- Modify the template ```content``` to be:
+```
+       [{
+          // It is also possible to set the fieldInfos outside of the content
+          // directly in the popupTemplate. If no fieldInfos is specifically set
+          // in the content, it defaults to whatever may be set within the popupTemplate.
+          type: "fields",
+          fieldInfos: [{
+            fieldName: "POP2000",
+            label: "2000 Population: ",
+            visible: true,
+            format: {
+              digitSeparator: true,
+              places: 0
+            }
+          }, {
+            fieldName: "POP2010",
+            label: "2010 Population: ",
+            visible: true,
+            format: {
+              digitSeparator: true,
+              places: 0
+            }
+          }]
+        }]
+```
 
 *That's a lot of STL themed data...*
 
