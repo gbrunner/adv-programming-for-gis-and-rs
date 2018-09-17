@@ -209,17 +209,17 @@ title: "Neighborhood: {NHD_NAME}",
 ```
 - Change the title: ```<title>Intro to PopupTemplate - 4.8</title>```
 
-(**Optional**) Do this with another STL dataset:
+2. (**Optional**) Do this with another STL dataset:
 - [St. Louis School Districts](http://slustl.maps.arcgis.com/home/item.html?id=cb8c591911fc4e3090b1371cb0f4ba87)
 - [St. Louis Parishes](http://slustl.maps.arcgis.com/home/item.html?id=ebb8787f96424ea88649e228f2dcfef5)
 
-2. Add the following two widgets to the [3D Boston Planning](http://slustl.maps.arcgis.com/home/webscene/viewer.html?webscene=8046207c1c214b5587230f5e5f8efc77) Exameple that we made last week. Use the file [boston_globe_starting_point.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%204/boston_globe_starting_point.html) as your starting point.
+3. Add the following two widgets to the [3D Boston Planning](http://slustl.maps.arcgis.com/home/webscene/viewer.html?webscene=8046207c1c214b5587230f5e5f8efc77) Exameple that we made last week. Use the file [boston_globe_starting_point.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%204/boston_globe_starting_point.html) as your starting point.
 - [Legend Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-legend/index.html)
   - *Hint:* ```var featureLayer = scene.layers.getItemAt(1);```
 - [Layer List Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-layerlist/index.html)
   - *Hint:* Nest the **LayerList** withing the same ```view.when(function() {``` that you put the **Legend** within.
 
-3 (**Optional**). Take a look at the other widget examples on the [Sample Widget Page](https://developers.arcgis.com/javascript/latest/sample-code/index.html?search=Widget). Add a two of the following widgets to an existing sample that we have worked on in Week 2, 3, or 4.
+4. (**Optional**) Take a look at the other widget examples on the [Sample Widget Page](https://developers.arcgis.com/javascript/latest/sample-code/index.html?search=Widget). Add a two of the following widgets to an existing sample that we have worked on in Week 2, 3, or 4.
 - [Scale Bar Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-scalebar/index.html)
 - [Custom Basemap Widget](https://developers.arcgis.com/javascript/latest/sample-code/basemap-custom/index.html)
 - [Expand Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-expand/index.html)
