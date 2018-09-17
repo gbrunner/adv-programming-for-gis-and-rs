@@ -171,7 +171,7 @@ var renderer = {
 };*/
 ```
 - Remove ```renderer: renderer,```
-- Change the URL t0 ```http://services.arcgis.com/Ak4vS4r1vIYUiU3q/arcgis/rest/services/StLNeighborhoods/FeatureServer/0```
+- Change the URL to ```http://services.arcgis.com/Ak4vS4r1vIYUiU3q/arcgis/rest/services/StLNeighborhoods/FeatureServer/0```
 - Change the zoom and center to be over St. Louis:
 ```
 center:[-90, 38],
