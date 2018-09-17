@@ -213,11 +213,32 @@ title: "Neighborhood: {NHD_NAME}",
 - [St. Louis School Districts](http://slustl.maps.arcgis.com/home/item.html?id=cb8c591911fc4e3090b1371cb0f4ba87)
 - [St. Louis Parishes](http://slustl.maps.arcgis.com/home/item.html?id=ebb8787f96424ea88649e228f2dcfef5)
 
-3. Add the following two widgets to the [3D Boston Planning](http://slustl.maps.arcgis.com/home/webscene/viewer.html?webscene=8046207c1c214b5587230f5e5f8efc77) Exameple that we made last week. Use the file [boston_globe_starting_point.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%204/boston_globe_starting_point.html) as your starting point.
-- [Legend Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-legend/index.html)
-  - *Hint:* ```var featureLayer = scene.layers.getItemAt(1);```
-- [Layer List Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-layerlist/index.html)
+3. Add the Legend Widget and Layer List Widget to the [3D Boston Planning](http://slustl.maps.arcgis.com/home/webscene/viewer.html?webscene=8046207c1c214b5587230f5e5f8efc77) Exameple that we made last week. Use the file [boston_globe_starting_point.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%204/boston_globe_starting_point.html) as your starting point.
+- Let's start with the [Legend Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-legend/index.html)
+- Add ```"esri/widgets/Legend",``` to the ```require``` statement.
+- Add ```Legend``` into the ```function(...)``` after ```Camera```
+- Add a ```view.when``` function to create the legend:
+```
+      view.when(function() {
+	
+          // get the first layer in the collection of operational layers in the WebMap
+          // when the resources in the MapView have loaded.
+        var featureLayer = scene.layers.getItemAt(1);
+
+        var legend = new Legend({
+          view: view,
+          layerInfos: [{
+            layer: featureLayer,
+            title: "Major project buildings"
+          }]
+        });
+```
+- Add the legend to the UI:
+```view.ui.add(legend, "bottom-right");```
+- Next, add the [Layer List Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-layerlist/index.html)
   - *Hint:* Nest the **LayerList** withing the same ```view.when(function() {``` that you put the **Legend** within.
+
+
 
 4. (**Optional**) Take a look at the other widget examples on the [Sample Widget Page](https://developers.arcgis.com/javascript/latest/sample-code/index.html?search=Widget). Add a two of the following widgets to an existing sample that we have worked on in Week 2, 3, or 4.
 - [Scale Bar Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-scalebar/index.html)
