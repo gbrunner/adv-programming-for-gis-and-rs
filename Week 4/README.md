@@ -244,6 +244,8 @@ var layerList = new LayerList({
   view: view
 });
 ```
+- Add the Layer List to the UI. Do this within the ```view.when``` function:
+```view.ui.add(legend, "bottom-right");```
 
 
 
