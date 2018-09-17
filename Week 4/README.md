@@ -153,10 +153,7 @@ Again, it's that easy! Now it's time for you to play!
 ## Classwork\Homework Problems:
 
 1. Create a webapp and popup following from the *popup_from_fl_with_symbol.html* using one of the datasets listed here:
-- [STL Neighborhoods](http://slustl.maps.arcgis.com/home/item.html?id=70fefcbe59ea421da9169a46b341dfa9)
-- [St. Louis School Districts](http://slustl.maps.arcgis.com/home/item.html?id=cb8c591911fc4e3090b1371cb0f4ba87)
-- [St. Louis Parishes](http://slustl.maps.arcgis.com/home/item.html?id=ebb8787f96424ea88649e228f2dcfef5)
-
+- Using the [STL Neighborhoods Feature Layer](http://slustl.maps.arcgis.com/home/item.html?id=70fefcbe59ea421da9169a46b341dfa9)
 - Starting with the *popup_from_fl_black_symbol.html*, comment out the *renderer*:
 ```
 /*
@@ -210,8 +207,11 @@ title: "Neighborhood: {NHD_NAME}",
           }]
         }]
 ```
+- Change the title: ```<title>Intro to PopupTemplate - 4.8</title>```
 
-*That's a lot of STL themed data...*
+(**Optional**) Do this with another STL dataset:
+- [St. Louis School Districts](http://slustl.maps.arcgis.com/home/item.html?id=cb8c591911fc4e3090b1371cb0f4ba87)
+- [St. Louis Parishes](http://slustl.maps.arcgis.com/home/item.html?id=ebb8787f96424ea88649e228f2dcfef5)
 
 2. Add the following two widgets to the [3D Boston Planning](http://slustl.maps.arcgis.com/home/webscene/viewer.html?webscene=8046207c1c214b5587230f5e5f8efc77) Exameple that we made last week. Use the file [boston_globe_starting_point.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%204/boston_globe_starting_point.html) as your starting point.
 - [Legend Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-legend/index.html)
