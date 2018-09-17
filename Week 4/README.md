@@ -233,10 +233,18 @@ title: "Neighborhood: {NHD_NAME}",
           }]
         });
 ```
-- Add the legend to the UI:
+- Add the legend to the UI within the ```view.when``` function
 ```view.ui.add(legend, "bottom-right");```
 - Next, add the [Layer List Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-layerlist/index.html)
-  - *Hint:* Nest the **LayerList** withing the same ```view.when(function() {``` that you put the **Legend** within.
+- Add ```"esri/widgets/LayerList",``` to the require statement after the Lenged.
+- Add ```LayerList``` into the ```function(...)``` after the ```Legend```.
+- Add the ```layerList``` withing the same ```view.when(function() {``` that you put the **Legend** within.
+```
+var layerList = new LayerList({
+  view: view
+});
+```
+
 
 
 
