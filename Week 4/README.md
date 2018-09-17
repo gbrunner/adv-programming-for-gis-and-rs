@@ -154,8 +154,10 @@ Again, it's that easy! Now it's time for you to play!
 
 1. Create a webapp and popup following from the *popup_from_fl_with_symbol.html* using one of the datasets listed here:
 - [STL Neighborhoods](http://slustl.maps.arcgis.com/home/item.html?id=70fefcbe59ea421da9169a46b341dfa9)
-- [St. Louis School Districts](http://slustl.maps.arcgis.com/home/item.html?id=cb8c591911fc4e3090b1371cb0f4ba87)
-- [St. Louis Parishes](http://slustl.maps.arcgis.com/home/item.html?id=ebb8787f96424ea88649e228f2dcfef5)
+~~- [St. Louis School Districts](http://slustl.maps.arcgis.com/home/item.html?id=cb8c591911fc4e3090b1371cb0f4ba87)
+- [St. Louis Parishes](http://slustl.maps.arcgis.com/home/item.html?id=ebb8787f96424ea88649e228f2dcfef5)~~
+
+
 
 *That's a lot of STL themed data...*
 
