@@ -152,7 +152,7 @@ Again, it's that easy! Now it's time for you to play!
 
 ## Classwork\Homework Problems:
 
-1. Create a webapp and popup following from the *popup_from_fl_with_symbol.html* using one of the datasets listed here:
+1. Create a webapp and popup following from the *popup_from_fl_black_symbol.html* using one of the datasets listed here:
 - Using the [STL Neighborhoods Feature Layer](http://slustl.maps.arcgis.com/home/item.html?id=70fefcbe59ea421da9169a46b341dfa9)
 - Starting with the *popup_from_fl_black_symbol.html*, comment out the *renderer*:
 ```
