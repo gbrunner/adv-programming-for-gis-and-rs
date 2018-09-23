@@ -19,14 +19,17 @@
   <script>
 
   // initialize the map
-  var map = L.map('map').setView([42.35, -71.08], 13);
+  var map = L.map('map').setView([41.8781, -87.6298], 10);
 
   // load a tile layer
   L.tileLayer('http://a.tile.stamen.com/toner/{z}/{x}/{y}.png',
-    ).addTo(map);
+    {
+      attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
+      maxZoom: 17
+    }).addTo(map);
 
   // load GeoJSON from an external file
-  $.getJSON("rodents.geojson",function(data){
+  $.getJSON("https://raw.githubusercontent.com/gbrunner/Advanced_Python_for_GIS_and_RS/master/Week%201/chicago.geojson",function(data){
     // add GeoJSON layer to the map once the file is loaded
     L.geoJson(data).addTo(map);
   });

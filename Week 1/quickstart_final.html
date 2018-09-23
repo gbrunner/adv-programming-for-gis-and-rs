@@ -27,8 +27,6 @@
         maxZoom: 18,
         id: 'mapbox.streets'
     }).addTo(mymap);
-    
-  var marker = L.marker([41.8781, -87.6298]).addTo(mymap);
 
   var circle = L.circle([41.871, -87.628], {
     color: 'green',
@@ -48,7 +46,11 @@
    }
   ).addTo(mymap);
     
-  marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+  var marker1 = L.marker([41.873, -87.629]).addTo(mymap);
+  var marker2 = L.marker([41.8, -87.62]).addTo(mymap);
+  
+  marker1.bindPopup("<b>Resturant 1</b><br>Spiros");
+  marker2.bindPopup("<b>Resturant 2</b><br>Annie Gunns");
   circle.bindPopup("I am a circle.");
   polygon.bindPopup("I am a polygon.");
     
