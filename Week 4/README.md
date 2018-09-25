@@ -48,6 +48,48 @@ zoom: 4
 ```
 Now, let's change the *template* to reflect the feature service.
 
+```
+var template = { // autocasts as new PopupTemplate()
+        title: "{Player} ({Position})",
+        content: [{
+          // It is also possible to set the fieldInfos outside of the content
+          // directly in the popupTemplate. If no fieldInfos is specifically set
+          // in the content, it defaults to whatever may be set within the popupTemplate.
+          type: "fields",
+          fieldInfos: [{
+            fieldName: "Height",
+            label: "Height: ",
+            visible: true
+          }, {
+            fieldName: "Weight",
+            label: "Weight: ",
+            visible: true,
+            format: {
+              digitSeparator: true,
+              places: 0
+            }
+          }, {
+            fieldName: "Shot",
+            label: "Shoots: ",
+            visible: true,
+            format: {
+              digitSeparator: true,
+              places: 0
+            }
+          }, {
+            fieldName: "Team",
+            label: "Team",
+            visible: true,
+            format: {
+              digitSeparator: true,
+              places: 0
+            }
+          }]
+        }]
+      };
+```
+
+
 Easy, right?!
 
 #### Now Let's Recreate the first Map's symbology, too!
