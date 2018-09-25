@@ -37,7 +37,7 @@ Pretty easy, right?
 Let's copy that code into an HTML file and save it before leaving.
 
 ### Loading the Popup through Code using Popup Template
-Let's open up the Popup teamplate Basic Example and start there:
+Let's open up the [Intro to Popup Tempate Example](https://developers.arcgis.com/javascript/latest/sample-code/sandbox/index.html?sample=intro-popuptemplate) and start there:
 
 Let's change the feature service to be: [NHL Prospects](https://services7.arcgis.com/fX3LzGegyrqMlv6s/ArcGIS/rest/services/2017NHLDraftProspects/FeatureServer/0)
 
