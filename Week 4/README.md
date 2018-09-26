@@ -287,7 +287,7 @@ var layerList = new LayerList({
 });
 ```
 - Add the Layer List to the UI. Do this within the ```view.when``` function:
-```view.ui.add(legend, "bottom-right");```
+```view.ui.add(layerList, "bottom-right");```
 
 
 
