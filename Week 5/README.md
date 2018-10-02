@@ -4,7 +4,7 @@
 - Start with an introduction to ArcGIS Pro
 - Seguey into ArcGIS Pro and Pyhon Package mangemeent
 - Discuss Anaconda distribution of Python
-- Setup Jupyter (if necessary). Use instructionf from last semester
+- Setup Jupyter (if necessary). Use instructions from last semester.
 - **Break**
 - Introduction to ArcGIS Online
 - Talk about Geocoding
