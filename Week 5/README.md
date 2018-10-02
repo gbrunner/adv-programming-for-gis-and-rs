@@ -1,4 +1,4 @@
-## Preparation: Read Chapter 1 of **Mastering Geospatial Analysis with Python**.
+## Preparation: Read Chapter 1 of **Mastering Geospatial Analysis with Python**
 
 ## Lecture:
 - Start with an introduction to ArcGIS Pro
