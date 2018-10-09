@@ -1,10 +1,10 @@
-## Preparation: Read Chapter 1 of **Mastering Geospatial Analysis with Python**.
+## Preparation: Read Chapter 1 of **Mastering Geospatial Analysis with Python**
 
 ## Lecture:
 - Start with an introduction to ArcGIS Pro
 - Seguey into ArcGIS Pro and Pyhon Package mangemeent
 - Discuss Anaconda distribution of Python
-- Setup Jupyter (if necessary). Use instructionf from last semester
+- Setup Jupyter (if necessary). Use instructions from last semester.
 - **Break**
 - Introduction to ArcGIS Online
 - Talk about Geocoding
@@ -28,8 +28,8 @@
   - Zooms to a particular city of interest
   - Changes the basemap from the default Terrain basemap
   - Please use Markdown to apply meaningful discriptions of your steps.
-2. Crete a Jupyter Notebook that:
-- Searched for an ACLED feature service in the ArcGIS Portal (if you are adventurous, feel free to search for a different point feature service)
+2. Create a Jupyter Notebook that:
+- Search for an ACLED feature service in the ArcGIS Portal (if you are adventurous, feel free to search for a different point feature service)
 - Adds that ACLED (or other service) to the map object as:
   - A point layer using a simple renderer (see *Hint* below for help).
   - A Classed Size Renderer that renders on the TOTAL_FATALITIES field.
