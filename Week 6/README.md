@@ -1,21 +1,12 @@
 ## Preparation for Class: [Watch this Video](https://www.youtube.com/watch?v=hWl4WXVZcIQ)
 
 ## Lecture
-### Intro to Github
-1.	Go to GitHub.com
-  - Register
-  -	Create a new repo
-  -	Initialize with a readme
-2.	Clone Repo in SourceTree
-3.	Modify Readme in Source Tree
-4.	Commit to GitHub.com
-5.	Push
-6.	Go to Github and se the update
-7.	Add script to repo folder
-8.	Commit and Push
-9.	Visualize the changes
-10.	Fork a repo
-11.	Add a person to a repo
+### Next 2 Projects
+Let's talk about Projects 2 and 3, and 4?
+
+### Let's take a step back...
+1. Searching Content in AGOL
+2. Renderers and Publishing a CSV
 
 **Break**
 
@@ -38,8 +29,7 @@
 These exercises are optional this week. You don't need to explicitly do them but please use them to guide you on the classwork problems below. Look at them in this order. Numbers one and two should be particularly helpful.
 1. [Accessing and Managing Groups](https://developers.arcgis.com/python/guide/accessing-and-managing-groups/)
 2. [Accessing and Managing Users](https://developers.arcgis.com/python/guide/accessing-and-managing-users/)
-3. [How to share your content](https://developers.arcgis.com/labs/python/share-your-content/)
-4. [Batch Creation of Groups](https://developers.arcgis.com/python/sample-notebooks/batch-creation-of-groups/)
+3. [Batch Creation of Groups](https://developers.arcgis.com/python/sample-notebooks/batch-creation-of-groups/)
 
 ## Classwork Problems
 For the Classwork problems, please follow the instructions, hints and **helpful links** below.
