@@ -17,7 +17,7 @@ In preparation for next week's class, please read the the following sections fro
 ### Demo
 - Start by installing Seaborn
 ```
-conda install seaborn
+conda install seaborn --force
 ```
 
 
