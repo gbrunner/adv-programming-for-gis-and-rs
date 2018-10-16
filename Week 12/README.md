@@ -8,12 +8,12 @@
 ## Lecture
 ### Jupyter RISE
 - Install RISE
-
+```conda install -c conda-forge rise```
 - Turn my Ocean Depth explorer into a RISE presentation
 
 ### Jupyter Dashboard
 - Install Jupyter Dashboards
-
+```conda install -c conda-forge jupyter_dashboards```
 - Demonstrate the Geoenrichment Dashboard
 
 ## In Class Problems:
