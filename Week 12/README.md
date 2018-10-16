@@ -1,11 +1,24 @@
 ## Preparation:
+- Watch this video on [Jupyter RISE](https://www.youtube.com/watch?v=Gx2TnIdt0hw)
+- Watch this video on [Jupyter Dashboards](https://www.youtube.com/watch?v=8Jktm-Imt-I)
+- Check out the Following Dashboards on [Notebooks.esri.com](http://notebooks.esri.com). They will be in the samples/02_power_users folder.
+  - jupyter_dashboard_for_raster_analytics.ipynb
+  - building_a_change_detection_app_using_jupyter_dashboard.ipynb
 
+## Lecture
+### Jupyter RISE
+- Install RISE
 
-## Lecture:
+- Turn my Ocean Depth explorer into a RISE presentation
 
-## In Class Exercises:
+### Jupyter Dashboard
+- Install Jupyter Dashboards
+
+- Demonstrate the Geoenrichment Dashboard
 
 ## In Class Problems:
+1. Turn what you submitted for **Project 2** into a presentation using Jupyter RISE
+2. 
 
 
 
