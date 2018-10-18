@@ -34,7 +34,7 @@ Have you ever wanted to learn how to publish, consume, and use geographic web se
 | Week 13  | Plotting with JS by [@JWasilgeo](https://github.com/jwasilgeo): DataViz, D3, Charting | 11/28 |
 | Week 14  | Advanced Plotting with [Matplotlib](https://jakevdp.github.io/PythonDataScienceHandbook/04.00-introduction-to-matplotlib.html) and [Seaborn](https://seaborn.pydata.org/) and [Intro to Scikit-learn](https://jakevdp.github.io/PythonDataScienceHandbook/05.02-introducing-scikit-learn.html)| 12/5 |
 | Week 15  | [Scikit-learn](https://jakevdp.github.io/PythonDataScienceHandbook/05.02-introducing-scikit-learn.html) and [Multiprocessing](https://www.youtube.com/watch?v=s1SkCYMnfbY) | 12/12 |
-~~| Week 15 | Students Present Final Project | 12/12 |~~
+| ~~Week 15~~ | ~~Students Present Final Project~~ | ~~12/12~~ |
 
 ## Assignments & Grading
 | Weight | Type |
