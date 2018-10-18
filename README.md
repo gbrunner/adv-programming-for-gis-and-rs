@@ -30,6 +30,7 @@ Have you ever wanted to learn how to publish, consume, and use geographic web se
 | Week 9  | [Intro to Pandas](https://jakevdp.github.io/PythonDataScienceHandbook/03.00-introduction-to-pandas.html) and ArcGIS Spatial DataFrames | 10/31 |
 | Week 10  | [Numpy](https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html) and Rasters | 11/7 |
 | Week 11  | Advanced Plotting with [Matplotlib](https://jakevdp.github.io/PythonDataScienceHandbook/04.00-introduction-to-matplotlib.html) and [Seaborn](https://seaborn.pydata.org/) and [Intro to Scikit-learn](https://jakevdp.github.io/PythonDataScienceHandbook/05.02-introducing-scikit-learn.html)| 11/14 |
+| Week 11  | Working with Imagery Services | 11/14 |
 | Week 12  | ~~[Esri Raster Functions](https://github.com/Esri/raster-functions)~~ IDEs, Jupyter Dashboards, Jupyter RISE  | 11/21 |
 | Week 13  | Plotting with JS by [@JWasilgeo](https://github.com/jwasilgeo): DataViz, D3, Charting | 11/28 |
 | Week 14  | [Scikit-learn](https://jakevdp.github.io/PythonDataScienceHandbook/05.02-introducing-scikit-learn.html) and [Multiprocessing](https://www.youtube.com/watch?v=s1SkCYMnfbY) | 12/5 |
