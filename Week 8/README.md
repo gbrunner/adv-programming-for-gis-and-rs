@@ -43,22 +43,15 @@ Follow up with how to use image services.
 - Uses the enrichment capability ```stl_df = enrich(``` to find the *Total Population* ```'TOTPOP'``` of St. Louis.
 - What is the Total Population of the City of St. Louis?
 
-
-2. Using the [world population](http://slustl.maps.arcgis.com/home/item.html?id=92d3005feb84428a8f85160f2451ec63) [image service](https://landscape7.arcgis.com/arcgis/rest/services/World_Population_Estimate_2016/ImageServer), estimate the population of St. Louis using the same polygon.
-- Define the image service layer ```il = ImageryLayer(url = img_url, gis=gis)```
-- Use ```get_samples``` to get the counts of the population cells ```samples = il.get_samples(geometry =, geometry_type='esriGeometryPolygon', sample_count=)```
-- Look at the ```samples``` variable.
-- Extract the Population from the samples and sum those values.
-
-3. Go into [ArcGIS Online](http://slustl.maps.arcgis.com/). Perform the following analysis on the STL Crime features that you published last week.
+2. Go into [ArcGIS Online](http://slustl.maps.arcgis.com/). Perform the following analysis on the STL Crime features that you published last week.
 - Analysis -> Analyze Patterns -> Calculate Density
 - Analysis -> Analyze Patterns -> Find Hot Spots
 
-4. After running that analysis in ArcGIS Online, run them through Python. Using Python, add the objects to a map (separate maps for each) and save the map as a Web Map. Take a look at the help documentation for each tool. Do the results from running through ArcGIS Online match up with the results from Python?
+3. After running that analysis in ArcGIS Online, run them through Python. Using Python, add the objects to a map (separate maps for each) and save the map as a Web Map. Take a look at the help documentation for each tool. Do the results from running through ArcGIS Online match up with the results from Python?
 - [Find Hot Spots](https://esri.github.io/arcgis-python-api/apidoc/html/arcgis.features.analysis.html?highlight=hot%20spot#find-hot-spots)
 - [Calculate Density](https://esri.github.io/arcgis-python-api/apidoc/html/arcgis.features.analysis.html?highlight=density#arcgis.features.analysis.calculate_density)
 
-5. **Challenge** 
+4. **Challenge** 
 - Publish the *STL-Police-Districts-2014-2* data as a feature service. 
 - Aggregate your crime feature layer by Police District
 - For each district, use the Geoenrichment capability to find the population per district
