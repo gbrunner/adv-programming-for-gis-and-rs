@@ -17,12 +17,18 @@ In preparation for next week's class, please read the the following sections fro
 ### Demo
 - Start by installing Seaborn
 ```
-conda install seaborn
+conda install seaborn --force
 ```
 
 
 ## Classwork Exercises
-1. [Kaggle Python Data Visualization](https://www.kaggle.com/benhamner/python-data-visualizations)
+~~1. [Kaggle Python Data Visualization](https://www.kaggle.com/benhamner/python-data-visualizations)~~
+Hve students read in different GIS  Data Types and plot different Characteristics using Seaborn
+- Shapefile
+- Feature is Geodatabase
+- Feature Service
+- Image Service
+
 
 ## Classwork Problems
 
