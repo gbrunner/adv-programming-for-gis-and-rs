@@ -2,7 +2,7 @@
 
 ## Goal: Apply your knowledge of the ArcGIS Python API and web services
 ## Asssigned: Week 8
-## Due: Week 11
+## Due: Monday, December 3 at Noon
 ## Score: Out of 100 points. Anything exceeding 100 points is a A+!
 
 Create two Python Notebooks that answer the following questions. Please use the notebook to explain your steps.
