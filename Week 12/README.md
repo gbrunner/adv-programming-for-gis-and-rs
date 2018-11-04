@@ -25,7 +25,7 @@ Pixel analysis from Image Services
 ## Lecture 3
 ### Jupyter RISE
 - Install RISE
-```conda install -c conda-forge rise```
+```conda install -c conda-forge rise --force```
 - Turn my Ocean Depth explorer into a RISE presentation
  
 ## In Class Problem 1:
@@ -35,12 +35,6 @@ Pixel analysis from Image Services
 
 ## In Class Problem 2
 Turn what you submitted for **Project 2** into a presentation using Jupyter RISE
-
-
-## In Class Problems:
-1. Turn what you submitted for **Project 2** into a presentation using Jupyter RISE
-~~2. Go through the [Change Detection Dashboard Example]~~(https://developers.arcgis.com/python/sample-notebooks/building-a-change-detection-app-using-jupyter-dashboard/)~~and recreat it yourself~~. 
-3. ~~Create a Jupyter Dashboard that shows the Demographic data on a map, alows users to click on a specific county, and shows a pie chart breakdown of the demographic data for that county.
 
 ## Homework:
 1. Complete the **In Class Assignments**
