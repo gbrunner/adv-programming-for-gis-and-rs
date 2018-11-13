@@ -1,35 +1,183 @@
-## Preparation:
-In preparation for next week's class, please read the the following sections from the Python Data Science Handbook:
-- [Introduction to Matplotlib](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/04.00-Introduction-To-Matplotlib.ipynb)
-- [Simple Scatterplots](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/04.02-Simple-Scatter-Plots.ipynb)
-- [Errorbars](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/04.03-Errorbars.ipynb)
-- [Density and Contour Plots](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/04.04-Density-and-Contour-Plots.ipynb)
-- [Histograms and Binnings](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/04.05-Histograms-and-Binnings.ipynb)
-- [Visuallization with Seaborn](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/04.14-Visualization-With-Seaborn.ipynb)
+## Preparation
 
-## Lecture 
-### Plots I like
-- Start at [Seaborn example gallery](https://seaborn.pydata.org/examples/)
-- Shotcharts [jointplot](http://savvastjortjoglou.com/nba-shot-sharts.html)
-- [Correlograms](https://python-graph-gallery.com/111-custom-correlogram/)
-- The multichart plot from last semester. Find it!
+- Review HTML &amp; JavaScript class activities from first few weeks of the semester.
 
-### Demo
-- Start by installing Seaborn
-```
-conda install seaborn --force
-```
+- Review your experience so far with Python charting (e.g. `matplotlib`, `seaborn`) to see how it compares to charting your data in the web.
 
+- Review April 2018 lecture: [Web Mapping Development Intro](https://github.com/gbrunner/Python_for_GIS_and_RS/tree/master/Week_14)
 
-## Classwork Exercises
-~~1. [Kaggle Python Data Visualization](https://www.kaggle.com/benhamner/python-data-visualizations)~~
-Hve students read in different GIS  Data Types and plot different Characteristics using Seaborn
-- Shapefile
-- Feature is Geodatabase
-- Feature Service
-- Image Service
+## Lecture
 
+### Charting in the web - 2D Graphics
 
-## Classwork Problems
+Bookmark: <https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics>
 
-## Homework:
+### Choose your own adventure
+
+[Option 1: SVG `<svg>`](https://developer.mozilla.org/en-US/docs/Web/SVG)
+
+- > Scalable Vector Graphics (SVG) is an XML-based markup language for describing two dimensional based  vector graphics. SVG is essentially to graphics what HTML is to text.
+
+- HTML: `<svg>` parent element with children elements such as `<rect>`, `<path>`, `<circle>`, `<text>`
+
+- JavaScript and CSS: used to manipulate contents, attributes, and styling of SVG-related HTML elements
+
+[Option 2: Canvas `<canvas>`](https://developer.mozilla.org/en-US/docs/HTML/Canvas)
+
+- > ...the HTML `<canvas>` element can be used to draw graphics via scripting in JavaScript. For example, it can be used to draw graphs, make photo compositions, create animations, or even do real-time video processing or rendering.
+
+- HTML: `<canvas>` element only
+
+- JavaScript: used to send drawing and styling commands to the `<canvas>` element; think of drawing a picture with code
+
+### Exercise 1: manually make an SVG chart
+
+<details>
+  <summary>Details...</summary>
+
+  ```html
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SVG Demo</title>
+
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      svg {
+        max-width: 500px;
+        max-height: 500px;
+        outline: 2px solid steelblue;
+
+        /* experiment with other CSS properties */
+        /* stroke-linejoin: round; */
+        /* stroke-linecap: round; */
+      }
+
+      rect {
+        fill: lightgray;
+        stroke: deeppink;
+        stroke-width: 2px;
+        vector-effect: non-scaling-stroke;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>SVG Demo</p>
+
+    <svg viewBox="0 0 100 100">
+      <!-- the data values are encoded in these properties -->
+      <rect x="5" y="0" width="10" height="50"></rect>
+      <rect x="25" y="0" width="10" height="15"></rect>
+      <rect x="45" y="0" width="10" height="75"></rect>
+      <rect x="65" y="0" width="10" height="66.666"></rect>
+      <rect x="85" y="0" width="10" height="33.333"></rect>
+    </svg>
+  </body>
+
+  </html>
+  ```
+
+</details>
+
+### Exercise 2: manually make a Canvas chart
+
+<details>
+  <summary>Details...</summary>
+
+  ```html
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas Demo</title>
+
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      #canvasElement {
+        outline: 2px solid steelblue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>Canvas Demo</p>
+
+    <canvas id="canvasElement" width="500" height="500"></canvas>
+
+    <script>
+      var canvas = document.querySelector('#canvasElement');
+      var ctx = canvas.getContext('2d');
+
+      // set styles for the next set of drawing commands
+      ctx.fillStyle = 'lightgray';
+      ctx.strokeStyle = 'deeppink'
+      ctx.lineWidth = 2;
+
+      // experiment with some other style properties
+      // ctx.lineJoin = 'round';
+      // ctx.lineCap = 'round';
+
+      // NOTE: this will create a graphic nearly identical to the SVG demo;
+      // all these numbers came from the SVG demo but were multiplied by 5 because the
+      // <canvas> handles width/height differently and is actually 5x bigger than the SVG
+
+      // draw rectangle fills
+      ctx.fillRect(25, 0, 50, 250);
+      ctx.fillRect(125, 0, 50, 75);
+      ctx.fillRect(225, 0, 50, 375);
+      ctx.fillRect(325, 0, 50, 333.333);
+      ctx.fillRect(425, 0, 50, 166.666);
+
+      // draw rectangle outlines
+      ctx.strokeRect(25, 0, 50, 250);
+      ctx.strokeRect(125, 0, 50, 75);
+      ctx.strokeRect(225, 0, 50, 375);
+      ctx.strokeRect(325, 0, 50, 333.333);
+      ctx.strokeRect(425, 0, 50, 166.666);
+    </script>
+  </body>
+
+  </html>
+  ```
+
+</details>
+
+### Time to get help from a JavaScript charting library
+
+[Search online for "JavaScript charting libraries"](https://duckduckgo.com/?q=JavaScript+charting+libraries)
+
+:scream: How do we pick one?! :scream:
+
+A few highlights:
+
+- [D3: Data-Driven Documents](https://d3js.org/) :star2: :star2: :star2:
+
+- [Chart.js](https://www.chartjs.org/)
+
+- [C3.js](https://c3js.org/)
+
+- [CHARTIST.JS](http://gionkunz.github.io/chartist-js/index.html)
+
+- [plotly.js](https://plot.ly/javascript/) (also available for [Python](https://plot.ly/python/) :snake:)
+
+- Some interesting (but complex) examples of charting with the ArcGIS API for JavaScript: <https://developers.arcgis.com/javascript/latest/sample-code/featurelayerview-query-stats/index.html?search=chart>
+
+### Exercise 3: Leaflet + Chart.js
+
+Walkthrough of `leaflet-demo.html`
+
+### Exercise 4: ArcGIS API for JavaScript + plotly.js
+
+Walkthrough of `esri-demo.html`
