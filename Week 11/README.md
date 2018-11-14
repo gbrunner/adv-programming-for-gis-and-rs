@@ -123,10 +123,14 @@ Bookmark: <https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics>
     <canvas id="canvasElement" width="500" height="500"></canvas>
 
     <script>
+      // get reference to the canvas element
       var canvas = document.querySelector('#canvasElement');
+
+      // get the canvas element's 2-D rendering context
+      // (this is where we give it drawing instructions)
       var ctx = canvas.getContext('2d');
 
-      // set styles for the next set of drawing commands
+      // set styles for the next set of drawing commands below
       ctx.fillStyle = 'lightgray';
       ctx.strokeStyle = 'deeppink'
       ctx.lineWidth = 2;
@@ -182,8 +186,16 @@ A few highlights:
 
 ### Exercise 3: Leaflet + Chart.js
 
-Walkthrough of `leaflet-demo.html`
+- Walkthrough of `leaflet-demo.html`
+
+- Make a dynamic chart with feature layer data attributes
+
+- Continue to customize it and make it your own
 
 ### Exercise 4: ArcGIS API for JavaScript + plotly.js
 
-Walkthrough of `esri-demo.html`
+- Walkthrough of `esri-demo.html`
+
+- Make a dynamic chart with feature layer data attributes
+
+- Continue to customize it and make it your own

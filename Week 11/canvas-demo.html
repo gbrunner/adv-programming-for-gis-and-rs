@@ -23,10 +23,14 @@
   <canvas id="canvasElement" width="500" height="500"></canvas>
 
   <script>
+    // get reference to the canvas element
     var canvas = document.querySelector('#canvasElement');
+
+    // get the canvas element's 2-D rendering context
+    // (this is where we give it drawing instructions)
     var ctx = canvas.getContext('2d');
 
-    // set styles for the next set of drawing commands
+    // set styles for the next set of drawing commands below
     ctx.fillStyle = 'lightgray';
     ctx.strokeStyle = 'deeppink'
     ctx.lineWidth = 2;

@@ -61,38 +61,39 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
 
   <script>
+    // STEP 1: MAKE A MAP
     var map = L.map('mapDiv');
-    // latitude, longitude, followed by zoom level
-    map.setView([65, 15], 4)
 
-    var basemap = L.esri.basemapLayer('Streets');
-    basemap.addTo(map);
+    // [latitude, longitude], followed by zoom level
+    map.setView([45, -122], 4);
 
-    // MAKE A CHART
-    var ctx = document.querySelector("#chartCanvas").getContext('2d');
+    // create and add a basemap layer
+    L.esri.basemapLayer('Streets').addTo(map);
+
+    // create and add a feature layer
+    var portlandTreesFeatureLayer = L.esri.featureLayer({
+      url: 'https://services.arcgis.com/rOo16HdIMeOBI4Mb/arcgis/rest/services/Heritage_Trees_Portland/FeatureServer/0',
+    });
+
+    portlandTreesFeatureLayer.addTo(map);
+
+    // auto zoom and pan the map to the bounding extent box of all the features
+    // https://esri.github.io/esri-leaflet/examples/zooming-to-all-features-1.html
+    portlandTreesFeatureLayer
+      .query()
+      .bounds(function(error, latlngbounds) {
+        map.flyToBounds(latlngbounds);
+      });
+
+    // STEP 2: MAKE A STATIC CHART
+    // this is just a static demo for now, we are going to change it together...
+    var ctx = document.querySelector('#chartCanvas').getContext('2d');
 
     var data = {
-      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      labels: ['category a', 'category b', 'category c', 'category d', 'category e', 'category f'],
       datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
-        backgroundColor: [
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
-          'rgba(255, 159, 64, 0.2)'
-        ],
-        borderColor: [
-          'rgba(255,99,132,1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)'
-        ],
-        borderWidth: 1
+        label: 'some random attribute value',
+        data: [12, 19, 3, 5, 2, 3]
       }]
     };
 
@@ -111,6 +112,22 @@
       type: 'bar',
       data: data,
       options: options
+    });
+
+    // STEP 3: MAKE THE CHART DYNAMIC
+    // run a query on the feature layer every time there was a zoom or pan event
+    // to get features in the map's current extent
+    map.on('zoomend, moveend', function() {
+      var currentMapBounds = map.getBounds();
+
+      portlandTreesFeatureLayer
+        .query()
+        .within(currentMapBounds)
+        .run(function(error, featureCollection) {
+          // now we have the current set of features...
+          // we need to update our chart...
+          console.log(featureCollection);
+        });
     });
   </script>
 </body>

@@ -59,36 +59,76 @@
   <script>
     require([
       'esri/Map',
-      'esri/views/MapView'
-    ], function(Map, MapView) {
+      'esri/views/MapView',
+      'esri/layers/FeatureLayer'
+    ], function(Map, MapView, FeatureLayer) {
+      // STEP 1: MAKE A MAPVIEW
+
+      // create a map object and set the basemap
       var map = new Map({
         basemap: 'streets'
       });
 
-      var view = new MapView({
+      // create and add a feature layer to the map object
+      var powerPlantsFeatureLayer = new FeatureLayer({
+        url: 'https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/US_Power_Plants_201612/FeatureServer/0',
+        outFields: ['*']
+        // outFields: ['PrimSource', 'tech_desc', 'Total_MW']
+      });
+
+      map.layers.add(powerPlantsFeatureLayer);
+
+      var mapView = new MapView({
         container: 'viewDiv',
         map: map,
-        zoom: 4,
-        center: [15, 65] // longitude, latitude
+        zoom: 3,
+        center: [-90, 40] // [longitude, latitude]
       });
 
-      view.when(function() {
-        // MAKE A CHART
-        var chartContainer = document.querySelector('#chartContainer');
+      // STEP 2: MAKE A STATIC CHART
+      // this is just a static demo for now, we are going to change it together...
+      var chartContainer = document.querySelector('#chartContainer');
 
-        var data = [
-          {
-            x: [1, 2, 3, 4, 5, 6],
-            y: [1, 2, 4, 8, 16, 9]
-          }
-        ];
+      var data = [
+        {
+          x: ['category a', 'category b', 'category c', 'category d', 'category e', 'category f'],
+          y: [12, 19, 3, 5, 2, 3],
+          type: 'bar'
+        }
+      ];
 
-        var layout = {
-          margin: { t: 0 }
-        };
+      var layout = {
+        margin: {
+          t: 40
+        }
+      };
 
-        var chart = Plotly.react(chartContainer, data, layout);
-      });
+      var config = {
+        responsive: true
+      };
+
+      var chart = Plotly.react(chartContainer, data, layout, config);
+
+      // STEP 3: MAKE THE CHART DYNAMIC
+      mapView
+        .whenLayerView(powerPlantsFeatureLayer)
+        .then(function(layerView) {
+          layerView.watch('updating', function(updatingBoolean) {
+            // wait for the layer view to finish updating
+            if (!updatingBoolean) {
+              // get all the features in the current mapView extent
+              layerView.queryFeatures({
+                geometry: mapView.extent,
+                returnGeometry: false
+              })
+                .then(function(results) {
+                  // now we have the current set of features...
+                  // we need to update our chart...
+                  console.log(results.features);
+                });
+            }
+          });
+        });
     });
   </script>
 </body>
