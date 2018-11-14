@@ -1,4 +1,10 @@
-## Preparation
+# Plotting with JavaScript
+
+November 2018
+
+Jacob Wasilkowski, <https://jwasilgeo.github.io>
+
+## Background
 
 - Review HTML &amp; JavaScript class activities from first few weeks of the semester.
 
@@ -8,7 +14,7 @@
 
 ## Lecture
 
-### Charting in the web - 2D Graphics
+### Charting in the web with 2D graphics
 
 Bookmark: <https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics>
 
@@ -16,7 +22,7 @@ Bookmark: <https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics>
 
 [Option 1: SVG `<svg>`](https://developer.mozilla.org/en-US/docs/Web/SVG)
 
-- > Scalable Vector Graphics (SVG) is an XML-based markup language for describing two dimensional based  vector graphics. SVG is essentially to graphics what HTML is to text.
+> Scalable Vector Graphics (SVG) is an XML-based markup language for describing two dimensional based  vector graphics. SVG is essentially to graphics what HTML is to text.
 
 - HTML: `<svg>` parent element with children elements such as `<rect>`, `<path>`, `<circle>`, `<text>`
 
@@ -24,7 +30,7 @@ Bookmark: <https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics>
 
 [Option 2: Canvas `<canvas>`](https://developer.mozilla.org/en-US/docs/HTML/Canvas)
 
-- > ...the HTML `<canvas>` element can be used to draw graphics via scripting in JavaScript. For example, it can be used to draw graphs, make photo compositions, create animations, or even do real-time video processing or rendering.
+> ...the HTML `<canvas>` element can be used to draw graphics via scripting in JavaScript. For example, it can be used to draw graphs, make photo compositions, create animations, or even do real-time video processing or rendering.
 
 - HTML: `<canvas>` element only
 
@@ -33,7 +39,7 @@ Bookmark: <https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics>
 ### Exercise 1: manually make an SVG chart
 
 <details>
-  <summary>Details...</summary>
+  <summary>Expand for details...</summary>
 
   ```html
   <!DOCTYPE html>
@@ -89,7 +95,7 @@ Bookmark: <https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics>
 ### Exercise 2: manually make a Canvas chart
 
 <details>
-  <summary>Details...</summary>
+  <summary>Expand for details...</summary>
 
   ```html
   <!DOCTYPE html>
@@ -172,7 +178,7 @@ A few highlights:
 
 - [plotly.js](https://plot.ly/javascript/) (also available for [Python](https://plot.ly/python/) :snake:)
 
-- Some interesting (but complex) examples of charting with the ArcGIS API for JavaScript: <https://developers.arcgis.com/javascript/latest/sample-code/featurelayerview-query-stats/index.html?search=chart>
+- Some interesting (but complex) examples of charting with the ArcGIS API for JavaScript: <https://developers.arcgis.com/javascript/latest/sample-code/index.html?search=chart>
 
 ### Exercise 3: Leaflet + Chart.js
 
