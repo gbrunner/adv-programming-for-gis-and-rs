@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Canvas Demo</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    #canvasElement {
+      outline: 2px solid steelblue;
+    }
+  </style>
+</head>
+
+<body>
+  <p>Canvas Demo</p>
+
+  <canvas id="canvasElement" width="500" height="500"></canvas>
+
+  <script>
+    // get reference to the canvas element
+    var canvas = document.querySelector('#canvasElement');
+
+    // get the canvas element's 2-D rendering context
+    // (this is where we give it drawing instructions)
+    var ctx = canvas.getContext('2d');
+
+    // set styles for the next set of drawing commands below
+    ctx.fillStyle = 'lightgray';
+    ctx.strokeStyle = 'deeppink'
+    ctx.lineWidth = 2;
+
+    // experiment with some other style properties
+    // ctx.lineJoin = 'round';
+    // ctx.lineCap = 'round';
+
+    // NOTE: this will create a graphic nearly identical to the SVG demo;
+    // all these numbers came from the SVG demo but were multiplied by 5 because the
+    // <canvas> handles width/height differently and is actually 5x bigger than the SVG
+        
+    // draw rectangle fills
+    ctx.fillRect(25, 0, 50, 250);
+    ctx.fillRect(125, 0, 50, 75);
+    ctx.fillRect(225, 0, 50, 375);
+    ctx.fillRect(325, 0, 50, 333.333);
+    ctx.fillRect(425, 0, 50, 166.666);
+
+    // draw rectangle outlines
+    ctx.strokeRect(25, 0, 50, 250);
+    ctx.strokeRect(125, 0, 50, 75);
+    ctx.strokeRect(225, 0, 50, 375);
+    ctx.strokeRect(325, 0, 50, 333.333);
+    ctx.strokeRect(425, 0, 50, 166.666);
+  </script>
+</body>
+
+</html>
