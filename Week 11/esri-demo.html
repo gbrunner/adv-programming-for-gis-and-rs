@@ -66,14 +66,14 @@
 
       // create a map object and set the basemap
       var map = new Map({
-        basemap: 'streets'
+        basemap: 'topo'
       });
 
       // create and add a feature layer to the map object
+      // http://open-fedmaps.opendata.arcgis.com/datasets/b7d20f91a412490782178ee60f994361_0
       var powerPlantsFeatureLayer = new FeatureLayer({
         url: 'https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/US_Power_Plants_201612/FeatureServer/0',
-        outFields: ['*']
-        // outFields: ['PrimSource', 'tech_desc', 'Total_MW']
+        outFields: ['PrimSource', 'Total_MW']
       });
 
       map.layers.add(powerPlantsFeatureLayer);
@@ -86,45 +86,81 @@
       });
 
       // STEP 2: MAKE A STATIC CHART
-      // this is just a static demo for now, we are going to change it together...
+      // this is just a static demo for now, we are going to make it dynamic below
       var chartContainer = document.querySelector('#chartContainer');
 
-      var data = [
+      var initialChartData = [
         {
-          x: ['category a', 'category b', 'category c', 'category d', 'category e', 'category f'],
-          y: [12, 19, 3, 5, 2, 3],
-          type: 'bar'
+          type: 'bar',
+          x: [],
+          y: []
         }
       ];
 
-      var layout = {
+      var chartLayout = {
         margin: {
           t: 40
         }
       };
 
-      var config = {
+      var chartConfig = {
         responsive: true
       };
 
-      var chart = Plotly.react(chartContainer, data, layout, config);
+      Plotly.react(chartContainer, initialChartData, chartLayout, chartConfig);
 
       // STEP 3: MAKE THE CHART DYNAMIC
+      // run a client-side query on the feature layer view every time it is done updating
+      // (usually after zooming or panning the mapView)
+      // to get only the features in the mapView's current extent
       mapView
         .whenLayerView(powerPlantsFeatureLayer)
         .then(function(layerView) {
-          layerView.watch('updating', function(updatingBoolean) {
+          mapView.watch('updating', function(updatingBoolean) {
             // wait for the layer view to finish updating
+            // (usually after zooming or panning the mapView)
             if (!updatingBoolean) {
               // get all the features in the current mapView extent
-              layerView.queryFeatures({
-                geometry: mapView.extent,
-                returnGeometry: false
-              })
+              layerView
+                .queryFeatures({
+                  geometry: mapView.extent,
+                  returnGeometry: false,
+                  orderByFields: ['PrimSource ASC']
+                })
                 .then(function(results) {
-                  // now we have the current set of features...
-                  // we need to update our chart...
-                  console.log(results.features);
+                  // now we have the current set of features since the query is finished,
+                  // se we need to update our chart every time we enter this function
+
+                  // console.log(results.features);
+
+                  // reformat the features' attributes of interest into the data array
+                  // format required by the plotly.js bar chart
+
+                  // here we are looping over all the features and tallying up sums
+                  // of megawatts per energy source category
+                  var energyCategories = [];
+                  var totalMWPerEnergyCategory = [];
+                  results.features.forEach(function(feature) {
+                    if (energyCategories.indexOf(feature.attributes.PrimSource) === -1) {
+                      energyCategories.push(feature.attributes.PrimSource);
+                      totalMWPerEnergyCategory.push(0);
+                    }
+
+                    var categoryArrayIndex = energyCategories.indexOf(feature.attributes.PrimSource);
+                    totalMWPerEnergyCategory[categoryArrayIndex] += feature.attributes.Total_MW;
+                  });
+
+                  var newChartData = [
+                    {
+                      type: 'bar',
+                      x: energyCategories,
+                      y: totalMWPerEnergyCategory
+                    }
+                  ];
+
+                  // assign the new chart data to the chart's data property
+                  // tell the chart to re-draw itself with the new data
+                  Plotly.react(chartContainer, newChartData, chartLayout, chartConfig);
                 });
             }
           });

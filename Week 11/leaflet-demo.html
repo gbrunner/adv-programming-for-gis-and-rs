@@ -30,7 +30,7 @@
     /* assists in making the chart responsive to changes in browser size */
     #chartContainer {
       height: 40vh;
-      width: 80vw;
+      width: 40vw;
       /* an outline can help us see what we're doing */
       outline: 1px solid steelblue;
       /* add some vertical spacing, and also horizontally center this on the page */
@@ -68,7 +68,7 @@
     map.setView([45, -122], 4);
 
     // create and add a basemap layer
-    L.esri.basemapLayer('Streets').addTo(map);
+    L.esri.basemapLayer('Topographic').addTo(map);
 
     // create and add a feature layer
     var portlandTreesFeatureLayer = L.esri.featureLayer({
@@ -86,37 +86,52 @@
       });
 
     // STEP 2: MAKE A STATIC CHART
-    // this is just a static demo for now, we are going to change it together...
+    // this is just a static demo for now, we are going to make it dynamic below
     var ctx = document.querySelector('#chartCanvas').getContext('2d');
 
-    var data = {
-      labels: ['category a', 'category b', 'category c', 'category d', 'category e', 'category f'],
+    var initialChartData = {
       datasets: [{
-        label: 'some random attribute value',
-        data: [12, 19, 3, 5, 2, 3]
+        label: 'Portland Heritage Trees',
+        // the data values are empty right now
+        data: []
       }]
     };
 
-    var options = {
+    var chartOptions = {
       maintainAspectRatio: false,
       scales: {
-        yAxes: [{
+        xAxes: [{
+          scaleLabel: {
+            display: true,
+            labelString: 'diameter'
+          },
           ticks: {
-            beginAtZero: true
+            beginAtZero: true,
+            max: 250
+          }
+        }],
+        yAxes: [{
+          scaleLabel: {
+            display: true,
+            labelString: 'height'
+          },
+          ticks: {
+            beginAtZero: true,
+            max: 250
           }
         }]
       }
     };
 
     var chart = new Chart(ctx, {
-      type: 'bar',
-      data: data,
-      options: options
+      type: 'scatter',
+      data: initialChartData,
+      options: chartOptions
     });
 
     // STEP 3: MAKE THE CHART DYNAMIC
     // run a query on the feature layer every time there was a zoom or pan event
-    // to get features in the map's current extent
+    // to get only the features in the map's current extent
     map.on('zoomend, moveend', function() {
       var currentMapBounds = map.getBounds();
 
@@ -124,9 +139,34 @@
         .query()
         .within(currentMapBounds)
         .run(function(error, featureCollection) {
-          // now we have the current set of features...
-          // we need to update our chart...
-          console.log(featureCollection);
+          // now we have the current set of features since the query is finished,
+          // se we need to update our chart every time we enter this function
+
+          // console.log(featureCollection.features);
+
+          // reformat the features' attributes of interest into the data array
+          // format required by the Chart.js scatterplot
+          var scatterDataArray = [];
+          featureCollection.features.forEach(function(feature) {
+            scatterDataArray.push({
+              x: feature.properties.DIAMETER,
+              y: feature.properties.HEIGHT
+            });
+          });
+
+          var newChartData = {
+            datasets: [{
+              label: 'Portland Heritage Trees',
+              data: scatterDataArray
+            }]
+          };
+
+          // assign the new chart scatter data to the chart's data property
+          chart.data = newChartData;
+
+          // tell the chart to re-draw itself with the new data
+          // (and don't animate it by setting a duration of 0)
+          chart.update(0);
         });
     });
   </script>
