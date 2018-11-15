@@ -133,28 +133,34 @@
 
                   // console.log(results.features);
 
-                  // reformat the features' attributes of interest into the data array
-                  // format required by the plotly.js bar chart
+                  // reformat the features' attributes of interest into
+                  // the data arrays format required by the plotly.js bar chart
 
-                  // here we are looping over all the features and tallying up sums
-                  // of megawatts per energy source category
+                  // here we are looping over all the features and
+                  // tallying up sums of megawatts (MW) per energy source category
                   var energyCategories = [];
                   var totalMWPerEnergyCategory = [];
                   results.features.forEach(function(feature) {
                     if (energyCategories.indexOf(feature.attributes.PrimSource) === -1) {
+                      // only add a category to the energyCategories array one time
                       energyCategories.push(feature.attributes.PrimSource);
+
+                      // and in the MW tallies array, set the initial value with 0 one time
                       totalMWPerEnergyCategory.push(0);
                     }
 
+                    // find the appropriate MW tally item in the tallies array
                     var categoryArrayIndex = energyCategories.indexOf(feature.attributes.PrimSource);
+
+                    // and continue adding to it to achieve our total MW count per energy source category
                     totalMWPerEnergyCategory[categoryArrayIndex] += feature.attributes.Total_MW;
                   });
 
                   var newChartData = [
                     {
                       type: 'bar',
-                      x: energyCategories,
-                      y: totalMWPerEnergyCategory
+                      x: energyCategories, // example: ['biomass', 'nuclear', 'wind']
+                      y: totalMWPerEnergyCategory // example: [2000, 13500, 8300]
                     }
                   ];
 

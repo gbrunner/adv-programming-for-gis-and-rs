@@ -146,14 +146,21 @@
 
           // console.log(featureCollection.features);
 
-          // reformat the features' attributes of interest into the data array
-          // format required by the Chart.js scatterplot
-          var scatterDataArray = [];
-          featureCollection.features.forEach(function(feature) {
-            scatterDataArray.push({
+          // reformat the features' attributes of interest into
+          // the data array format required by the Chart.js scatterplot
+          var scatterDataArray = featureCollection.features.map(function(feature) {
+            // for each feature we are looping over,
+            // return an object in this format:
+
+            // {
+            //   x: diameter attribute value,
+            //   y: height attribute value
+            // }
+
+            return {
               x: feature.properties.DIAMETER,
               y: feature.properties.HEIGHT
-            });
+            };
           });
 
           var newChartData = {
