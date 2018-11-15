@@ -18,7 +18,7 @@ Jacob Wasilkowski, <https://jwasilgeo.github.io>
 
 Bookmark: <https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics>
 
-### Choose your own adventure
+### Choose your own adventure: SVG or Canvas?
 
 [Option 1: SVG `<svg>`](https://developer.mozilla.org/en-US/docs/Web/SVG)
 
@@ -34,135 +34,53 @@ Bookmark: <https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics>
 
 - HTML: `<canvas>` element only
 
-- JavaScript: used to send drawing and styling commands to the `<canvas>` element; think of drawing a picture with code
+- JavaScript: used to send drawing and styling commands to the `<canvas>` element; think of drawing a picture with code.
 
 ### Exercise 1: manually make an SVG chart
 
-<details>
-  <summary>Expand for details...</summary>
+- Walkthrough of `svg-demo.html`
+
+- It is all about HTML elements defining the vector graphics to render:
 
   ```html
-  <!DOCTYPE html>
-  <html>
-
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SVG Demo</title>
-
-    <style>
-      body {
-        font-family: sans-serif;
-      }
-
-      svg {
-        max-width: 500px;
-        max-height: 500px;
-        outline: 2px solid steelblue;
-
-        /* experiment with other CSS properties */
-        /* stroke-linejoin: round; */
-        /* stroke-linecap: round; */
-      }
-
-      rect {
-        fill: lightgray;
-        stroke: deeppink;
-        stroke-width: 2px;
-        vector-effect: non-scaling-stroke;
-      }
-    </style>
-  </head>
-
-  <body>
-    <p>SVG Demo</p>
-
-    <svg viewBox="0 0 100 100">
-      <!-- the data values are encoded in these properties -->
-      <rect x="5" y="0" width="10" height="50"></rect>
-      <rect x="25" y="0" width="10" height="15"></rect>
-      <rect x="45" y="0" width="10" height="75"></rect>
-      <rect x="65" y="0" width="10" height="66.666"></rect>
-      <rect x="85" y="0" width="10" height="33.333"></rect>
-    </svg>
-  </body>
-
-  </html>
+  <!-- the data values are encoded in the height properties
+    to simulate a bar chart with values from 0 to 100 -->
+  <svg viewBox="0 0 100 100">
+    <rect x="5" y="0" width="10" height="50"></rect>
+    <rect x="25" y="0" width="10" height="15"></rect>
+  </svg>
   ```
-
-</details>
 
 ### Exercise 2: manually make a Canvas chart
 
-<details>
-  <summary>Expand for details...</summary>
+- Walkthrough of `canvas-demo.html`
+
+- It is all about JavaScript telling a single `<canvas>` element what image pixel graphics to render:
 
   ```html
-  <!DOCTYPE html>
-  <html>
+  <canvas id="canvasElement"></canvas>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Canvas Demo</title>
+  <script>
+    // get reference to the canvas element
+    var canvas = document.querySelector('#canvasElement');
 
-    <style>
-      body {
-        font-family: sans-serif;
-      }
+    // get the canvas element's 2-D rendering context
+    // (this is where we give it drawing instructions)
+    var ctx = canvas.getContext('2d');
 
-      #canvasElement {
-        outline: 2px solid steelblue;
-      }
-    </style>
-  </head>
-
-  <body>
-    <p>Canvas Demo</p>
-
-    <canvas id="canvasElement" width="500" height="500"></canvas>
-
-    <script>
-      // get reference to the canvas element
-      var canvas = document.querySelector('#canvasElement');
-
-      // get the canvas element's 2-D rendering context
-      // (this is where we give it drawing instructions)
-      var ctx = canvas.getContext('2d');
-
-      // set styles for the next set of drawing commands below
-      ctx.fillStyle = 'lightgray';
-      ctx.strokeStyle = 'deeppink'
-      ctx.lineWidth = 2;
-
-      // experiment with some other style properties
-      // ctx.lineJoin = 'round';
-      // ctx.lineCap = 'round';
-
-      // NOTE: this will create a graphic nearly identical to the SVG demo;
-      // all these numbers came from the SVG demo but were multiplied by 5 because the
-      // <canvas> handles width/height differently and is actually 5x bigger than the SVG
-
-      // draw rectangle fills
-      ctx.fillRect(25, 0, 50, 250);
-      ctx.fillRect(125, 0, 50, 75);
-      ctx.fillRect(225, 0, 50, 375);
-      ctx.fillRect(325, 0, 50, 333.333);
-      ctx.fillRect(425, 0, 50, 166.666);
-
-      // draw rectangle outlines
-      ctx.strokeRect(25, 0, 50, 250);
-      ctx.strokeRect(125, 0, 50, 75);
-      ctx.strokeRect(225, 0, 50, 375);
-      ctx.strokeRect(325, 0, 50, 333.333);
-      ctx.strokeRect(425, 0, 50, 166.666);
-    </script>
-  </body>
-
-  </html>
+    // draw a couple rectangle fills to simulate bars in a bar chart
+    ctx.fillRect(25, 0, 50, 250);
+    ctx.fillRect(125, 0, 50, 75);
+  </script>
   ```
 
-</details>
+- Learn more about Canvas and get inspired:
+
+  - <https://generativeartistry.com/>
+
+  - <https://flaviocopes.com/canvas/>
+
+  - <https://skilled.co/html-canvas/>
 
 ### Time to get help from a JavaScript charting library
 
@@ -176,7 +94,7 @@ A few highlights:
 
 - [Chart.js](https://www.chartjs.org/)
 
-- [plotly.js](https://plot.ly/javascript/) (also available for [Python](https://plot.ly/python/) :snake:)
+- [plotly.js](https://plot.ly/javascript/) (_also available for [Python](https://plot.ly/python/)_ :snake:)
 
 - [C3.js](https://c3js.org/)
 
