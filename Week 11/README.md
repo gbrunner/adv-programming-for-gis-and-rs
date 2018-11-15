@@ -38,7 +38,7 @@ Bookmark: <https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics>
 
 ### Exercise 1: manually make an SVG chart
 
-- Walkthrough of `svg-demo.html`
+- Code walkthrough of [`svg-demo.html`](https://gbrunner.github.io/adv-python-for-gis-and-rs/Week%2011/svg-demo.html)
 
 - It is all about HTML elements defining the vector graphics to render:
 
@@ -53,7 +53,7 @@ Bookmark: <https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics>
 
 ### Exercise 2: manually make a Canvas chart
 
-- Walkthrough of `canvas-demo.html`
+- Code walkthrough of [`canvas-demo.html`](https://gbrunner.github.io/adv-python-for-gis-and-rs/Week%2011/canvas-demo.html)
 
 - It is all about JavaScript telling a single `<canvas>` element what image pixel graphics to render:
 
@@ -102,7 +102,7 @@ A few highlights:
 
 ### Exercise 3: [Leaflet](https://leafletjs.com/) + [Chart.js](https://www.chartjs.org/)
 
-- Walkthrough of `leaflet-demo.html`
+- Code walkthrough of [`leaflet-demo.html`](https://gbrunner.github.io/adv-python-for-gis-and-rs/Week%2011/leaflet-demo.html)
 
 - Make a dynamic chart with feature layer data attributes
 
@@ -110,7 +110,7 @@ A few highlights:
 
 ### Exercise 4: [ArcGIS API for JavaScript](https://js.arcgis.com) + [plotly.js](https://plot.ly/javascript/)
 
-- Walkthrough of `esri-demo.html`
+- Code walkthrough of [`esri-demo.html`](https://gbrunner.github.io/adv-python-for-gis-and-rs/Week%2011/esri-demo.html)
 
 - Make a dynamic chart with feature layer data attributes
 
