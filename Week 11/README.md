@@ -176,15 +176,13 @@ A few highlights:
 
 - [Chart.js](https://www.chartjs.org/)
 
-- [C3.js](https://c3js.org/)
-
-- [CHARTIST.JS](http://gionkunz.github.io/chartist-js/index.html)
-
 - [plotly.js](https://plot.ly/javascript/) (also available for [Python](https://plot.ly/python/) :snake:)
+
+- [C3.js](https://c3js.org/)
 
 - Some interesting (but complex) examples of charting with the ArcGIS API for JavaScript: <https://developers.arcgis.com/javascript/latest/sample-code/index.html?search=chart>
 
-### Exercise 3: Leaflet + Chart.js
+### Exercise 3: [Leaflet](https://leafletjs.com/) + [Chart.js](https://www.chartjs.org/)
 
 - Walkthrough of `leaflet-demo.html`
 
@@ -192,7 +190,7 @@ A few highlights:
 
 - Continue to customize it and make it your own
 
-### Exercise 4: ArcGIS API for JavaScript + plotly.js
+### Exercise 4: [ArcGIS API for JavaScript](https://js.arcgis.com) + [plotly.js](https://plot.ly/javascript/)
 
 - Walkthrough of `esri-demo.html`
 
