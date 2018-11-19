@@ -41,18 +41,18 @@ def slope_function(dem, cellsize):
  6. View in Arcmap
  7. **Challange!** Building on the workflow here, go back to Jupyter and create a Hillshade raster from the DEM. Follow the code found [here](https://github.com/rveciana/geoexamples/blob/master/python/shaded_relief/hillshade.py)
  ```
- def hillshade(array, azimuth, angle_altitude): 
+def hillshade(array, azimuth, angle_altitude): 
+   
+    x, y = np.gradient(array)
+    slope = np.pi/2. - np.arctan(np.sqrt(x*x + y*y))
+    aspect = np.arctan2(-x, y)
+    azimuthrad = azimuth*np.pi / 180.
+    altituderad = angle_altitude*np.pi / 180.
     
-    x, y = gradient(array)
-    slope = pi/2. - arctan(sqrt(x*x + y*y))
-    aspect = arctan2(-x, y)
-    azimuthrad = azimuth*pi / 180.
-    altituderad = angle_altitude*pi / 180.
-     
- 
-    shaded = sin(altituderad) * sin(slope)\
-     + cos(altituderad) * cos(slope)\
-     * cos(azimuthrad - aspect)
+
+    shaded = np.sin(altituderad) * np.sin(slope)\
+        + np.cos(altituderad) * np.cos(slope)\
+        * np.cos(azimuthrad - aspect)
     return 255*(shaded + 1)/2
  ```
  8. View the hillshade in matplotlib
