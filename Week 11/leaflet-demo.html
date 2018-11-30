@@ -17,11 +17,11 @@
       text-align: center;
     }
 
-    #mapDiv {
+    #mapNode {
       height: 40vh;
       width: 80vw;
       /* an outline can help us see what we're doing */
-      outline: 1px solid steelblue;
+      outline: 1px solid steelblue !important;
       /* add some vertical spacing, and also horizontally center this on the page */
       margin: 10px auto;
       position: relative;
@@ -44,7 +44,7 @@
 <body>
   <p>Leaflet + Chart.js Demo</p>
   <!-- where the Leaflet Map will be created -->
-  <div id="mapDiv"></div>
+  <div id="mapNode"></div>
 
   <!-- where the chart will be created -->
   <div id="chartContainer">
@@ -62,10 +62,10 @@
 
   <script>
     // STEP 1: MAKE A MAP
-    var map = L.map('mapDiv');
+    var map = L.map('mapNode');
 
     // [latitude, longitude], followed by zoom level
-    map.setView([45, -122], 4);
+    map.setView([45.526, -122.667], 13)
 
     // create and add a basemap layer
     L.esri.basemapLayer('Topographic').addTo(map);
@@ -74,21 +74,11 @@
     var portlandTreesFeatureLayer = L.esri.featureLayer({
       url: 'https://services.arcgis.com/rOo16HdIMeOBI4Mb/arcgis/rest/services/Heritage_Trees_Portland/FeatureServer/0',
     });
-
     portlandTreesFeatureLayer.addTo(map);
 
-    // auto zoom and pan the map to the bounding extent box of all the features
-    // https://esri.github.io/esri-leaflet/examples/zooming-to-all-features-1.html
-    portlandTreesFeatureLayer
-      .query()
-      .bounds(function(error, latlngbounds) {
-        map.flyToBounds(latlngbounds);
-      });
-
     // STEP 2: MAKE A STATIC CHART
-    // this is just a static demo for now, we are going to make it dynamic below
-    var ctx = document.querySelector('#chartCanvas').getContext('2d');
-
+    // this is just a static chart for now, we are going to make it dynamic
+    // by responding to map and feature layer events
     var initialChartData = {
       datasets: [{
         label: 'Portland Heritage Trees',
@@ -103,7 +93,7 @@
         xAxes: [{
           scaleLabel: {
             display: true,
-            labelString: 'diameter'
+            labelString: 'tree diameter'
           },
           ticks: {
             beginAtZero: true,
@@ -114,7 +104,7 @@
         yAxes: [{
           scaleLabel: {
             display: true,
-            labelString: 'height'
+            labelString: 'tree height'
           },
           ticks: {
             beginAtZero: true,
@@ -125,59 +115,45 @@
       }
     };
 
-    var chart = new Chart(ctx, {
+    var chart = new Chart('chartCanvas', {
       type: 'scatter',
       data: initialChartData,
       options: chartOptions
     });
 
     // STEP 3: MAKE THE CHART DYNAMIC
-    // run a query on the feature layer every time there was a zoom or pan event
-    // to get only the features in the map's current extent
-    map.on('zoomend, moveend', function() {
-      var currentMapBounds = map.getBounds();
+    // show in the chart only the features in the map's current extent
+    // by responding to events from the map and feature layer
+    map.on('zoom, move', updateChart);
+    portlandTreesFeatureLayer.on('load', updateChart);
 
-      portlandTreesFeatureLayer
-        .query()
-        .within(currentMapBounds)
-        .run(function(error, featureCollection) {
-          // now we have the current set of features since the query is finished,
-          // se we need to update our chart every time we enter this function
+    function updateChart() {
+      // reformat the features' attributes of interest into
+      // the data array format required by the Chart.js scatterplot
+      var scatterDataArray = [];
 
-          // console.log(featureCollection.features);
+      portlandTreesFeatureLayer.eachActiveFeature(function(e) {
+        // for each feature we are looping over,
+        // push an object into the scatterDataArray in this format:
 
-          // reformat the features' attributes of interest into
-          // the data array format required by the Chart.js scatterplot
-          var scatterDataArray = featureCollection.features.map(function(feature) {
-            // for each feature we are looping over,
-            // return an object in this format:
+        // {
+        //   x: diameter attribute value,
+        //   y: height attribute value
+        // }
 
-            // {
-            //   x: diameter attribute value,
-            //   y: height attribute value
-            // }
-
-            return {
-              x: feature.properties.DIAMETER,
-              y: feature.properties.HEIGHT
-            };
-          });
-
-          var newChartData = {
-            datasets: [{
-              label: 'Portland Heritage Trees',
-              data: scatterDataArray
-            }]
-          };
-
-          // assign the new chart scatter data to the chart's data property
-          chart.data = newChartData;
-
-          // tell the chart to re-draw itself with the new data
-          // (and don't animate it by setting a duration of 0)
-          chart.update(0);
+        scatterDataArray.push({
+          x: e.feature.properties.DIAMETER,
+          y: e.feature.properties.HEIGHT
         });
-    });
+      });
+
+      // assign the new chart scatter data to the chart's data property
+      chart.data.datasets[0].data = scatterDataArray;
+
+      // tell the chart to re-draw itself with the new data
+      // (and don't animate it by setting a duration of 0)
+      chart.update(0);
+    }
   </script>
 </body>
 
