@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>Esri Demo</title>
+
+  <!-- Load Esri CSS from CDN -->
+  <link rel="stylesheet" href="https://js.arcgis.com/4.9/esri/css/main.css" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      text-align: center;
+    }
+
+    #viewDiv {
+      height: 40vh;
+      width: 80vw;
+      /* an outline can help us see what we're doing */
+      outline: 1px solid steelblue;
+      /* add some vertical spacing, and also horizontally center this on the page */
+      margin: 10px auto;
+      position: relative;
+    }
+
+    /* assists in making the chart responsive to changes in browser size */
+    #chartContainer {
+      height: 40vh;
+      width: 80vw;
+      /* an outline can help us see what we're doing */
+      outline: 1px solid steelblue;
+      /* add some vertical spacing, and also horizontally center this on the page */
+      margin: 10px auto;
+      position: relative;
+    }
+
+  </style>
+</head>
+
+<body>
+  <p>Esri + plotly.js Demo</p>
+
+  <!-- where the Esri MapView will be created -->
+  <div id="viewDiv"></div>
+
+  <!-- where the chart will be created -->
+  <div id="chartContainer"></div>
+
+  <!-- Load plotly.js from CDN -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+  <!-- Load Esri JavaScript from CDN -->
+  <script src="https://js.arcgis.com/4.9/"></script>
+
+  <script>
+    require([
+      'esri/Map',
+      'esri/views/MapView',
+      'esri/layers/FeatureLayer'
+    ], function(Map, MapView, FeatureLayer) {
+      // STEP 1: MAKE A MAPVIEW
+
+      // create a map object and set the basemap
+      var map = new Map({
+        basemap: 'topo'
+      });
+
+      // create and add a feature layer to the map object
+      // http://open-fedmaps.opendata.arcgis.com/datasets/b7d20f91a412490782178ee60f994361_0
+      var powerPlantsFeatureLayer = new FeatureLayer({
+        url: 'https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/US_Power_Plants_201612/FeatureServer/0',
+        outFields: ['PrimSource', 'Total_MW']
+      });
+
+      map.layers.add(powerPlantsFeatureLayer);
+
+      var mapView = new MapView({
+        container: 'viewDiv',
+        map: map,
+        zoom: 3,
+        center: [-90, 40] // [longitude, latitude]
+      });
+
+      // STEP 2: MAKE A STATIC CHART
+      // this is just a static demo for now, we are going to make it dynamic below
+      var chartContainer = document.querySelector('#chartContainer');
+
+      var initialChartData = [
+        {
+          type: 'bar',
+          x: [],
+          y: []
+        }
+      ];
+
+      var chartLayout = {
+        margin: {
+          t: 40
+        }
+      };
+
+      var chartConfig = {
+        responsive: true
+      };
+
+      Plotly.react(chartContainer, initialChartData, chartLayout, chartConfig);
+
+      // STEP 3: MAKE THE CHART DYNAMIC
+      // run a client-side query on the feature layer view every time it is done updating
+      // (usually after zooming or panning the mapView)
+      // to get only the features in the mapView's current extent
+      mapView
+        .whenLayerView(powerPlantsFeatureLayer)
+        .then(function(layerView) {
+          mapView.watch('updating', function(updatingBoolean) {
+            // wait for the layer view to finish updating
+            // (usually after zooming or panning the mapView)
+            if (!updatingBoolean) {
+              // get all the features in the current mapView extent
+              layerView
+                .queryFeatures({
+                  geometry: mapView.extent,
+                  returnGeometry: false,
+                  orderByFields: ['PrimSource ASC']
+                })
+                .then(function(results) {
+                  // now we have the current set of features since the query is finished,
+                  // se we need to update our chart every time we enter this function
+
+                  // console.log(results.features);
+
+                  // reformat the features' attributes of interest into
+                  // the data arrays format required by the plotly.js bar chart
+
+                  // here we are looping over all the features and
+                  // tallying up sums of megawatts (MW) per energy source category
+                  var energyCategories = [];
+                  var totalMWPerEnergyCategory = [];
+                  results.features.forEach(function(feature) {
+                    if (energyCategories.indexOf(feature.attributes.PrimSource) === -1) {
+                      // only add a category to the energyCategories array one time
+                      energyCategories.push(feature.attributes.PrimSource);
+
+                      // and in the MW tallies array, set the initial value with 0 one time
+                      totalMWPerEnergyCategory.push(0);
+                    }
+
+                    // find the appropriate MW tally item in the tallies array
+                    var categoryArrayIndex = energyCategories.indexOf(feature.attributes.PrimSource);
+
+                    // and continue adding to it to achieve our total MW count per energy source category
+                    totalMWPerEnergyCategory[categoryArrayIndex] += feature.attributes.Total_MW;
+                  });
+
+                  var newChartData = [
+                    {
+                      type: 'bar',
+                      x: energyCategories, // example: ['biomass', 'nuclear', 'wind']
+                      y: totalMWPerEnergyCategory // example: [2000, 13500, 8300]
+                    }
+                  ];
+
+                  // assign the new chart data to the chart's data property
+                  // tell the chart to re-draw itself with the new data
+                  Plotly.react(chartContainer, newChartData, chartLayout, chartConfig);
+                });
+            }
+          });
+        });
+    });
+  </script>
+</body>
+
+</html>

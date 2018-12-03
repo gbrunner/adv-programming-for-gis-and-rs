@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>Leaflet + Chart.js Demo</title>
+
+  <!-- Load Leaflet CSS from CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3/dist/leaflet.css" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      text-align: center;
+    }
+
+    #mapNode {
+      height: 40vh;
+      width: 80vw;
+      /* an outline can help us see what we're doing */
+      outline: 1px solid steelblue !important;
+      /* add some vertical spacing, and also horizontally center this on the page */
+      margin: 10px auto;
+      position: relative;
+    }
+
+    /* assists in making the chart responsive to changes in browser size */
+    #chartContainer {
+      height: 40vh;
+      width: 40vh;
+      /* an outline can help us see what we're doing */
+      outline: 1px solid steelblue;
+      /* add some vertical spacing, and also horizontally center this on the page */
+      margin: 10px auto;
+      position: relative;
+    }
+
+  </style>
+</head>
+
+<body>
+  <p>Leaflet + Chart.js Demo</p>
+  <!-- where the Leaflet Map will be created -->
+  <div id="mapNode"></div>
+
+  <!-- where the chart will be created -->
+  <div id="chartContainer">
+    <canvas id="chartCanvas"></canvas>
+  </div>
+
+  <!-- Load Leaflet JavaScript from CDN -->
+  <script src="https://unpkg.com/leaflet@1.3/dist/leaflet.js"></script>
+
+  <!-- Load Esri-Leaflet plugin from CDN -->
+  <script src="https://unpkg.com/esri-leaflet@2.2/dist/esri-leaflet.js"></script>
+
+  <!-- Load Chart.js from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+
+  <script>
+    // STEP 1: MAKE A MAP
+    var map = L.map('mapNode');
+
+    // [latitude, longitude], followed by zoom level
+    map.setView([45.526, -122.667], 13)
+
+    // create and add a basemap layer
+    L.esri.basemapLayer('Topographic').addTo(map);
+
+    // create and add a feature layer
+    var portlandTreesFeatureLayer = L.esri.featureLayer({
+      url: 'https://services.arcgis.com/rOo16HdIMeOBI4Mb/arcgis/rest/services/Heritage_Trees_Portland/FeatureServer/0',
+    });
+    portlandTreesFeatureLayer.addTo(map);
+
+    // STEP 2: MAKE A STATIC CHART
+    // this is just a static chart for now, we are going to make it dynamic
+    // by responding to map and feature layer events
+    var initialChartData = {
+      datasets: [{
+        label: 'Portland Heritage Trees',
+        // the data values are empty right now
+        data: []
+      }]
+    };
+
+    var chartOptions = {
+      maintainAspectRatio: false,
+      scales: {
+        xAxes: [{
+          scaleLabel: {
+            display: true,
+            labelString: 'tree diameter'
+          },
+          ticks: {
+            beginAtZero: true,
+            max: 250,
+            stepSize: 50
+          }
+        }],
+        yAxes: [{
+          scaleLabel: {
+            display: true,
+            labelString: 'tree height'
+          },
+          ticks: {
+            beginAtZero: true,
+            max: 250,
+            stepSize: 50
+          }
+        }]
+      }
+    };
+
+    var chart = new Chart('chartCanvas', {
+      type: 'scatter',
+      data: initialChartData,
+      options: chartOptions
+    });
+
+    // STEP 3: MAKE THE CHART DYNAMIC
+    // show in the chart only the features in the map's current extent
+    // by responding to events from the map and feature layer
+    map.on('zoom, move', updateChart);
+    portlandTreesFeatureLayer.on('load', updateChart);
+
+    function updateChart() {
+      // reformat the features' attributes of interest into
+      // the data array format required by the Chart.js scatterplot
+      var scatterDataArray = [];
+
+      portlandTreesFeatureLayer.eachActiveFeature(function(e) {
+        // for each feature we are looping over,
+        // push an object into the scatterDataArray in this format:
+
+        // {
+        //   x: diameter attribute value,
+        //   y: height attribute value
+        // }
+
+        scatterDataArray.push({
+          x: e.feature.properties.DIAMETER,
+          y: e.feature.properties.HEIGHT
+        });
+      });
+
+      // assign the new chart scatter data to the chart's data property
+      chart.data.datasets[0].data = scatterDataArray;
+
+      // tell the chart to re-draw itself with the new data
+      // (and don't animate it by setting a duration of 0)
+      chart.update(0);
+    }
+  </script>
+</body>
+
+</html>
