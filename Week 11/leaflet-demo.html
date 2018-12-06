@@ -124,7 +124,7 @@
     // STEP 3: MAKE THE CHART DYNAMIC
     // show in the chart only the features in the map's current extent
     // by responding to events from the map and feature layer
-    map.on('zoom, move', updateChart);
+    map.on('zoom move', updateChart);
     portlandTreesFeatureLayer.on('load', updateChart);
 
     function updateChart() {
