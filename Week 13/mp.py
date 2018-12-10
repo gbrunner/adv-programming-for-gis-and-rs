@@ -28,7 +28,6 @@ if __name__ == '__main__':
 
     pool = multiprocessing.Pool()
 
-
     results = pool.map(run_viewshed, view_locations) #, maxtasksperchild=10)
 
     pool.close()
