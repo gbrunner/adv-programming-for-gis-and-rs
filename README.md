@@ -19,28 +19,25 @@ Have you ever wanted to learn how to publish, consume, and use geographic web se
 
 | Week    | Topics | Date |
 |---------|--------| ---- |
-| Week 1 | Web Mapping with [Leaflet](http://leafletjs.com/) and [Github](www.github.com) ~~and [Folium](https://blog.dominodatalab.com/creating-interactive-crime-maps-with-folium/)~~ | 8/29 |
-| Week 2 | Creating GIS Applications with the ArcGIS Javascript API | 9/12 | 
-| Week 3 | GIS Web Application and 3D Scenes | 9/19 |
-| Week 4 | Popups and Widgets in Webapps | 9/26 |
-| Week 5  | [Jupyter Notebooks (IDE)](https://jupyter.org/install.html), [Intro to the ArcGIS API for Python](https://developers.arcgis.com/python/), ~~[Domino](https://app.dominodatalab.com/overview)?~~ | 10/3 |                
-| Week 6  |  [Github](https://github.com/) and [Administering Your Organization](https://developers.arcgis.com/python/sample-notebooks/batch-creation-of-groups/) | 10/10 |
-| Week 7  | ArcGIS API for Python: [Publishing](https://developers.arcgis.com/python/sample-notebooks/publishing-sd-shapefiles-and-csv/) and [Analysis](https://developers.arcgis.com/python/sample-notebooks/chennai-floods-analysis/) | 10/17 |
-| Week 8  | ArcGIS API for Python: [Data Science](https://developers.arcgis.com/python/sample-notebooks/counting-features-in-satellite-images-using-scikit-image/) | 10/24 |
-| Week 9  | [Intro to Pandas](https://jakevdp.github.io/PythonDataScienceHandbook/03.00-introduction-to-pandas.html) and ArcGIS Spatial DataFrames | 10/31 |
-| Week 10  | [Numpy](https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html) and Rasters & Working with Imagery Services | 11/7 |
-| Week 11  | Plotting with JS by [@JWasilgeo](https://github.com/jwasilgeo): DataViz, D3, Charting | 11/14 |
-| Week 12  | ~~[Esri Raster Functions](https://github.com/Esri/raster-functions)~~ Thanksgiving Break | 11/21 |
-| Week 13  | IDEs, Jupyter Dashboards, Jupyter RISE  | 11/28 |
-| Week 14  | Advanced Plotting with [Matplotlib](https://jakevdp.github.io/PythonDataScienceHandbook/04.00-introduction-to-matplotlib.html) and [Seaborn](https://seaborn.pydata.org/) and [Intro to Scikit-learn](https://jakevdp.github.io/PythonDataScienceHandbook/05.02-introducing-scikit-learn.html)| 12/5 |
-| Week 15  | [Scikit-learn](https://jakevdp.github.io/PythonDataScienceHandbook/05.02-introducing-scikit-learn.html) and [Multiprocessing](https://www.youtube.com/watch?v=s1SkCYMnfbY) | 12/12 |
-| ~~Week 15~~ | ~~Students Present Final Project~~ | ~~12/12~~ |
+| Week 1 | Web Mapping with [Leaflet](http://leafletjs.com/) and [Github](www.github.com) |  |
+| Week 2 | Creating GIS Applications with the ArcGIS Javascript API | | 
+| Week 3 | GIS Web Application and 3D Scenes | |
+| Week 4 | Popups and Widgets in Webapps | |
+| Week 5  | [Jupyter Notebooks (IDE)](https://jupyter.org/install.html), [Intro to the ArcGIS API for Python](https://developers.arcgis.com/python/) |  |                
+| Week 6  |  [Github](https://github.com/) and [Administering Your Organization](https://developers.arcgis.com/python/sample-notebooks/batch-creation-of-groups/) | |
+| Week 7  | ArcGIS API for Python: [Publishing](https://developers.arcgis.com/python/sample-notebooks/publishing-sd-shapefiles-and-csv/) and [Analysis](https://developers.arcgis.com/python/sample-notebooks/chennai-floods-analysis/) |  |
+| Week 8  | ArcGIS API for Python: [Data Science](https://developers.arcgis.com/python/sample-notebooks/counting-features-in-satellite-images-using-scikit-image/) |  |
+| Week 9  | [Intro to Pandas](https://jakevdp.github.io/PythonDataScienceHandbook/03.00-introduction-to-pandas.html) and ArcGIS Spatial DataFrames |  |
+| Week 10  | [Numpy](https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html) and Rasters & Working with Imagery Services |  |
+| Week 11  | Plotting with JS by [@JWasilgeo](https://github.com/jwasilgeo): DataViz, D3, Charting |  |
+| Week 12  | IDEs, Jupyter Dashboards, Jupyter RISE  |  |
+| Week 13  | Advanced Plotting with [Matplotlib](https://jakevdp.github.io/PythonDataScienceHandbook/04.00-introduction-to-matplotlib.html) and [Seaborn](https://seaborn.pydata.org/) and [Intro to Scikit-learn](https://jakevdp.github.io/PythonDataScienceHandbook/05.02-introducing-scikit-learn.html)|  |
+| Week 14  | Review Final Projects and [Multiprocessing](https://www.youtube.com/watch?v=s1SkCYMnfbY) | |
 
 ## Assignments & Grading
 | Weight | Type |
 |--------|------|
-| 20% | Weekly Assignments |
-| 20% | Project 1 - Web Application Project |
-| 20% | Project 2 - ArcGIS Python API Project |
-| 20% | Project 3 - Data Science Notebook Project|
-| 20% | Project 4 - Student Defined Final Project |
+| 19% | Weekly Assignments |
+| 27% | Project 1 - Web Application Project |
+| 27% | Project 2 - ArcGIS Python API Project |
+| 27% | Project 3 - Data Science Notebook Project or Student Defined Project|
