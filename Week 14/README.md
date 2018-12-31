@@ -1,7 +1,10 @@
-## Prepatation: [Watch this Video](https://www.youtube.com/watch?v=s1SkCYMnfbY)
+## Prepatation:
 
-## Lecture:
+## Lecture 1:
 
-## In Class:
+
+## In Class Problem 
+ 
+
 
 ## Homework:
