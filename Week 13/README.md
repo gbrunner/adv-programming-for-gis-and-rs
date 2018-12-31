@@ -21,8 +21,7 @@ for i in range(1, 7):
 ```
 
 3. [Controlling Aesthetics](https://seaborn.pydata.org/tutorial/aesthetics.html)
-
-
+- [Overidign styles](https://seaborn.pydata.org/tutorial/aesthetics.html#overriding-elements-of-the-seaborn-styles)
 
 ## Algorithmic Learning Introduction
 
