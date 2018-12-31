@@ -27,6 +27,8 @@ for i in range(1, 7):
 
 ## Algorithmic Learning Introduction
 
+[An Introduction to Statistical Learning (James, Witten, Hastie, Tibshirani, 2013): Python code](https://github.com/JWarmenhoven/ISLR-python)
+
 ### Linear Regression
 
 ### Non-Linear Regression
