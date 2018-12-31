@@ -3,7 +3,7 @@
 # Lecture
 ## Seaborn - Ocean Temperature Profiles
 
-[Plotting themes](https://python-graph-gallery.com/104-seaborn-themes/)
+1. [Plotting themes](https://python-graph-gallery.com/104-seaborn-themes/)
 ```
 %matplotlib inline
 import matplotlib.pyplot as plt
@@ -12,7 +12,15 @@ import seaborn as sns
 plt.style.use('fivethirtyeight')
 ```
 
+2. [Subplots](https://jakevdp.github.io/PythonDataScienceHandbook/04.08-multiple-subplots.html)
+```
+for i in range(1, 7):
+    plt.subplot(2, 3, i)
+    plt.text(0.5, 0.5, str((2, 3, i)),
+             fontsize=18, ha='center')
+```
 
+3. [Controlling Aesthetics](https://seaborn.pydata.org/tutorial/aesthetics.html)
 
 
 
