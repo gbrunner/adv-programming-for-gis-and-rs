@@ -12,6 +12,8 @@ import seaborn as sns
 plt.style.use('fivethirtyeight')
 ```
 
+- [Style list](https://tonysyu.github.io/raw_content/matplotlib-style-gallery/gallery.html)
+
 2. [Subplots](https://jakevdp.github.io/PythonDataScienceHandbook/04.08-multiple-subplots.html)
 ```
 for i in range(1, 7):
