@@ -3,7 +3,7 @@
 # Lecture
 ## Seaborn - Ocean Temperature Profiles
 
-Plotting themes
+[Plotting themes](https://python-graph-gallery.com/104-seaborn-themes/)
 ```
 %matplotlib inline
 import matplotlib.pyplot as plt
