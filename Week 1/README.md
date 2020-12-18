@@ -7,11 +7,28 @@ Watch Jacob Wasilkowski's lecture from April 2018.
 ## Github
 - Let's got to [github.com](www.github.com)
 - Login
-- Create a new repo and initialize with a readme. Name the repo *GIS 5091 - Week 1* 
-- Download and install the [Github Windows Client](https://desktop.github.com/)
-- Login
-- Clone your *GIS 5091 - Week 1* repo. 
-- Let's put all of our work in there today!
+- Create a new repo and initialize with a readme. Name the repo *my-first-app*
+- Go to **Settings**
+- Turn on **GitHub Pages**
+- Set branch to **main**
+- Let's go!
+
+## Our First Webpage with GitHub and the ArcGIS Javascript API
+- Go to [ArcGIS Javascript API 2D Map sample](https://developers.arcgis.com/javascript/latest/sample-code/intro-mapview/index.html)
+- Open in [Codepen](https://codepen.io/)
+- Make some edits
+- Copy code
+- Go back to GitHub
+- Create an *index.html* file in *my-first-app*
+- Paste the HTML into it.
+- Save it
+- Go to website!
+- Easy, right?
+
+## Refactoring that code into HTML, CSS, and JS
+- [Example](https://codepen.io/gbrunner/pen/MWjoKBG)
+- Let's start moving things around.
+
 
 ### Let's Learn Leaflet!!!
 Leaflet -> Is an open-source JavaScript library for interactive web maps. It's lightweight, simple, and flexible, and is probably the most popular open-source mapping library at the moment. Leaflet is developed by Vladimir Agafonkin (currently of MapBox) and other contributors.
