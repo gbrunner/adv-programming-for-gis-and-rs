@@ -24,11 +24,15 @@ Watch Jacob Wasilkowski's lecture from April 2018.
 - Save it
 - Go to website!
 - Easy, right?
-
-## Refactoring that code into HTML, CSS, and JS
+### Refactoring that code into HTML, CSS, and JS
 - [Example](https://codepen.io/gbrunner/pen/MWjoKBG)
 - Let's start moving things around.
 
+### The Apps
+- [First Web App in CodePen](https://codepen.io/gbrunner/pen/vYXJVLE?editors=1100)
+- [First Web App as Stand Alone App in GitHub](https://gbrunner.github.io/my-first-app/)
+- [First Web App in CodePen, Refactored](https://codepen.io/gbrunner/pen/MWjoKBG)
+- [First Web App as Stand Alone App in GitHub, Refactored]()
 
 ### Let's Learn Leaflet!!!
 Leaflet -> Is an open-source JavaScript library for interactive web maps. It's lightweight, simple, and flexible, and is probably the most popular open-source mapping library at the moment. Leaflet is developed by Vladimir Agafonkin (currently of MapBox) and other contributors.
