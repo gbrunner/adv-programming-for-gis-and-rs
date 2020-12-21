@@ -43,8 +43,8 @@ Leaflet -> Is an open-source JavaScript library for interactive web maps. It's l
 
 Check out thie tutorial from [Maptime Boston](https://maptimeboston.github.io/leaflet-intro/) to learn more.
 
-### Let's Get Started!
-#### The Anatomy of a Web Mapping Application using Leaflet.
+# Let's Get Started!
+## The Anatomy of a Web Mapping Application using Leaflet.
 - HTML
   - HyperText Markup Language
   - Provides the layout for a webpage
@@ -57,23 +57,26 @@ Check out thie tutorial from [Maptime Boston](https://maptimeboston.github.io/le
   - Most of the dynamic behavior you'll see on a web page is thanks to JavaScript
   - And it's become a lot more than this!!!
   
-#### Our first Leaflet map
-Let's use the Leaflet [Quick Start Guide](https://leafletjs.com/examples/quick-start/) to create our first map!
-
-Let's do this in [JSBin](https://jsbin.com/)
-
-Let's use the same example, but change the JS to be the following:
+## Our first Leaflet map
+- Let's use the Leaflet [Quick Start Guide](https://leafletjs.com/examples/quick-start/) to create our first map!
+- Let's do this in [CodePen](https://codepen.io/gbrunner/pen/yLaXYrg)
+- Let's use the same example, but change the JS to be the following:
 ```
-var mymap = L.map('mapid').setView([41.8781, -87.6298], 13);
-L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/{z}/{x}/{y}.png', {
-    attribution: 'Map tiles by Stamen Design, under CC BY 3.0.',
-    maxZoom: 18,
-    id: 'stamen.toner'
+var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+
+L.tileLayer('http://a.tile.stamen.com/toner/{z}/{x}/{y}.png', {
+        attribution: 'Map tiles by Stamen Design, under CC BY 3.0.',
+        maxZoom: 18
 }).addTo(mymap);
 ```
 What city are we centered over?
 
-#### How does this look if we jam it into a single HTML file?
+### The Apps
+- [Leaflet app in CodePen](https://codepen.io/gbrunner/pen/yLaXYrg)
+- [Leaflet app in GitHub](https://gbrunner.github.io/my-first-leaflet-map/), [Code](https://github.com/gbrunner/my-first-leaflet-map)
+- [Leaflet as a Single File](), [Code]()
+
+### How does this look if we jam it into a single HTML file?
 See quickstart.html
 
 Let's complete the tutorial and see where we end up :)
