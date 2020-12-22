@@ -103,10 +103,16 @@ Ever wonder how that works?
 
 Demonstrate the Boston Heatmap example.
 
+- [Leaflet Heatmap in CodePen](https://codepen.io/gbrunner/pen/rNMGxGw)
+- [Leaflet Heatmap in GitHub](https://github.com/gbrunner/leaflet-heatmap/)
+- [Leaflet Heatmap Live](https://gbrunner.github.io/leaflet-heatmap/)
+
 #### Leaflet Clustermap
 Clustermaps are fun too!
 
-Demonstrate the Boston Clustermap too. https://gbrunner.github.io/Advanced_Python_for_GIS_and_RS/Week%2011/boston_cluster.html
+- [Leaflet Cluster Map in CodePen](https://codepen.io/gbrunner/pen/GRjMoxb)
+- [Leaflet Cluster Map in GitHub](https://github.com/gbrunner/leaflet-cluster-map/)
+- [Leaflet Cluster Map Live](https://gbrunner.github.io/leaflet-cluster-map/)
 
 ## Classwork Problems
 1. Create a Leaflet map of 5 restaurants that you'd like to go to in St. Louis. Include popups! If you're up to it, change the symbology for the points.
