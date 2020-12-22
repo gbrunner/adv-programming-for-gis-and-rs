@@ -86,13 +86,20 @@ Data is read in [GeoJSON](http://geojson.org/) format, a format for encoding a v
 - [GeoJSON example in CodePen](https://codepen.io/gbrunner/pen/yLaXYrg)
 
 #### Let's Add Some Objects in GeoJSON format
-Following from the leaflet tutorial, [let's add some features in GeoJSON format](https://leafletjs.com/examples/geojson/).
+Following from the Leaflet tutorial, [let's add some features in GeoJSON format](https://leafletjs.com/examples/geojson/).
 
-- 
+- [GeoJSON Features in Leaflet in CodePen](https://codepen.io/gbrunner/pen/VwKMvyz)
+- [GeoJSON Features in Leaflet in GitHub](https://github.com/gbrunner/leaflet-geojson-features-app)
+- [GeoJSON Features in Leaflet Live](https://gbrunner.github.io/leaflet-geojson-features-app/)
+
 
 ### Reading GeoJSON and Using it
 1. Use the Boston GeoJSON example here. https://gbrunner.github.io/Advanced_Python_for_GIS_and_RS/Week%2011/boston_heatmap.html
 2. Use the Chicago ZIPs example too to show polygons. https://gbrunner.github.io/Advanced_Python_for_GIS_and_RS/Week%2011/chicago_zips.html
+
+- [GeoJSON from File in Leaflet in CodePen](https://codepen.io/gbrunner/pen/oNzGjLY)
+- [GeoJSON from File in Leaflet in GitHub](https://github.com/gbrunner/leaflet-geojson-from-file-app)
+- [GeoJSON from File in Leaflet Live](https://gbrunner.github.io/leaflet-geojson-from-file-app/index.html)
 
 ### Powerful, fun capabilities of Leaflet
 
