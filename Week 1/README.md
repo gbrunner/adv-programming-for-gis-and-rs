@@ -74,12 +74,11 @@ What city are we centered over?
 ### The Apps
 - [Leaflet app in CodePen](https://codepen.io/gbrunner/pen/yLaXYrg)
 - [Leaflet app in GitHub](https://gbrunner.github.io/my-first-leaflet-map/), [Code](https://github.com/gbrunner/my-first-leaflet-map)
-- [Leaflet as a Single File](), [Code]()
-
-### How does this look if we jam it into a single HTML file?
-See quickstart.html
 
 Let's complete the tutorial and see where we end up :)
+
+### How does this look if we jam it into a single HTML file?
+- [Leaflet as a Single File](https://gbrunner.github.io/leaflet-app/), [Code](https://github.com/gbrunner/leaflet-app)
 
 ### Working with Data in Leaflet
 Data is read in [GeoJSON](http://geojson.org/) format, a format for encoding a variety of geographic data structures.
@@ -90,7 +89,6 @@ Following from the leaflet tutorial, [let's add some features in GeoJSON format]
 ### Reading GeoJSON and Using it
 1. Use the Boston GeoJSON example here. https://gbrunner.github.io/Advanced_Python_for_GIS_and_RS/Week%2011/boston_heatmap.html
 2. Use the Chicago ZIPs example too to show polygons. https://gbrunner.github.io/Advanced_Python_for_GIS_and_RS/Week%2011/chicago_zips.html
-
 
 ### Powerful, fun capabilities of Leaflet
 
