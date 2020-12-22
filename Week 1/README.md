@@ -72,7 +72,7 @@ L.tileLayer('http://a.tile.stamen.com/toner/{z}/{x}/{y}.png', {
 What city are we centered over?
 
 ### The Apps
-- [Leaflet app in CodePen](https://codepen.io/gbrunner/pen/yLaXYrg)
+- [Leaflet app in CodePen](https://codepen.io/gbrunner/pen/yLaoRqR)
 - [Leaflet app in GitHub](https://gbrunner.github.io/my-first-leaflet-map/), [Code](https://github.com/gbrunner/my-first-leaflet-map)
 
 Let's complete the tutorial and see where we end up :)
