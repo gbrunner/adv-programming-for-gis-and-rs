@@ -83,15 +83,12 @@ Let's complete the tutorial and see where we end up :)
 ### Working with Data in Leaflet
 Data is read in [GeoJSON](http://geojson.org/) format, a format for encoding a variety of geographic data structures.
 
-- [GeoJSON example in CodePen](https://codepen.io/gbrunner/pen/yLaXYrg)
-
 #### Let's Add Some Objects in GeoJSON format
 Following from the Leaflet tutorial, [let's add some features in GeoJSON format](https://leafletjs.com/examples/geojson/).
 
 - [GeoJSON Features in Leaflet in CodePen](https://codepen.io/gbrunner/pen/VwKMvyz)
 - [GeoJSON Features in Leaflet in GitHub](https://github.com/gbrunner/leaflet-geojson-features-app)
 - [GeoJSON Features in Leaflet Live](https://gbrunner.github.io/leaflet-geojson-features-app/)
-
 
 ### Reading GeoJSON and Using it
 1. Use the Boston GeoJSON example here. https://gbrunner.github.io/Advanced_Python_for_GIS_and_RS/Week%2011/boston_heatmap.html
