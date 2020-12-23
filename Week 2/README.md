@@ -1,15 +1,15 @@
-## Preparation: 
+# Preparation: 
 1. Please read Chapters 1, 2, and 3 of [Introducing ArcGIS API 4 for Javascript](https://www.apress.com/us/book/9781484232811). Chapters 1 and 2 are really short!
 2. Samples for the book can be found on [Github](https://github.com/Apress/introducing-arcgis-api-4-for-javascript/tree/master/intro-arcgis-js-api-4)
 
-## Lecture:
-### Review Homework Problem
+# Lecture:
+## Review Homework Problem
 - Any volunteers to discuss their solutions?
 
-### GeoJSON
+## GeoJSON
 - [http://geojson.io](http://geojson.io)
 
-### Terminology
+## Terminology
 - [ArcGIS API for Javascript](https://developers.arcgis.com/javascript/)
 - [Asynchronous Module Definition](https://requirejs.org/docs/whyamd.html)
 - [Dojo](https://dojotoolkit.org/) - Javascript toolkit that aids in development. Provides everything you need to build a WebApp.
@@ -42,7 +42,7 @@ Once we have a map, change it to a Scene.
 
 Let's save this as an app in Github and view it online!
 
-### ArcGIS Layers
+## ArcGIS Layers
 Let's learn about layers in ArcGIS!
 
 - Go to ArcGIS Online
@@ -58,8 +58,8 @@ Let's learn about layers in ArcGIS!
 **What's the point of this?**
 *That we did in Leaflet can be done without code. But you can code it now with Leaflet and will be able to with ArcGIS JavaScript!*
 
-### How do we work with these in JavaScript?
-#### From a WebMap
+## How do we work with these in JavaScript?
+### From a WebMap
 Let's start by creating an app from our traffic webmap
 - Go to [Load a Basic WebMap](https://developers.arcgis.com/javascript/latest/sample-code/webmap-basic/index.html)
 - Open in Sandbox
@@ -67,23 +67,28 @@ Let's start by creating an app from our traffic webmap
 - Notice it even zooms over to the extent of your webmap?
 - Play around with CSS and HTML parameters
 
-#### From a Feature Layer
+### From a Feature Layer
 - Feature layers are probably the most prevalent layers
 - Can be created from Portal Item or Service URL
 - Let's edit the webmap example to use the Feature Service (ca_traffic_from_fl.html)
 - What differences do you see between the webmap version and the heatmap version?
 
-#### From an Imagery Layer
+### From an Imagery Layer
 - Let's look at adding an imagery layer.
 - Using the [Imagery Layers Intro](https://developers.arcgis.com/javascript/latest/sample-code/sandbox/index.html?sample=layers-imagerylayer)
 - Open in Sandbox
 - Let's change the imagery URL to the [Landsat 8 Views URL]("https://landsat2.arcgis.com/arcgis/rest/services/Landsat8_Views/ImageServer")
 
-#### From a CSV
+### From a CSV
 - Let's take a look at the [CSV Layer Example](https://developers.arcgis.com/javascript/latest/sample-code/layers-csv/index.html)
 - From here, let's try to solve some problems ourselves!
 
-## Classwork\Homework Problems:
+# Exercises
+1. [Create a starter app](https://developers.arcgis.com/labs/javascript/create-a-starter-app/)
+2. [Select a basemap](https://developers.arcgis.com/labs/javascript/select-a-basemap/)
+3. [Add layers to a map](https://developers.arcgis.com/labs/javascript/add-layers-to-a-map/)
+
+# Classwork\Homework Problems:
 1. Search through ArcGIS Online and find 2 layers that overlap (not including the basemap). Create two apps that show all two layers on the map. You choose the 2 layers from ArcGIS Online. 
 **Part 1**
 - Create one by adding the layers to the app [From a Webmap](https://developers.arcgis.com/javascript/latest/sample-code/webmap-basic/) and then loading the Webmap object into the ArcGIS Javascript API
@@ -179,12 +184,12 @@ const layer = new CSVLayer({
 - After you change it, does the *Popup* still work?
 - If not, can you fix it? The Bands for Landsat 8 can be found [here](https://landsat.usgs.gov/what-are-band-designations-landsat-satellites). This data corresponds to the OLI sensor.
 
-## Homework:
+# Homework:
 1. Finish the **Classwork\Homework Problems** and submit them as **Assignment 2**.
 2. Read Chapters 4 and 5 of [Rubalcava](https://www.apress.com/us/book/9781484232811) on **API Core Fundamentals** and **Scenes**
 3. Project 1 assigned!
 
-## Helpful Links
+# Helpful Links
 - [Esri GeoDav Hacker Lab JSAPI samples](https://github.com/Esri/geodev-hackerlabs/tree/master/develop/jsapi)
 - [Heatmap Renderer](https://developers.arcgis.com/javascript/latest/sample-code/visualization-heatmap/index.html)
 - [Colors as Hex Codes](http://www.color-hex.com/)
