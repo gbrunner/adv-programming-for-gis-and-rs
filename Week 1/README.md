@@ -119,7 +119,7 @@ Clustermaps are fun too!
 - [Leaflet Cluster Map Live](https://gbrunner.github.io/leaflet-cluster-map/)
 
 ## Classwork Problems
-1. Create a Leaflet map of 5 restaurants that you'd like to go to in St. Louis. Include popups! If you're up to it, change the symbology for the points.
+1. Create a Leaflet map and **share it on GitHub** of 5 restaurants that you'd like to go to in St. Louis. Include popups! If you're up to it, change the symbology for the points. 
 *Hints:*
 - look at [quickstart_final.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/quickstart_final.html). 
 - In quickstart_final.html, add 5 markers. For example:
@@ -140,7 +140,7 @@ marker2.bindPopup("<b>Resturant 2</b><br>Annie Gunns").openPopup();
 ```
 - Remove the other markers (Circle, Polygon, etc.)
 
-2. Create a Leaflet showing the San Francisco Crime points from the GeoJSON found [here](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/sf_crime.geojson). Please add a relevant icon to the points. See the [Leaflet tutorial here](https://maptimeboston.github.io/leaflet-intro/) if you need help with that.
+2. Create a Leaflet map and **share it on GitHub** showing the San Francisco Crime points from the GeoJSON found [here](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/sf_crime.geojson). Please add a relevant icon to the points. See the [Leaflet tutorial here](https://maptimeboston.github.io/leaflet-intro/) if you need help with that.
 *Hints:*
 - Start with the [bonston_geojson.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/boston_geojson.html) example.
 - Change the ```view``` to be over San Francisco: ```var map = L.map('map').setView([42.35, -71.08], 13);```
@@ -159,14 +159,14 @@ marker2.bindPopup("<b>Resturant 2</b><br>Annie Gunns").openPopup();
   } 
 ```
 
-3. **Challenge** Create a Leaflet heatmap from the crime points GeoJSON that you used above.
+3. **Optional Challenge** Create a Leaflet heatmap from the crime points GeoJSON that you used above.
 *Hints:*
 - Start with [boston_heatmap.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/boston_heatmap.html)
 - Change the view of the map ```var map = L.map('map').setView([42.35, -71.08], 13);``` to be over San Francisco.
 - Change the basemap to a Stamen Basemap ```L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png'``` that is listed below.
 - Change *rodents.geojson* to the [sf_crime.geojson](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/sf_crime.geojson)
 
-4. **Challenge** Create a Leaflet cluster map from the crime points GeoJSON that you used above. Make sure you have a default icon set. Can you change the color on the clusters?
+4. **Optional Challenge** Create a Leaflet cluster map from the crime points GeoJSON that you used above. Make sure you have a default icon set. Can you change the color on the clusters?
 - Start with [boston_cluster.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/boston_cluster.html)
 - Change the view of the map ```var map = L.map('map').setView([42.35, -71.08], 13);``` to be over San Francisco.
 - Change the basemap to a Stamen Basemap ```L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png'``` that is listed below.
