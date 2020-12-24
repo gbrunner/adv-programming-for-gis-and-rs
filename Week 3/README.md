@@ -209,8 +209,12 @@ That's all we have to do. Of course, we should change the home location to be di
 #### Let's add some Buttons
 - Jump over to Button Sample and Demonstrate how to add buttons.
 
+# Exercises
+1. [Get map coordinates](https://developers.arcgis.com/labs/javascript/get-map-coordinates/)
+2. [Display a web scene](https://developers.arcgis.com/labs/javascript/display-a-web-scene/)
+3. [Add a layers to a 3D scene](https://developers.arcgis.com/labs/javascript/add-layers-to-a-3d-scene/)
 
-## Classwork Problems:
+# Classwork Problems:
 1. Change the world_pop_3d_w_buttons.html to use this webscene over Boston as the input portal item: http://slustl.maps.arcgis.com/home/webscene/viewer.html?webscene=8046207c1c214b5587230f5e5f8efc77
 - Open [world_pop_3d_w_buttons.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%203/world_pop_3d_w_buttons.html) in Notepad++ or jsbin.
 - change the ```id:"fbbbaa2fbfda41b8b3f96427c3ac5c79" ``` to be ```id:"8046207c1c214b5587230f5e5f8efc77" ```
