@@ -192,7 +192,12 @@ view.ui.add(legend, "bottom-right");
 ```
 Again, it's that easy! Now it's time for you to play!
 
-## Classwork\Homework Problems:
+# Exercises
+1. [Configure pop-ups](https://developers.arcgis.com/labs/javascript/configure-pop-ups/)
+2. [Search for an address](https://developers.arcgis.com/labs/javascript/search-for-an-address/)
+3. [Find places](https://developers.arcgis.com/labs/javascript/find-places/)
+
+# Classwork\Homework Problems:
 
 1. Create a webapp and popup following from the *popup_from_fl_black_symbol.html* using one of the datasets listed here:
 - Using the [STL Neighborhoods Feature Layer](http://slustl.maps.arcgis.com/home/item.html?id=70fefcbe59ea421da9169a46b341dfa9)
