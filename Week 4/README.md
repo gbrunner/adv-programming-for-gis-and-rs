@@ -194,8 +194,9 @@ Again, it's that easy! Now it's time for you to play!
 
 # Exercises
 1. [Configure pop-ups](https://developers.arcgis.com/labs/javascript/configure-pop-ups/)
-2. [Search for an address](https://developers.arcgis.com/labs/javascript/search-for-an-address/)
-3. [Find places](https://developers.arcgis.com/labs/javascript/find-places/)
+2. [Driving Directions](https://developers.arcgis.com/labs/javascript/driving-directions/)
+3. [Search for an address](https://developers.arcgis.com/labs/javascript/search-for-an-address/)
+4. [Find places](https://developers.arcgis.com/labs/javascript/find-places/)
 
 # Classwork\Homework Problems:
 
