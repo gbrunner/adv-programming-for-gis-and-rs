@@ -12,13 +12,13 @@ Let's take a look at how we can add popups to our apps.
 
 ## The Easy Way - Add a Popup through ArcGIS Online
 Let's get started by mapping NHL Draft Prospects!
-[2017 NHL Draft Products](http://slustl.maps.arcgis.com/home/item.html?id=d071140cea6c44818fc19a583bebf716)
+[2017 NHL Draft Products](https://slustl.maps.arcgis.com/home/item.html?id=b427474f83b946efae5e5dd4bd021398)
 
 We can find this Feature Layer by searching "NHL Draft" Feature Layers in ArcGIS Online.
 
 Let's open this in a *New Map*.
 
-Let's symbolize the players with a [puck](https://www.hockeyshot.ca/media/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/b/l/black-puck.jpg)
+Let's symbolize the players with a [puck](https://graphicriver.img.customer.envatousercontent.com/files/224145068/preview.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=60d4fe57e0a4ead05318f4b9ba91192a)
 
 Let's change the *Basemap*
 
@@ -38,13 +38,13 @@ Let's copy that code into an HTML file and save it before leaving.
 
 ### Final App
 - [App in CodePen](https://codepen.io/gbrunner/pen/OJRQjYa)
-- [App in GitHub]()
-- [Code in GitHub]()
+- [App in GitHub](https://gbrunner.github.io/popup-from-webmap)
+- [Code in GitHub](https://github.com/gbrunner/popup-from-webmap)
 
 ## Loading the Popup through Code using Popup Template
 Let's open up the [Intro to Popup Tempate Example](https://developers.arcgis.com/javascript/latest/sample-code/sandbox/index.html?sample=intro-popuptemplate) and start there:
 
-Let's change the feature service to be: [NHL Prospects](https://services7.arcgis.com/fX3LzGegyrqMlv6s/ArcGIS/rest/services/2017NHLDraftProspects/FeatureServer/0)
+Let's change the feature service to be: [NHL Prospects](https://services2.arcgis.com/bB9Y1bGKerz1PTl5/arcgis/rest/services/NHL_Draft_Prospects_WFL1/FeatureServer)
 
 Let's change the center map location to be:
 ```
@@ -109,7 +109,7 @@ Wee need to add a *renderer* and a *symbol*
 ```
  var symbol = {
       type: "picture-marker",  // autocasts as new PictureMarkerSymbol()
-      url: "https://www.hockeyshot.ca/media/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/b/l/black-puck.jpg",
+      url: "https://graphicriver.img.customer.envatousercontent.com/files/224145068/preview.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=60d4fe57e0a4ead05318f4b9ba91192a",
       width: "48px",
       height: "48px"
 };
@@ -124,7 +124,7 @@ var renderer = {
 **Our *Feature Layer***
 ```
 var featureLayer = new FeatureLayer({
-        url: "https://services7.arcgis.com/fX3LzGegyrqMlv6s/ArcGIS/rest/services/2017NHLDraftProspects/FeatureServer/0",
+        url: "https://services2.arcgis.com/bB9Y1bGKerz1PTl5/arcgis/rest/services/NHL_Draft_Prospects_WFL1/FeatureServer",
         outFields: ["*"],
         renderer: renderer,
         popupTemplate: template
@@ -141,7 +141,7 @@ var featureLayer = new FeatureLayer({
 My focus is not to get you writing your own widgets. That is beyond my intended scope of this class. My emphasis is that I want you to be able to use widgets. To do that, we'll look at specific out of the box widgets that come with the **ArcGIS API for Javascript 4**.
 
 ## Home Button Widget - We Did This Last Week
-Let's go back to Week 3 and look at the [3D Global Population app](https://gbrunner.github.io/Advanced_Python_for_GIS_and_RS/Week%203/world_pop_3d_w_home.html)
+Let's go back to Week 3 and look at the [World Population 3D CodePen](https://codepen.io/gbrunner/pen/JjRrxJx)
 
 Notice, we used the home button and that was imported via
 ```
