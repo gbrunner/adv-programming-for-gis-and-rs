@@ -356,6 +356,5 @@ var renderer = {
 fl.renderer = renderer
 ```
 
-## Links
-- [3D Scene over St. Louis](http://www.arcgis.com/home/webscene/viewer.html?webscene=cdf7b9d41f1440068543cce2bb62ce7a)
+# Links
 - [3D Scene with Lidar over St. Louis](https://www.arcgis.com/home/webscene/viewer.html?webscene=a7a868efc9f640009fc2d5352bad6879&viewpoint=cam:-90.18096388,38.62194316,533.188;312.322,65.934)
