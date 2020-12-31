@@ -36,6 +36,11 @@ Pretty easy, right?
 
 Let's copy that code into an HTML file and save it before leaving.
 
+### Final App
+- [App in CodePen](https://codepen.io/gbrunner/pen/OJRQjYa)
+- [App in GitHub]()
+- [Code in GitHub]()
+
 ## Loading the Popup through Code using Popup Template
 Let's open up the [Intro to Popup Tempate Example](https://developers.arcgis.com/javascript/latest/sample-code/sandbox/index.html?sample=intro-popuptemplate) and start there:
 
@@ -89,8 +94,12 @@ var template = { // autocasts as new PopupTemplate()
       };
 ```
 
-
 Easy, right?!
+
+### Final App
+- [App in CodePen](https://codepen.io/gbrunner/pen/yLavzNY)
+- [App in GitHub](https://gbrunner.github.io/popup-from-feature-layer)
+- [Code in GitHub](https://github.com/gbrunner/popup-from-feature-layer)
 
 ## Now Let's Recreate the first Map's symbology, too!
 
@@ -123,10 +132,15 @@ var featureLayer = new FeatureLayer({
       map.add(featureLayer);
 ```
 
+### Final App
+- [App in CodePen](https://codepen.io/gbrunner/pen/KKgQXVp)
+- [App in GitHub](https://gbrunner.github.io/popup-from-feature-layer-with-puck)
+- [Code in GitHub](https://github.com/gbrunner/popup-from-feature-layer-with-puck)
+
 # Lecture 2 - Widgets
 My focus is not to get you writing your own widgets. That is beyond my intended scope of this class. My emphasis is that I want you to be able to use widgets. To do that, we'll look at specific out of the box widgets that come with the **ArcGIS API for Javascript 4**.
 
-## Home Button Widget
+## Home Button Widget - We Did This Last Week
 Let's go back to Week 3 and look at the [3D Global Population app](https://gbrunner.github.io/Advanced_Python_for_GIS_and_RS/Week%203/world_pop_3d_w_home.html)
 
 Notice, we used the home button and that was imported via
@@ -167,6 +181,11 @@ All we have to do is add:
 
 Easy, right?!
 
+### Final App
+- [App in CodePen](https://codepen.io/gbrunner/pen/wvzyrqw)
+- [App in GitHub](https://gbrunner.github.io/world-population-3d-with-search)
+- [Code in GitHub](https://github.com/gbrunner/world-population-3d-with-search)
+
 ## Legend Widget
 Now, let's add a Legend!
 
@@ -191,6 +210,11 @@ var legend = new Legend({
 view.ui.add(legend, "bottom-right");
 ```
 Again, it's that easy! Now it's time for you to play!
+
+### Final App
+- [App in CodePen](https://codepen.io/gbrunner/pen/wvzyrqw)
+- [App in GitHub](https://gbrunner.github.io/world-population-3d-with-legend)
+- [Code in GitHub](https://github.com/gbrunner/world-population-3d-with-legend)
 
 # Exercises
 1. [Configure pop-ups](https://developers.arcgis.com/labs/javascript/configure-pop-ups/)
