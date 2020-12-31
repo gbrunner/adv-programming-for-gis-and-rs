@@ -30,6 +30,11 @@ view.watch("center, scale", (value, oldValue, propertyName)=>{
 Taken deeper, here we have an example where we watch a scene and update the overview map based on the scene extent.
 [Overview Map](https://developers.arcgis.com/javascript/latest/sample-code/overview-map/index.html)
 
+### Final App
+- [App in CodePen](https://codepen.io/gbrunner/pen/BaLwMLK)
+- [App in GitHub](https://gbrunner.github.io/map-view-watcher)
+- [Code in GitHub](https://github.com/gbrunner/map-view-watcher)
+
 ### Autocasting - Passing data that looks like a certain type into that type.
 Autocasting a Portal Item as a Webmap
 Let's modify the [Intro to MapView](https://developers.arcgis.com/javascript/latest/sample-code/intro-mapview/index.html) code again!
@@ -46,6 +51,12 @@ var webmap = new WebMap({
   }
 });
 ```
+
+### Final App
+- [App in CodePen](https://codepen.io/gbrunner/pen/KKgXJav)
+- [App in GitHub](https://gbrunner.github.io/autocast-webmap)
+- [Code in GitHub](https://github.com/gbrunner/autocast-webmap)
+
 ### Collections - Array like containers of data
 **Example**
 - [Graphic collection](https://developers.arcgis.com/javascript/latest/sample-code/layers-featurelayer-collection/index.html)
@@ -186,6 +197,11 @@ viewingMode:"local",
 Does the lighting matter anymore?
 Do the buttons still work?
 
+#### Final App
+- [App in CodePen](https://codepen.io/gbrunner/pen/JjRrxJx)
+- [App in GitHub](https://gbrunner.github.io/world-population-3d)
+- [Code in GitHub](https://github.com/gbrunner/world-population-3d)
+
 ### Home Button
 Let's add a *Home* button:
 ```
@@ -206,8 +222,18 @@ Let's add a *Home* button:
 ```
 That's all we have to do. Of course, we should change the home location to be different from the St. Louis, USA button :)
 
+#### Final App
+- [App in CodePen](https://codepen.io/gbrunner/pen/XWjeOxo)
+- [App in GitHub](https://gbrunner.github.io/world-population-3d-with-home-button)
+- [Code in GitHub](https://github.com/gbrunner/world-population-3d-with-home-button)
+
 ### Let's add some Buttons
 - Jump over to Button Sample and Demonstrate how to add buttons.
+
+#### Final App
+- [App in CodePen](https://codepen.io/gbrunner/pen/LYRzqeK)
+- [App in GitHub](https://gbrunner.github.io/world-population-3d-with-buttons)
+- [Code in GitHub](https://github.com/gbrunner/world-population-3d-with-buttons)
 
 # Exercises
 1. [Get map coordinates](https://developers.arcgis.com/labs/javascript/get-map-coordinates/)
