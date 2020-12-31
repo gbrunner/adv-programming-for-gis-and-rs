@@ -1,9 +1,9 @@
-## Preparation: Please read Chapters 4 and 5 of Rubalcava
+# Preparation: Please read Chapters 4 and 5 of Rubalcava
 
-## Lecture:
-### API Core Concepts
+# Lecture
+## API Core Concepts
 
-#### Accessors
+### Accessors
 - Used to *get* and *set* properties
 - Rather than listening for events, you watch for changes
 - So instead of having functions like:
@@ -26,11 +26,11 @@ view.watch("center, scale", (value, oldValue, propertyName)=>{
 ```
 **Cool! But different than Python, right?!**
 
-#### watchUtils
+### watchUtils
 Taken deeper, here we have an example where we watch a scene and update the overview map based on the scene extent.
 [Overview Map](https://developers.arcgis.com/javascript/latest/sample-code/overview-map/index.html)
 
-#### Autocasting - Passing data that looks like a certain type into that type.
+### Autocasting - Passing data that looks like a certain type into that type.
 Autocasting a Portal Item as a Webmap
 Let's modify the [Intro to MapView](https://developers.arcgis.com/javascript/latest/sample-code/intro-mapview/index.html) code again!
 ```
@@ -46,7 +46,7 @@ var webmap = new WebMap({
   }
 });
 ```
-#### Collections - Array like containers of data
+### Collections - Array like containers of data
 **Example**
 - [Graphic collection](https://developers.arcgis.com/javascript/latest/sample-code/layers-featurelayer-collection/index.html)
 - Reads GeoJSON, converts to esri/Graphic collection, renders them on map.
@@ -57,7 +57,7 @@ number_as_string = 1600
 number = int(number_as_string)
 ```
 
-#### [Promises](https://www.youtube.com/watch?v=H8Q83DPZy6E)
+### [Promises](https://www.youtube.com/watch?v=H8Q83DPZy6E)
 Different concept from event listeners, but very important and increasingly used throughough JavaScript web development.
 
 At ArcGIS Javascript API v4 *promises* tell you when an "asynchronous" action is complete, or in other words, when a result is ready from some action that occurred over an unknown amount of time.  We call this "fulfilling" a promise.  If something fails along the way, we call this "rejecting" a promise.
@@ -66,11 +66,11 @@ For example, consider network traffic (network requests) to fetch data from a se
 
 Event listeners can also be used sometimes in these situations, but the trend now is to differentiate a lot more between promises and event listeners.  One good way to think about event listeners is to use them as mechanisms for responding to user actions. They sit around and wait for an event to occur. For example, when the user of your website clicks their mouse on a button, then you respond to that action with more custom code inside of a click event listener.
 
-#### TypeScript Integraion - Don't worry about this right now...
+### TypeScript Integraion - Don't worry about this right now...
 
-#### Final Thought: These concepts are hard to learn and understand without exploring them yourself!!!
+### Final Thought: These concepts are hard to learn and understand without exploring them yourself!!!
 
-### 3D Scenes
+## 3D Scenes
 3D is probably the most exciting development\addition to the GIS web developer experience.
 
 Opens up the ability to view 3D globes, scenes, and Lidar!
@@ -116,7 +116,7 @@ var view = new SceneView({
 });
 ```
 
-#### Camera Property
+### Camera Property
 I think Rubalcava's camera property is a bit overkill. Instead, let's add some cameras to our worl population example.
 
 Let's add a camera over st. louis on the world population scene:
@@ -156,7 +156,7 @@ tilt:30,
 Now, let's create an app that has some buttons to drive the cameras.
 Walk through the world_pop_3d_w_buttons.html example.
 
-#### Environment
+### Environment
 Notice how the lighting goes right through the middle of the globe? **Let's fix that by adding an environment parameter**
 
 Here's we'll add  alighting paramter to the SceneView that allows us to view the lighting so as to reflect the current tie of day.
@@ -178,7 +178,7 @@ var view = new SceneView({
 ```
 There is a lot more we can do with this. Check out the samples!
 
-#### Local Scenes
+### Local Scenes
 Let's change this to a local scene:
 ```
 viewingMode:"local",
@@ -186,7 +186,7 @@ viewingMode:"local",
 Does the lighting matter anymore?
 Do the buttons still work?
 
-#### Home Button
+### Home Button
 Let's add a *Home* button:
 ```
 "esri/widgets/Home",
@@ -206,7 +206,7 @@ Let's add a *Home* button:
 ```
 That's all we have to do. Of course, we should change the home location to be different from the St. Louis, USA button :)
 
-#### Let's add some Buttons
+### Let's add some Buttons
 - Jump over to Button Sample and Demonstrate how to add buttons.
 
 # Exercises
