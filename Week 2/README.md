@@ -67,11 +67,31 @@ Let's start by creating an app from our traffic webmap
 - Notice it even zooms over to the extent of your webmap?
 - Play around with CSS and HTML parameters
 
+#### Final App
+- [App in CodePen](https://codepen.io/gbrunner/pen/MWjoKBG)
+- [App in GitHub]()
+- [Code in GitHub]()
+
+## From a Portal Item
+You can build a web app direcly from the portal item. This wep app will inherit the properties of the Portal Item. 
+In this case, you can think of the Portal Item as the starting point for the app you want to create.
+
+#### Final App
+- [App in CodePen](https://codepen.io/gbrunner/pen/LYRzRXg)
+- [App in GitHub]()
+- [Code in GitHub]()
+
+
 ### From a Feature Layer
 - Feature layers are probably the most prevalent layers
 - Can be created from Portal Item or Service URL
 - Let's edit the webmap example to use the Feature Service (ca_traffic_from_fl.html)
 - What differences do you see between the webmap version and the heatmap version?
+
+#### Final App
+- [App in CodePen](https://codepen.io/gbrunner/pen/MWjEbwr)
+- [App in GitHub]()
+- [Code in GitHub]()
 
 ### From an Imagery Layer
 - Let's look at adding an imagery layer.
@@ -79,9 +99,27 @@ Let's start by creating an app from our traffic webmap
 - Open in Sandbox
 - Let's change the imagery URL to the [Landsat 8 Views URL]("https://landsat2.arcgis.com/arcgis/rest/services/Landsat8_Views/ImageServer")
 
+#### Final App
+- [App in CodePen](https://codepen.io/gbrunner/pen/yLazVOp)
+- [App in GitHub]()
+- [Code in GitHub]()
+
 ### From a CSV
 - Let's take a look at the [CSV Layer Example](https://developers.arcgis.com/javascript/latest/sample-code/layers-csv/index.html)
 - From here, let's try to solve some problems ourselves!
+
+#### Final App
+- [App in CodePen](https://codepen.io/gbrunner/pen/zYKEoKm)
+- [App in GitHub]()
+- [Code in GitHub]()
+
+### Loading a Web Scene
+Next week, we will work with 3D scenes. If you are interested, you can get started using this example.
+
+#### Final App
+- [App in CodePen](https://codepen.io/gbrunner/pen/dypVpjQ)
+- [App in GitHub]()
+- [Code in GitHub]()
 
 # Exercises
 1. [Create a starter app](https://developers.arcgis.com/labs/javascript/create-a-starter-app/)
