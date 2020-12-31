@@ -127,7 +127,9 @@ Next week, we will work with 3D scenes. If you are interested, you can get start
 3. [Add layers to a map](https://developers.arcgis.com/labs/javascript/add-layers-to-a-map/)
 
 # Classwork\Homework Problems:
-1. Search through ArcGIS Online and find 2 layers that overlap (not including the basemap). Create two apps that show all two layers on the map. You choose the 2 layers from ArcGIS Online. 
+Please complete problems 1 and 2. Problems 3 and 4 are optional, but I think they are achievable and that you will find some satisfaction in completing them and learning the topics.
+
+1. Search through ArcGIS Online and find 2 layers that overlap (not including the basemap). Create two apps that show all two layers on the map. You choose the 2 layers from ArcGIS Online. **Please submit your code and app using GitHub. The app should be hosted on GitHub using GitHub Pages.**
 **Part 1**
 - Create one by adding the layers to the app [From a Webmap](https://developers.arcgis.com/javascript/latest/sample-code/webmap-basic/) and then loading the Webmap object into the ArcGIS Javascript API
 - Start with the [Load a Basic Webmap Example](https://developers.arcgis.com/javascript/latest/sample-code/webmap-basic/)
@@ -150,7 +152,8 @@ d2e5c37512054e62a15464955dc65d95
 ```
 
 **Part 2**
-- Using the same layers you added to the Webmap, create a web application by adding the layers as Feature Layers like in the [Intro to Feature Layer](https://developers.arcgis.com/javascript/latest/sample-code/layers-featurelayer/index.html) example.
+- Using the same layers you added to the Webmap, create a web application by adding the layers as Feature Layers like in the [Intro to Feature Layer](https://developers.arcgis.com/javascript/latest/sample-code/layers-featurelayer/index.html) example. **Please submit your code and app using GitHub. The app should be hosted on GitHub using GitHub Pages.**
+
 - For this problem, you'll have to load multiple layers, similar to this:
 ```
 var featureLayer_1 = new FeatureLayer({
@@ -166,8 +169,9 @@ var featureLayer_2 = new FeatureLayer({
 map.add(featureLayer_2);
 ```
 
-2. Create a webapp that uses the [CSV Layer](https://developers.arcgis.com/javascript/latest/sample-code/layers-csv/index.html) to map crime over St. Louis from the [STL Crime CSV](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%202/stl_crime_wgs_84.csv) in this folder.
-- Start with the [CSV Layer example](https://developers.arcgis.com/javascript/latest/sample-code/layers-csv/index.html)
+2. Create a webapp that uses the [CSV Layer](https://developers.arcgis.com/javascript/latest/sample-code/layers-csv/index.html) to map crime over St. Louis from the [STL Crime CSV](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%202/stl_crime_wgs_84.csv) in this folder. **Please submit your code and app using GitHub. The app should be hosted on GitHub using GitHub Pages.**
+
+- Start with [my CSV Layer example](https://codepen.io/gbrunner/pen/zYKEoKm) or [Esri's CSV Layer example](https://developers.arcgis.com/javascript/latest/sample-code/layers-csv/index.html)
 - Change the url to be:
 ```
 var url = "https://raw.githubusercontent.com/gbrunner/Advanced_Python_for_GIS_and_RS/master/Week%202/stl_crime_wgs_84.csv";
@@ -189,6 +193,7 @@ csvLayer.renderer = {
 
 
 3. (**Optional**) Change the renderer in the crime map to a [heatmap renderer](https://developers.arcgis.com/javascript/latest/sample-code/visualization-heatmap/index.html). Have some fun. Change the colors!
+
 - Starting from the [Heatmap Visualization Example](https://developers.arcgis.com/javascript/latest/sample-code/sandbox/index.html?sample=visualization-heatmap), change the URL to be:
 ```
 var url = "https://raw.githubusercontent.com/gbrunner/Advanced_Python_for_GIS_and_RS/master/Week%202/stl_crime_wgs_84.csv"
