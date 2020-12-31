@@ -1,16 +1,16 @@
-## Preparation: 
+# Preparation: 
 1. Don't forget to work on Project 1.
 2. Read Chapters 6 and 7 of Rubalcava. Chapter 7 can be a bit intimidating. Don't get concerned if you don't understand it. Rather than focus on creating widgets, we will focus on using them. After reading Chapter 7, please look at the following examples:
 - [Legend Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-legend/index.html)
 - [Layer List Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-layerlist-actions/index.html)
 - [Search Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-search-3d/index.html)
 
-## Lecture 1 - Popups and Popup Template
-Popups are ususally a uses first interaction with a map.
+# Lecture 1 - Popups and Popup Template
+Popups are usually a users first interaction with a map.
 
 Let's take a look at how we can add popups to our apps.
 
-### The Easy Way - Add a Popup through ArcGIS Online
+## The Easy Way - Add a Popup through ArcGIS Online
 Let's get started by mapping NHL Draft Prospects!
 [2017 NHL Draft Products](http://slustl.maps.arcgis.com/home/item.html?id=d071140cea6c44818fc19a583bebf716)
 
@@ -36,7 +36,7 @@ Pretty easy, right?
 
 Let's copy that code into an HTML file and save it before leaving.
 
-### Loading the Popup through Code using Popup Template
+## Loading the Popup through Code using Popup Template
 Let's open up the [Intro to Popup Tempate Example](https://developers.arcgis.com/javascript/latest/sample-code/sandbox/index.html?sample=intro-popuptemplate) and start there:
 
 Let's change the feature service to be: [NHL Prospects](https://services7.arcgis.com/fX3LzGegyrqMlv6s/ArcGIS/rest/services/2017NHLDraftProspects/FeatureServer/0)
@@ -92,7 +92,7 @@ var template = { // autocasts as new PopupTemplate()
 
 Easy, right?!
 
-#### Now Let's Recreate the first Map's symbology, too!
+## Now Let's Recreate the first Map's symbology, too!
 
 Wee need to add a *renderer* and a *symbol*
 
@@ -123,10 +123,10 @@ var featureLayer = new FeatureLayer({
       map.add(featureLayer);
 ```
 
-## Lecture 2 - Widgets
+# Lecture 2 - Widgets
 My focus is not to get you writing your own widgets. That is beyond my intended scope of this class. My emphasis is that I want you to be able to use widgets. To do that, we'll look at specific out of the box widgets that come with the **ArcGIS API for Javascript 4**.
 
-### Home Button Widget
+## Home Button Widget
 Let's go back to Week 3 and look at the [3D Global Population app](https://gbrunner.github.io/Advanced_Python_for_GIS_and_RS/Week%203/world_pop_3d_w_home.html)
 
 Notice, we used the home button and that was imported via
@@ -148,7 +148,7 @@ Implementing widgets is generally this easy.
 - We assign it properties. 
 - And we put it on the user interface.
 
-### Search Widget
+## Search Widget
 Let's take the global population example we were looking at last week, remove the buttons, and add a search widget.
 
 Let's look at the [Search Widget Example](https://developers.arcgis.com/javascript/latest/sample-code/widgets-search-3d/index.html)
@@ -167,7 +167,7 @@ All we have to do is add:
 
 Easy, right?!
 
-### Legend Widget
+## Legend Widget
 Now, let's add a Legend!
 
 Check out the [legend example](https://developers.arcgis.com/javascript/latest/sample-code/widgets-legend/index.html).
@@ -199,9 +199,10 @@ Again, it's that easy! Now it's time for you to play!
 4. [Find places](https://developers.arcgis.com/labs/javascript/find-places/)
 
 # Classwork\Homework Problems:
+First, do not forget to submit **Project 1**. For homework, complete **Problems 1 and 3** and **optionally, Problems 2 and 4**. Submit the link to your apps in either CodePen or GitHub Pages.
 
 1. Create a webapp and popup following from the *popup_from_fl_black_symbol.html* using one of the datasets listed here:
-- Using the [STL Neighborhoods Feature Layer](http://slustl.maps.arcgis.com/home/item.html?id=70fefcbe59ea421da9169a46b341dfa9)
+- Using the [STL Neighborhoods Feature Layer](https://services2.arcgis.com/bB9Y1bGKerz1PTl5/arcgis/rest/services/STL_Neighborhood/FeatureServer)
 - Starting with the *popup_from_fl_black_symbol.html*, comment out the *renderer*:
 ```
 /*
@@ -259,9 +260,8 @@ title: "Neighborhood: {NHD_NAME}",
 
 2. (**Optional**) Do this with another STL dataset:
 - [St. Louis School Districts](http://slustl.maps.arcgis.com/home/item.html?id=cb8c591911fc4e3090b1371cb0f4ba87)
-- [St. Louis Parishes](http://slustl.maps.arcgis.com/home/item.html?id=ebb8787f96424ea88649e228f2dcfef5)
 
-3. Add the Legend Widget and Layer List Widget to the [3D Boston Planning](http://slustl.maps.arcgis.com/home/webscene/viewer.html?webscene=8046207c1c214b5587230f5e5f8efc77) Exameple that we made last week. Use the file [boston_globe_starting_point.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%204/boston_globe_starting_point.html) as your starting point.
+3. Add the Legend Widget and Layer List Widget to the [3D Boston Planning](http://slustl.maps.arcgis.com/home/webscene/viewer.html?webscene=8046207c1c214b5587230f5e5f8efc77) Exameple that we made last week. Use the file [boston-globe-starting-point CodePen](https://codepen.io/gbrunner/pen/LYRQzNe) as your starting point.
 - Let's start with the [Legend Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-legend/index.html)
 - Add ```"esri/widgets/Legend",``` to the ```require``` statement.
 - Add ```Legend``` into the ```function(...)``` after ```Camera```
@@ -296,16 +296,8 @@ var layerList = new LayerList({
 ```view.ui.add(layerList, "bottom-right");```
 
 
-
-
-4. (**Optional**) Take a look at the other widget examples on the [Sample Widget Page](https://developers.arcgis.com/javascript/latest/sample-code/index.html?search=Widget). Add a two of the following widgets to an existing sample that we have worked on in Week 2, 3, or 4.
+4. (**Optional**) Take a look at the other widget examples on the [Sample Widget Page](https://developers.arcgis.com/javascript/latest/sample-code/index.html?search=Widget). Add two of the following widgets to an existing sample that we have worked on in Week 2, 3, or 4.
 - [Scale Bar Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-scalebar/index.html)
 - [Custom Basemap Widget](https://developers.arcgis.com/javascript/latest/sample-code/basemap-custom/index.html)
 - [Expand Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-expand/index.html)
 - [Any of the other samples](https://developers.arcgis.com/javascript/latest/sample-code/index.html?search=Widget) that use widgets that you want to play with!
-
-## Homework:
-1. Finish the **Problems 1 and 2** above and submit them as **Assignment 4**.
-2. Submit **Project 1!**
-3. Read **Chapter 1** of **Mastering Geospatial Analysis with Python.** If you don't have the book, I will provide the chapter on **Blackboard**
-
