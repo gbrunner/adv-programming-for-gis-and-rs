@@ -69,8 +69,8 @@ Let's start by creating an app from our traffic webmap
 
 #### Final App
 - [App in CodePen](https://codepen.io/gbrunner/pen/MWjoKBG)
-- [App in GitHub]()
-- [Code in GitHub]()
+- [App in GitHub](https://gbrunner.github.com/my-first-app-refactored)
+- [Code in GitHub](https://github.com/gbrunner/my-first-app-refactored)
 
 ## From a Portal Item
 You can build a web app direcly from the portal item. This wep app will inherit the properties of the Portal Item. 
@@ -78,8 +78,8 @@ In this case, you can think of the Portal Item as the starting point for the app
 
 #### Final App
 - [App in CodePen](https://codepen.io/gbrunner/pen/LYRzRXg)
-- [App in GitHub]()
-- [Code in GitHub]()
+- [App in GitHub](https://gbrunner.github.com/add-layer-from-portal-item)
+- [Code in GitHub](https://github.com/gbrunner/add-layer-from-portal-item)
 
 
 ### From a Feature Layer
@@ -90,19 +90,19 @@ In this case, you can think of the Portal Item as the starting point for the app
 
 #### Final App
 - [App in CodePen](https://codepen.io/gbrunner/pen/MWjEbwr)
-- [App in GitHub]()
-- [Code in GitHub]()
+- [App in GitHub](https://gbrunner.github.com/add-feature-layer)
+- [Code in GitHub](https://github.com/gbrunner/add-feature-layer)
 
 ### From an Imagery Layer
 - Let's look at adding an imagery layer.
 - Using the [Imagery Layers Intro](https://developers.arcgis.com/javascript/latest/sample-code/sandbox/index.html?sample=layers-imagerylayer)
 - Open in Sandbox
-- Let's change the imagery URL to the [Landsat 8 Views URL]("https://landsat2.arcgis.com/arcgis/rest/services/Landsat8_Views/ImageServer")
+- Let's change the imagery URL to the [USA Forest Type URL]("https://landscape4.arcgis.com/arcgis/rest/services/USA_Forest_Type/ImageServer")
 
 #### Final App
 - [App in CodePen](https://codepen.io/gbrunner/pen/yLazVOp)
-- [App in GitHub]()
-- [Code in GitHub]()
+- [App in GitHub](https://gbrunner.github.com/add-imagery-layer)
+- [Code in GitHub](https://github.com/gbrunner/add-imagery-layer)
 
 ### From a CSV
 - Let's take a look at the [CSV Layer Example](https://developers.arcgis.com/javascript/latest/sample-code/layers-csv/index.html)
@@ -110,16 +110,16 @@ In this case, you can think of the Portal Item as the starting point for the app
 
 #### Final App
 - [App in CodePen](https://codepen.io/gbrunner/pen/zYKEoKm)
-- [App in GitHub]()
-- [Code in GitHub]()
+- [App in GitHub](https://gbrunner.github.com/add-csv-layer)
+- [Code in GitHub](https://github.com/gbrunner/add-csv-layer)
 
 ### Loading a Web Scene
 Next week, we will work with 3D scenes. If you are interested, you can get started using this example.
 
 #### Final App
 - [App in CodePen](https://codepen.io/gbrunner/pen/dypVpjQ)
-- [App in GitHub]()
-- [Code in GitHub]()
+- [App in GitHub](https://gbrunner.github.com/intro-to-scene-view)
+- [Code in GitHub](https://github.com/gbrunner/intro-to-scene-view)
 
 # Exercises
 1. [Create a starter app](https://developers.arcgis.com/labs/javascript/create-a-starter-app/)
