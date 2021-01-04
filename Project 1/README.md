@@ -1,7 +1,7 @@
 # Project 1 - Create 3 web applications from the similar (if not the same) datasets!
 
 ## Goal: I want you to create three web applications: one with Leaflet, one that uses the 2D map view with the ArcGIS Javascript API, and one that uses a 3D scene or globe view with the ArcGIS Javascript API.
-## Due: March 16th at Midnight.
+## Due: March 9th at Midnight.
 ## Score: Out of 150 points. Anything exceeding 150 points is a A+!
 
 ## The Assignment: 
@@ -22,4 +22,4 @@ Each application must have:
 3. **I hope to see some beautiful maps!!!**
 
 ## Presentation
-I plan to hold class remotely on March 17th via Zoom and have each student present his or her applications during class. Be prepared to talk about your maps and apps on March 17.
+I plan to hold class remotely on March 10th via Zoom and have each student present his or her applications during class. Be prepared to talk about your maps and apps on March 10.
