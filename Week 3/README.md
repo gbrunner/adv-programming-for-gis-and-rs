@@ -28,7 +28,7 @@ view.watch("center, scale", (value, oldValue, propertyName)=>{
 
 ### watchUtils
 Taken deeper, here we have an example where we watch a scene and update the overview map based on the scene extent.
-[Overview Map](https://developers.arcgis.com/javascript/latest/sample-code/overview-map/index.html)
+[Overview Map](https://developers.arcgis.com/javascript/latest/sample-code/overview-map/index.html). Open your browser developer tools console to see what this does.
 
 ### Final App
 - [App in CodePen](https://codepen.io/gbrunner/pen/BaLwMLK)
