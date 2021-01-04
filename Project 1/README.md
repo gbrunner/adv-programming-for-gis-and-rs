@@ -20,3 +20,6 @@ Each application must have:
 1. For this project, I don't want to be the first person you come to with questions. You can talk to your classmate. That being said, I am hoping to see variation in the data and maps that are submitted. **Submit *your* own work**
 2. If you are unclear about the instructions, let me know as soon as possible!
 3. **I hope to see some beautiful maps!!!**
+
+## Presentation
+I plan to hold class remotely on March 17th via Zoom and have each student present his or her applications during class. Be prepared to talk about your maps and apps on March 17.
