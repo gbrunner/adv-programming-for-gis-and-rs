@@ -1,6 +1,14 @@
 # Project 2
 
-## Problem 1
+Each problem is worth 50 points. Please submit your answers as a notebook. Each problem will be graded as follows:
+- You solved the problem: (20 points)
+- Description of goal and meaning of result explained: (15 points)
+- Code readability (10 points)
+- Proper Markdown usage in Jupyter Notebook (5 points)
+
+
+
+## Problem 1 
 
 [An image kernel is a small matrix used to apply effects like the ones you might find in Photoshop or Gimp, such as blurring](https://setosa.io/ev/image-kernels/). FOr this problem, I want you to use ```numpy``` to read in this image, and apply a 3x3 mean filter so that it smooths or blurs the image. I recommend doing this by iterating over every pixel, and for every pixel, average that pixel value with the pixels surrounding it.
 
@@ -41,7 +49,6 @@ This problem is intentionally open-ended. Go to the [St. Louis Metro Police Depa
 2. Filter the data on a specific crime type.
 3. Aggregated those types of crimes by month (or week or day).
 4. Plot the number of times that crime occurred per month (or week or day) for the entire year.
-
 
 # Project 2 - Choose One of the Following
 
