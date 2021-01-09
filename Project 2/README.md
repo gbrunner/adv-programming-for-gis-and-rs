@@ -1,3 +1,48 @@
+# Project 2
+
+## Problem 1
+
+[An image kernel is a small matrix used to apply effects like the ones you might find in Photoshop or Gimp, such as blurring](https://setosa.io/ev/image-kernels/). FOr this problem, I want you to use ```numpy``` to read in this image, and apply a 3x3 mean filter so that it smooths or blurs the image. I recommend doing this by iterating over every pixel, and for every pixel, average that pixel value with the pixels surrounding it.
+
+## Problem 2
+[The UN Refugee Agency (UNHCR)](https://www.unhcr.org/en-us/) tracks the movement of immigrants worldwide. They provide an API for you to access their data. You can access the [UNHCR API documentation here](https://api.unhcr.org/docs/).
+
+For this problem, I want you to use the UNHCR data API to find out how many immigrants were resettled to the United States (USA) from the following countries:
+- Syria (SYR)
+- Sudan (SDN)
+- Afghanistan (AFG)
+- Iran (IRN)
+- Iraq (IRQ)
+
+FOr the following years:
+- 2017
+- 2018
+- 2019
+- 2020
+
+I want you to figure out how to for the query URL to retrieve that data. As an example, the following URL will query the number of refugees that were resettled in the USA and Norway from Myanmar and Syria from 2017:
+http://api.unhcr.org/rsq/v1/demographics?page=1&year=2017&origin=MMR%2CSYR&resettlement=NOR%2CUSA
+
+Use ```pandas``` to read the data from the API into a dataframe as follows:
+```
+req = requests.get(url)
+data = req.json()['results']
+df = pd.DataFrame(data)
+```
+
+After the data is in the dataframe, do the following:
+1. Plot each countries immigration statistics over those four years.
+2. Plot the data on a map in your notebook.
+
+## Problem 3
+
+This problem is intentionally open-ended. Go to the [St. Louis Metro Police Department website](https://www.slmpd.org/Crimereports.shtml). Download 12 months worth of crime data. Using ```pandas```:
+1. Bring them into a single dataframe.
+2. Filter the data on a specific crime type.
+3. Aggregated those types of crimes by month (or week or day).
+4. Plot the number of times that crime occurred per month (or week or day) for the entire year.
+
+
 # Project 2 - Choose One of the Following
 
 ## Goal: Apply your knowledge of the ArcGIS Python API and web services
