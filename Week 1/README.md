@@ -143,9 +143,9 @@ marker2.bindPopup("<b>Resturant 2</b><br>Annie Gunns").openPopup();
 2. Create a Leaflet map and **share it on GitHub** showing the San Francisco Crime points from the GeoJSON found [here](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/sf_crime.geojson). Please add a relevant icon to the points. See the [Leaflet tutorial here](https://maptimeboston.github.io/leaflet-intro/) if you need help with that.
 *Hints:*
 - Start with the [bonston_geojson.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/boston_geojson.html) example.
-- Change the ```view``` to be over San Francisco: ```var map = L.map('map').setView([42.35, -71.08], 13);```
+- Change the ```view``` to be over San Francisco: ```var map = L.map('map').setView([37.7, -122.4], 10);```
 - Change the basemap to a Stamen Basemap ```L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png'``` that is listed below.
-- Change ```$.getJSON("rodents.geojson",function(data){``` to look at the [sf_crime.geojson](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/sf_crime.geojson) file
+- Change ```$.getJSON("https://raw.githubusercontent.com/gbrunner/adv-python-for-gis-and-rs/master/Week%201/sf_crime.geojson",function(data){``` to look at the [sf_crime.geojson](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/sf_crime.geojson) file
 - Add the symbol following from the [leaflet tutorial](http://maptimeboston.github.io/leaflet-intro/) like:
 ```
  var ratIcon = L.icon({
