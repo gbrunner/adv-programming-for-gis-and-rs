@@ -142,7 +142,7 @@ marker2.bindPopup("<b>Resturant 2</b><br>Annie Gunns").openPopup();
 
 2. Create a Leaflet map and **share it on GitHub** showing the San Francisco Crime points from the GeoJSON found [here](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/sf_crime.geojson). Please add a relevant icon to the points. See the [Leaflet tutorial here](https://maptimeboston.github.io/leaflet-intro/) if you need help with that.
 *Hints:*
-- Start with the [bonston_geojson.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/boston_geojson.html) example.
+- Start with the [leaflet from geoJSON file example](https://codepen.io/gbrunner/pen/oNzGjLY) example.
 - Change the ```view``` to be over San Francisco: ```var map = L.map('map').setView([37.7, -122.4], 10);```
 - Change the basemap to a Stamen Basemap ```L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png'``` that is listed below.
 - Change ```$.getJSON("https://raw.githubusercontent.com/gbrunner/adv-python-for-gis-and-rs/master/Week%201/sf_crime.geojson",function(data){``` to look at the [sf_crime.geojson](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/sf_crime.geojson) file
@@ -161,30 +161,17 @@ marker2.bindPopup("<b>Resturant 2</b><br>Annie Gunns").openPopup();
 
 3. **Optional Challenge** Create a Leaflet heatmap from the crime points GeoJSON that you used above.
 *Hints:*
-- Start with [boston_heatmap.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/boston_heatmap.html)
+- Start with [leaflet heatmap example](https://codepen.io/gbrunner/pen/rNMGxGw)
 - Change the view of the map ```var map = L.map('map').setView([42.35, -71.08], 13);``` to be over San Francisco.
 - Change the basemap to a Stamen Basemap ```L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png'``` that is listed below.
 - Change *rodents.geojson* to the [sf_crime.geojson](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/sf_crime.geojson)
 
 4. **Optional Challenge** Create a Leaflet cluster map from the crime points GeoJSON that you used above. Make sure you have a default icon set. Can you change the color on the clusters?
-- Start with [boston_cluster.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/boston_cluster.html)
+- Start with [leaflet-cluster-map example](https://codepen.io/gbrunner/pen/GRjMoxb)
 - Change the view of the map ```var map = L.map('map').setView([42.35, -71.08], 13);``` to be over San Francisco.
 - Change the basemap to a Stamen Basemap ```L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png'``` that is listed below.
-- Change *rodents.geojson* to the [sf_crime.geojson](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/sf_crime.geojson)
-- Change the icon url ```iconUrl: 'http://andywoodruff.com/maptime-leaflet/rat.png',```
-- Change:
-```
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
-<link rel="stylesheet" href="MarkerCluster.css" />
-<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-```
-to:
-```
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css"/>
-<link rel="stylesheet" href="MarkerCluster.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
-```
-Github serves things through **https** and therefore the libraries you reference must use **https**.
+- Change *rodents.geojson* to the [sf_crime.geojson](https://raw.githubusercontent.com/gbrunner/adv-python-for-gis-and-rs/master/Week%201/sf_crime.geojson)
+- Change the icon url ```iconUrl: 'http://andywoodruff.com/maptime-leaflet/rat.png',```. Search the internet for an icon or [use the one that I found](https://effect.org/wp-content/uploads/2016/01/crime-icon.png).
 
 
 ## If you finish this in class, there's one more thing I want to show you
