@@ -121,7 +121,7 @@ Clustermaps are fun too!
 ## Classwork Problems
 1. Create a Leaflet map and **share it on GitHub** of 5 restaurants that you'd like to go to in St. Louis. Include popups! If you're up to it, change the symbology for the points. 
 *Hints:*
-- look at [quickstart_final.html](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/quickstart_final.html). 
+- look at [the leaflet geojson example](https://codepen.io/gbrunner/pen/VwKMvyz). 
 - In quickstart_final.html, add 5 markers. For example:
 ```
 var marker1 = L.marker([41.873, -87.629]).addTo(mymap);
