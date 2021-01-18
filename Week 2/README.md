@@ -129,8 +129,9 @@ Next week, we will work with 3D scenes. If you are interested, you can get start
 # Classwork\Homework Problems:
 Please complete problems 1 and 2. Problems 3 and 4 are optional, but I think they are achievable and that you will find some satisfaction in completing them and learning the topics.
 
-1. Search through ArcGIS Online and find 2 layers that overlap (not including the basemap). Create two apps that show all two layers on the map. You choose the 2 layers from ArcGIS Online. **Please submit your code and app using GitHub. The app should be hosted on GitHub using GitHub Pages.**
-**Part 1**
+1. Search through ArcGIS Online and find 2 feature layers that overlap (not including the basemap). You will create two apps that show both layers on the map. **Please submit your code and app using GitHub. The app should be hosted on GitHub using GitHub Pages.**
+
+**App 1**
 - Create one by adding the layers to the app [From a Webmap](https://developers.arcgis.com/javascript/latest/sample-code/webmap-basic/) and then loading the Webmap object into the ArcGIS Javascript API
 - Start with the [Load a Basic Webmap Example](https://developers.arcgis.com/javascript/latest/sample-code/webmap-basic/)
 - Create a Webmap in [http://slustl.maps.arcgis.com/home/index.html](http://slustl.maps.arcgis.com/home/index.html). After you have saved it, make sure to *Share* it with everyone.
@@ -151,7 +152,7 @@ The ID is:
 d2e5c37512054e62a15464955dc65d95
 ```
 
-**Part 2**
+**App 2**
 - Using the same layers you added to the Webmap, create a web application by adding the layers as Feature Layers like in the [Intro to Feature Layer](https://developers.arcgis.com/javascript/latest/sample-code/layers-featurelayer/index.html) example. **Please submit your code and app using GitHub. The app should be hosted on GitHub using GitHub Pages.**
 
 - For this problem, you'll have to load multiple layers, similar to this:
