@@ -127,7 +127,7 @@ Next week, we will work with 3D scenes. If you are interested, you can get start
 3. [Add layers to a map](https://developers.arcgis.com/labs/javascript/add-layers-to-a-map/)
 
 # Classwork\Homework Problems:
-Please complete problems 1 and 2. Problems 3 and 4 are optional, but I think they are achievable and that you will find some satisfaction in completing them and learning the topics.
+Please complete problems 1, 2, and 3. Problem 4 is optional, but I think it is achievable and that you will find some satisfaction in completing it and learning the topic.
 
 1. Search through ArcGIS Online and find 2 feature layers that overlap (not including the basemap). You will create two apps that show both layers on the map. **Please submit your code and app using GitHub. The app should be hosted on GitHub using GitHub Pages.**
 
@@ -181,7 +181,7 @@ var url = "https://raw.githubusercontent.com/gbrunner/Advanced_Python_for_GIS_an
 - Change the *center* and the *zoom* to be over St. Louis, MO.
 
 
-3. (**Optional, but recommended**) Change the renderer in the crime map to a [heatmap renderer](https://developers.arcgis.com/javascript/latest/sample-code/visualization-heatmap/index.html). Have some fun. Change the colors!
+3. Change the renderer in the crime map to a [heatmap renderer](https://developers.arcgis.com/javascript/latest/sample-code/visualization-heatmap/index.html). Have some fun. Change the colors!
 
 - Starting from the [Heatmap Visualization Example](https://developers.arcgis.com/javascript/latest/sample-code/sandbox/index.html?sample=visualization-heatmap), change the URL to be:
 ```
