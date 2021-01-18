@@ -246,9 +246,9 @@ This week, please begin working on Project 1 and read Chapters 6 and 7 of Rubalc
 - [Layer List Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-layerlist-actions/index.html)
 - [Search Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-search-3d/index.html)
 
-Complete the Following Problems and submit either a link to your CodePen or your application hosted on GitHub Pages:
+Complete the following problems and submit either a link to your CodePen or your application hosted on GitHub Pages:
 1. Change the [world-population-3d-with-home-buttons CodePen](https://codepen.io/gbrunner/pen/XWjeOxo) to use this webscene over Boston as the input portal item: http://slustl.maps.arcgis.com/home/webscene/viewer.html?webscene=8046207c1c214b5587230f5e5f8efc77
-- Open [world-population-3d-with-home-buttons](https://codepen.io/gbrunner/pen/XWjeOxo) in Notepad++ or jsbin.
+- Open [world-population-3d-with-home-buttons](https://codepen.io/gbrunner/pen/XWjeOxo).
 - change the ```id:"fbbbaa2fbfda41b8b3f96427c3ac5c79" ``` to be ```id:"8046207c1c214b5587230f5e5f8efc77" ```
 - Change the camera position from looking at St. Louis, to looking at Boston:
 ```
