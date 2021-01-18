@@ -177,23 +177,11 @@ map.add(featureLayer_2);
 ```
 var url = "https://raw.githubusercontent.com/gbrunner/Advanced_Python_for_GIS_and_RS/master/Week%202/stl_crime_wgs_84.csv";
 ```
-- Change the renderer to be a *simple* renderer:
-```
-var symbol = {
-   type: "simple-marker", 
-   color:"red"
-};
-
-csvLayer.renderer = {
-   type: "simple", // autocasts as new SimpleRenderer()
-   symbol: symbol
-};
-```
-- Change all the *SceneView* parameters to *MapView* parameters.
+- Change the symbol color.
 - Change the *center* and the *zoom* to be over St. Louis, MO.
 
 
-3. (**Optional**) Change the renderer in the crime map to a [heatmap renderer](https://developers.arcgis.com/javascript/latest/sample-code/visualization-heatmap/index.html). Have some fun. Change the colors!
+3. (**Optional, but recommended**) Change the renderer in the crime map to a [heatmap renderer](https://developers.arcgis.com/javascript/latest/sample-code/visualization-heatmap/index.html). Have some fun. Change the colors!
 
 - Starting from the [Heatmap Visualization Example](https://developers.arcgis.com/javascript/latest/sample-code/sandbox/index.html?sample=visualization-heatmap), change the URL to be:
 ```
