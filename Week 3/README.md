@@ -253,14 +253,14 @@ Complete the following problems and submit either a link to your CodePen or your
 - Change the camera position from looking at St. Louis, to looking at Boston:
 ```
         position: [
-           -71.060217,// lon of St. Louis
-          42.382655, // lat of St. Louis
+           -71.060217,
+          42.382655,
           2500// elevation in meters
         ],
 ```
 
-2. Change the two cameras to point at different areas of Boston.
-- Change the parameters of ```var camera2``` and ```var camera3``` to point at different parts of boston. You might have to play around to get the views you want. Right now I have ```var camera3 = camera```. You will have to define ```var camera2 = new Camera({....```
+2. Change the two cameras to point at different areas of Boston. Modify the parameters of ```var camera``` and ```var camera2```.
+- Modify the parameters in ```var camera``` and ```var camera2``` to point at different parts of boston. You might have to play around to get the views you want. 
 - Be sure to change the names on the buttons from ```St. Louis, USA``` and ```Beijing, China``` to something more meaningful.
 
 3. Add a third camera (and button!) that looks towards downtown boston from the Atlantic Ocean.
