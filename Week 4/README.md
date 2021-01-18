@@ -287,9 +287,9 @@ title: "Neighborhood: {NHD_NAME}",
 - Let's start with the [Legend Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-legend/index.html)
 - Add ```"esri/widgets/Legend",``` to the ```require``` statement.
 - Add ```Legend``` into the ```function(...)``` after ```Camera```
-- Add a ```view.when``` function to create the legend:
+- Add a ```view.when``` function to create the legend and a ```view.ui.add(legend, "bottom-right");``` to add it to the interface:
 ```
-      view.when(function() {
+view.when(function() {
 	
           // get the first layer in the collection of operational layers in the WebMap
           // when the resources in the MapView have loaded.
@@ -302,9 +302,10 @@ title: "Neighborhood: {NHD_NAME}",
             title: "Major project buildings"
           }]
         });
+      
+   view.ui.add(legend, "bottom-right");
+   });
 ```
-- Add the legend to the UI within the ```view.when``` function
-```view.ui.add(legend, "bottom-right");```
 - Next, add the [Layer List Widget](https://developers.arcgis.com/javascript/latest/sample-code/widgets-layerlist/index.html)
 - Add ```"esri/widgets/LayerList",``` to the require statement after the Lenged.
 - Add ```LayerList``` into the ```function(...)``` after the ```Legend```.
