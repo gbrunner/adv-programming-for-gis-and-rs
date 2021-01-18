@@ -225,30 +225,28 @@ Again, it's that easy! Now it's time for you to play!
 # Classwork\Homework Problems:
 First, do not forget to submit **Project 1**. For homework, complete **Problems 1 and 3** and **optionally, Problems 2 and 4**. Submit the link to your apps in either CodePen or GitHub Pages.
 
-1. Create a webapp and popup following from the *popup_from_fl_black_symbol.html* using one of the datasets listed here:
-- Using the [STL Neighborhoods Feature Layer](https://services2.arcgis.com/bB9Y1bGKerz1PTl5/arcgis/rest/services/STL_Neighborhood/FeatureServer)
-- Starting with the *popup_from_fl_black_symbol.html*, comment out the *renderer*:
+1. Starting from the [popup-from-feature-layer example](https://codepen.io/gbrunner/pen/yLavzNY), create an app that shows the STL Neighborhoods with a Popup:
+- Use the [STL Neighborhoods Feature Layer](https://services2.arcgis.com/bB9Y1bGKerz1PTl5/ArcGIS/rest/services/STL_Neighborhood/FeatureServer/0)
+- Starting with the  [popup-from-feature-layer example](https://codepen.io/gbrunner/pen/yLavzNY), comment out the *renderer*:
 ```
-/*
-var renderer = {
-  type: "simple",  // autocasts as new SimpleRenderer()
-  symbol: {
-    type: "simple-marker",  // autocasts as new SimpleMarkerSymbol()
-    size: 6,
-    color: "black",
-    outline: {  // autocasts as new SimpleLineSymbol()
-      width: 0.5,
-      color: "white"
-    }
-  }
-};*/
+/*featureLayer.renderer = {
+      type: "simple",  // autocasts as new SimpleRenderer()
+      symbol: {
+        type: "simple-marker",  // autocasts as new SimpleMarkerSymbol()
+        size: 6,
+        color: "red",
+        outline: {  // autocasts as new SimpleLineSymbol()
+          width: 0.5,
+          color: "white"
+        }
+      }
+    };*/
 ```
-- Remove ```renderer: renderer,```
-- Change the URL to ```http://services.arcgis.com/Ak4vS4r1vIYUiU3q/arcgis/rest/services/StLNeighborhoods/FeatureServer/0```
+- Change the URL to ```https://services2.arcgis.com/bB9Y1bGKerz1PTl5/ArcGIS/rest/services/STL_Neighborhood/FeatureServer/0```
 - Change the zoom and center to be over St. Louis:
 ```
-center:[-90, 38],
-zoom: 4
+        center:[-91.1, 38.6],
+        zoom: 9
 ```
 -  Modify the template title to be:
 ```         
