@@ -214,7 +214,7 @@ const layer = new CSVLayer({
 - Look at the service **RasterFunction Infos**. Change the Raster function template to one of the *NDVI* Raster Functions.
 - Change the Zoom location to be over the Midwest.
 - After you change it, does the *Popup* still work?
-- If not, can you fix it? The Bands for Landsat 8 can be found [here](https://landsat.usgs.gov/what-are-band-designations-landsat-satellites). This data corresponds to the OLI sensor.
+- If not, can you fix it? The Bands for Landsat 8 can be found [here](https://www.usgs.gov/faqs/what-are-band-designations-landsat-satellites?qt-news_science_products=0#qt-news_science_products). This data corresponds to the OLI sensor.
 
 # Homework:
 1. Finish the **Classwork\Homework Problems** and submit them as **Assignment 2**.
