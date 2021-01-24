@@ -1,6 +1,3 @@
-## Preparation
-Watch Jacob Wasilkowski's lecture from April 2018.
-[The lecture notes and materials are available here.](https://github.com/gbrunner/Python_for_GIS_and_RS/tree/master/Week_14)
 
 ## Lecture
 
