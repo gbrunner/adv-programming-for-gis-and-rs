@@ -90,7 +90,7 @@ Loading a WebScene is ver easy. It follows the same pattern as loading a WebMap.
 
 Let's create our first scene by building on top of the [SceneView Example](https://developers.arcgis.com/javascript/latest/sample-code/intro-sceneview/index.html)
 
-FOr this example, let's use the [World Population in 3D Data](http://slustl.maps.arcgis.com/home/item.html?id=fbbbaa2fbfda41b8b3f96427c3ac5c79)
+For this example, let's use the [World Population in 3D Data](http://slustl.maps.arcgis.com/home/item.html?id=fbbbaa2fbfda41b8b3f96427c3ac5c79)
 ```
 <script>
     require([
