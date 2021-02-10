@@ -146,7 +146,7 @@ marker2.bindPopup("<b>Resturant 2</b><br>Annie Gunns").openPopup();
 - Add the symbol following from the [leaflet tutorial](http://maptimeboston.github.io/leaflet-intro/) like:
 ```
  var ratIcon = L.icon({
-    iconUrl: 'rat.gif',
+    iconUrl: ''http://maptimeboston.github.io/leaflet-intro/rat.gif'',
     iconSize: [50,40]
   }); 
   L.geoJson(data  ,{
