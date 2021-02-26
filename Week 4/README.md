@@ -252,31 +252,7 @@ First, do not forget to submit **Project 1**. For homework, complete **Problems 
 ```         
 title: "Neighborhood: {NHD_NAME}",
 ```
-- Modify the template ```content``` to be:
-```
-       [{
-          // It is also possible to set the fieldInfos outside of the content
-          // directly in the popupTemplate. If no fieldInfos is specifically set
-          // in the content, it defaults to whatever may be set within the popupTemplate.
-          type: "fields",
-          fieldInfos: [{
-            fieldName: "POP2000",
-            label: "2000 Population: ",
-            visible: true,
-            format: {
-              digitSeparator: true,
-              places: 0
-            }
-          }, {
-            fieldName: "POP2010",
-            label: "2010 Population: ",
-            visible: true,
-            format: {
-              digitSeparator: true,
-              places: 0
-            }
-          }]
-        }]
+- Modify the template ```content``` to be print different field values.
 ```
 - Change the title: ```<title>Intro to PopupTemplate - 4.8</title>```
 
