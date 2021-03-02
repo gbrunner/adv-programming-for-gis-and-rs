@@ -322,7 +322,7 @@ var view = new SceneView({
 6. (**Challenge**) In preparation for next week:
 - Add a popup to the [ca-traffic-from-feature-layer](https://codepen.io/gbrunner/pen/GRjQYEz) CodePen. This can be done by defining a template:
 ```
-var template = { // autocasts as new PopupTemplate()
+		var template = { // autocasts as new PopupTemplate()
         title: "What Happened?",
         content: [{
           // It is also possible to set the fieldInfos outside of the content
@@ -330,12 +330,12 @@ var template = { // autocasts as new PopupTemplate()
           // in the content, it defaults to whatever may be set within the popupTemplate.
           type: "fields",
           fieldInfos: [{
-            fieldName: "Descriptn",
-            label: "Description %",
+            fieldName: "CollisnTyp",
+            label: "Collision Type",
             visible: true
           }]
         }]
-      };
+      };	
 ```
 and adding these fields to the FeatureLayer definition.
 ```
