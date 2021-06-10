@@ -105,7 +105,7 @@ To learn more about GeoJSON, check out [GeoJSON.io](http://www.geojson.io)
   
 # Our first Leaflet map
 - Let's use the Leaflet [Quick Start Guide](https://leafletjs.com/examples/quick-start/) to create our first map!
-- Let's do this in [CodePen](https://codepen.io/gbrunner/pen/yLaXYrg)
+- Let's do this in [CodePen](https://codepen.io)
 - Let's use the same example, but change the JS to be the following:
 ```
 var mymap = L.map('mapid').setView([51.505, -0.09], 13);
