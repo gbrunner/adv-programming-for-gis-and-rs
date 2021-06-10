@@ -8,8 +8,8 @@ Watch this video on [ArcGIS API for Python: Mapping, Visualization, and Explorat
 - [dataviz.jpg](dataviz.jpg)
 - [sources.txt](sources.txt)
 - [housing.csv](housing.csv)
-- [Unit 6 - Data Visualization with the ArcGIS API for Python.ipynb](Unit 6 - Data Visualization with the ArcGIS API for Python.ipynb)
-- [Unit 6 - Web Map Demo.ipynb](Unit 6 - Web Map Demo.ipynb) 
+- Unit 6 - Data Visualization with the ArcGIS API for Python.ipynb
+- Unit 6 - Web Map Demo.ipynb
 
 This week, we will start by reviewing "conda" and "pip". 
 We will look at the notebooks that you completed for homework this week.
