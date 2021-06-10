@@ -222,7 +222,7 @@ marker2.bindPopup("<b>Resturant 2</b><br>Annie Gunns").openPopup();
 - Start with [leaflet-cluster-map example](https://codepen.io/gbrunner/pen/GRjMoxb)
 - Change the view of the map ```var map = L.map('map').setView([42.35, -71.08], 13);``` to be over San Francisco.
 - Change the basemap to a Stamen Basemap ```L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png'``` that is listed below.
-- Change *rodents.geojson* to the [sf_crime.geojson](https://raw.githubusercontent.com/gbrunner/adv-python-for-gis-and-rs/master/Week%201/sf_crime.geojson)
+- Change *rodents.geojson* to the [sf_crime.geojson](https://raw.githubusercontent.com/gbrunner/adv-programming-for-gis-and-rs/master/Web%20Development%20Module/Unit%201%20-%20GitHub%20and%20Leaflet/sf_crime.geojson)
 - Change the icon url ```iconUrl: 'http://andywoodruff.com/maptime-leaflet/rat.png',```. Search the internet for an icon or [use the one that I found](https://effect.org/wp-content/uploads/2016/01/crime-icon.png).
 
 
