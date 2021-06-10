@@ -148,12 +148,12 @@ var featureLayer_2 = new FeatureLayer({
 map.add(featureLayer_2);
 ```
 
-2. Create a webapp that uses the [CSV Layer](https://developers.arcgis.com/javascript/latest/sample-code/layers-csv/index.html) to map crime over St. Louis from the [STL Crime CSV](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%202/stl_crime_wgs_84.csv) in this folder. **Please submit your code and app using GitHub. The app should be hosted on GitHub using GitHub Pages.**
+2. Create a webapp that uses the [CSV Layer](https://developers.arcgis.com/javascript/latest/sample-code/layers-csv/index.html) to map crime over St. Louis from the [STL Crime CSV](https://raw.githubusercontent.com/gbrunner/adv-programming-for-gis-and-rs/master/Web%20Development%20Module/Unit%202%20-%20ArcGIS%20JavaScript%20API/stl_crime_wgs_84.csv) in this folder. **Please submit your code and app using GitHub. The app should be hosted on GitHub using GitHub Pages.**
 
 - Start with [my CSV Layer example](https://codepen.io/gbrunner/pen/zYKEoKm) or [Esri's CSV Layer example](https://developers.arcgis.com/javascript/latest/sample-code/layers-csv/index.html)
 - Change the url to be:
 ```
-var url = "https://raw.githubusercontent.com/gbrunner/Advanced_Python_for_GIS_and_RS/master/Week%202/stl_crime_wgs_84.csv";
+var url = "https://raw.githubusercontent.com/gbrunner/adv-programming-for-gis-and-rs/master/Web%20Development%20Module/Unit%202%20-%20ArcGIS%20JavaScript%20API/stl_crime_wgs_84.csv";
 ```
 - Change the symbol color.
 - Change the *center* and the *zoom* to be over St. Louis, MO.
@@ -163,7 +163,7 @@ var url = "https://raw.githubusercontent.com/gbrunner/Advanced_Python_for_GIS_an
 
 - Starting from the [Heatmap Visualization Example](https://developers.arcgis.com/javascript/latest/sample-code/sandbox/index.html?sample=visualization-heatmap), change the URL to be:
 ```
-var url = "https://raw.githubusercontent.com/gbrunner/Advanced_Python_for_GIS_and_RS/master/Week%202/stl_crime_wgs_84.csv"
+var url = "https://raw.githubusercontent.com/gbrunner/adv-programming-for-gis-and-rs/master/Web%20Development%20Module/Unit%202%20-%20ArcGIS%20JavaScript%20API/stl_crime_wgs_84.csv"
 ```
 - Change the template to:
 ```
