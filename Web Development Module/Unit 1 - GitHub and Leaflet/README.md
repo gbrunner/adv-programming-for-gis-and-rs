@@ -1,5 +1,5 @@
 # Github
-## [What is GitHub?](www.youtube.com/watch?v=w3jLJU7DT5E)
+## [What is GitHub?](https://www.youtube.com/watch?v=w3jLJU7DT5E)
 
 
 Throughout this course, we will be using GitHub. 
