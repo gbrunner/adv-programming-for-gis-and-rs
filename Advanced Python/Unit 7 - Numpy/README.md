@@ -1,8 +1,6 @@
 # Watch this Video
 Check out this video for an introduction to Numpy.
 [Python NumPy Tutorial for Beginners](http://www.youtube.com/watch?v=QUT1VHiLmmI)
-Duration: 58:10
-User: n/a - Added: 8/7/19
 
 # Read this Chapter
 [Chapter 2 of Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html)
