@@ -77,7 +77,6 @@ create a notebooks that:
 L- ists the USA subgeographies ```usa.subgeographies.states```
 - Uses Missouri as the state and to find the places within Missouri ```usa.subgeographies.states['Missouri'].places```
 - Creates a Map object over St. Louis that plots the boundary of St. Louis over the topographic basemap
-    - Hint: Make sure that you have the right 
-    - ```place_name in usa.subgeographies.states['Missouri'].places['place_name'].geometry```
+    - Hint: Make sure that you have the right ```place_name in usa.subgeographies.states['Missouri'].places['place_name'].geometry```
 - Uses the enrichment capability ```stl_df = enrich()``` to find the Total Population 'TOTPOP' of St. Louis.
 - What is the Total Population of the City of St. Louis?
