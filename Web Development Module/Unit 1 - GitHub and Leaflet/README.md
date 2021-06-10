@@ -100,6 +100,8 @@ to learn more.
 Data is read in [GeoJSON](http://geojson.org/) format, 
 a format for encoding a variety of geographic data structures.
 
+To learn more about GeoJSON, check out [GeoJSON.io](http://www.geojson.io)
+
   
 # Our first Leaflet map
 - Let's use the Leaflet [Quick Start Guide](https://leafletjs.com/examples/quick-start/) to create our first map!
