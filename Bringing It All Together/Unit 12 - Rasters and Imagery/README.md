@@ -1,5 +1,6 @@
 # [Watch This Video](http://www.youtube.com/watch?v=oMvifdeorqs)
 [Imagery in ArcGIS](http://www.youtube.com/watch?v=oMvifdeorqs)
+
 We are living in a golden era of remote sensing and aerial imagery. 
 Significant advancements in satellite launch vehicles, dropping the 
 cost per kilogram to space, miniaturization of optical imaging 
