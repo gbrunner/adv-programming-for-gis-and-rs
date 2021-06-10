@@ -37,7 +37,7 @@ Let's learn about layers in ArcGIS!
 - Go to ArcGIS Online
 - Search for [traffic layers outside of your organization](https://www.arcgis.com/home/search.html?q=traffic&t=content&start=1&sortOrder=desc&sortField=relevance&restrict=false&focus=layers-weblayers-features)
 - Find [California Traffic Layers](https://www.arcgis.com/home/search.html?q=traffic&t=content&start=1&sortOrder=desc&sortField=relevance&restrict=false&focus=layers-weblayers-features)
-- Open up [the service](https://services1.arcgis.com/8CpMUd3fdw6aXef7/arcgis/rest/services/Vehicle_Traffic_Volumes_2016/FeatureServer)
+- Open up [the service](https://demographics5.arcgis.com/arcgis/login/?returnUrl=https://demographics5.arcgis.com/arcgis/rest/services/USA_Traffic_Counts/MapServer/0)
 - Let's query the service
 - Notice you can return HTML, JSON (Esri JSON), GeoJSON, etc.
 - Let's add this to a Webmap.
@@ -58,7 +58,7 @@ Let's start by creating an app from our traffic webmap
 
 ### Final App
 - [App in CodePen](https://codepen.io/gbrunner/pen/MWjoKBG)
-- [App in GitHub](https://gbrunner.github.com/my-first-app-refactored)
+- [App in GitHub](https://gbrunner.github.io/my-first-app-refactored)
 - [Code in GitHub](https://github.com/gbrunner/my-first-app-refactored)
 
 ## From a Portal Item
@@ -67,7 +67,7 @@ In this case, you can think of the Portal Item as the starting point for the app
 
 ### Final App
 - [App in CodePen](https://codepen.io/gbrunner/pen/LYRzRXg)
-- [App in GitHub](https://gbrunner.github.com/add-layer-from-portal-item)
+- [App in GitHub](https://gbrunner.github.io/add-layer-from-portal-item)
 - [Code in GitHub](https://github.com/gbrunner/add-layer-from-portal-item)
 
 
@@ -79,7 +79,7 @@ In this case, you can think of the Portal Item as the starting point for the app
 
 ### Final App
 - [App in CodePen](https://codepen.io/gbrunner/pen/MWjEbwr)
-- [App in GitHub](https://gbrunner.github.com/add-feature-layer)
+- [App in GitHub](https://gbrunner.github.io/add-feature-layer)
 - [Code in GitHub](https://github.com/gbrunner/add-feature-layer)
 
 ## From an Imagery Layer
@@ -90,7 +90,7 @@ In this case, you can think of the Portal Item as the starting point for the app
 
 ### Final App
 - [App in CodePen](https://codepen.io/gbrunner/pen/yLazVOp)
-- [App in GitHub](https://gbrunner.github.com/add-imagery-layer)
+- [App in GitHub](https://gbrunner.github.io/add-imagery-layer)
 - [Code in GitHub](https://github.com/gbrunner/add-imagery-layer)
 
 ## From a CSV
@@ -99,7 +99,7 @@ In this case, you can think of the Portal Item as the starting point for the app
 
 ### Final App
 - [App in CodePen](https://codepen.io/gbrunner/pen/zYKEoKm)
-- [App in GitHub](https://gbrunner.github.com/add-csv-layer)
+- [App in GitHub](https://gbrunner.github.io/add-csv-layer)
 - [Code in GitHub](https://github.com/gbrunner/add-csv-layer)
 
 ## Loading a Web Scene
@@ -107,7 +107,7 @@ Next week, we will work with 3D scenes. If you are interested, you can get start
 
 ### Final App
 - [App in CodePen](https://codepen.io/gbrunner/pen/dypVpjQ)
-- [App in GitHub](https://gbrunner.github.com/intro-to-scene-view)
+- [App in GitHub](https://gbrunner.github.io/intro-to-scene-view)
 - [Code in GitHub](https://github.com/gbrunner/intro-to-scene-view)
 
 # Helpful Links
