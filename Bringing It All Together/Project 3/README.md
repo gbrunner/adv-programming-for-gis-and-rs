@@ -1,61 +1,105 @@
-# Project 3 - Creating Some Data Science Notebooks
+# Project 3 - Bringing it all together
 
-## Goal: Apply your knowledge of the ArcGIS Python API and web services
-## Asssigned: Week 8
-## Due: Monday, December 3 at Noon
-## Score: Out of 100 points. Anything exceeding 100 points is a A+!
+**Choose one of the following options.**
 
-Create two Python Notebooks that answer the following questions. Please use the notebook to explain your steps.
-## 1. Missouri Demographic Study
-Using Esri's [USA Tapestry Service for Counties](http://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/Tapestry_Households/FeatureServer/1), create a Python Notebook that answers the following questions
-1. For the counties in Missouri only, what is the dominant Tapestry LifeMode Group Name(*TLIFENAME*)? (**10 points**)
-2. Create a histrogram that shows the number of Missouri counties per Tapestry LifeMode Group Name(*TLIFENAME*) (**5 points**)
-3. Create a pie chart that shows the number of Missouri counties per Tapestry LifeMode Group Name(*TLIFENAME*) (**5 points**)
-4. For the counties in Missouri, what is the dominant Dominant Tapestry Segment Name (*TSEGNAME*) (**10 points**)
-5. Create a histogram  that shows the number of Missouri counties per Tapestry Segment Name (*TSEGNAME*). (**5 points**)
-6. Create a pie chart that shows the number of Missouri counties per Tapestry Segment Name (*TSEGNAME*). (**5 points**)
-7. Is there Any correlation between LifeMode Group and Segment name? *Hint: plot TSEGNAME' vs. TLIFENAME.* (**2 points**)
-8. Make sure the notebook is well-documented. (**8 points**)
-9. **Bonus** Explore the data and show me somethig cool that I haven't thought of. (**5 Points**)
+## Option 1
 
+Suppose you work for a consulting agency, and they just 
+tasked you with a new assignment to build scripts 
+to analyze and inform the NYC council about the 
+Uber ride sharing companies. The city wants 1.) 
+reproducible workflows in a jupyter notebook and 2.) 
+A web page (web application with a map) showing the results.
 
-### Helpful Hint
-You can return only Missouri data from the feature service query by usring a geometry filter. See the example here:
-```
-from arcgis.geometry import filters
-import arcpy
+The data can be obtained from 
+here: https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 
-fc = r'C:\PROJECTS\STATE_OF_THE_DATA\DATA\usa_states\usa.gdb\nj'
+You will likely need the 
+following resources, which can be found on the webpage:
+1. Taxi Ride CSV (I suggest Yellow Taxi records CSV from January 2021).
+2. [Taxi Zone Lookup Table (CSV)](https://s3.amazonaws.com/nyc-tlc/misc/taxi+_zone_lookup.csv)
+3. [Taxi Zone Shapefile (CSV)](https://s3.amazonaws.com/nyc-tlc/misc/taxi_zones.zip)
 
-grid_desc = arcpy.Describe(fc)
-grid_sr = grid_desc.spatialReference
-grid_extent = grid_desc.extent
+The information will be given to non-technical 
+individuals so they want pretty maps, graph, 
+and charts. They have set limits on what 
+Python package you can use because their 
+IT staff restricts what analysts can use.
+Whitelist Software Limitations from the Client
 
-geometry = grid_extent
-sr = grid_sr
-sp_rel = "esriSpatialRelIntersects"
-sp_filter = filters.intersects(geometry=geometry)
+    scipy
+    sklearn
+    ArcGIS API for Python
+    ArcPy
+    Standard Python Libraries (which includes Numpy and Pandas)
+    Requests
 
-fl.query(geometry_filter=sp_filter, return_all_records=True).df
-```
-**Note:** This is not the only way to do this.
+I want to see Python Analysis that derives 2 of the following:
+- aggregation of taxi statistics by "Borough" and "Zone"
+- Interactive maps (minimum of 2)
+- Nice descriptive reporting and plots that show statistics
+- Other interesting facts
 
-## 2. Earthquake Impact Assessment
-Have you ever seen the [USGS Earthquake Pager](https://earthquake.usgs.gov/earthquakes/eventpage/us1000g60s#pager)? In the project, you're going to work towards creating something similar!
+What to turn in: **Jupyter notebook or ArcGIS Notebook**
 
-The USGS tracks [global earthquake activity](https://earthquake.usgs.gov/earthquakes/map/). For this project, I want you to estimate the potential population affected by a large earthquake that occurred over the past month. The significant earthquakes from the past month can be found [here](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.csv). There will be on the order of 1 to 10 *significant* earthquakes from the last month. 
+###Grading
 
-As a template for this analysis, please see this [GeoEnrichment Tutorial](https://developers.arcgis.com/python/guide/performing-geoenrichment/). For your analysis, you will follow some steps seen here. Your goal is to present an estimate of the **Total Population** affected by those earthquakes. I'm leaving it up to you to figure out buffer sizes, whether there are in fact any people within range of the earthquake, and other questions.
+The project will be graded on the following:
+- Successful analysis: (70%)
+- Description of goal and meaning of result explained: (10%)
+- Proper Markdown usage in Jupyter Notebook (20%)
+- 25 Bonus points for making a Leaflet or ArcGIS Javascript API application that showcases your results.
 
-Please submit a detailed and clean notebook.
+Some Hint(s)
+- Use pandas to read the Taxi Ride CSV and Taxi Zone Lookup Table CSV into dataframes
+- Join the Taxi "Borough" and "Zone" from the Taxi Zone Lookup Table to the Taxi Ride CSV using join (https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.join.html).
+- Use groupby to get ride counts by "Zone" and by "Borough"
+- Use the ArcGIS Python API to read the Taxi Zones shapefile into a spatially enabled dataframe.
+- Join the counts to the spatially enabled dataframe.
 
-### Ruberic
-- Well-documented Notebook (**10 Points**)
-- reasonable *Total Population* estimates (**15 points**)
-- Successful implementation of geoenrichment workflow based on the [Geoenrichment Tutorial](https://developers.arcgis.com/python/guide/performing-geoenrichment/). (**25 points**)
-- **Bonus** plot the events on a map symbolized by potentail population affected. (**10 points**)
+## Option 2
+City of Madison GIS Data Analysis Lab
 
-### Helpful Hint(s)
-- If you create a Notebook that works, and after running it like 10 times in a row it stops working, you might have exceeded an ArcGIS service credit usage threshold. Becuase geoenrichment taps into the ArcGIS Online credit based service, you can actually exceed the credit useage. Just an FYI...
+The City of Madison is one of many cities 
+that provide a wealth of geo-spatial 
+information for anyone to analyze. 
+Image you are a GIS analyst who works for 
+the city. Being a large city there are many problems 
+that need to be addressed.
+- Crime
+- Homelessness
+- Environmental
+- Housing .. any many more
 
+Pick an issue you that interests you and explore the 
+dataset. Use the ArcGIS API for Python analysis tools 
+and perform some kind of analysis, such as 
+aggregating the features by zip code, 
+finding hot spots, or some other kind of analysis. 
+Document your analysis.
 
+Publish your results as a service and create a 
+web application that is hosted on GitHub that shows your results
+
+Think of this as your first big assignment 
+on the job, and you want to impress your manager!
+
+The data can be found here.
+
+https://data-cityofmadison.opendata.arcgis.com/
+I want to see Python Analysis that derives 2 of the following:
+- aggregation of some features by city block, zip code, or some other region
+- Some other interactive maps (minimum of 2)
+- Nice descriptive reporting
+- Other interesting facts
+
+What to turn in: **Jupyter notebook or ArcGIS Notebook**
+
+### Grading
+Grading The project will be graded on the following:
+- Successful analysis: (70%)
+- Description of goal and meaning of result explained: (10%)
+- Proper Markdown usage in Jupyter Notebook (20%)
+- 25 Bonus points for making a Leaflet or ArcGIS Javascript API application that showcases your results.
+
+**Note: If you want to work with data from another city, you can. You just need to find that city's data.**
