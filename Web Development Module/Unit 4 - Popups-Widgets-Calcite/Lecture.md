@@ -264,7 +264,7 @@ First, do not forget to submit **Project 1**. For homework, complete **Problems 
 title: "Neighborhood: {NHD_NAME}",
 ```
 - Modify the template ```content``` to be print different field values.
-```
+
 - Change the title: ```<title>Intro to PopupTemplate - 4.8</title>```
 
 2. (**Optional**) Do this with another STL dataset:

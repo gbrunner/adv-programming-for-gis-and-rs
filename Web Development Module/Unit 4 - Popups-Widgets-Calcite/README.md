@@ -32,7 +32,7 @@ These calcite examples are included in the CodePen samples. Here are the Calcite
 - [App in GitHub](https://gbrunner.github.io/popup-from-feature-layer)
 - [Code in GitHub](https://github.com/gbrunner/popup-from-feature-layer)
 
-### Popup Final App
+## Popup Final App
 - [App in CodePen](https://codepen.io/gbrunner/pen/KKgQXVp)
 - [App in GitHub](https://gbrunner.github.io/popup-from-feature-layer-with-puck)
 - [Code in GitHub](https://github.com/gbrunner/popup-from-feature-layer-with-puck)
@@ -88,7 +88,7 @@ Problems 2 and 4**. Submit the link to your apps in either CodePen or GitHub Pag
 title: "Neighborhood: {NHD_NAME}",
 ```
 - Modify the template ```content``` to be print different field values.
-```
+
 - Change the title: ```<title>Intro to PopupTemplate - 4.8</title>```
 
 2. (**Optional**) Do this with another STL dataset:
