@@ -2,14 +2,19 @@
 1. Please read Chapters 1, 2, and 3 of [Introducing ArcGIS API 4 for Javascript](https://www.apress.com/us/book/9781484232811). Chapters 1 and 2 are really short!
 2. Samples for the book can be found on [Github](https://github.com/Apress/introducing-arcgis-api-4-for-javascript/tree/master/intro-arcgis-js-api-4)
 
-# Lecture:
-## Review Homework Problem
-- Any volunteers to discuss their solutions?
+# Unit 1 Homework Solutions item options
+Any volunteers to discuss their solutions?
+Here are the [Unit 1 Homework Solutions](https://codepen.io/collection/XJqVNB).
 
-## GeoJSON
+# [Unit 2 CodePen Samples](https://codepen.io/collection/DjRGgj)
+This is a link to the Unit 2 CodePen examples I intend to show during class. 
+Check them out. Modify them. Explore them. 
+
+
+# GeoJSON
 - [http://geojson.io](http://geojson.io)
 
-## Terminology
+# Terminology
 - [ArcGIS API for Javascript](https://developers.arcgis.com/javascript/)
 - [Asynchronous Module Definition](https://requirejs.org/docs/whyamd.html)
 - [Dojo](https://dojotoolkit.org/) - Javascript toolkit that aids in development. Provides everything you need to build a WebApp.
@@ -42,7 +47,7 @@ Once we have a map, change it to a Scene.
 
 Let's save this as an app in Github and view it online!
 
-## ArcGIS Layers
+# ArcGIS Layers
 Let's learn about layers in ArcGIS!
 
 - Go to ArcGIS Online
@@ -58,75 +63,48 @@ Let's learn about layers in ArcGIS!
 **What's the point of this?**
 *That we did in Leaflet can be done without code. But you can code it now with Leaflet and will be able to with ArcGIS JavaScript!*
 
-## How do we work with these in JavaScript?
-### From a WebMap
-Let's start by creating an app from our traffic webmap
-- Go to [Load a Basic WebMap](https://developers.arcgis.com/javascript/latest/sample-code/webmap-basic/index.html)
-- Open in Sandbox
-- Let's modify this to take your webmap
-- Notice it even zooms over to the extent of your webmap?
-- Play around with CSS and HTML parameters
-
-#### Final App
+# Completed Apps
+## My first JSAPI App
 - [App in CodePen](https://codepen.io/gbrunner/pen/MWjoKBG)
 - [App in GitHub](https://gbrunner.github.com/my-first-app-refactored)
 - [Code in GitHub](https://github.com/gbrunner/my-first-app-refactored)
 
-## From a Portal Item
-You can build a web app direcly from the portal item. This wep app will inherit the properties of the Portal Item. 
-In this case, you can think of the Portal Item as the starting point for the app you want to create.
-
-#### Final App
+##  App from Portal Item
 - [App in CodePen](https://codepen.io/gbrunner/pen/LYRzRXg)
 - [App in GitHub](https://gbrunner.github.com/add-layer-from-portal-item)
 - [Code in GitHub](https://github.com/gbrunner/add-layer-from-portal-item)
 
-
-### From a Feature Layer
-- Feature layers are probably the most prevalent layers
-- Can be created from Portal Item or Service URL
-- Let's edit the webmap example to use the Feature Service (ca_traffic_from_fl.html)
-- What differences do you see between the webmap version and the heatmap version?
-
-#### Final App
+## App from Feature Layer
 - [App in CodePen](https://codepen.io/gbrunner/pen/MWjEbwr)
 - [App in GitHub](https://gbrunner.github.com/add-feature-layer)
 - [Code in GitHub](https://github.com/gbrunner/add-feature-layer)
 
-### From an Imagery Layer
-- Let's look at adding an imagery layer.
-- Using the [Imagery Layers Intro](https://developers.arcgis.com/javascript/latest/sample-code/sandbox/index.html?sample=layers-imagerylayer)
-- Open in Sandbox
-- Let's change the imagery URL to the [USA Forest Type URL]("https://landscape4.arcgis.com/arcgis/rest/services/USA_Forest_Type/ImageServer")
-
-#### Final App
+## App from Imagery Layer
 - [App in CodePen](https://codepen.io/gbrunner/pen/yLazVOp)
 - [App in GitHub](https://gbrunner.github.com/add-imagery-layer)
 - [Code in GitHub](https://github.com/gbrunner/add-imagery-layer)
 
-### From a CSV
-- Let's take a look at the [CSV Layer Example](https://developers.arcgis.com/javascript/latest/sample-code/layers-csv/index.html)
-- From here, let's try to solve some problems ourselves!
-
-#### Final App
+## App from CSV
 - [App in CodePen](https://codepen.io/gbrunner/pen/zYKEoKm)
 - [App in GitHub](https://gbrunner.github.com/add-csv-layer)
 - [Code in GitHub](https://github.com/gbrunner/add-csv-layer)
 
-### Loading a Web Scene
-Next week, we will work with 3D scenes. If you are interested, you can get started using this example.
-
-#### Final App
+## App from Web Scene
 - [App in CodePen](https://codepen.io/gbrunner/pen/dypVpjQ)
 - [App in GitHub](https://gbrunner.github.com/intro-to-scene-view)
 - [Code in GitHub](https://github.com/gbrunner/intro-to-scene-view)
 
-# Exercises
+# Unit 2 Assignment
+1. Finish the **Classwork\Homework Problems** and submit them as **Assignment 2**.
+2. Read Chapters 4 and 5 of [Rubalcava](https://www.apress.com/us/book/9781484232811) on **API Core Fundamentals** and **Scenes**
+3. Project 1 assigned!
+
+## Exercises
 1. [Create a starter app](https://developers.arcgis.com/labs/javascript/create-a-starter-app/)
 2. [Select a basemap](https://developers.arcgis.com/labs/javascript/select-a-basemap/)
 3. [Add layers to a map](https://developers.arcgis.com/labs/javascript/add-layers-to-a-map/)
 
-# Classwork\Homework Problems:
+## Classwork\Homework Problems:
 Please complete problems 1, 2, and 3. Problem 4 is optional, but I think it is achievable and that you will find some satisfaction in completing it and learning the topic.
 
 1. Search through ArcGIS Online and find 2 feature layers that overlap (not including the basemap). You will create two apps that show both layers on the map. **Please submit your code and app using GitHub. The app should be hosted on GitHub using GitHub Pages.**
@@ -215,11 +193,6 @@ const layer = new CSVLayer({
 - Change the Zoom location to be over the Midwest.
 - After you change it, does the *Popup* still work?
 - If not, can you fix it? The Bands for Landsat 8 can be found [here](https://www.usgs.gov/faqs/what-are-band-designations-landsat-satellites?qt-news_science_products=0#qt-news_science_products). This data corresponds to the OLI sensor.
-
-# Homework:
-1. Finish the **Classwork\Homework Problems** and submit them as **Assignment 2**.
-2. Read Chapters 4 and 5 of [Rubalcava](https://www.apress.com/us/book/9781484232811) on **API Core Fundamentals** and **Scenes**
-3. Project 1 assigned!
 
 # Helpful Links
 - [Esri GeoDav Hacker Lab JSAPI samples](https://github.com/Esri/geodev-hackerlabs/tree/master/develop/jsapi)
