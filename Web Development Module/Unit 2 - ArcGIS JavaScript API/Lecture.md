@@ -35,8 +35,8 @@ Let's save this as an app in Github and view it online!
 Let's learn about layers in ArcGIS!
 
 - Go to ArcGIS Online
-- Search for [traffic layers outside of your organization](http://slustl.maps.arcgis.com/home/search.html?q=traffic&t=content&start=1&sortOrder=desc&sortField=relevance&restrict=false&focus=layers-weblayers-features)
-- Find [California Traffic Layers](http://slustl.maps.arcgis.com/home/search.html?q=traffic&t=content&start=1&sortOrder=desc&sortField=relevance&restrict=false&focus=layers-weblayers-features)
+- Search for [traffic layers outside of your organization](https://www.arcgis.com/home/search.html?q=traffic&t=content&start=1&sortOrder=desc&sortField=relevance&restrict=false&focus=layers-weblayers-features)
+- Find [California Traffic Layers](https://www.arcgis.com/home/search.html?q=traffic&t=content&start=1&sortOrder=desc&sortField=relevance&restrict=false&focus=layers-weblayers-features)
 - Open up [the service](https://services1.arcgis.com/8CpMUd3fdw6aXef7/arcgis/rest/services/Vehicle_Traffic_Volumes_2016/FeatureServer)
 - Let's query the service
 - Notice you can return HTML, JSON (Esri JSON), GeoJSON, etc.
