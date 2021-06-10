@@ -216,7 +216,7 @@ marker2.bindPopup("<b>Resturant 2</b><br>Annie Gunns").openPopup();
 - Start with [leaflet heatmap example](https://codepen.io/gbrunner/pen/rNMGxGw)
 - Change the view of the map ```var map = L.map('map').setView([42.35, -71.08], 13);``` to be over San Francisco.
 - Change the basemap to a Stamen Basemap ```L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png'``` that is listed below.
-- Change *rodents.geojson* to the [sf_crime.geojson](https://github.com/gbrunner/Advanced_Python_for_GIS_and_RS/blob/master/Week%201/sf_crime.geojson)
+- Change *rodents.geojson* to the [sf_crime.geojson](https://raw.githubusercontent.com/gbrunner/adv-programming-for-gis-and-rs/master/Web%20Development%20Module/Unit%201%20-%20GitHub%20and%20Leaflet/sf_crime.geojson)
 
 4. **Optional Challenge** Create a Leaflet cluster map from the crime points GeoJSON that you used above. Make sure you have a default icon set. Can you change the color on the clusters?
 - Start with [leaflet-cluster-map example](https://codepen.io/gbrunner/pen/GRjMoxb)
