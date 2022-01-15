@@ -21,7 +21,7 @@ Here are some extra examples that I discussed:
 - [App in GitHub](https://gbrunner.github.io/map-view-watcher)
 - [Code in GitHub](https://github.com/gbrunner/map-view-watcher)
 
-## 3D Final App
+## Autocasting
 - [App in CodePen](https://codepen.io/gbrunner/pen/KKgXJav)
 - [App in GitHub](https://gbrunner.github.io/autocast-webmap)
 - [Code in GitHub](https://github.com/gbrunner/autocast-webmap)
